@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Josep Maria Junoy on Papers Vells</title>
+    <link>http://localhost:1313/autors/josep-maria-junoy/</link>
+    <description>Recent content in Josep Maria Junoy on Papers Vells</description>
+    <generator>Hugo</generator>
+    <language>ca</language>
+    <lastBuildDate>Sun, 11 Dec 1927 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/autors/josep-maria-junoy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Un premi-aniversari</title>
+      <link>http://localhost:1313/josep-maria-junoy/un-premi-aniversari/</link>
+      <pubDate>Sun, 11 Dec 1927 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/josep-maria-junoy/un-premi-aniversari/</guid>
+      <description>&lt;p&gt;No ens n&amp;rsquo;adonem prou, potser; és un fet incontestable, però, que d&amp;rsquo;un breu espai de temps ençà l&amp;rsquo;esperit i les coses relacionades amb l&amp;rsquo;esperit a casa nostra segueixen una rapidíssima marxa ascendent.&lt;/p&gt;&#xA;&lt;p&gt;S&amp;rsquo;està creant una atmosfera. S&amp;rsquo;està formant un ambient favorable a la desclosió d&amp;rsquo;una sèrie de projectes enormement interessants.&lt;/p&gt;&#xA;&lt;p&gt;El balanç actual de la nostra situació literària i artística és un balanç evidentment encoratjador. Les nostres principals tares es van atenuant; els nostres defectes més característics es van corregint. De tant en tant diríeu que es clava una fita definitiva en el decurs ininterromput del nostre espiritual avançament.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

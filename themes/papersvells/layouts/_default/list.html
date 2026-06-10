@@ -1,0 +1,143 @@
+{{/*
+  ═══════════════════════════════════════════════════════════
+  LIST.HTML — llistes genèriques de seccions
+  ═══════════════════════════════════════════════════════════
+  Hugo fa servir aquesta plantilla per mostrar llistes
+  d'elements quan no troba una plantilla més específica.
+
+  S'aplica per exemple a:
+    /articles/         → llista tots els articles
+    /publicacions/     → llista totes les publicacions (si fos secció)
+
+  Una "secció" a Hugo és una carpeta dins content/.
+  Si tens content/articles/, la URL /articles/ farà servir
+  aquesta plantilla per llistar el contingut.
+
+  Nota: les pàgines /autors/ i /publicacions/ NO fan servir
+  aquesta plantilla — les fan servir taxonomy.html i term.html
+  perquè autors i publicacions són "taxonomies" definides al
+  hugo.toml, no seccions de contingut.
+
+  IMPORTANT: els camps "autors" i "publicacions" del frontmatter
+  són ARRAYS, per això s'accedeix amb "delimit ... ', '" per
+  concatenar-los com a text llegible.
+*/}}
+
+
+{{ define "main" }}
+
+<div class="container">
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    CAPÇALERA DE LA SECCIÓ
+    ─────────────────────────────────────────────────────────
+    .Title  → títol de la secció (per defecte el nom de la carpeta)
+              Pots personalitzar-lo creant un fitxer _index.md
+              dins de la carpeta amb un title al front matter.
+
+    .Content → contingut markdown del _index.md (descripció,
+               text introductori). Si no existeix, no es mostra.
+  */}}
+  <header style="text-align:center; margin-bottom: var(--space-lg);">
+
+    <h1 style="font-size: var(--text-2xl); margin: var(--space-md) 0;">
+      {{ .Title }}
+    </h1>
+
+    {{/* Descripció opcional de la secció */}}
+    {{ with .Content }}
+      <div style="max-width: 65ch; margin-inline: auto; color: var(--color-ink-light);">
+        {{ . }}
+      </div>
+    {{ end }}
+
+  </header>
+
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    LLISTA D'ELEMENTS DE LA SECCIÓ
+    ─────────────────────────────────────────────────────────
+    Reutilitzem la mateixa graella d'articles que a la portada
+    per mantenir consistència visual.
+
+    .Paginator.Pages = articles d'aquesta pàgina de paginació.
+  */}}
+  {{ if .Pages }}
+
+    <div class="articles-grid">
+      {{ range .Paginator.Pages }}
+
+        <article class="article-card">
+
+          <p class="article-card__meta">
+            {{ with .Params.publicacions }}{{ delimit . ", " }}{{ end }}
+            {{ with .Date }} · {{ .Format "02/01/2006" }}{{ end }}
+          </p>
+
+          <h2 class="article-card__title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h2>
+
+          {{ with .Params.autors }}
+            <p class="article-card__author">{{ delimit . ", " }}</p>
+          {{ end }}
+
+          {{ with .Summary }}
+            <p class="article-card__excerpt">{{ . }}</p>
+          {{ end }}
+
+        </article>
+
+      {{ end }}
+    </div>
+
+    {{/*
+      ─────────────────────────────────────────────────────────
+      PAGINACIÓ
+      ─────────────────────────────────────────────────────────
+      Mateixa lògica que a index.html.
+      Quan tinguem 300 articles, aquí sortiran 25 pàgines de 12.
+    */}}
+    {{ with .Paginator }}
+      {{ if gt .TotalPages 1 }}
+
+        <nav class="pagination" aria-label="Paginació" style="
+          display: flex;
+          justify-content: center;
+          gap: var(--space-sm);
+          margin-top: var(--space-xl);
+          font-size: var(--text-sm);
+          letter-spacing: 0.08em;
+        ">
+
+          {{ if .HasPrev }}
+            <a href="{{ .Prev.URL }}" style="color:var(--color-accent);">← Anterior</a>
+          {{ end }}
+
+          <span style="color:var(--color-ink-faded);">
+            {{ .PageNumber }} / {{ .TotalPages }}
+          </span>
+
+          {{ if .HasNext }}
+            <a href="{{ .Next.URL }}" style="color:var(--color-accent);">Següent →</a>
+          {{ end }}
+
+        </nav>
+
+      {{ end }}
+    {{ end }}
+
+  {{ else }}
+
+    {{/* Cas excepcional: la secció existeix però està buida */}}
+    <p style="text-align:center; color:var(--color-ink-faded); padding: var(--space-xl) 0;">
+      No hi ha contingut en aquesta secció.
+    </p>
+
+  {{ end }}
+
+</div>
+
+{{ end }}

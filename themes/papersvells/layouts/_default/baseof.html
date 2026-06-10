@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#973330">
+  
+  {{/*
+    ─────────────────────────────────────────────────────────
+    TÍTOL
+    ─────────────────────────────────────────────────────────
+    El replaceRE que corregeix la "I" conjunció catalana
+    (ex: "Marsans I Basté" → "Marsans i Basté") s'aplica
+    NOMÉS a les pàgines de taxonomia (autors, publicacions),
+    que és on Hugo capitalitza automàticament.
+
+    Els títols dels articles i la resta de pàgines venen del
+    front matter i no necessiten la correcció — a més,
+    evitem trencar números romans ("Alfons I") o similars.
+    ─────────────────────────────────────────────────────────
+  */}}
+  {{- $pageTitle := .Title -}}
+  {{- if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $pageTitle = .Title | replaceRE `\bI\b` "i" -}}
+  {{- end -}}
+  {{- $title := cond .IsHome .Site.Title (printf "%s · %s" $pageTitle .Site.Title) -}}
+  <title>{{ $title }}</title>
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    META DESCRIPCIÓ
+    ─────────────────────────────────────────────────────────
+  */}}
+  {{- $desc := "" -}}
+  {{- if .Params.description -}}
+    {{- $desc = .Params.description -}}
+  {{- else if .Params.bio -}}
+    {{- $desc = printf "%s — Articles a Papers Vells, arxiu de premsa catalana antiga." .Params.bio -}}
+  {{- else if and .IsPage .Params.autors -}}
+    {{- $autorsText := delimit .Params.autors ", " -}}
+    {{- $desc = printf "%s, de %s." .Title $autorsText -}}
+    {{- with .Params.publicacions }}
+      {{- $publText := delimit . ", " -}}
+      {{- $desc = printf "%s Publicat a %s." $desc $publText -}}
+    {{- end -}}
+  {{- else if .Summary -}}
+    {{- $desc = .Summary -}}
+  {{- else -}}
+    {{- $desc = .Site.Params.description -}}
+  {{- end -}}
+  <meta name="description" content="{{ $desc | htmlUnescape | plainify | truncate 160 }}">
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    OPEN GRAPH
+    ─────────────────────────────────────────────────────────
+  */}}
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $desc | htmlUnescape | plainify | truncate 160 }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:locale" content="ca_ES">
+  {{- if .IsPage }}
+  <meta property="og:type" content="article">
+  {{- else }}
+  <meta property="og:type" content="website">
+  {{- end }}
+  {{- $ogImage := printf "%simages/og-default.webp" .Site.BaseURL -}}
+  {{- with .Params.imatge }}{{- $ogImage = . -}}{{- end }}
+  <meta property="og:image" content="{{ $ogImage }}">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    CANONICAL + ROBOTS
+    ─────────────────────────────────────────────────────────
+  */}}
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta name="robots" content="{{ if .Params.noindex }}noindex, nofollow{{ else }}index, follow{{ end }}">
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    STRUCTURED DATA (JSON-LD)
+    ─────────────────────────────────────────────────────────
+    Tres casos:
+    1. ARTICLE (.IsPage) — Article + BreadcrumbList
+    2. TERME/TAXONOMIA   — CollectionPage + BreadcrumbList
+    3. HOME              — WebSite amb SearchAction
+    ─────────────────────────────────────────────────────────
+  */}}
+
+  {{- if .IsPage }}
+  {{/*
+    ── CAS 1: ARTICLE ──────────────────────────────────────
+  */}}
+  {{- $autorNom := "" -}}
+  {{- $autorURL := "" -}}
+  {{- $autorWikipedia := "" -}}
+  {{- with .Params.autors -}}
+    {{- $autorNom = index . 0 -}}
+    {{- $autorSlug := $autorNom | urlize -}}
+    {{- $autorPage := site.GetPage (printf "/autors/%s" $autorSlug) -}}
+    {{- with $autorPage -}}
+      {{- $autorURL = .Permalink -}}
+      {{- $autorWikipedia = .Params.wikipedia | default "" -}}
+    {{- end -}}
+  {{- end -}}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Title | plainify | jsonify | safeJS }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | jsonify }}
+  },
+  "author": {
+    "@type": "Person",
+    "name": {{ $autorNom | default "Desconegut" | jsonify }}
+    {{- if $autorURL }},
+    "url": {{ $autorURL | jsonify }}
+    {{- end }}
+    {{- if $autorWikipedia }},
+    "sameAs": {{ $autorWikipedia | jsonify }}
+    {{- end }}
+  },
+  "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify }},
+  "publisher": {
+    "@type": "Organization",
+    "name": "Papers Vells",
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ "images/logo-horitzontal.webp" | absURL | jsonify }}
+    }
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": {{ with .Params.publicacions }}{{ index . 0 | jsonify }}{{ else }}"Papers Vells"{{ end }}
+  },
+  "inLanguage": "ca",
+  "url": {{ .Permalink | jsonify }}
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Papers Vells",
+      "item": {{ .Site.BaseURL | jsonify }}
+    }
+    {{- if $autorNom }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ $autorNom | jsonify }},
+      "item": {{ $autorURL | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ .Title | plainify | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }
+    {{- else }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ .Title | plainify | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }
+    {{- end }}
+  ]
+}
+</script>
+
+  {{- else if .IsHome }}
+  {{/*
+    ── CAS 3: HOME ─────────────────────────────────────────
+  */}}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Papers Vells",
+  "description": {{ .Site.Params.description | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }},
+  "inLanguage": "ca",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": {{ printf "%scerca/?q={search_term_string}" .Site.BaseURL | jsonify }}
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+  {{- else if and (not .IsHome) (not .IsPage) }}
+  {{/*
+    ── CAS 2: TERME o TAXONOMIA ────────────────────────────
+    Usem $pageTitle que ja porta el replaceRE aplicat
+    correctament per a les pàgines de taxonomia.
+  */}}
+  {{- $seccioNom := "" -}}
+  {{- $seccioURL := "" -}}
+  {{- if eq .Type "autors" -}}
+    {{- $seccioNom = "Autors" -}}
+    {{- $seccioURL = printf "%sautors/" .Site.BaseURL -}}
+  {{- else if eq .Type "publicacions" -}}
+    {{- $seccioNom = "Publicacions" -}}
+    {{- $seccioURL = printf "%spublicacions/" .Site.BaseURL -}}
+  {{- end -}}
+  {{- $wikipedia := .Params.wikipedia | default "" -}}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ $pageTitle | jsonify }},
+  "description": {{ $desc | htmlUnescape | plainify | truncate 160 | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  "inLanguage": "ca"
+  {{- if $wikipedia }},
+  "about": {
+    "@type": {{ if eq .Type "autors" }}"Person"{{ else }}"Periodical"{{ end }},
+    "name": {{ $pageTitle | jsonify }},
+    "sameAs": {{ $wikipedia | jsonify }}
+  }
+  {{- end }}
+}
+</script>
+  {{- if $seccioNom }}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Papers Vells",
+      "item": {{ .Site.BaseURL | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ $seccioNom | jsonify }},
+      "item": {{ $seccioURL | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ $pageTitle | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }
+  ]
+}
+</script>
+  {{- end }}
+  {{- end }}
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    CSS — Hugo Pipes: concat + minify + fingerprint
+    ─────────────────────────────────────────────────────────
+  */}}
+  {{- $headerCSS := resources.Get "css/header.css" -}}
+  {{- $mainCSS   := resources.Get "css/main.css" -}}
+  {{- $cercaCSS  := resources.Get "css/cerca.css" -}}
+  {{- $css := slice $headerCSS $mainCSS $cercaCSS | resources.Concat "css/bundle.css" | minify | fingerprint -}}
+  <link rel="stylesheet"
+        href="{{ $css.Permalink }}"
+        integrity="{{ $css.Data.Integrity }}">
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    PRELOAD DE LA FONT
+    ─────────────────────────────────────────────────────────
+  */}}
+  <link rel="preload"
+        href="/fonts/psfournier.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin>
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    FAVICONS
+    ─────────────────────────────────────────────────────────
+  */}}
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    RSS — descoberta automàtica del feed
+    ─────────────────────────────────────────────────────────
+    Hugo genera /index.xml automàticament. Aquesta línia
+    permet als lectors de RSS i navegadors detectar-lo.
+    En pàgines de terme (autor, publicació) apunta al feed
+    específic d'aquell terme.
+    ─────────────────────────────────────────────────────────
+  */}}
+  {{- if or (eq .Kind "term") (eq .Kind "taxonomy") }}
+  <link rel="alternate" type="application/rss+xml"
+        title="{{ $pageTitle }} · {{ .Site.Title }}"
+        href="{{ .Permalink }}index.xml">
+  {{- else }}
+  <link rel="alternate" type="application/rss+xml"
+        title="{{ .Site.Title }}"
+        href="{{ .Site.BaseURL }}index.xml">
+  {{- end }}
+
+</head>
+<body>
+
+  {{/* Skip link — accessibilitat per a navegació per teclat */}}
+  <a href="#main-content" class="skip-link">Saltar al contingut</a>
+
+  <header class="site-header">
+
+    <a href="/" aria-label="Papers Vells — pàgina principal">
+      <picture>
+        <source
+          media="(max-width: 900px)"
+          srcset="/images/logo-vertical.webp">
+        <img
+          class="site-header__logo"
+          src="/images/logo-horitzontal.webp"
+          alt="Papers Vells"
+          width="600"
+          height="80"
+          fetchpriority="high"
+        >
+      </picture>
+    </a>
+
+    <nav class="site-nav" aria-label="Navegació principal">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}"
+          {{ if or (eq $.RelPermalink .URL) (eq $.Permalink .URL) }}aria-current="page"{{ end }}>
+          {{ .Name }}
+        </a>
+      {{ end }}
+
+      <a href="/cerca/"
+         aria-label="Cerca"
+         class="site-nav__cerca"
+         {{ if eq $.RelPermalink "/cerca/" }}aria-current="page"{{ end }}>
+        <img src="/images/lupa.webp"
+             alt=""
+             width="20" height="20">
+      </a>
+
+      <a href="https://x.com/papersvells"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Papers Vells a Twitter/X"
+         class="site-nav__twitter">
+        <img src="/images/twpv.webp"
+             alt="Twitter/X"
+             width="20" height="20">
+      </a>
+    </nav>
+
+  </header>
+
+  <main class="site-main" id="main-content">
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  <script src="/js/header-scroll.js" defer></script>
+</body>
+</html>

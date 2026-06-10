@@ -1,0 +1,122 @@
+{{ define "main" }}
+
+<article>
+
+  {{/* IMATGE DE CAPÇALERA amb títol superposat */}}
+  {{ with .Params.image }}
+    <div class="article-hero">
+      <img
+        class="article-hero__img"
+        src="/images/articles/{{ . }}"
+        alt="{{ $.Title }}"
+        width="900" height="450"
+      >
+      <div class="article-hero__overlay">
+        <h1 class="article-hero__title">{{ $.Title }}</h1>
+      </div>
+    </div>
+  {{ else }}
+    <div class="container">
+      <h1 class="article-header__title" style="padding-top: var(--space-lg);">
+        {{ .Title }}
+      </h1>
+    </div>
+  {{ end }}
+
+  <div class="container">
+
+    {{/*
+      ─────────────────────────────────────────────────────────
+      BLOC AUTOR
+      ─────────────────────────────────────────────────────────
+      Els camps "autors" i "publicacions" són arrays.
+      Agafem el primer element amb "index ... 0" per al
+      cas habitual d'un sol autor i una sola publicació.
+      L'avatar i l'enllaç s'apliquen al primer.
+    */}}
+    {{ with .Params.autors }}
+      {{ $primerAutor := index . 0 }}
+      {{ $autorSlug := $primerAutor | urlize }}
+      <div class="article-byline">
+
+        <img
+          class="article-byline__avatar"
+          src="/images/autors/{{ $autorSlug }}.webp"
+          alt="Fotografia de {{ $primerAutor }}"
+          width="80" height="80"
+          onerror="this.style.display='none'"
+        >
+
+        <div>
+          <p class="article-byline__name">
+            {{/*
+              Si hi ha més d'un autor, els enllacem tots
+              individualment separats per comes.
+            */}}
+            {{ range $i, $a := . }}
+              {{ if $i }}, {{ end }}
+              <a href="/{{ $a | urlize }}/">{{ $a }}</a>
+            {{ end }}
+          </p>
+
+          <p class="article-byline__publication">
+            {{ with $.Params.publicacions }}
+              {{ range $i, $p := . }}
+                {{ if $i }}, {{ end }}
+                <a href="/{{ $p | urlize }}/">{{ $p }}</a>
+              {{ end }}
+            {{ end }}
+            {{ with $.Date }}
+              <span style="color: var(--color-ink-faded);">
+                {{- $mesos := slice "" "gener" "febrer" "març" "abril" "maig" "juny" "juliol" "agost" "setembre" "octubre" "novembre" "desembre" }}
+                {{- $mes := index $mesos .Month }}
+                {{- $prep := "de " }}
+                {{- if in (slice "abril" "agost" "octubre") $mes }}{{- $prep = "d'" }}{{- end }}
+                {{- $art := "el " }}
+                {{- if in (slice 1 11) .Day }}{{- $art = "l'" }}{{- end }}
+                {{ $art }}{{ .Day }} {{ $prep }}{{ $mes }} de {{ .Year }}
+              </span>
+            {{ end }}
+          </p>
+        </div>
+
+      </div>
+    {{ end }}
+
+    <hr class="rule">
+
+    {{/* COS DE L'ARTICLE */}}
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+
+    <hr class="rule" style="margin-top: var(--space-xl);">
+
+    {{/* NAVEGACIÓ ENTRE ARTICLES */}}
+    <nav style="
+      display: flex;
+      justify-content: space-between;
+      font-size: var(--text-sm);
+      padding: var(--space-sm) 0 var(--space-lg);
+      gap: var(--space-md);
+    ">
+      {{ with .PrevInSection }}
+        <a href="{{ .Permalink }}" style="color:var(--color-accent); flex:1;" title="{{ .Title }}">
+          ← {{ .Title | truncate 50 "…" }}
+        </a>
+      {{ else }}
+        <span></span>
+      {{ end }}
+
+      {{ with .NextInSection }}
+        <a href="{{ .Permalink }}" style="color:var(--color-accent); flex:1; text-align:right;" title="{{ .Title }}">
+          {{ .Title | truncate 50 "…" }} →
+        </a>
+      {{ end }}
+    </nav>
+
+  </div>
+
+</article>
+
+{{ end }}

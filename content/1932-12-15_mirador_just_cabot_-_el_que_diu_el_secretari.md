@@ -1,0 +1,31 @@
+---
+title: "El que diu el secretari"
+autors: ["Just Cabot"]
+publicacions: ["Mirador"]
+date: 1932-12-15
+slug: "just-cabot/el-que-diu-el-secretari"
+draft: false
+image: "1932-12-15_mirador_just_cabot_-_el_que_diu_el_secretari.webp"
+---
+
+Encara avui, que han passat prop de cinc anys, no m'explico com va anar la cosa. Em vaig trobar a la candidatura per a jurats que la Comissió gestora del Premi Crexells proposava, perquè la confirmessin o infirmessin amb llur vot, els benemèrits contribuents d'aquesta institució. I, el que és pitjor, em vaig trobar elegit. Em penso que la meva obscuritat fou el que més hi contribuí. En aquell temps feliç, potser no havia posat els meus nom i cognom al peu d'una dotzena d'articles, bagatge tan migrat que no sé pas què s'hauria empescat la bona voluntat dels que em proposaren per justificar, si algú els ho hagués demanat, la inclusió del meu entre aquells noms conegudíssims: Pompeu Fabra, Carles Rahola, Agustí Calvet, J. M. Lòpez-Picó, J. M. Junoy, Carles Riba.
+
+Per raons d'edat, em va tocar fer de secretari, aquell any i dos més, ja que fórem nomenats per tres anys. En tractar-se de renovar el jurat, i renovar també la composició d'aquest, fent-hi entrar els autors premiats, vaig ésser víctima d'aneu a saber quina ofuscació dels amics de la Comissió gestora, reelegit per cinc anys. Cinc anys! Vaig acceptar perquè de vegades sóc persona disciplinada. Abrigo però l'esperança d'estalviar-me els dos anys que em queden, gràcies a la incorporació del Premi Crexells al pla de premis instituïts i mantinguts per la Generalitat.
+
+I no és que pensi escriure cap novel·la, que la meva condició de membre del jurat exclouria de concórrer al premi, ni que esperi aquesta llibertat per explicar anècdotes d'entre bastidors, per la senzilla raó que a penes n'hi ha, i les poques que hi ha no valen la pena.
+
+Desgraciadament, es juguen pocs interessos, la competència és massa poc aferrissada i les probabilitats massa mal repartides, perquè un premi de novel·la desvetlli gaires passions, demés que, fora dels temps de la dictadura, i encara, la nostra gent no acostuma apassionar-se per aquests temes. Si la cosa literària apassionés de debò, els jurats del Crexells hauríem estat copiosament insultats i acusats sovint de tèrboles compra-vendes i subterrànies combinacions editorials. I no ha estat així. Només un any es produí alguna passioneta i vaig ésser acusat d'haver sopat amb un autor pel qual vaig votar. Realment, ja era cotitzar-me ben baix. Amb tota seguretat, l'autor de la insídia m'aplicava la seva mesura, ignorant que ―mal m'està dir-ho― gairebé la meitat dels dies de la meva vida sopo a casa d'uns amics o altres, i per tant un suborn d'aquesta mena té poques probabilitats de reeixir.
+
+Ara veurem si enguany s'alça una mica de polseguera entorn del premi. Gairebé es pot assegurar per endavant que se n'alçarà. D'antuvi, ja cal comptar que certa mena de gent, que disposa d'uns certs papers impresos, llançarà els grans marramaus. També cal comptar amb el que arribaran a dir els moralistes, pels quals, l'autor de l'obra premiada i els membres del jurat que l'hem votada perdrem la ciutadania catalana per adquirir la babilònica o la pentapolitana. Pel que fa a mi, ben poc m'amoïnen els uns i els altres. Ni pensar en el solemne judici de la història és capaç de treure'm cap hora de son. Altra feina tindrà la història que ocupar-se de mi. Sense anar tan lluny: només d'aquí deu anys, tret d'algun erudit que ho consultarà als diaris o al seu fitxer, ningú no es recordarà del que va votar cada un del jurat, ni a penes de les obres premiades.
+
+Tot plegat, misèria. Cinc mil pessetes no donen dret a exigir una obra immortal, que de vegades es produeix de franc o perdent-hi diners. Però en aquestes latituds, on comprar un llibre encara és considerat una despesa sumptuària i on s'han escrit articles per dos ous aferrats ―que és molt pitjor que escriure'ls de franc―, això és difícil de fer entendre.
+
+De totes maneres, el Premi Crexells ha remogut sempre una mica les aigües generalment tranquil·les del nostre món intel·lectual. Si la remoció no ha estat més intensa i extensa, és perquè aquest món que deia és petit, i perquè el públic no ha arribat mai a interessar-s'hi gaire. Però sempre ha fet bonic la tarda del dia de Santa Llúcia a l'Ateneu, animada com els dies d'eleccions, amb els periodistes esperant el veredicte i les declaracions ―que sempre han resultat comprometedores― dels membres del jurat que tenien a bé fer-ne; els curiosos, més o menys lletraferits, prodigant comentaris; alguns autors fent el cor fort i dient que s'alegraven de la decisió dels jurats, tret d'algun que desapareixia tan quitament que ni el porter el veia sortir.
+
+I el que enyorarem sobretot serà aquell sopar dels membres de la Comissió gestora i dels del Jurat, un sopar del qual Léon Daudet, del Premi Goncourt, no es cansaria de parlar des del seu lloc de l'Action Française, substituint amb la mateixa vèrbola rabelesiana els insults d'energumen per les lloances de gourmet. Gràcies en siguin donades ―del sopar― al nostre Quim Borralleras, al qual es deu més que a ningú ―i això és l'important― que el Premi Crexells s'hagi pogut mantenir amb el mecenatge d'uns quants homes desinteressats i comprensius.
+
+Ara, ja ho saben, per la premsa diària, els nostres lectors: aquest any el premi ha estat donat a Josep Maria de Sagarra.
+
+Ja tenim l'amic Josep Maria de Sagarra i de Castellarnau consagrat, i quasi diria reconsagrat, ja que en un any s'ha endut dos premis, l'Ignasi Iglésies i el Joan Crexells. Es veia venir que aquest xicot acabaria així, reblant amb distincions oficials una consagració popular congriada ja fa temps. Ell prou ha fet, alguna vegada, per retardar-la, ara indignant una ciutat amb un capítol de novel·la; ara molestant un estament amb un article; gloriejant-se tothora de ficar-se al llit quan clareja (a l'hivern) o quan ja fa hores que el sol ha sortit (a l'estiu); dient que no es pren res seriosament, i altres coses així. Sort d'això; si no, l'hauríem consagrat massa jove.
+
+Jo espero, només, que consagrat i reconsagrat i tot, faci la vida de sempre, cosa de la qual, per altra banda, estic segur. Així la glòria li serà més lleu, i ens en serà, també i sobretot, als seus companys d'aquelles darreres hores del nostre dia.

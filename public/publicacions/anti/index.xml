@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anti on Papers Vells</title>
+    <link>http://localhost:1313/publicacions/anti/</link>
+    <description>Recent content in Anti on Papers Vells</description>
+    <generator>Hugo</generator>
+    <language>ca</language>
+    <lastBuildDate>Fri, 01 May 1931 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/publicacions/anti/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Una gràcia de qualitat, per l’amor de Déu!</title>
+      <link>http://localhost:1313/sebastia-gasch/una-gracia-de-qualitat-per-l-amor-de-deu/</link>
+      <pubDate>Fri, 01 May 1931 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sebastia-gasch/una-gracia-de-qualitat-per-l-amor-de-deu/</guid>
+      <description>&lt;p&gt;Fa anys que menem amb sincer entusiasme, les més diverses campanyes per a intentar la dignificació de la pintura catalana.&lt;/p&gt;&#xA;&lt;p&gt;Fa anys que ens esgargamellem en tots els tons, que empren els més potents megàfons que gesticulem fins i tot com uns energúmens, per a aconseguir un guany qualitatiu de la pintura catalana. Començàrem per oposar austeritat formal a la disbauxa colorística imperant, l&amp;rsquo;abstinència estructural a l&amp;rsquo;embriaguesa llumínica, l&amp;rsquo;ordre al desordre. Davant els resultats negatius, assenyalàrem la conveniència d&amp;rsquo;alliberar-se del naturalisme en ús, considerat com una trava poderosa, com un control rigorós de la intel·ligència i de la sensibilitat. Aconsellàrem l&amp;rsquo;evasió per afavorir la lliure expansió de la raó i de l&amp;rsquo;instint de la plàstica i de la poesia, de l&amp;rsquo;ordre arquitectònic i de les efusions líriques. Davant la mansuetud dominant, exigírem la intensitat, dreçàrem la força contra la gràcia, el vigor mascle contra l&amp;rsquo;afemellament&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

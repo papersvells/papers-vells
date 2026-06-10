@@ -1,0 +1,19 @@
+---
+title: "Entorn de Virgili"
+autors: ["Joaquim Balcells"]
+publicacions: ["El Matí"]
+date: 1930-12-23
+slug: "joaquim-balcells/entorn-de-virgili"
+draft: false
+image: "1930-12-23_el_mati_joaquim_balcells_-_entorn_de_virgili.webp"
+---
+
+Roma ha viscut cent anys terribles de sagnants lluites interiors, i passa ara la crisi de totes les institucions. Els anys que seguiren a la mort de Juli Cèsar, els romans semblaven arrossegats per una cega follia criminal i fratricida. La terrible guerra de Perusa dugué la desesperació als esperits. Enmig d'aquesta, un crit d'angoixa s'alçà: és l'epode XVI d'Horaci, fèrvid, ple de desesper. Una segona generació es llança a la guerra civil i Roma s'enruna per ella mateixa. Quan tants d'enemics no han pogut ensorrar-la nosaltres ―diu el poeta―, generació impiadosa, nosaltres l'aterrarem i de nou el solar de Roma serà de les feres; el bàrbar escamparà les cendres de Roma, i les potes dels seus cavalls sollaren la Ciutat; amb mà insolent llançà al vent els ossos de Quirí. El poeta, per no veure l'espectacle sacríleg, invità els que no vulguin restar allà on ja no hi ha esperança a fugir a una altra terra, a Occident, a passar la mar, a la terra benaurada on regnen la pau i una edat d'or eterna. Aquesta fuga és el crit de desesper d'un home que havia lluitat en els partits polítics, però que ara podrà dir enervat: «Mai en llur ferocitat lluitaren entre ells ni els lleons, ni els llops, sinó sempre contra una espècie diferent.»
+
+Aquesta comparació és segurament de l'any 40 abans de Crist. Mesos més tard aquell altre poeta que era «meitat de la seva ànima» alça una veu plena d'esperança; és la predicció de la pau al món, la pau que ha de dur un infant. És la bucòlica IV de Virgili escrita en la tardor de l'any 40.
+
+No cal parlar aquí de les mil qüestions que s'han posat entorn d'aquesta poesia. És el to, és l'accent d'ella el que cal retenir. Qualsevol lector podrà copsar-ne la profunditat. Avui encara desvetlla en el nostre cor un sentiment de deslliurança.
+
+Al crit d'angoixa d'Horaci, respon aquest altre crit d'esperança, del poeta dels camps. Horaci havia sentit ja el desencís de les lluites polítiques fratricides. Part dels epodes responen a aquesta època de la seva vida. Ell reaccionarà; però, poeta més aviat cerebral que de sentiment, en el moment de la crisi el desesper se li arrapa a l'ànima fins a aconsellar-li la fuga a un somniat paradís. Horaci, descregut, irònic, no té alè en la crisi. Virgili, poeta de sentiment, usant mots semblants als del seu amic, gira els ulls vers la mateixa pàtria i prediu en ella mateixa la benaurança. No sols hi ha hagut en l'endemig de les dues poesies la pau de Brindis; Virgili, empès pel seu sentiment religiós, lligat amb la fe en la pàtria, sent que un nou segle s'atansa, que han de venir nous temps de pau i d'amor; per això les seves darreres paraules són una al·lusió simbòlica a la pietat filial, a l'amor. Crec que Virgili, endut per les seves inquietuds religioses ha sentit la necessitat de creure i d'esperar, i això de certa manera li donava el misticisme neopitagòric. Si dubtéssim, caldria trobar una altra font, una altra doctrina per la seva predicció, però sempre trobaríem que el seu sentiment d'inquietud religiosa enlairà el seu cor a l'esperança. En temps semblants, Lucreci, epicuri, que no negava la divinitat, però sí la providència, és una veu tràgica i desesperada; i Horaci, epicuri també, en la crisi, si no cerca la mort, que Lucreci creia anihiladora, cerca la fuga, és a dir, un moment no té fe en la pàtria.
+
+Dos mil anys han passat sobre el nom de Virgili; avui encara arriba a nosaltres el seu crit d'esperança.

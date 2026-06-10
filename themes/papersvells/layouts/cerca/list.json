@@ -1,0 +1,64 @@
+{{/*
+  ═══════════════════════════════════════════════════════════
+  CERCA/INDEX.JSON — índex de cerca generat per Hugo
+  ═══════════════════════════════════════════════════════════
+  Hugo genera aquest fitxer durant el build a:
+    /cerca/index.json
+
+  Conté tres llistes paral·leles:
+    - articles    → tots els .md amb autors i publicacions
+    - autors      → tots els _index.md d'autors amb bio
+    - publicacions → tots els _index.md de publicacions amb bio
+
+  El JS de cerca llegeix aquest fitxer una sola vegada i el
+  guarda en memòria. A partir d'aquí filtra localment amb
+  String.includes(), instantani per 296 articles.
+
+  ACTIVACIÓ:
+  Per què Hugo generi aquest fitxer, cal:
+  1. Aquest layout a layouts/cerca/index.json
+  2. Una pàgina /content/cerca/_index.md amb:
+       outputs: ["html", "json"]
+*/}}
+{
+  "articles": [
+    {{- $articles := where .Site.RegularPages "Section" "" -}}
+    {{- range $i, $p := $articles -}}
+      {{- if $i -}},{{- end }}
+      {
+        "t": {{ $p.Title | jsonify }},
+        "u": {{ $p.RelPermalink | jsonify }},
+        "a": {{ with $p.Params.autors }}{{ . | jsonify }}{{ else }}[]{{ end }},
+        "p": {{ with $p.Params.publicacions }}{{ . | jsonify }}{{ else }}[]{{ end }},
+        "d": {{ $p.Date.Format "2006" | jsonify }},
+        "x": {{ $p.Plain | jsonify }}
+      }
+    {{- end }}
+  ],
+  "autors": [
+    {{- $autors := where .Site.Pages "Type" "autors" -}}
+    {{- $autors = where $autors "Kind" "term" -}}
+    {{- range $i, $p := $autors -}}
+      {{- if $i -}},{{- end }}
+      {
+        "t": {{ $p.Title | jsonify }},
+        "u": {{ $p.RelPermalink | jsonify }},
+        "b": {{ with $p.Params.bio }}{{ . | plainify | jsonify }}{{ else }}""{{ end }},
+        "n": {{ len $p.Pages }}
+      }
+    {{- end }}
+  ],
+  "publicacions": [
+    {{- $pubs := where .Site.Pages "Type" "publicacions" -}}
+    {{- $pubs = where $pubs "Kind" "term" -}}
+    {{- range $i, $p := $pubs -}}
+      {{- if $i -}},{{- end }}
+      {
+        "t": {{ $p.Title | jsonify }},
+        "u": {{ $p.RelPermalink | jsonify }},
+        "b": {{ with $p.Params.bio }}{{ . | plainify | jsonify }}{{ else }}""{{ end }},
+        "n": {{ len $p.Pages }}
+      }
+    {{- end }}
+  ]
+}

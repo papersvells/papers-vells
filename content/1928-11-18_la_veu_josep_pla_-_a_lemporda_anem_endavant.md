@@ -1,0 +1,22 @@
+---
+title: "A l’Empordà anem endavant"
+autors: ["Josep Pla"]
+publicacions: ["La Veu de Catalunya"]
+date: 1928-11-18
+slug: "josep-pla/a-l-emporda-anem-endavant"
+draft: false
+image: "1928-11-18_la_veu_josep_pla_-_a_lemporda_anem_endavant.webp"
+---
+Encara que sembli mentida, és així mateix: el que amarga la vida dels pintors d'avui és la seva coherència filosòfica. Potser mai com ara no hi havia hagut un paral·lelisme tan perfecte entre les idees dels tallers i dels cafès i les idees de la filosofia. I el paral·lelisme començà amb Bergson, qui és el pare de tota l'elucubració aparentment confusa que es produeix i de tota la producció que amb timidesa o amb procacitat s'ensenya.
+
+El que convé saber és que avui no hi ha cap artista que concedeixi la més mínima importància a allò que el senyor Milà i Fontanals en deia la Bellesa. Allò que el senyor Milà i Fontanals en deia la Bellesa s'ha refugiat als seminaris i a les universitats oficials. Aquesta trista retirada s'ha produït perquè els artistes han descobert que dessota d'allò que s'anomena Bellesa hi ha una cosa molt més important, molt més directament lligada amb la supervivència de l'obra d'art. Aquesta cosa tan important és la realitat, la vida. És ver això que l'artista d'avui ―sigui la que sigui la seva posició polèmica immediata― no es proposa la Bellesa, sinó la captació de la realitat. I si hi ha algun artista encara al qual no ofengui del tot la paraula Bellesa, us dirà que en tot cas està continguda en la Realitat.
+
+Aquesta subversió total hauria estat molt difícil d'imposar als senyors i senyores que compren pintura per al menjador. En realitat, la paraula Bellesa era magnífica per a fer marxar la gent. La paraula Realitat, en canvi, serà sempre una paraula ordinària i de regust subversiu. El que determinà l'admissió fou el gran triomf econòmic dels pintors impressionistes francesos ―pintors que foren llargament combatuts precisament en nom de la Bellesa. I el que acabà de fer donar la volta de campana fou el triomf econòmic de Picasso, qui és un pintor que guanya quatre milions de francs l'any, fent moltes vegades coses horribles, impenjables― coses, gairebé sempre, però, d'un realisme i d'una vida sensacional.
+
+En el moment que un home es planteja la captació de la realitat, se li planteja alhora el problema del mètode. Hi ha alguna manera, algun estat, alguna disposició que permeti encarar-se amb avantatge amb la realitat? I és en aquest moment que comença el paral·lelisme amb la filosofia, ultraromàntica, de Bergson. Car Bergson, en posar en el seu sistema filosòfic el problema del coneixement, es plantejà el problema d'una manera idèntica que els artistes. Des del punt de mira del subjecte negà que el mitjà més directe i més fi de captació del món exterior fossin les facultats superiors de l'home. Posà per contra, a la base del coneixement, la intuïció, l'instint, l'«élan vital». I què és això sinó aquelles possibilitats de l'inconscient, de què parlen els nostres superrealistes? En posar el problema de la realitat exterior, Bergson, alhora, portà la seva contribució a l'obra de destrucció de les nocions clàssiques de la realitat, de la mateixa manera que molts pintors moderns han dissociat, analitzat i investigat, amb una fúria desenfrenada, el món exterior. El paral·lelisme, en un mot, ha estat total.
+
+I, en realitat, no ha passat res més que això. El que hi ha, però, és que la gent que tracta aquestes coses és d'un enfarfegament, d'una infelicitat i d'un avorriment tan enorme, que no hi ha manera de concretar mai. Per altra part, no és pas el meu propòsit actual de fer l'apologia o combatre aquestes idees i les obres que aquestes idees produeixen. El meu propòsit és simplement assenyalar i demostrar el paral·lelisme filosòfico-artístic de l'hora, i dir ―amb un gran retard― que la conferència de Salvador Dalí a les Galeries Maragall és un document coherent, lligat i collat, Salvador Dalí podria tenir o no tenir raó, però si fer un esforç de coherència té encara valor, aquest valor ningú no la hi podrà regatejar.
+
+I d'això n'estic satisfet, francament. Està bé que els empordanesos siguem federals, que hàgim tractat de resoldre el problema del moviment continu, que hàgim llegit llargues i terribles novel·les humanitàries. També està bé, però, que quan anem a Barcelona deixem tothom amb un pam de nas...
+
+A l'Empordà progressem, anem bé, anem molt endavant...

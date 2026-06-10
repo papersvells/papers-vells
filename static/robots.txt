@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /cerca/
+Disallow: /cerca/index.json
+
+Sitemap: https://papersvells.cat/sitemap.xml

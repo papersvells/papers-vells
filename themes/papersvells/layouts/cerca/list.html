@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="cerca">
+
+  <header class="cerca__header">
+    <h1 class="cerca__title">Cerca</h1>
+    <p class="cerca__subtitle">
+      Articles de l'arxiu
+    </p>
+  </header>
+
+  <form class="cerca__form" role="search" onsubmit="return false;">
+    <label class="cerca__label" for="cerca-input">
+      Què busques?
+    </label>
+    <input
+      type="search"
+      id="cerca-input"
+      class="cerca__input"
+      placeholder="escriu un nom, un títol, una paraula…"
+      autocomplete="off"
+      autocapitalize="off"
+      autocorrect="off"
+      spellcheck="false"
+      autofocus>
+  </form>
+
+  <p class="cerca__estat" id="cerca-estat" aria-live="polite">
+    Carregant índex…
+  </p>
+
+  <section class="cerca__seccio" id="cerca-seccio-articles" hidden>
+    <ul class="cerca__llista" id="cerca-llista-articles"></ul>
+  </section>
+
+</div>
+
+<script src="/js/cerca.js" defer></script>
+
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="container">
+
+  <header style="text-align: center; margin-bottom: var(--space-xs);">
+    <h1 style="font-size: var(--text-2xl); margin: var(--space-xs) 0;">
+      {{ .Title }}
+    </h1>
+  </header>
+
+  <div class="page-body">
+    {{ .Content }}
+  </div>
+
+</div>
+
+{{ end }}

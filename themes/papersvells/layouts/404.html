@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="container">
+
+  <div class="error-404">
+
+    <p class="error-404__codi">404</p>
+    <h1 class="error-404__titol">Pàgina no trobada</h1>
+    <p class="error-404__text">
+      Aquest article, autor o publicació no existeix o ha canviat d'adreça.
+      Prova de cercar-lo:
+    </p>
+
+    <form class="cerca__form" role="search" onsubmit="return false;">
+      <label class="cerca__label" for="cerca-input">
+        Cerca a l'arxiu
+      </label>
+      <input
+        type="search"
+        id="cerca-input"
+        class="cerca__input"
+        placeholder="escriu un nom, un títol, una paraula…"
+        autocomplete="off"
+        autocapitalize="off"
+        autocorrect="off"
+        spellcheck="false"
+        autofocus>
+    </form>
+
+    <p class="cerca__estat" id="cerca-estat" aria-live="polite">
+      Carregant índex…
+    </p>
+
+    <section class="cerca__seccio" id="cerca-seccio-articles" hidden>
+      <ul class="cerca__llista" id="cerca-llista-articles"></ul>
+    </section>
+
+    <a href="/" class="error-404__tornar">← Tornar a la portada</a>
+
+  </div>
+
+</div>
+
+<script src="/js/cerca.js" defer></script>
+{{ end }}

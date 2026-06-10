@@ -1,0 +1,20 @@
+---
+title: "Pablo R. Picasso"
+autors: ["Miquel Utrillo"]
+publicacions: ["Pèl i Ploma"]
+date: 1901-06-01
+slug: "miquel-utrillo/pablo-r-picasso"
+draft: false
+image: "1901-06-01_pel_i_ploma_miquel_utrillo_-_pablo_r_picasso.webp"
+---
+En el centre artístic a la moderna que s'està condensant a Barcelona, han brollat ja alguns talents de pervindre entre'ls joves forasters que les corrents de la vida han portat entre nosaltres. En Pablo R. Picasso, quines condicions de pintor ningú negarà, aixís desitgem creureu, hauria fet vibrar l'esclat d'una obra ben diferent si no s'hagués mogut d'aquella Màlaga que'l sol esberla. Trasplantat a Barcelona, se trobà en un mig més propici a les seves facultats, qu'entre mig d'aquell petit estol de pintors de coloraines que's dihuen coloristes perquè gasten paletes que semblen fetes amb plomes de lloro. Tot lo més, al cap d'unes quantes medalles somicades, hauria pogut fer algun altre *Flevit super illam*, que fins ara's queda l'obra *antuma* del ardent país de les panses.
+
+En Picasso a Barcelona, si bé no ha aprofitat les lliçons que reglamentàriament deurien donar-se a Llotja, ha vist l'afortunat mal exemple de molts pintors que'n saben sense recórrer a les escoles oficials, ni bregar de cara a l'istiu per a obtenir la bosseta de viatge que tantes glòries ha proporcionat a les famílies.
+
+El talent del jove pintor andalús, que parla castellà amb accent barceloní (segons digué en l'únic número de la revista madrilenya *Mercurio*), se revelà entre companys de l'ofici, jurat que mereix més crèdit que'ls que donen medalles als quadros, com si fossin arts de xacolata. Algunes obres *mig-exposades* als *Quatre Gats*, foren ràpidament adquirides per els que busquen les fruites primerenques de l'Art i *Joventut*, la revista catalanista publicà el primer dibuix d'en Picasso. Ja fa un any, se'n anà a fer el romiatge a París i allí un xic enlluernat per la magnitud del camp obert a les arts, arreplegà innumerables paquets de croquis i treballs més complerts qu'abandonà en ple començament d'èxit per a fer un viatge a l'extrem migdia d'Espanya, quin antich recort no correspongué a la nova impressió rebuda. A Madrid, ell i l'escriptor Soler, fundaren el periòdic *Arte joven* que feu rotllo en pocs números, precisament per el regust de fruita nova que's despreníe dels dibuixos del jove pintor andalús. I allí, li passà'l que succeeix a molts artistes, en un temps més o menos llarg; aquell París, el París bescantat de la vida febrosa l'atreie altra volta, no per a conquerir-lo amb l'empenta somniada al fer el primer viatge, sinó amb l'ardiment d'aprendre en el centre a on en definitiva floreixen més frondosament totes les arts.
+
+L'art d'en Picasso, és joveníssim; fill d'un esprit d'observació que no perdona les flaqueses de la gent del nostre temps, se'n desprenen fins les belleses de lo horrible apuntades amb la sobrietat del que dibuixa perquè veu i no perquè sap fer nassos de memòria. Els pastels que figuren en l'Exposició que la nostra publicació ha organisat a can Parés, són tan sols un dels aspectes del talent d'en Picasso, que serà molt discutit, però no menos apreciat entre'ls que deixant-se de motllos, busquen l'art baix tots els aspectes. En aquest número publiquem alguns fulls d'àlbum, que com molts altres que tenim en preparació demostren la rapidesa de visió del jove pintor quin retrato publiquem, en aqueix pel & ploma que tant acota'l cap saludant a n'els vells que valen, com ajudant en lo possible la volada dels que poden ser els grans homes de demà.
+
+En Picasso qu'encara no té vint anys, fins té sort amb el *motiu* que l'hi han tret a París; sota d'aquell gran barret qu'es un pavero passat per les intempèries de Montmartre, amb els ullets vius de meridional que sap dominar-se i envolquellat de coll per historiades corbates ultra impressionistes, ha suggerit als seus companys francesos el nom de *Petit Goya* amb el qu'el anomenen amistosament. Desitgem que'l físic no menteixi i'l cor ens diu que'ns farà quedar bé.
+
+<div class= "autor">Pincell</div>

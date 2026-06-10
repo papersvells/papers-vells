@@ -1,0 +1,23 @@
+---
+title: "Conzertstück"
+autors: ["Robert Gerhard"]
+publicacions: ["Mirador"]
+date: 1930-04-03
+slug: "robert-gerhard/conzertstuck"
+draft: false
+image: "1930-04-03_mirador_robert_gerhard_-_conzertstuck.webp"
+---
+
+Joan Manén, el gran violinista català, acaba d'enriquir la seva personalitat amb una faceta inèdita. Per si no fos prou el reclam del seu màgic virtuosisme de violinista, doblat del prestigi de compositor hàbil en tots els gèneres musicals, se'ns ha revelat encara sota un aspecte nou: el de completador d'una obra inacabada de Beethoven. Tasca ingrata i problema espinós el que s'ha plantejat.
+
+Caldria fer dues preguntes; primera: era necessari acabar aquest fragment jovenívol de Beethoven? Segona: Manén ha reeixit en aquesta empresa? Al meu entendre, ha d'ésser negativa la resposta a la primera pregunta. La segona no pot ésser resposta en poques ratlles; caldria veure la partitura per mesurar l'abast del fracàs d'una empresa en la qual Manén no podia reeixir.
+
+Si Beethoven és al Purgatori —Déu no ho permeti, però tot podria ésser— està segur Manén que en arribar-hi ell no s'hagi de sentir apostrofat pel geni iracund del mestre de Bonn per haver volgut fer pa blanc d'un rosegó caigut de la seva taula ben parada?
+
+Les carteres de tots els compositors, grans i petits, estan plenes de fragments condemnats. Cal admirar aquests documents de clarividència, més nombrosos en els grans mestres que en els mediocres. És heroic el gest de l'artista que esquinça un dibuix, que recobreix una tela avençada, sacrificant de vegades un treball de dies i de setmanes, en el moment just en què un instint poderós li anuncia que la partida és perduda. L'espectador que protesta no ha entès res. El bon jugador ha previst el «mat» final amb *n* jugades d'anticipació. És una pedra de toc. L'art de saber perdre no s'ensenya als Conservatoris, és una llàstima. Cal aprendre'l dels grans mestres. L'estudi dels llibres d'apunts i dels fragments beethovenians, precisament, són una alta escola de consciència i de modèstia.
+
+És molt diferent el cas de Beethoven-Manén del cas d'un Busoni encomanant l'acabament del seu *Doctor Faust* a Felip Jarnach (un dels noms més il·lustres de la jove escola alemanya: compositor d'origen català que no coneix la terra dels seus pares i que nosaltres un dia haurem de reivindicar com a nostre). En el cas Busoni-Jarnach, com en el cas Puccini-Alfano, hi ha inicialment la voluntat expressa de l'autor confiant l'acabament d'una obra interrompuda per la mort a una persona escollida en vida. La tasca difícil d'aquest completadors, en segon lloc, és alleugerida pel coneixement exacte de les intencions comunicades pels autors als «executors testamentaris». Aquests coneixements i l'existència d'esbossos més o menys explícits fa humanament possible de reeixir amb fidelitat a l'esperit de l'autor. Un altre exemple clàssic és el de Süssmeyer acabant el *Requiem* del seu mestre Mozart, les intencions del qual, evidentment, coneixia en molts de detalls precisos. En tots aquests casos hi ha ultra això, un resultat important: l'obra «acabada» pels completadors és després efectivament una «obra acabada» i encara: una obra que valia la pena d'ésser acabada.
+
+Un cas molt distint, en canvi, era l'acudit de la «Columbia», ara fa dos anys, d'honorar el centenari de la mort de Schubert amb 10.000 dòlars destinats a premiar el millor acabament de la «Inacabada». Això que sona com una facècia i que recorda els braços de la Venus de Milo s'ha d'apreciar en ço que té de generós optimisme universal, tan simpàtic, dels ianquis. De totes maneres, la «Columbia» es va deixar convèncer a les bones que valia més destinar el premi a una simfonia nova, per bé que «d'esperit schubertià». Excel·lent solució! No es pot insistir prou: la «Columbia» meresqué bé de la cultura, en general, i de la música, en particular, preferint l'eclosió de cent simfonies mediocres a la profanació de l'immortal *torso* de Schubert.
+
+Tornant al cas d'En Manén: ell ha acabat un fragment que resta fragment després de tot. No puc fer del seu treball, indubtablement conscienciós, una crítica de «composició» —que és l'única que s'escauria— sense conèixer la partitura escrita per ell. No obstant puc dir que m'ha sobtat a primera audició un efecte *fausse reprise* que segurament no és volgut. En segon lloc es pot afirmar també que la represa tan *calcada* sobre l'exposició no respon a l'esperit beethovenià, ni situant-nos en el pla de les seves obres més joves i *sages*. Tot plegat té l'atenuant que l'experiment ha estat practicat damunt d'un esbós del Beethoven adolescent; el pecat, per tant, és venial.

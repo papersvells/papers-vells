@@ -1,0 +1,286 @@
+{{/*
+  ═══════════════════════════════════════════════════════════
+  TAXONOMY.HTML — autors i publicacions
+  ═══════════════════════════════════════════════════════════
+  Aquest fitxer fa tres feines diferents segons el context:
+
+  1. VISTA GLOBAL D'AUTORS (/autors/)
+     Graella d'avatars circulars en blanc i negre.
+     Detecció: .Data.Terms existeix i .Type == "autors"
+
+  2. VISTA GLOBAL DE PUBLICACIONS (/publicacions/)
+     Graella de capçaleres respectant les seves proporcions
+     naturals. Cada logo viu en una "fila" d'alçada fixa amb
+     amplada flexible. Sota, una línia ornamental fa de
+     costura visual que unifica el conjunt.
+     Detecció: .Data.Terms existeix i .Type != "autors"
+
+  3. VISTA INDIVIDUAL (/lluis-marsans/, /la-veu/, etc.)
+     Capçalera del terme + bio + icona Viquipèdia + llista d'articles.
+     Detecció: .Data.Terms és buit (nil)
+     Bifurcació interna: autors → avatar circular esquerra
+                         publicacions → logo gran centrat
+
+  CLAU TÈCNICA PER EVITAR DUPLICATS:
+  Iterem per .Data.Terms.Alphabetical (no per .Data.Pages) i
+  agafem .Page del terme per accedir al _index.md correcte.
+  Hugo agrupa correctament els termes equivalents amb accents
+  o sense, sempre que existeixi un _index.md amb el title
+  exacte de cadascun.
+
+  ICONA VIQUIPÈDIA:
+  Apareix si el _index.md té el camp wikipedia:
+    wikipedia: "https://ca.wikipedia.org/wiki/..."
+  Imatge a /static/images/wikipedia.webp
+*/}}
+
+{{ define "main" }}
+<div class="container--wide">
+
+  {{ if .Data.Terms }}
+
+    {{/*
+      ═══════════════════════════════════════════════════════
+      VISTA GLOBAL: tots els termes d'una taxonomia
+      ═══════════════════════════════════════════════════════
+    */}}
+  
+    {{ if eq .Type "autors" }}
+
+      {{/*
+        ─────────────────────────────────────────────────────
+        AUTORS — graella d'avatars circulars
+        ─────────────────────────────────────────────────────
+        Iterem per .Data.Terms (no per .Data.Pages) per
+        evitar duplicacions amb noms accentuats. Per a cada
+        terme, agafem el seu .Page per accedir al _index.md
+        amb el cognom i la imatge correctes.
+
+        Per ordenar per cognom, primer convertim els termes
+        a una llista de pàgines i les filtrem.
+      */}}
+      <div class="autors-grid">
+
+        {{/* Recollim directament els arxius físics _index.md per evitar que Hugo 
+          perdi els accentuats. El filtre "cognom != nil" evita pàgines virtuals duplicades.
+        */}}
+        {{ $pagines := sort (where .Data.Pages "Params.cognom" "!=" nil) "Params.cognom" "asc" }}
+
+        {{ range $pagines }}
+
+          {{/* Recompte d'articles: comparem urlize per relacionar "Lluís" (articles) amb "lluis" (_index.md) */}}
+          {{ $count := 0 }}
+          {{ $currentTitle := .Title }}
+          {{ range $key, $value := $.Data.Terms }}
+            {{ if eq ($key | urlize) ($currentTitle | urlize) }}
+              {{ $count = $value.Count }}
+            {{ end }}
+          {{ end }}
+
+          <a class="autor-card" href="{{ .Permalink }}">
+            <div class="autor-card__foto-wrapper">
+              <img class="autor-card__avatar"
+                   src="/images/autors/{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Title | urlize }}{{ end }}.webp"
+                   alt="" width="120" height="120" loading="lazy"
+                   onerror="this.style.display='none'">
+              <div class="autor-card__overlay">
+                <span class="autor-card__count">{{ $count }} articles</span>
+              </div>
+            </div>
+            {{/* replaceRE corregeix el bug de Hugo que capitalitza la "i" conjunció */}}
+            <p class="autor-card__name">{{ .Title | replaceRE `\bI\b` "i" }}</p>
+          </a>
+
+        {{ end }}
+      </div>
+
+    {{ else }}
+
+      {{/*
+        ─────────────────────────────────────────────────────
+        PUBLICACIONS — graella de capçaleres (mockup 4)
+        ─────────────────────────────────────────────────────
+        Iterem per .Data.Terms.Alphabetical per evitar
+        duplicacions. Cada logo viu en un frame d'alçada
+        fixa amb amplada flexible.
+
+        Si un terme no té _index.md (cas rar), .Page apunta
+        a una pàgina automàtica generada per Hugo que també
+        funciona correctament.
+      */}}
+      <div class="publicacions-grid">
+
+        {{ range .Data.Terms.Alphabetical }}
+
+          {{ $termPage := .Page }}
+          {{ $count := .Count }}
+
+          <a class="publicacio-card" href="{{ $termPage.Permalink }}">
+            <div class="publicacio-card__frame">
+              <img class="publicacio-card__logo" loading="lazy"
+                   src="/images/publicacions/{{ with $termPage.File }}{{ .ContentBaseName | urlize }}{{ else }}{{ $termPage.Title | urlize }}{{ end }}.webp"
+                   alt=""
+                   onerror="this.style.display='none'">
+              <div class="publicacio-card__overlay">
+                <span class="autor-card__count">{{ $count }} articles</span>
+              </div>
+            </div>
+          </a>
+
+        {{ end }}
+      </div>
+
+    {{ end }}
+
+  {{ else }}
+
+    {{/*
+      ═══════════════════════════════════════════════════════
+      VISTA INDIVIDUAL: /lluis-marsans/, /la-veu/, etc.
+      ═══════════════════════════════════════════════════════
+      Quan .Data.Terms és nil, estem a la pàgina d'un terme
+      concret. Mostrem la capçalera (avatar/logo + nom + bio
+      + icona Viquipèdia) i la llista d'articles associats.
+
+      Sistema de doble recerca: primer intentem .Pages.
+      Si retorna 0 articles, fem una recerca manual filtrant
+      per l'array corresponent del frontmatter dels articles.
+    */}}
+    <div class="container">
+
+      {{/* Recerca primària */}}
+      {{ $articles := .Pages }}
+
+      {{/* Recerca alternativa si la primera ha fallat */}}
+{{ if eq (len $articles) 0 }}
+  {{ $nomBuscat := .Title }}
+  {{ $slugBuscat := .Title | urlize }}
+  {{ if eq .Type "publicacions" }}
+    {{ $articles = where .Site.RegularPages "Params.publicacions" "intersect" (slice $nomBuscat) }}
+    {{ if eq (len $articles) 0 }}
+      {{ range .Site.RegularPages }}
+        {{ $page := . }}
+        {{ range .Params.publicacions }}
+          {{ if eq (. | urlize) $slugBuscat }}
+            {{ $articles = $articles | append $page }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    {{ $articles = where .Site.RegularPages "Params.autors" "intersect" (slice $nomBuscat) }}
+    {{ if eq (len $articles) 0 }}
+      {{ range .Site.RegularPages }}
+        {{ $page := . }}
+        {{ range .Params.autors }}
+          {{ if eq (. | urlize) $slugBuscat }}
+            {{ $articles = $articles | append $page }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+      
+      {{/*
+        Bifurcació de capçalera segons el tipus:
+        - publicacions → logo gran centrat
+        - autors → avatar petit circular a l'esquerra
+      */}}
+      {{ if eq .Type "publicacions" }}
+
+        {{/*
+          CAPÇALERA DE PUBLICACIÓ — logo gran centrat
+        */}}
+        <header class="publicacio-header">
+          <img class="publicacio-header__logo" loading="lazy"
+               src="/images/publicacions/{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Title | urlize }}{{ end }}.webp"
+               alt=""
+               onerror="this.style.display='none'">
+          <p class="autor-header__info">{{ len $articles }} articles publicats</p>
+          {{ with .Params.bio }}
+            <div class="autor-bio">
+              {{ . | markdownify }}
+            </div>
+          {{ end }}
+          {{/* Icona Viquipèdia centrada — només si existeix el camp */}}
+          {{ with .Params.wikipedia }}
+            <a href="{{ . }}"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Article a la Viquipèdia en català"
+               class="wikipedia-link--center">
+              <img src="/images/wikipedia.webp"
+                   alt="Viquipèdia"
+                   class="wikipedia-icon">
+            </a>
+          {{ end }}
+        </header>
+
+      {{ else }}
+
+        {{/*
+          CAPÇALERA D'AUTOR — avatar circular a l'esquerra
+        */}}
+        <header class="autor-header">
+          <img class="autor-header__avatar"
+               src="/images/autors/{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Title | urlize }}{{ end }}.webp"
+               alt="" width="95" height="95"
+               onerror="this.style.display='none'">
+          <div class="autor-header__text">
+            <h1 class="autor-header__name">{{ .Title | replaceRE `\bI\b` "i" }}</h1>
+            <p class="autor-header__info">{{ len $articles }} articles publicats</p>
+            {{ with .Params.bio }}
+              <div class="autor-bio">
+                {{ . | markdownify }}
+              </div>
+            {{ end }}
+            {{/* Icona Viquipèdia alineada a l'esquerra (segueix el flex pare) */}}
+            {{ with .Params.wikipedia }}
+              <a href="{{ . }}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Article a la Viquipèdia en català"
+                 class="wikipedia-link--left">
+                <img src="/images/wikipedia.webp"
+                     alt="Viquipèdia"
+                     class="wikipedia-icon">
+              </a>
+            {{ end }}
+          </div>
+        </header>
+
+      {{ end }}
+
+      <hr class="rule rule--term">
+
+      {{/*
+        Llista d'articles ordenats per data descendent.
+        A les publicacions mostrem l'autor, als autors la
+        publicació (i a tots, la data).
+      */}}
+      <ul class="lista-articulos">
+        {{ range $articles.ByDate.Reverse }}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <span class="meta">
+              {{ if eq $.Type "publicacions" }}
+                {{ with .Params.autors }}{{ delimit . ", " }}{{ end }}
+              {{ else }}
+                {{ with .Params.publicacions }}{{ delimit . ", " }}{{ end }}
+              {{ end }}
+              · {{ .Date.Format "02/01/2006" }}
+            </span>
+          </li>
+        {{ else }}
+          <li class="error-debug">
+            Hugo no troba articles per al nom "{{ .Title }}". Revisa l'accent a l'article.
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+
+  {{ end }}
+
+</div>
+{{ end }}

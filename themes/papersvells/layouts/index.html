@@ -1,0 +1,91 @@
+{{/*
+  ═══════════════════════════════════════════════════════════
+  PORTADA — index.html amb scroll infinit
+  ═══════════════════════════════════════════════════════════
+*/}}
+
+{{ define "main" }}
+
+<div style="width: 100%;">
+
+  {{/*
+    ─────────────────────────────────────────────────────────
+    GRAELLA D'ARTICLES
+    ─────────────────────────────────────────────────────────
+    .Pages = TOTS els articles del lloc (no .Paginator.Pages)
+    perquè hem eliminat la paginació.
+
+    Cada article-card té la classe "card-hidden" inicialment.
+    El JavaScript l'eliminarà quan l'article entri al viewport,
+    activant l'animació d'aparició.
+
+    Si JavaScript no funciona o està desactivat, els articles
+    apareixen tots visibles gràcies al CSS de fallback.
+  */}}
+  {{ if .Pages }}
+
+    <div class="articles-grid" id="articles-grid">
+      {{ range where .Pages "Type" "!=" "el-diari" }}
+
+        <article class="article-card card-hidden">
+
+          <p class="article-card__meta">
+            {{ with .Params.publicacions }}{{ delimit . ", " }}{{ end }}
+            {{ with .Date }} · {{ .Format "02/01/2006" }}{{ end }}
+          </p>
+
+          <h2 class="article-card__title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h2>
+
+          {{ with .Params.autors }}
+            <p class="article-card__author">{{ delimit . ", " }}</p>
+          {{ end }}
+
+          {{ with .Summary }}
+            <p class="article-card__excerpt">{{ . }}</p>
+          {{ end }}
+
+        </article>
+
+      {{ end }}
+    </div>
+
+  {{ else }}
+
+    <p style="text-align:center; color:var(--color-ink-faded); padding: var(--space-xl) 0;">
+      Encara no hi ha articles publicats.
+    </p>
+
+  {{ end }}
+
+</div>
+
+
+{{/*
+  ═══════════════════════════════════════════════════════════
+  JAVASCRIPT — IntersectionObserver per a l'scroll infinit
+  ═══════════════════════════════════════════════════════════
+*/}}
+<script>
+  const observadorOpcions = {
+    threshold:  0.1,
+    rootMargin: '0px 0px -40px 0px'
+  };
+
+  const quanApareix = (entries, observador) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.remove('card-hidden');
+      observador.unobserve(entry.target);
+    });
+  };
+
+  const observador = new IntersectionObserver(quanApareix, observadorOpcions);
+
+  document.querySelectorAll('.card-hidden').forEach(card => {
+    observador.observe(card);
+  });
+</script>
+
+{{ end }}

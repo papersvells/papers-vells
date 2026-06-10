@@ -1,0 +1,14 @@
+---
+title: "Les deesses proscrites"
+autors: ["Josep Carner"]
+publicacions: ["La Veu de Catalunya"]
+date: 1927-01-26
+slug: "josep-carner/les-deesses-proscrites"
+draft: false
+image: "1927-01-26_la_veu_-_josep_carner_-_les_deeses_proscrites.webp"
+---
+Hi ha un bell nombre de ciutadans que semblen entestats a proscriure dues deesses, en les quals hom reconeix, a través de deferències de temperament, l'aire de família, i a través de la diversitat de tons, l'usual entreajut. Llurs noms són Ironia i Passió. L'una és més cohibida i púdica i intel·lectualitzada en la seva flama; l'altra, més mostradissa i de veu més viva, es dóna tota a l'escomesa del desig. Hom les concep com a persones pertorbadores. Hom les bandeja en nom del Seny. I cada vegada que hom bandeja en nom del Seny la Ironia i la Passió, hom torna a fer prendre la cicuta a Sòcrates i empra una mena de neomaltusianisme per a evitar que aparegui un nou Pèricles. Hom es desdiu per consuetud peresosa i poruga del complex poderós i dramàtic de la civilització viscuda amb sentit protagonístic. Hom demana de vegetar en provincianismes, d'engorronir-se en una vida social esquemàtica, de tenir, més que no pas una cultura, una rambla de savis, com la de les flors i la dels ocells.
+
+Moltes de porteres i de moralistes de cases de dispeses i de pseudorevolucionaris sentimentalistes i de congregants que cerquen de lliurar-se a una mena de pedanteria de virtut, creuen que la Ironia és un cert to mofeta, i la Passió un gratuït desequilibri ofensiu. No saben que només la Passió crea i gairebé només la Ironia és el neguit punyent, enfront de la poquesa que viu, de la irrenunciació a l'ideal. Totes dues juntes fertilitzen sobiranament la història i les lletres de la Grècia i de la França. No en seria pas suficient contrapès la gravetat ibèrica, mena de deixa oriental o de producte de l'Atlas, la insociabilitat amb excuses de preocupacions ètiques, la susceptibilitat irritada dels Pickwicks sense cordialitat o dels senyors Jourdain sense bonhomia, la fe sense cortesia com per temença d'ésser aglutinant, l'acció sense doble fons com per temença de reeixir.
+
+Què cosa se'ns vol predicar contra la Ironia? L'enravenament, o la vulgaritat? Què cosa se'ns recomana contra la Passió? El fatalisme, o la vilesa claudicadora? Tots aquests planys i recriminacions, ja endèmics, són influència transibèrica. La nostra gent, en el passat protagonístic, no havia pas lluït aquesta riquesa d'apuntaladors del decor primmirat, de curanderos d'aquelles sotragades vitals que són indispensables en la vida. Teníem valors universals, i inspiràvem comentaris laudatoris de Maquiavel; hi havia qui es correspongués amb Erasme; almogàvers precediren a belles concrecions polítiques i els pirates mallorquins a una escola de cartografia... I els eticistes, aleshores, no es deien eticistes. Es deien sants, que és un nom més bell.
