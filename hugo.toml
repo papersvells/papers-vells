@@ -1,4 +1,4 @@
-baseURL           = 'http://localhost:1313/'
+baseURL           = 'https://papers-vells.papersvells.workers.dev/'
 locale            = 'ca'
 title             = 'Papers Vells'
 theme             = 'papersvells'
