@@ -7,7 +7,6 @@ slug: "manuel-brunet/la-novel-la-que-josep-maria-de-sagarra-ha-escrit-aquest-est
 draft: false
 image: "1932-08-25_la_publicitat_manuel_brunet_-_la_novella_que_josep_maria_de_sagarra_ha_escrit_aquest_estiu.webp"
 ---
-
 Tota la literatura catalana contemporània és obra de gent que s'ha de guanyar la vida.
 
 Escrit aquest concepte m'adono que potser ho he fet massa fort, que potser he plantejat el tema d'una enquesta. Segurament duen haver-hi excepcions. Se m'acuden dos noms: Ruyra i Víctor Català. Però resolc l'objecció contestant-me que aquests dos eminents literats i propietaris no se sentiran molestats si dic que ja no són ben bé d'aquesta generació.
@@ -18,7 +17,7 @@ Ben mirat i sospesat em sembla que podria afirmar-se que la literatura grossa, l
 
 Un cop establerta aquesta veritat històrica se'ns aclarirà una sèrie de fenòmens, algun que segurament afecta la quantitat, altres que potser expliquen la qualitat, i podríem encara, sense arriscar-nos gaire, fer auguris sobre la filosofia i el to de la nostra producció futura. I podríem, almenys, deduir-ne la conclusió que si les persones benestants no escriuen, cal cercar l'explicació d'aquest fet en dues causes: que els catalans no som tan laboriosos com ens pensem, que ens agrada molt badar, contemplar el paisatge i —aquesta és potser la raó principal— que fins ara la Universitat ha estat un mite, una fàbrica d'analfabets de segon grau que no ha aconseguit donar una cultura ni desvetllar en l'esperit de la major part d'alumnes cap mena de curiositat. També em sembla que es podria assegurar que tant els universitaris com els extrauniversitaris, tots som uns autodidactes, que el que s'hagi adormit sobre el títol universitari, el que no s'hagi fet la feina pel seu compte, ja es pot donar per mort en tota mena de batalles de l'esperit.
 
-El poeta Josep Maria de Sagarra —ell ho recorda sovint— és dels que escriuen per guanyar-se la vida. Però, si no s'hagués de guanyar la vida, estiguem-ne certs, també escriuria. Entre els nostres escriptors, En Sagarra és dels que treballa més. I no obstant molta gent, els que estan acostumats a veure'l a les terrasses dels cafès i als restaurants i xocolateries de nit, creuen que és el príncep dels sense feina voluntaris.
+El poeta [Josep Maria de Sagarra](/josep-maria-de-sagarra/) —ell ho recorda sovint— és dels que escriuen per guanyar-se la vida. Però, si no s'hagués de guanyar la vida, estiguem-ne certs, també escriuria. Entre els nostres escriptors, En Sagarra és dels que treballa més. I no obstant molta gent, els que estan acostumats a veure'l a les terrasses dels cafès i als restaurants i xocolateries de nit, creuen que és el príncep dels sense feina voluntaris.
 
 Entre els escriptors catalans que treballen per guanyar-se la vida cap no ha pogut realitzar l'ideal de no tenir amo. L'amo d'En Sagarra és el públic dels teatres, un amo molt exigent, però que no us obliga a una disciplina de dia i hora. Només dient això ja em sembla que he explicat suficient que En Sagarra té una força de voluntat, una disciplina i un esperit de continuïtat que espanten. Aquesta és la condició extraliterària d'un escriptor. Però, a més, En Sagarra té el do més important que pugui desitjar-se: la imaginació. Disciplina i imaginació, són les virtuts que manquen a molts, les que sobren al nostre poeta.
 

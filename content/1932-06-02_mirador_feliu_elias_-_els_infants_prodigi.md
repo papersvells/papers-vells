@@ -7,7 +7,6 @@ slug: "feliu-elias/els-infants-prodigi"
 draft: false
 image: "1932-06-02_mirador_feliu_elias_-_els_infants_prodigi.webp"
 ---
-
 Recordeu els vells òmnibus parisencs, de tracció animal, aquelles enormes atronadores baluernes arrossegades per quatre colossals cavallots el Poitou, quatre bestiasses fornides, esferoidals i monumentals com quatre hipèrboles de la fúria domesticada? El *Madeleine-Bastille*, sobretot, era imposant. Amb els seus trenta o quaranta imperials atapeïts de parisencs, curulls, sobreeixint de parisencs i de parisenques, trotava terrabastalladorament pel damunt dels empedrats grossos i desiguals. Al cim dels munts de passatgers tronava, més gran i gros, cofat amb barret de planxa de ferro pintat al vernís i decorat amb una coqueta cinta de llautó polit, l'auriga ros i vermell. El bulevard no era prou per a l'òmnibus: li calien les voreres i les rengleres de cases a banda i banda, les quals eren aterrades cada vegada que passava el bufarut.
 
 No sé ben bé si fou Anatole France que escriví un bell epigrama sobre l'òmnibus *Madeleine-Bastille*, epigrama que venia a dir això:
@@ -22,4 +21,4 @@ Alícia de Larrocha és una pianista prodigi, del tremp dels germans Corma, deix
 
 Els homes es miraran orgullosament al mirall, i altra vegada tornarà a semblar un prodigi l'òmnibus *Madeleine-Bastille* ―i la Bastilla mateixa.
 
-Joan Sacs
+<div class= "autor">Joan Sacs</div>

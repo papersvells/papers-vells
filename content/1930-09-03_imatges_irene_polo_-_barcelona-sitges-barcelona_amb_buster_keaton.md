@@ -7,7 +7,6 @@ slug: "irene-polo/barcelona-sitges-barcelona-amb-buster-keaton-lluis-alonso-i-no
 draft: false
 image: "1930-09-03_imatges_irene_polo_-_barcelona-sitges-barcelona_amb_buster_keaton.webp"
 ---
-
 Les primeres fotografies de Buster Keaton, Lluís Alonso i Norma i Natàlia Talmadge, fetes a Santander, a Granada, Madrid, etc., ens han emocionat a tots. Amb una emoció especial i fantàstica que no desperten més que els artistes de cine: meravella. Les ombres llunyanes s'acosten. Els ninots de llum de l'«écran», les brillants marionetes del blanc-i-negre, estan entre nosaltres en carn i ossos. Aquesta carn i aquests ossos dels artistes de cine que sembla que no existeixin, que fa l'efecte que no són més que una il·lusió d'imatges.
 
 I aquí, precisament, està la clau de l'èxit d'aquesta gent: la seva immaterialitat, la seva qualitat irreal i intangible.

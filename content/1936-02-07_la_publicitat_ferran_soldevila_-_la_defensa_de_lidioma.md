@@ -7,7 +7,6 @@ slug: "ferran-soldevila/la-defensa-de-l-idioma"
 draft: false
 image: "1936-02-07_la_publicitat_ferran_soldevila_-_la_defensa_de_lidioma.webp"
 ---
-
 La vida d'un idioma, com tota vida, és una lluita constant. Constantment agents de destrucció o d'afebliment l'escometen, dels quals cal que constantment es defensi, sia transformant-los i assimilant-los, sia rebutjant-los. Àdhuc els idiomes més sòlids i robustos han de realitzar aqueixa funció de defensa. Amb més de motiu han de realitzar-la els idiomes afeblits i contaminats —com el nostre.
 
 El català no és un idioma feble: n'ha donat proves eloqüents al llarg de la seva història; les ha donades, sobretot, en els segles de decadència. Però és un idioma afeblit. Els agents de destrucció o d'afebliment no hi troben sempre les defenses que haurien de trobar-hi. Actuen sovint amb tota llibertat. Si no han fet, si no fan més de mal, és perquè no duen més de virulència, no pas perquè trobin resistències eficaces.

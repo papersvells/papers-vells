@@ -7,7 +7,6 @@ slug: "just-cabot/el-deure-de-tots"
 draft: false
 image: "1936-08-13_mirador_just_cabot_-_el_deure_de_tots.webp"
 ---
-
 Tota la República espanyola ha sofert la commoció més intensa, el moviment de més envergadura que registra la història de molts anys ençà. Es tracta no sols d'una guerra civil amb totes les conseqüències pròximes i remotes, sinó d'una revolució en el veritable sentit històric del mot. Una revolució que no es mesura pas pel nombre de víctimes ni per la quantia dels perjudicis materials ―per molt considerables i de plànyer que unes i altres siguin―, sinó pel que significa de remoció fins als fonaments de l'estructura política, social i econòmica del país.
 
 Malgrat les proporcions que des del primer moment ha tingut, no es tracta solament d'un pronunciamiento d'uns arrossegasabres que en llur fatxenderia s'han pensat que bastava sortir al carrer perquè la República Espanyola retrogradés als temps en què un poble envilit sotmès a un sobirà més vil encara cridava *¡Vivan las caenas!* Es tracta de la gestació d'un ordre nou, d'una estructuració radicalment diferent de la vigent fins ara. Que aquesta gestació no hagi estat evolutiva i costi víctimes i ruïna, no en té ningú més la culpa sinó les caricatures de feixistes d'aquestes latituds, la mentalitat cretinoide dels militars sublevats i la política insensata d'aquells elements que gosant anomenar-se conservadors no han comprès que l'actitud més conservadora és adaptar-se als corrents dels temps.

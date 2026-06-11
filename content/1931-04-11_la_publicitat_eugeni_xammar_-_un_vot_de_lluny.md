@@ -7,7 +7,6 @@ slug: "eugeni-xammar/un-vot-de-lluny"
 draft: false
 image: "1931-04-11_la_publicitat_eugeni_xammar_-_un_vot_de_lluny.webp"
 ---
-
 No podré votar, diumenge que ve, perquè no seré a Barcelona. Si hi fos, votaria la candidatura del partit catalanista republicà.
 
 Faig aquesta declaració pública per tal d'evitar que em prenguin per mort. Si els difunts, gràcies al senyor Santamaria, han estat a punt de tenir una intervenció important en el govern municipal de Barcelona, ningú no podrà negar als absents, em sembla, el dret a interessar-se, de lluny, per la sort de la Ciutat.
@@ -22,4 +21,4 @@ Cal restaurar, ho repetim, el concepte de la dignitat nacional catalana. Empresa
 
 Per ajudar a la restauració del sentiment de dignitat nacional a Catalunya, dono de lluny, el meu vot a la candidatura del Partit Catalanista Republicà.
 
-Berlín, dilluns de Pasqua de 1931.
+<div class= "autor">Berlín, dilluns de Pasqua de 1931</div>

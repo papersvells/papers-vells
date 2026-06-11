@@ -7,7 +7,6 @@ slug: "josep-maria-de-sagarra/1915"
 draft: false
 image: "1930-03-20_mirador_josep_maria_de_sagarra_-_1915.webp"
 ---
-
 Vet aquí que aquest any 1915 és un any fatal. Algú es pensarà que ens referim a algun incident famós de la guerra. Però ara aquest sentiment d'historiador recau sobre una ampolla de beguda. Tràgicament declarada indesitjable, calumniada d'una manera sagristanesca i pedant, i condemnada per un decret a evitar tota mena de contacte amb el paladar de milions de senyors i de senyores.
 
 Es tracta simplement del decret prohibint la fabricació i la venda de l'absenta en territori francès, donat l'any 1915.

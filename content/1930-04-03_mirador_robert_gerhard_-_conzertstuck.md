@@ -7,8 +7,7 @@ slug: "robert-gerhard/conzertstuck"
 draft: false
 image: "1930-04-03_mirador_robert_gerhard_-_conzertstuck.webp"
 ---
-
-Joan Manén, el gran violinista català, acaba d'enriquir la seva personalitat amb una faceta inèdita. Per si no fos prou el reclam del seu màgic virtuosisme de violinista, doblat del prestigi de compositor hàbil en tots els gèneres musicals, se'ns ha revelat encara sota un aspecte nou: el de completador d'una obra inacabada de Beethoven. Tasca ingrata i problema espinós el que s'ha plantejat.
+[Joan Manén](https://ca.wikipedia.org/wiki/Joan_Man%C3%A9n_i_Planas), el gran violinista català, acaba d'enriquir la seva personalitat amb una faceta inèdita. Per si no fos prou el reclam del seu màgic virtuosisme de violinista, doblat del prestigi de compositor hàbil en tots els gèneres musicals, se'ns ha revelat encara sota un aspecte nou: el de completador d'una obra inacabada de Beethoven. Tasca ingrata i problema espinós el que s'ha plantejat.
 
 Caldria fer dues preguntes; primera: era necessari acabar aquest fragment jovenívol de Beethoven? Segona: Manén ha reeixit en aquesta empresa? Al meu entendre, ha d'ésser negativa la resposta a la primera pregunta. La segona no pot ésser resposta en poques ratlles; caldria veure la partitura per mesurar l'abast del fracàs d'una empresa en la qual Manén no podia reeixir.
 

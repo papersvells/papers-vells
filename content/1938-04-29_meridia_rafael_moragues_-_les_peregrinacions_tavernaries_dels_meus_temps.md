@@ -7,7 +7,6 @@ slug: "rafael-moragas/les-peregrinacions-tavernaries-dels-meus-temps"
 draft: false
 image: "1938-04-29_meridia_rafael_moragues_-_les_peregrinacions_tavernaries_dels_meus_temps.webp"
 ---
-
 Som en temps de guerra. El vi escasseja. Però nosaltres, bevedors, continuarem impertèrrits fent l'elogi del vi, passant de pressa pels “cocktails” (inventors, els Pells Roges).
 
 Retrospectiva. Bevien vi les marqueses en els balls de la Cort de França. I no xaropejaven. La pavana donava tanta set com fins fa poc donaven el vals i el “blue” i el xotis i el jazz. He sentit dir que Lluís XIV baixava ell mateix al celler a cercar vins per honorar als seus invitats i ell mateix escollia les ampolles. Les claus del celler, mai no les va confiar a ningú, ni a la reina. Temps en que bevien els monarques. Un rei aiguader, Lluís XVI. Fatal paradoxa. Prou sabeu com va acabar. L'aigua li va fer perdre el cap (21 gener del 1793).
@@ -70,31 +69,19 @@ Anàvem més lluny. La “Taberna d'Hostafrancs” feta gairebé a la cantonada 
 
 I de pressa que vol ploure. Pujàvem al tramvia “Arenas-Astillero” i cap a “Cal Joan” hi falta gent, que aleshores era a “Cal Onofre Bañasco". No coneixeu el seu himne? El que va escriure-lo, a ben segur, era un mona. L'himne diu, tal com pinta:
 
-“Tilin — Tilin
-
-Tilin — Tilàn!
-
-Tots en sortint
-
-a Can Joan.
-
-Gin i conyac, tic-tac
-
-Va el cor com un rellotge i amb l'aiguardent…
-
-I amb el conyac…
-
-Tic-tac, Tic-tac…
-
-conyac, conyac, conyac, que's fi i ardent.
-
-Fum, fum; fum, fum
-
-quina ferum…!
-
-…de cigarretes i de conyac que'ns electritza…!
-
-Anem…! Anem a posar-nos en mànegues de camisa!”
+<div class= "poema">“Tilin — Tilin<br>
+Tilin — Tilàn!<br>
+Tots en sortint<br>
+a Can Joan.<br>
+Gin i conyac, tic-tac<br>
+Va el cor com un rellotge i amb l'aiguardent…<br>
+I amb el conyac…<br>
+Tic-tac, Tic-tac…<br>
+conyac, conyac, conyac, que's fi i ardent.<br>
+Fum, fum; fum, fum<br>
+quina ferum…!<br>
+…de cigarretes i de conyac que'ns electritza…!<br>
+Anem…! Anem a posar-nos en mànegues de camisa!”</div>
 
 I què us diria de la Taverna del Mico, de la plaça de Sant Miquel, prop de la Casa de la Ciutat, on anaven els repòrters de l'Ajuntament i els “urbanos” i els municipals?
 

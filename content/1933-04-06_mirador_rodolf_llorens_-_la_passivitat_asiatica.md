@@ -7,7 +7,6 @@ slug: "rodolf-llorens/la-passivitat-asiatica"
 draft: false
 image: "1933-04-06_mirador_rodolf_llorens_-_la_passivitat_asiatica.webp"
 ---
-
 És de domini de tothom la passivitat i l'apatia dels asiàtics. Malgrat faci temps i més temps que les notícies que ens arriben d'aquelles terres únicament parlin d'agressivitats, d'intranquil·litats i de guerres.
 
 És evident que les prèdiques més fortes en pro de la passivitat, de la inacció i de la renúncia a aquesta vida han tingut lloc en el continent asiàtic: Buda i Laotsé.

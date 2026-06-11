@@ -7,7 +7,6 @@ slug: "angel-pons-i-guitart/mallorca-i-catalunya"
 draft: false
 image: "1936-06-04_la_veu_angel_pons_i_guitart_-_mallorca_i_catalunya.webp"
 ---
-
 Tot just arribat de les terres mallorquines, on he fet una llarga estada, em trobo amb l'agradable sorpresa d'aquest missatge de germanor que els intel·lectuals catalans adrecen als nostres germans de l'Illa Daurada. Ja no cal que us remarqui la joia immensa que m'ha produït aquest fet, car tornava d'aquelles terres amb l'ànima angoixada després d'haver palesat la considerable distància que ens separa —i no parlo de la distància material, cada dia més abreujada pel progrés, sinó de l'allunyament moral en què vivim uns mateixos germans en distintes terres.
 
 El català que no ha visitat Mallorca, o que solament la coneix de pas, no la nota gens aquesta separació. Veu Mallorca com una prolongació de la terra catalana, un brot més del Pirineu surant damunt d'una mar blava i meravellosa. Fins i tot, en contemplar les seves costes daurades, les seves valls florides i els seus pobles en puixança, sent una mena d'orgull íntim, com aquell que contempla una cosa que li pertany, que forma part d'ell mateix i que els altres li admiren. En el bell parlar dels mallorquins hi descobreix mots del català antic, avui gairebé perduts en les contrades catalanes, i que allí serven un dolç perfum de remembrança; en els seus costums ancestrals, reminiscències pures de la nostra manera d'ésser; en fi, tota una colla de factors que se n'entren pels ulls i pel cor i que produeixen una ben íntima i joiosa satisfacció.

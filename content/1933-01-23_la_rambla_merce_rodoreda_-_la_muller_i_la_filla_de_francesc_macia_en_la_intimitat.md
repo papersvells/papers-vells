@@ -7,7 +7,6 @@ slug: "merce-rodoreda/la-muller-i-la-filla-de-francesc-macia-en-la-intimitat"
 draft: false
 image: "1933-01-23_la_rambla_merce_rodoreda_-_la_muller_i_la_filla_de_francesc_macia_en_la_intimitat.webp"
 ---
-
 Pluja fina de gener: menuda, persistent; ratlles brodades, movibles, que ornamenten les façanes de les cases i l'horitzó obert dels carrers. Pluja glaçada que fa lluir els asfalts idealitzant-los; tot el cel dintre la terra emmirallant-s'hi vanitós, acompanyat per les siluetes torturades dels senyals lluminosos, nota groga, verda, vermella, trencant la monotonia del color cendra que cosmopolitza la ciutat. Barcelona sota la pluja esdevé un espill immens, dintre el qual es reflecteixen els òmnibus, els vehicles tots, que llisquents passen, mentre les seves rodes llancen enlaire humils brolladors.
 
 Carrer del Bisbe: ara quiet i recollit. La Residència particular del President de Catalunya, somnolent, obre, damunt el carrer estret, la policromia dels seus gòtics finestrals. I davant del pati menut, al dintell de l'ampla portalada, un mosso d'esquadra, alterós i benplantat, llueix, arrogant, la seva capa de gires vermelles i la gràcia d'unes espardenyes blanques.

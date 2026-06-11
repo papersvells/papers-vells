@@ -7,8 +7,7 @@ slug: "manuel-de-montoliu/goethe-i-maragall"
 draft: false
 image: "1932-01-01_la_revista_manuel_de_montoliu_-_maragall_i_goethe.webp"
 ---
-
-Fins ara hem examinat el coneixement que Maragall tenia de l'obra de Goethe i el concepte i el judici que ell tenia de la seva personalitat i de les seves creacions. Ens manca encara entrar en l'examen del punt més interessant d'aquesta part del nostre treball: la influència positiva exercida per Goethe en Maragall.
+Fins ara hem examinat el coneixement que [Maragall](/joan-maragall/) tenia de l'obra de Goethe i el concepte i el judici que ell tenia de la seva personalitat i de les seves creacions. Ens manca encara entrar en l'examen del punt més interessant d'aquesta part del nostre treball: la influència positiva exercida per Goethe en Maragall.
 
 Per endavant sigui dit que tots els punts de contacte i totes les semblances que hom pugui trobar entre l'un i l'altre i entre llurs respectives produccions, no són pas resultat d'una imitació més o menys volguda, més o menys conscient per part de Maragall. Es tracta no d'una imitació ni d'una influència pròpiament dita, sinó d'una afinitat d'esperit que va fer possibles tots els reflexos del temperament i de l'obra de Goethe sobre el temperament i l'obra de Maragall.
 
@@ -32,53 +31,35 @@ Maragall, com altres poetes, ha omplert moltes pàgines amb les reflexions que l
 
 Goethe s'ha referit en molts passatges de les seves obres a la lluita amb l'idioma, unes vegades planyent-se, d'altres enorgullint-se. Entre els seus planys és famós, aquell que diu: “Moltes coses he assajat; he dibuixat, esculpit en coure, pintat a l'oli; també he fet alguna cosa amb l'argila; però tot d'una manera inconstant, i res no he après, i res d'acabat no he fet; sols una tasca única l'he portada gairebé fins a la maestria: escriure l'alemany. I ara consumeix, malaurat poeta, vida i art en la matèria més rebel.” Encara és més expressiva, potser, per al nostre objecte, una poesia que respira l'orgull que sent com a artista de saber vèncer i dominar no una matèria inerta i passiva, com la de les arts plàstiques, sinó una matèria viva, fluida i escoladissa com la paraula humana. Heu's ací aquesta notable composició:
 
-Mag der Grieche seinen Ton
+<div class= "poema">Mag der Grieche seinen Ton<br>
+Zu Gestalten drücken,<br>
+An der eignen Hände Sohn<br>
+Steigern sein Entsücken.<br><br>
 
-Zu Gestalten drücken,
+(Que el grec pasti la seva<br>
+argila convertint-la en estàtues<br>
+que creixi el seu encís davant del<br>
+fill de les seves pròpies mans).<br>
 
-An der eignen Hände Sohn
+Aber uns ist wonnereich<br>
+In den Euphrat Greifen<br>
+Und im flüss'gen Element<br>
+Hin und wieder schweifen.<br>
 
-Steigern sein Entsücken.
+(Però a nosaltres ens és un pler<br>
+endinsar la mà en l'Eufrates<br>
+i passar-la i tornar-la a passar<br>
+en l'element fluid).<br>
 
-(Que el grec pasti la seva
+Löscht'ich so der Seele Brand,<br>
+Lied es wird erschallen;<br>
+Schöpft des Dichters reine Hand,<br>
+Wasser wird sich ballen.<br>
 
-argila convertint-la en estàtues
-
-que creixi el seu encís davant del
-
-fill de les seves pròpies mans).
-
-Aber uns ist wonnereich
-
-In den Euphrat Greifen
-
-Und im flüss'gen Element
-
-Hin und wieder schweifen.
-
-(Però a nosaltres ens és un pler
-
-endinsar la mà en l'Eufrates
-
-i passar-la i tornar-la a passar
-
-en l'element fluid).
-
-Löscht'ich so der Seele Brand,
-
-Lied es wird erschallen;
-
-Schöpft des Dichters reine Hand,
-
-Wasser wird sich ballen.
-
-(Si d'aquesta faisó apago la flama de l'anima,
-
-sonarà una cançó;
-
-si la pura mà del poeta poa aigua,
-
-l'aigua s'apilotarà).
+(Si d'aquesta faisó apago la flama de l'anima,<br>
+sonarà una cançó;<br>
+si la pura mà del poeta poa aigua,<br>
+l'aigua s'apilotarà).</div>
 
 El resultat final, en tot poeta conscient, d'aquesta lluita amb la paraula, és una insatisfacció interior davant de la incompleta potència creadora del llenguatge.
 
@@ -86,61 +67,37 @@ En el *Comte Arnau*, Maragall planteja aquest problema amb paraules memorables. 
 
 És Adalaisa la qui espera ansiosament del poeta la virtut taumatúrgica de la seva poesia que la torni a la vida, que la ressusciti a aquest món visible i tangible. Escoltem-la:
 
-ADALAISA
+<div class= "poema">ADALAISA<br>
+I què saps tu d'aquest món ni d'altres<br>
+ni de lo que és un cos o un esperit,<br>
+ni lo que un gran desig pot en nosaltres,<br>
+restant en l'últim ai! del nostre pit?<br>
+Tu em tens per morta i jo em tinc per viva;<br>
+mes tal com si enterrada viva fos,<br>
+tinc el voler de mos sentits furiós,<br>
+perquè hi ha alguna cosa que me'l priva.<br>
+Si no me la pots treure de damunt,<br>
+de què us val, doncs, poetes, la poesia?<br><br>
 
-I què saps tu d'aquest món ni d'altres
+EL POETA<br>
+Alguna veu jo sento en aquest punt<br>
+que d'altre modo no la sentiria.<br>
 
-ni de lo que és un cos o un esperit,
+ADALAISA<br>
+Oh! La veu sense so del que és difunt!<br>
+No és pas aquesta la que jo voldria;<br>
+aquella eixida de mon pit de carn<br>
+que alegrament en torn me ressonava;<br>
+aquella, amic, és la que jo et deman,<br>
+i lo demés que amb ella es comportava.<br>
+I si ta poesia no pot tant,<br>
+si no em pots tornâ al món, calla i acaba.<br>
 
-ni lo que un gran desig pot en nosaltres,
-
-restant en l'últim ai! del nostre pit?
-
-Tu em tens per morta i jo em tinc per viva;
-
-mes tal com si enterrada viva fos,
-
-tinc el voler de mos sentits furiós,
-
-perquè hi ha alguna cosa que me'l priva.
-
-Si no me la pots treure de damunt,
-
-de què us val, doncs, poetes, la poesia?
-
-EL POETA
-
-Alguna veu jo sento en aquest punt
-
-que d'altre modo no la sentiria.
-
-ADALAISA
-
-Oh! La veu sense so del que és difunt!
-
-No és pas aquesta la que jo voldria;
-
-aquella eixida de mon pit de carn
-
-que alegrament en torn me ressonava;
-
-aquella, amic, és la que jo et deman,
-
-i lo demés que amb ella es comportava.
-
-I si ta poesia no pot tant,
-
-si no em pots tornâ al món, calla i acaba.
-
-EL POETA
-
-Adalaisa, Adalaisa, per pietat,
-
-al temps hi ha encara coses no sabudes;
-
-la poesia tot just ha començat
-
-i és plena de virtuts inconegudes.
+EL POETA<br>
+Adalaisa, Adalaisa, per pietat,<br>
+al temps hi ha encara coses no sabudes;<br>
+la poesia tot just ha començat<br>
+i és plena de virtuts inconegudes.</div>
 
 Goethe ha tocat diverses vegades en les seves obres encara que no tan directament aquest torturador problema de la incompleta potència creadora de la poesia. Només volem esmentar un pensament en el qual explícitament constata el mateix mancament de l'esforç creador del poeta, que fa sospirar a Adalaisa: *Denn das Wort bemüth sich nur umsonst Gestalten schöpferisch aufzubauen*.
 
@@ -156,31 +113,22 @@ Una altra afinitat entre el temperament poètic de Goethe i el de Maragall podem
 
 Hom ha remarcat que a Goethe no li plaïen ni el principi ni el final de l'obra. El seu temperament el portava a situar-se tot seguit en la part viva de les seves concepcions poètiques i tallava l'obra sense preocupar-se d'estilitzar el final. En Goethe, com en Maragall, hi havia el domini absolut de l'esperit. I l'esperit és per essència quelcom fora de l'espai i del temps. Principi i fi són convencions inventades i volgudes per aquells qui sols es preocupen per la realització d'una idea poètica o filosòfica; però no tenen importància per aquell qui la “viu” intensament, amb tot el seu ésser, com s'esdevenia en un i altre poeta. Així, doncs, la proverbial negligència de Maragall en tot ço que és detall tècnic de l'art de la poesia és també, en el fons, d'essència goethiana. Detalls de tècnica artística són el començar bé i acabar bé una obra. Totes les obres de poetes com Goethe i Maragall són, en realitat, fragments dispersos, però orgànicament articulats, d'un sol poema, estrofes d'aquella *Oda infinita* que Maragall glossà en aquells versos inoblidables, que serveixen de lema general a la seva producció poètica. I és notable de veure com Maragall en aquesta *Oda infinita* expressa inspiradament aquella indiferència tan goethiana sobre el principi i el fi de l'obra poètica:
 
-Tinc una oda començada
-
-que no puc acabar mai.
-
-Però encara més explícitament s'expressa en aquest sentit en aquesta estrofa:
-
-Jo no sé com començava,
-
-ni sé com acabarà,
-
-perquè tinc la pensa esclava
-
-d'una força que s'esbrava
-
-dictant-me-la sens parar.
+<div class= "poema">Tinc una oda començada<br>
+que no puc acabar mai.<br>
+Però encara més explícitament s'expressa en aquest sentit en aquesta estrofa:<br>
+Jo no sé com començava,<br>
+ni sé com acabarà,<br>
+perquè tinc la pensa esclava<br>
+d'una força que s'esbrava<br>
+dictant-me-la sens parar.</div>
 
 Maragall, realment, podia dir d'ell mateix aquells dos versos en què Goethe expressa aquesta mateixa idea:
 
-Das du nicht enden Kannst, das macht dich gross;
+<div class= "poema">Das du nicht enden Kannst, das macht dich gross;<br>
+Und dass du nie beginnst, das ist dein Los.<br><br>
 
-Und dass du nie beginnst, das ist dein Los.
-
-(Que tu no puguis acabar, això et fa gran;
-
-I que tu mai no comencis, això és el teu destí).
+(Que tu no puguis acabar, això et fa gran;<br>
+I que tu mai no comencis, això és el teu destí).</div>
 
 Fins ara hem vist les afinitats que hi ha entre els temperaments de Goethe i de Maragall. A més a més, però, d'aquesta mena d'afinitats, que es manifesten en la particular captinença que l'un i l'altre adopten enfront del fet de la creació literària, existeix una altra afinitat més profunda i significativa encara, car està íntimament relacionada amb la mateixa estructura espiritual de la personalitat, amb la mateixa llei biològica que regeix la seva vida interior.
 

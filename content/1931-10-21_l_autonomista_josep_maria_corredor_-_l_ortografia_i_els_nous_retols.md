@@ -7,7 +7,6 @@ slug: "josep-maria-corredor/l-ortografia-i-els-nous-retols"
 draft: false
 image: "1931-10-21_l_autonomista_josep_maria_corredor_-_l_ortografia_i_els_nous_retols.webp"
 ---
-
 Una de les coses més significatives de la nostra psicologia, de la nostra manera d'ésser, és el que ve succeint amb la gramàtica catalana, el coneixement de la qual sembla hauria de seguir una trajectòria paral·lela als entusiasmes i als anhels pel renaixement de la personalitat de Catalunya.
 
 Doncs no és així. Ens plau tota l'ampul·lositat verbalista, on hi ha tanta faramalla, per les “coses nostrades”. Ens hi emocionem, i fins ens posem sentimentals davant una caputxeta i una barretina; però passar algunes hores d'estudi davant les regles ortogràfiques, extraure de les complicades excepcions de la dièresi o de la posposició de pronoms alguna idea clara i precisa, ho considerem una feina molt accessòria i completament inútil.

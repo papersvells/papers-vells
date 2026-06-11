@@ -7,7 +7,6 @@ slug: "lluis-montanya/primeres-notes-sobre-ulysses"
 draft: false
 image: "1930-02-01_helix_lluis_montanya_-_primeres_notes_sobre_ulysses.webp"
 ---
-
 El primer contacte amb «Ulysses», fou motiu per a mi d'una inesperada decepció. Vivament encuriosit per un article de Valéry-Larbaud a la N. R. F. parlant d'aquest llibre, vaig procurar-me el text anglès (no traduït encara a cap altra llengua) massa fiat en els meus coneixements d'aquell idioma.
 
 La lectura ―si lectura se'n pot dir― d'algunes pàgines, amb un enervant i infructuós treball de diccionari, em féu desistir ben aviat del meu intent. L'anglès de Joyce, esmaltat de mots irlandesos, *argot* periodístic i pur *slang* londinenc, barrejat amb vocabularis de l'edat mitja, academismes i àdhuc amb invencions verbals inèdites, resultava per a mi poc menys que inintel·ligible. El meu desig de conèixer una obra que sospita va única i d'assimilació indispensable donades les meves preferències literàries, esdevingué encara exacerbat davant aquell fracàs. Això explica que, tot just apareguda la versió francesa, portada a cap per tres traductors, un d'ells anglès, assistits pel propi Joyce (això m'aconsola una mica) m'apressés a adquirir-la, malgrat de tractar-se d'un tiratge limitat i caríssim. Calia encara un altre sacrifici. Trobar el temps necessari pe llegir amb atenció unes nou-centes pàgines in-quarto, atapeïdes i difícils. Uns lleures d'aquest istiu darrer me'l proporcionaren. Però no he tingut encara, malgrat de la meva decidida voluntat de fer-ho, el necessari per concretar en un assaig, de mesos projectat, la meva opinió sobre aquest llibre immens i incomprensible. (Aquest darrer adjectiu no és degut a cap descuit; és ben bé incomprensible el que vull dir). Les notes ràpides que segueixen, dedicades als amics d'Hèlix, deuen ésser considerades només com a una petita anticipació provisional, susceptible d'ésser ampliada i, fins i tot, rectificada si convé.
@@ -28,4 +27,4 @@ I és que tot ho és d'inexplicable, de sublim i d'immens en aquest llibre. Llum
 
 Aquest monument, en el qual Joyce esmerçà cinc anys de la seva vida, que és el resum d'una experiència humana i un credo artístic, no pot ésser simplement un mirallet per a caçar snobs. O aleshores no valdria ja la pena de prendre's res seriosament.
 
-Gener 1930
+<div class= "autor">Gener 1930</div>

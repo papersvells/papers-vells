@@ -7,7 +7,6 @@ slug: "llucieta-canya/escolteu-dones-de-catalunya"
 draft: false
 image: "1930-03-01_la_veu_llucieta_canya_-_escolteu_dones_de_catalunya.webp"
 ---
-
 Escolteu, dones de Catalunya!
 
 S'acosten temps en els quals caldria que el vostre esforç i el vostre entusiasme es decantessin vers afers polítics.

@@ -7,16 +7,15 @@ slug: "robert-gerhard/preludi"
 draft: false
 image: "1930-01-30_mirador_robert_gerhard_-_preludi.webp"
 ---
-
-Em pertoca donar als lectors de les meves cròniques musicals una notícia agradable. Des d'avui la secció es veurà honorada amb la signatura de Robert Gerhard. Aquest èxit de MIRADOR és el resultat d'unes gestions de llarga data, que fins ara no havien donat fruit, a causa de diversos treballs que tenia empresos el jove i madur compositor.
+Em pertoca donar als lectors de les meves cròniques musicals una notícia agradable. Des d'avui la secció es veurà honorada amb la signatura de [Robert Gerhard](/robert-gerhard/). Aquest èxit de [Mirador](/mirador/) és el resultat d'unes gestions de llarga data, que fins ara no havien donat fruit, a causa de diversos treballs que tenia empresos el jove i madur compositor.
 
 Robert Gerhard, el més pràctic dels nostres músics, n'és també el més agut crític.
 
 Ara jo, en acomiadar-me de la secció i dels lectors que m'hauran llegit, sento com una mena de modest orgull per haver pogut ésser el precursor d'una figura tan decisiva dintre del món de les nostres arts. Si són permeses comparacions, és, salvant les distàncies, l'alegria del Baptista. I, només sota aquest aspecte, he gosat batejar una mica, encapçalar amb quatre paraules les sàvies i autoritzades del meu successor.
 
-ROSSEND LLATES
+<div class= "autor">Rossend Llates</div>
 
-MIRADOR em fa la invitació ―que m'honora― d'escriure a les seves columnes. Alguns amics meus, el judici dels quals té molta de valor als meus ulls, insisteixen perquè jo exposi públicament algunes idees relatives a la música actual, algunes paraules d'orientació per a homes de bona voluntat. Aquestes dues circumstàncies lligades han acabat per vèncer tots els meus arguments de resistència. Vençuts i tot, però, no es resignen. Sobretot aquest: el compositor combat en favor dels seus ideals fent música. Els arguments veritables que ell pot portar a la discussió són obres. El combat dialèctic, la teoria, l'anàlisi han de confiar-se a un altre home: el *crític creador*, el *schöpferischer Kritiker* dels alemanys. Invocació:
+Mirador em fa la invitació ―que m'honora― d'escriure a les seves columnes. Alguns amics meus, el judici dels quals té molta de valor als meus ulls, insisteixen perquè jo exposi públicament algunes idees relatives a la música actual, algunes paraules d'orientació per a homes de bona voluntat. Aquestes dues circumstàncies lligades han acabat per vèncer tots els meus arguments de resistència. Vençuts i tot, però, no es resignen. Sobretot aquest: el compositor combat en favor dels seus ideals fent música. Els arguments veritables que ell pot portar a la discussió són obres. El combat dialèctic, la teoria, l'anàlisi han de confiar-se a un altre home: el *crític creador*, el *schöpferischer Kritiker* dels alemanys. Invocació:
 
 Crític creador, vine...!
 

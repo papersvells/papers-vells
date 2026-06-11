@@ -7,8 +7,7 @@ slug: "lluis-elias/anecdotari-d-artistes-catalans-a-paris"
 draft: false
 image: "1931-07-09_mirador_lluis_elias_-_anecdotari_dartistes_catalans_a_paris.webp"
 ---
-
-Lluís Jou i Anatole France
+<div class= "seccio">Lluís Jou i Anatole France</div>
 
 Lluís Jou va arribar a París i es va posar a gravar el boix així que va baixar del tren. I grava que gravaràs. De dia, assegut sota les ombres del jardí del Luxemburg, un burí a la mà i un tros de fusta a l'altra, anava matant les hores fent relliscar l'eina per la dura matèria. De nits, en la seva petita cambra, sota un mal llum de petroli, seguia incansable la seva tasca. Però la vida era difícil. Tot just arribat a la gran capital, desorientat, sense altres amics que uns quants catalans tots ells joves i desconeguts encara, no trobava cap sortida pels seus boixos.
 
@@ -52,7 +51,7 @@ Jou es quedà lívid. Va arrencar dels dits del company la cartolina i corrents 
 
 D'allí en va sortir amb uns quants mils francs a compte de la celebritat que des d'aquell moment va començar a lluir en la vida d'aquest català, que conquistà París ajudat pel seu talent i encoratjat pel *charmant* autor de *La Rôtisserie*.
 
-Villà i el dinosauri
+<div class= "seccio">Villà i el dinosauri</div>
 
 L'excel·lent pintor Villà, a més d'ésser un company agradabilíssim i un complert *gentleman*, és un d'aquells homes tan meticulosos i ordenats. N'és tant, que tot ell dóna la impressió que acaba de sortir de la capsa, que estava endreçat en algun lloc, i que quan el trobeu acaba de sortir del seu estoig.
 
@@ -74,7 +73,7 @@ I diu que als pocs dies de portar l'uniforme el varen matar junt amb dos o tres-
 
 I ara ve el bo. En Villà, aquest home tan tocat i posat, aquest home que ha donat la volta al món sense perdre mai el Nord ni l'estoig de les seves pipes, En Villà perdé els plans del lloc on es trobava l'animal, i cada vegada que el veuen els seus amics, pensen amb tristesa que aquest home ordenat no s'ha pogut escapar de perdre, un dinosauri que diu que feia vint-i-cinc metres de llarg per cinc d'alçada.
 
-Control de semblança
+<div class= "seccio">Control de semblança</div>
 
 Solà era escultor abans d'ésser pintor. Tenia un petit taller a Montparnasse, en aquella època feliç en què els carnissers i els adroguers de París es feien fer un bust o un retrat per a cobrar els *biftecs* que els artistes el quedaven a deure.
 
@@ -103,5 +102,3 @@ Per una d'aquelles rares casualitats el barret entrà just. El pare arrenca un p
 Es tragué de la cartera cinc-cents francs, els donà a En Solà i li digué:
 
 ―És ben bé ell! Si el barret no li hagués entrat, no us pagava pas l'escultura.
-
-Lluís ELIES

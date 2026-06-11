@@ -7,7 +7,6 @@ slug: "eugeni-xammar/fora-del-catalanisme"
 draft: false
 image: "1936-01-29_el_be_negre_eugeni_xammar_-_fora_del_catalanisme.webp"
 ---
-
 Davant de Catalunya, les coses han de quedar ben clares i per sempre més. Cap confusió no ha de tornar a ésser possible entre catalans catalanistes i catalans que no ho són, que no ho han estat mai o que han deixat d'ésser-ho. El poble català té dret a la claredat i a la netedat.
 
 Dretes? Esquerres? Si les esquerres es troben ara amb tot el patrimoni moral de Catalunya a les mans, la culpa és dels altres. No hi ha cap llei que privi un català catòlic d'ésser catalanista. No hi ha res que privi un català conservador d'ésser catalanista. Les condicions són iguals per a tothom. És catalanista el qui posa, per damunt de tot, la llibertat de Catalunya.
@@ -34,4 +33,4 @@ Què diu, senyora Perdiu? Perdre la memòria el poble de Catalunya? Oblidar la d
 
 …quan hi ha tants catalans que han perdut la vergonya, seria una desgràcia massa grossa.
 
-Peer Gynt
+<div class= "autor">Peer Gynt</div>

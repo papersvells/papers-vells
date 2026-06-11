@@ -7,7 +7,6 @@ slug: "angel-pons-i-guitart/una-catalana-a-les-illes-de-la-polinesia"
 draft: false
 image: "1930-08-13_imatges_angel_pons_i_guitart_-_una_catalana_a_les_illes_de_la_polinesia.webp"
 ---
-
 Una tarda ens traslladàrem a la torre que el matrimoni Choffat té al turó de Montcada.
 
 ―La senyora Choffat? ―preguntàrem a la minyona que ens vingué a obrir la porta...
@@ -18,7 +17,7 @@ De les parets en penjaven uns draps exòtics d'una rara bellesa.
 
 Una taula de te, incrustada de nacre. Unes tasses de metall policromat. A un angle una figura de pedra toscament treballada. A la taula de centre revistes angleses, franceses i catalanes. Pel finestral esbatanat albiràrem el paisatge casolà i sense trontolls, de Montcada i Reixac.
 
-Aurora Bertrana aparegué al cap de poc, somrient i allargant-nos la mà.
+[Aurora Bertrana](/aurora-bertrana/) aparegué al cap de poc, somrient i allargant-nos la mà.
 
 ―Ah! Però vostès per aquí? Han sabut trobar-hi?
 
@@ -87,5 +86,3 @@ L'haguérem de dur amagat tot el viatge. Si haguessin sabut que el portàvem no 
 Aurora Bertrana ens seguí contant coses i més coses dels seus viatges. Dels projectes que té, quan pugui, d'anar al Centre Africà, al Japó i la Xina, on pensa també sojornar-hi. Després va presentar-nos el seu marit, l'enginyer Mr. Choffat, que ens va rebre molt afectuosament i que ens facilità les fotografies que il·lustren aquestes planes, fetes per ell mateix.
 
 Aurora Bertrana, amb les fotografies a les mans, parla d'aquest país amb una mena de melangia. Aquesta terra salvatge, els seus paradisos oceànics, han estat per ella alguna cosa més que un simple pretext per fer literatura.
-
-Imatge: Fons Bertrana (Universitat de Girona)

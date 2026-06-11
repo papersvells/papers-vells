@@ -7,7 +7,6 @@ slug: "irene-polo/a-la-cacera-de-quatre-paraules-amb-el-sr-cambo"
 draft: false
 image: "1930-11-12_imatges_irene_polo_-_a_la_cacera_de_quatre_paraules_amb_el_sr_cambo.webp"
 ---
-
 Fa vuit dies que la figura d'actualitat a Barcelona és don Francesc Cambó. Don Francesc Cambó, que acaba de tornar del seu llarg i discutit viatge per l'estranger, que porta una cua impressionant de prestigis i que arriba en una ocasió política especial.
 
 Expectació. Expectació unànime i extraordinària. ¿Com estarà Cambó de la seva famosa malaltia? Quins projectes deu portar? ¿Què és el que està fent en aquests moments?
@@ -36,7 +35,7 @@ Misteri. Tenen prohibit de dir-ho... no ho saben, que aquí, que allà... Inúti
 
 No cal pensar en interviuar en Cambó. A l'entorn d'ell hi ha dreçada una terrible barrera, alta i sòlida de reserva, que no podreu pas franquejar.
 
-SORTIRÀ? NO SORTIRÀ?
+<div class= "seccio">SORTIRÀ? NO SORTIRÀ?</div>
 
 Tot i amb això, i per això mateix, calia veure en Cambó; calia intentar el que fos; els nostres lectors no podien quedar-se sense unes fotos i unes paraules de l'home que aquests dies interessa a tot Barcelona.
 
@@ -60,13 +59,13 @@ I efectivament, l'Esmeu retrata la façana massissa i impenetrable de l'edifici,
 
 Un quart d'una.
 
-EL PREMI A LA CONSTÀNCIA!
+<div class= "seccio">EL PREMI A LA CONSTÀNCIA!</div>
 
 A l'últim, les portes de ferro s'obren, i el «Rolls Royce» d'en Cambó surt de l'entrada amb un ocupant a dins. Ens fa un salt el cor. En Cambó? És clar. Per la finestrella de darrere la capota, veiem la calba cèlebre i les orelles separades ―diabòliques― del popular «leader» català. És ell, realment. L'Esmeu li fa la primera fotografia, i arranquem a córrer al seu darrere. Reforma amunt. Ja el tenim, ara!
 
 El perseguim, naturalment, fins allà on vagi. De moment sortim a la Plaça d'Urquinaona, enfilem tot el carrer de Llúria i desemboquem a la Diagonal. Avall. Pedralbes; veiem en Cambó inclinar-se cap al xofer senyalant-li unes direccions, i el «Rolls» agafa la carretera d'Esplugues.
 
-«...EM TROBO MOLT EIXERIT»
+<div class= "seccio">«...EM TROBO MOLT EIXERIT»</div>
 
 Nosaltres al darrere, és clar. ¿On deu anar aquest home? No hem fet un quilòmetre, quan el cotxe s'atura. En Cambó baixa, pren el bastó, es posa el capell i comença a caminar, carretera enllà.
 

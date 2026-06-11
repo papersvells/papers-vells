@@ -7,28 +7,22 @@ slug: "eduard-nicol/el-premi-crexells-1931"
 draft: false
 image: "1931-11-01_revista_de_catalunya_eduard_nicol_-_el_premi_crexells_1931._conversa_amb_just_cabot.webp"
 ---
-
-Conversa amb Just Cabot
+<div class= "seccio">Conversa amb Just Cabot</div>
 
 El 13 de desembre serà concedit el tercer Premi Crexells. La concessió d'aquest premi continua essent la solemnitat literària més important de l'any. Cal desitjar que el terrabastall apassionant d'aquests temps no absorbeixi l'atenció de la gent fins al punt de deixar semioblidat aquest esdeveniment literari. Precisament, la lectura no és un dels nostres vicis cabdals. Durant set anys, alguna gent es venjava de la Dictadura llegint llibres ―o almenys comprant-los. Des de fa un any i mig, el ciutadà rep cada matí, en llevar-se, sorpreses tan apassionants i inevitables, que això el disculpa de no cercar altres apassionaments gratuïts en la literatura. Però potser és arribada l'hora de reaccionar. Les vacances han estat llargues; escriptors, editors i llibrers se'n ressenten. Si persistim per aquest camí esdevindrem definitivament uns sud-americans de la mena dolenta.
 
-Aquest any el Jurat qualificador està format pels senyors Just Cabot (secretari), Carles Capdevila, Estanislau Duran i Reynals, Miquel Llor, Alexandre Plana, J. Puig i Ferreter i Vicenç Solé de Sojo. El senyor Cabot, reelegit del Jurat anterior, ha actuat de Secretari en totes les deliberacions que compta la història del Premi. Aquesta sola circumstància, àdhuc deixant de banda la perspicàcia d'informació i de judici del senyor Cabot, el faria l'home més indicat per a pronunciar un comentari sobre el Premi.
+Aquest any el Jurat qualificador està format pels senyors [Just Cabot](/just-cabot/) (secretari), [Carles Capdevila](/carles-capdevila/), Estanislau Duran i Reynals, Miquel Llor, [Alexandre Plana](/alexandre-plana/), [J. Puig i Ferreter](/joan-puig-i-ferreter/) i Vicenç Solé de Sojo. El senyor Cabot, reelegit del Jurat anterior, ha actuat de Secretari en totes les deliberacions que compta la història del Premi. Aquesta sola circumstància, àdhuc deixant de banda la perspicàcia d'informació i de judici del senyor Cabot, el faria l'home més indicat per a pronunciar un comentari sobre el Premi.
 
 El senyor Cabot diu que la crisi del llibre no sembla haver influït en l'ànim dels concursants al Premi, i això prova un aspecte de la seva eficàcia. El Jurat ha rebut aproximadament el mateix nombre de manuscrits que en anys anteriors: una quinzena. Segons acord de l'any 1929, no es pot divulgar el nom dels autors. Es pot recordar, perquè ja s'ha anunciat per altra banda, que Prudenci Bertrana, Francesc Trabal i Jeroni de Moragas han escrit sengles novelles que es publicaran, probablement, abans del Premi.
 
 Les ja publicades són:
 
-*Vint anys*, de Rafael Tassis i Marca.
-
-*El rellogat del tercer pis*, de J. Navarro Costabella.
-
-*Magda la generosa*, de J. Mínguez.
-
-*Presó oberta*, de Maria Teresa Vernet.
-
-*L'inútil combat*, de S. Juan Arbó.
-
-*Eva*, de Carles Soldevila.
+*Vint anys*, de Rafael Tassis i Marca.<br>
+*El rellogat del tercer pis*, de J. Navarro Costabella.<br>
+*Magda la generosa*, de J. Mínguez.<br>
+*Presó oberta*, de Maria Teresa Vernet.<br>
+*L'inútil combat*, de S. Juan Arbó.<br>
+*Eva*, de Carles Soldevila.<br>
 
 ―...?
 

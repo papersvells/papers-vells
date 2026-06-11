@@ -7,7 +7,6 @@ slug: "jaume-serra-hunter/l-experiencia-insubstituible"
 draft: false
 image: "1938-03-18_meridia_serra_hunter_-_lexperiencia_insustuible.webp"
 ---
-
 Cada nova etapa de la vida és una nova experiència de la persona individual. No hi ha lliçó més eloqüent com la de la pròpia experiència, perquè tant en exactitud com en lluminositat l'esforç de l'individu no pot tenir una sortida ni una aplicació més lògicament reeixida, si vol orientar-se en el món de les coses existents i dels actes dels homes.
 
 L'home, però, no és una pura receptivitat, ni un aparell registrador d'impressions i de commocions orgàniques… té aquesta facultat, sens dubte; però no és l'única, ni menys encara la superior de què disposa. L'home transforma i crea. Potser, per aquesta raó, no rep mai les coses passivament, sinó que les adapta a la seva personal idiosincràsia amb una mena de facultat selectiva que treballa quasi sempre d'una manera ignorada o, almenys, inconscient.

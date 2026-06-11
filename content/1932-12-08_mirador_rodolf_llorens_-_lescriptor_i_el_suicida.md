@@ -7,7 +7,6 @@ slug: "rodolf-llorens/l-escriptor-i-el-suicida"
 draft: false
 image: "1932-12-08_mirador_rodolf_llorens_-_lescriptor_i_el_suicida.webp"
 ---
-
 José Ortega y Gasset s'esforça a voler-nos fer pensar en un Goethe que no hagués anat a parar a Weimar: «Nada debilita tanto a los profundos resortes del viviente como el exceso de facilidades. Esto fué Weimar para Goethe en aquella sazón decisiva. Facilitó el enquistamiento de su juventud y quedó para siempre en disponibilidad.» «Goethe se acostumbró a flotar sobre la vida ―se olvidó de que era un náufrago.» «Goethe se vegetaliza. El vegetal es el ser orgánico que no lucha con su contorno. Por eso no puede vivir sino en ambiente favorable, sostenido, mimado, por él. Weimar fué el capullo de seda que el gusano segrega de sí para interponerlo entre sí y el mundo.»
 
 Potser Goethe ho veia també així, ja que en marxà. Però reincidí.

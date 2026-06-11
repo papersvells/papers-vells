@@ -22,7 +22,7 @@
   --color-ink:        #1a1209;
   --color-ink-light:  #3d2f1a;
   --color-ink-faded:  #7a6a52;
-  --color-accent:     #973330;   /* el teu vermell original */
+  --color-accent:     #973330;
   --color-rule:       #c4b08a;
 
   /* Tipografia */
@@ -662,7 +662,7 @@ a.accent:hover, .accent a:hover {
     font-size: 1.8rem;
   }
   .article-card__meta   { 
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
     text-align: center;
   }
   .article-card__excerpt{ font-size: 1.6rem; }

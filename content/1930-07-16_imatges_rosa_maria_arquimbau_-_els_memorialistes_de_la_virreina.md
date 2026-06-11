@@ -7,7 +7,6 @@ slug: "rosa-maria-arquimbau/els-memorialistes-de-la-virreina"
 draft: false
 image: "1930-07-16_imatges_rosa_maria_arquimbau_-_els_memorialistes_de_la_virreina.webp"
 ---
-
 A l'hora d'anar al mercat és quan els arriba la feina als memorialistes de la Virreina.
 
 Sovint a la vora de les cabines se sent sospirar allò tan antic i tan tronadet d'aquell senyor que es deia Campoamor: «¡Quien supiera escribir!», i de seguida li encomanen al memorialista: «Digui-li que…»

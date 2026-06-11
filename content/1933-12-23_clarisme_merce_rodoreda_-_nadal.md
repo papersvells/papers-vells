@@ -7,7 +7,6 @@ slug: "merce-rodoreda/nadal"
 draft: false
 image: "1933-12-23_clarisme_merce_rodoreda_-_nadal.webp"
 ---
-
 M'agrada el dia de Nadal. I m'agrada passar-lo a casa. I recordar. Evocar imatges que fugisseres s'escapoleixen negant-se a venir. Records de criatura, per purs, els millors quan ja ets gran... Jo, enamorada de l'hivern: de les vetlles llargues, de l'encís de les tardes de desembre barcelonines quan cau gassa boirosa damunt la ciutat i les muntanyes són ombres una mica esfumades damunt la grisor del cel, irisat com perles, mica abans, a la posta; de la pluja menuda que tot ho fa lluir, de la neu tan escassa a les nostres latituds que et fa somniar amb països del nord i t'hi agermana, amb lligams espirituals, quan es digna, com enguany, de fer-te visita complimentosa, guarnidora amb llurs borrallons de tot el que es travessa al seu pas... Jo no voldria que s'avancés ni s'endarrerís la nevada, sinó que deixés anar el seu plomissol el dia de Nadal encara que del cel en fes fugir les estrelles.
 
 Quin doldre que no nevi el dia de Nadal! Fruir del goig encomanadís que neix de la blancor; que s'enganxa arreu i que fa ideal àdhuc allò que no en té res. La neu, blanca, gelada, amoroseix totes les coses: les cornises, els troncs nuosos dels arbres que anys ha s'han fet vells, que poleix i s'hi gronxa la teranyina dels fils elèctrics... que n'ha fet blancs els gessamins enfiladissos del jardí i gràcils i airoses alhora les branques de la perera, i ha fet ajaçar-se les fulles amples del llimoner encara guarnit de llimones...

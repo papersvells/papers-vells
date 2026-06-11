@@ -7,8 +7,7 @@ slug: "joan-alavedra/el-perill-groc-a-barcelona"
 draft: false
 image: "1930-06-26_mirador_joan_alavedra_-_el_perill_groc_a_barcelona.webp"
 ---
-
-Una vella coneixença
+<div class= "seccio">Una vella coneixença</div>
 
 —No fareu pas res amb els xinesos —va dir-me el jueu Lidgi mirant, amb calma, el fum de la seva pipa—. Els conec fa temps. Quan tallava bosc al Chaco, allà baix a l'Argentina, en tenia uns quants sota les meves ordres. Són gent reservada, silenciosa, unida. Així que ensumen que voleu esbrinar quelcom d'ells, es posen a somriure i a callar com uns morts. Ja podeu anar fent, ja, que ells, mutis, i vinga anar-vos prenent el pèl. Si teniu una qüestió amb un, tots plegats fan un bloc contra vostre. Us dic que en saben. Per altra part, els que hi ha a Barcelona no parlen ni un mot d'espanyol. Només «Don Miguel»…
 
@@ -16,7 +15,7 @@ Una vella coneixença
 
 —«Don Miguel» és un xinès molt trempat que fa molt de temps que roda per Barcelona… Viu al carrer de Montserrat…
 
-Anàrem al carrer de Montserrat.
+<div class= "seccio">Anàrem al carrer de Montserrat</div>
 
 —És difícil que pugueu parlar-los —va dir-me En Corominas—. Vénen, efectivament, a comprar a casa. De primer, no hi havia manera d'entendre'ns. Ara, tots els meus dependents saben prou xinès perquè les operacions puguin realitzar-se normalment. Tots saben, per exemple, que *mi* vol dir arròs; *fatsa*, patates; *ia*, sal; *yudà*, sabó; *torsó*, sucre; *yiyu*, petroli; *selajú*, mistos, etc. Quan entra un dependent nou, el primer que li demanem és com està de xinès…
 
@@ -46,11 +45,11 @@ Anàrem al carrer de Montserrat.
 
 —Sí, home; el meu amic Liau. Si no en conec d'altre!…
 
-El pobre Xinès
+<div class= "seccio">El pobre Xinès</div>
 
 Asseguts en algun cafè de la Rambla, no ha vingut, alguna vegada, el pobre xinès a oferir-vos un ventall, una pipa o un collaret de senyora? Bevíeu un glop i, en alçar el cap, us heu topat amb el seu somriure. Recordeu el seu posat tímid, l'aire resignat amb què n'ha anat cap a una altra taula? Segurament ho recordeu. I no us heu demanat mai, mirant-lo, quin atzar podia menar a Barcelona aquell minyó de terres tan llunyanes? El rostre o els ulls de cap d'ells no us ha desvetllat el desig de conèixer coses de la seva vida? Aquests xicotets que, amb la maleta a la mà, passen lentament entre nosaltres amb un posat un xic absent i semblen només conrear, i encara amb una certa negligència, el seu negociet i el seu somriure, pertanyen a una raça, les vicissituds de la qual són seguides amb el major interès a Europa. Ja fa uns quants anys que bufa un vent groc, en política. Provocant o reprimint l'enorme desvetllament nacional i social d'una nació de 420 milions d'homes, atiant o sufocant les repercussions que en puguin arribar al nostre continent, Rússia i Anglaterra s'han lliurat a una guerra descarada sobre l'immens territori xinès. Darrere d'un paravent hi ha el Japó. Darrere d'un gran dòlar, Amèrica. Potser l'esdevenidor del món depèn d'aquella gran lluita. Canton, Xangai, Mukden, no són ja solament ciutats, sinó, sobretot, posicions. D'aquella fornal còsmica, d'aquell caos indescriptible, en són espurnes ardents o romanalles fredes aquests xinesos nostres. El fons rogenc que, al lluny emmarca llur figura, esperona, encara, l'interès que, sense això, ja sentíem per aquestes vides enigmàtiques… Entrem, doncs, en aquests pisos del carrer de Montserrat i del carrer d'En Guàrdia on viuen llur vida ignorada…
 
-Un sopar i una conversa
+<div class= "seccio">Un sopar i una conversa</div>
 
 —Estimat Liau, aquest *fang-kuà* ha estat realment exquisit. Jo hauria dit que eren fideus, però en tastar-los, semblaven fets d'arròs. Ho eren? Perfectament. Quant al sofregit, una delícia. Però, digueu-me, Txang-Ué-Pe: aquest *xant-sai*, aquesta herba que, com el nostre moixernó, assaona i aromatitza la carn, creix, potser, en aquelles solituds muntanyoses davant les quals es retiraven a meditar els vostres vells filòsofs? Assaborint aquesta planta delicada em sembla —com en una d'aquelles teles austeres del vostre Ma-Yuan, d'un tret tan fi i tan segur— veure el savi dessota el pi secular mirant com al lluny sorgeixen uns cimals d'entre la boira impalpable, mentre una prunera deixa caure algunes flors blanques en aquella majestat silenciosa.
 

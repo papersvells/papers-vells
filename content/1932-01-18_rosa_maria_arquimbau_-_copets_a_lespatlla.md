@@ -7,7 +7,6 @@ slug: "rosa-maria-arquimbau/copets-a-l-espatlla"
 draft: false
 image: "1932-01-18_rosa_maria_arquimbau_-_copets_a_lespatlla.webp"
 ---
-
 Els homes tenen una forma una mica estranya de manifestar les seves afectuositats amb els seus consemblants del mateix sexe. Per a demostrar una consideració, una admiració o un afecte no se'ls ocorre més que tustar-se les respectives espatlles.
 
 En el lloc que em trobo actualment veig cada dia un tustament d'espatlles que sembla excessiu, potser, però que, us diré, resulta força divertit.

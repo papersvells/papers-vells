@@ -7,7 +7,6 @@ slug: "robert-gerhard/la-musica-a-la-cort-d-alfons-iv-el-magnanim"
 draft: false
 image: "1936-02-06_mirador_robert_gerhard_-_la_musica_a_la_cort_dalfons_iv_el_magnanim.webp"
 ---
-
 L'especialitat musicològica que cultiva mossèn Higini Anglès és d'aquelles que viuen tancades en una mena de clausura científica rigorosa. Això fa que només poques persones a casa nostra, no del tot alienes aquestes matèries, tinguin idea de la veritable importància de l'obra de mossèn Anglès i sàpiguen que en el món internacional de la musicologia el seu nom figura avui dia entre els tres o quatre noms de primera fila. Les seves publicacions del Departament de Música de la Biblioteca de Catalunya representen aportacions invaluables per al coneixement de la cultura musical hispànica. En molts aspectes fins ara totalment desconeguts dels historiògrafs, els treballs de Mn. Anglès han revolucionat i tot una mica les perspectives històriques tradicionals. El paper del nostre país a l'Edat mitjana, per exemple ―tingut per gairebé inexistent fins fa poc― es va perfilant a través de les erudites aportacions de mossèn Higini Anglès, com un paper de protagonista dintre de la cultura musical de l'època.
 
 Igual és el cas de la cort musical d'Alfons el Magnànim. Gràcies als treballs del nostre il·lustre musicòleg, en els nous textos històrics la cort del Magnànim alterna parellament amb les famoses corts de França i de Borgonya.

@@ -7,8 +7,7 @@ slug: "guillem-diaz-plaja/la-deshumanitzacio-del-gest"
 draft: false
 image: "1930-03-13_mirador_guillem_diaz-plaja_-_la_deshumanitzacio_del_gest.webp"
 ---
-
-Objectes expressius
+<div class= "seccio">Objectes expressius</div>
 
 El mateix delit de depuració que empeny el cinema vers una progressiva simplificació del gest facial el mena ―com a última conseqüència― a allò que pot anomenar-se la deshumanització del gest.
 
@@ -32,13 +31,13 @@ Efectivament, l'aportació del teatre a la naixença del cinema fou sovint assen
 
 La mà, diguem-ho finalment, és el primer dels objectes expressius, amb què compta el cinema. I mereix un capítol a part dins aquest estudi de la deshumanització del gest.
 
-Mans
+<div class= "seccio">Mans</div>
 
 El gest de la mà és un gest deshumanitzat. Un gest d'objecte expressiu, classificable amb qualsevol objecte inanimat l'actitud del qual denoti alguna cosa.
 
 “La mà ―reportàvem de Jean Epstein― es separa de l'home, i, sola, pateix i s'alegra. El dit es deslliga de la mà. Tota una vida es concentra de sobte i troba la seva expressió.”
 
-Salvador Dalí va escriure, al darrer i definitiu número de L'Amic de les Arts, un article ―L'alliberació dels dits― que m'assegurà en la meva creença en la manca d'humanitat que posseeix una mà que gesticula a l'écran, com a centre de l'acció: “El meu polze ―diu el pintor― m'havia sorprès sovint repentinament, malgrat el costum, en veure'l isolat sortint pel forat de la paleta, com a quelcom torbador i insòlit.” Aquesta sensació de cosa aliena, que hi ha en les nostres mans ―o en els nostres peus― enfocats fragmentàriament, és vençuda en la nostra vida quotidiana per mitjà de la raó. Anotem, però, com un exemple significatiu, el fet que els infants de pocs mesos juguin amb els seus peus com si juguessin amb uns objectes estranys a la seva persona.
+Salvador Dalí va escriure, al darrer i definitiu número de [L'Amic de les Arts](/lamic-de-les-arts/), un article ―L'alliberació dels dits― que m'assegurà en la meva creença en la manca d'humanitat que posseeix una mà que gesticula a l'écran, com a centre de l'acció: “El meu polze ―diu el pintor― m'havia sorprès sovint repentinament, malgrat el costum, en veure'l isolat sortint pel forat de la paleta, com a quelcom torbador i insòlit.” Aquesta sensació de cosa aliena, que hi ha en les nostres mans ―o en els nostres peus― enfocats fragmentàriament, és vençuda en la nostra vida quotidiana per mitjà de la raó. Anotem, però, com un exemple significatiu, el fet que els infants de pocs mesos juguin amb els seus peus com si juguessin amb uns objectes estranys a la seva persona.
 
 Aquest fet és el que produeix a l'écran aquesta deshumanització del gest manual que estem constatant.
 
@@ -58,4 +57,4 @@ Anotem, finalment, les mans com a expressió gesticular de les multituds.
 
 El control de les multituds és una de les victòries més clares i legítimes del cinema. A l'écran, les multituds resten completament despullades del lamentable comparsa teatral. I si en alguns films recents, com el Napoleón de Gance, es pot copsar encara un cert regust escènic, en altres, com Metròpolis, de Fritz Lang, la multitud és un personatge més, impressionantment disciplinat, únic. És d'aquest film que volem recordar les mans de la multitud, esteses, implorants, d'una grandiosa força patètica. Darrerament hem vist el mateix procediment en una pel·lícula que esperem amb veritable ansietat: Halleluja de King Vidor.
 
-La segona part de l'article (Mans) va ser publicada el 27 de març de 1930.
+<div class= "autor">La segona part de l'article (Mans) va ser publicada el 27 de març de 1930.</div>

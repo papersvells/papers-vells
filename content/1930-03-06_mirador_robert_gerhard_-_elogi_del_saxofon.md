@@ -7,7 +7,6 @@ slug: "robert-gerhard/elogi-del-saxofon"
 draft: false
 image: "1930-03-06_mirador_robert_gerhard_-_elogi_del_saxofon.webp"
 ---
-
 Una mica tard, és veritat ―i me n'he d'excusar― prenc la defensa d'aquest noble instrument que ha estat objecte d'atacs desconsiderats, en ocasió d'haver figurat en el nou acoblament instrumental que jo proposava per a la *Sardana*, en una composició meva d'aquest nom. Crítics prestigiosos de casa nostra l'han titllat d'instrument *pseudo-negre*, apuntant el gest d'esquinçar-se una mica les vestidures en veure'l figurar al costat de les nostres bucòliques xirimies ―no menys nobles, és cert― la tenora i el tiple de l'Empordà.
 
 No caldrà recordar a cap *blanc* de sentit comú, em sembla, que *negre* ni *pseudo-negre* no poden emprar-se en un sentit de desqualificació per aquest instrument ni per cap cosa! (Els pobles que pateixen set de justícia tenen obligació d'oblidar menys que els altres aquestes coses).
