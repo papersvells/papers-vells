@@ -19,17 +19,14 @@ Vins dolços, generosos, lleugers, nerviosos, saborosos, aspres… Estic ben seg
 
 Però ¿sabeu on vareig fer les meves primeres armes amb el vi? Abans que tot perquè des que estudiava allò que en deien batxillerat, vaig aprendre'm de memòria a Baltasar de Alcázar, en “Una cena”, i en la que diu:
 
-“Si es antigua o si es moderna,
-
-¡Vive Dios! que no lo sé.
-
-Pero brava invención fué
-
-la invención de la taberna.”
+<div class= "poema">“Si es antigua o si es moderna,<br>
+¡Vive Dios! que no lo sé.<br>
+Pero brava invención fué<br>
+la invención de la taberna.”</div>
 
 I una vegada ben après aquest evangeli i ja a la Universitat dels meus temps (1900) —que era una veritable i sorollosa “olla”— un magnífic bevedor, en Roses (a) el “Xato”, portat pel seu noble desig de guiar els qui ho necessitessin pels carrers, carrerons i cantonades de la nostra ciutat, indicant-los de passada els trencacolls que s'hi trobaven, els llocs d'esbarjo o de sojorn que hi havia instal·lats i els establiments més notables, per fas o per nefes, els aparadors dels quals s'obrien en dites vies, ens exposava amb fets i fins amb cuits, allà on es menjava bé i on es bevia millor. Es pot dir que Roses (a) el “Xato”, íntim d'Alexandre Soler Rovirosa —el malaguanyat “Pandro”— i el poeta (que pocs actualment llegeixen i a fe que és admirable) Ramon Vives Pastor, el dia que vàrem llegir aquell “Brindis” de Matheu —“Tot maleint la memòria de Felip V”—, vàrem prendre una arrencada de beure, que ens va arrossegar (parlo per mi i altres) per tota la vida. En aquells temps, jo era romàntic i en els d'ara i a conseqüència del vi, sóc romàntic i artístic, que no ho és tothom qui vol.
 
-1900
+<div class= "seccio">1900</div>
 
 Quan érem estudiants no anàvem a classe, però en canvi ens dedicàvem a seguir “monuments”, com anomenàvem els establiments de begudes els seus habituals feligresos i digníssims parroquians. Ens dirigíem, sortint de la Universitat, cap al carrer de la Lleona, via en què hi havia instal·lada la cèlebre “Catedral”, cap i casal de les tavernes de Barcelona. Aquesta va ésser admirablement dibuixada pel gran “Bon” i publicada en aquell immortal “Papitu”, que escrivíem amb Francesc Pujols, Ramon Reventós, Màrius Aguilar, Salvador Vilaregut, i hi dibuixaven “Apa”, Colom, Labarta, Xavier Nogués i tants altres, setmanari que en aquells començos de segle tant va contribuir a la cultura, il·lustració i barrila ciutadana. Setmanari que valia per tota una obra de text.
 
