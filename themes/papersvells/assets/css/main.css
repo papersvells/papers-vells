@@ -26,8 +26,8 @@
   --color-rule:       #c4b08a;
 
   /* Tipografia */
-  --font-body:    'psfournier', Optima, 'Lucida Sans', Calibri, serif;
-  --font-display: 'psfournier', Georgia, serif;
+  --font-body:    'Alegreya', Georgia, serif;
+  --font-display: 'Alegreya', Georgia, serif;
 
   /* Mides de text */
   --text-xs:   0.85rem;  /* textos molt petits: etiquetes, meta, dates */
@@ -57,12 +57,39 @@
 
 /* ── 2. FONT FACE ─────────────────────────────────────────── */
 @font-face {
-  font-family: 'psfournier';
-  src: url('/fonts/psfournier.woff2') format('woff2'),
-       url('/fonts/psfournier.woff')  format('woff');
+  font-family: 'Alegreya';
+  src: url('/fonts/Alegreya-Regular.woff2') format('woff2');
   font-weight: 400;
-  font-style:  normal;
-  font-display: swap;   /* carga ràpida: mostra fallback fins que carrega */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('/fonts/Alegreya-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('/fonts/Alegreya-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('/fonts/Alegreya-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('/fonts/Alegreya-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
 
 
@@ -134,7 +161,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-display);
   line-height: 1.15;
   color: var(--color-ink);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h1 { font-size: var(--text-3xl); }
@@ -331,7 +358,8 @@ a.accent:hover, .accent a:hover {
 
 .article-header__title {
   font-size: clamp(1.6rem, 4vw, var(--text-3xl));
-  line-height: 1.1;                      /* mínim respir per evitar xocs entre descendents i majúscules */
+  line-height: 1.1;
+  font-weight: 700;
   margin-bottom: var(--space-md);
 }
 
@@ -353,7 +381,8 @@ a.accent:hover, .accent a:hover {
 
 .article-byline__name {
   font-size: var(--text-xl);
-  font-weight: 600;
+  font-weight: 400;
+  font-style: italic;
   line-height: 2;
 }
 
@@ -373,6 +402,7 @@ a.accent:hover, .accent a:hover {
 /* Cos de l'article */
 .article-body {
   font-size: var(--text-md);
+  font-weight: 400;
   line-height: 1.5;
   color: var(--color-ink-light);
   text-align: left;
