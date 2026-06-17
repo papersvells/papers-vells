@@ -34,8 +34,10 @@
   --text-ss:   1.0rem;
   --text-base: 1.1rem;   /* mida base del body — tot escala des d'aquí */
   --text-sm:   1.2rem;   /* textos secundaris: autor, publicació, nav */
+  --text-m:    1.3rem;
   --text-md:   1.4rem;   /* cos dels articles */
   --text-lg:   1.5rem;   /* títols de targeta a la portada */
+  --text-ll:   1.6rem;
   --text-xl:   1.7rem;   /* nom d'autor a la pàgina d'article */
   --text-2xl:  2.4rem;   /* títols de pàgina (autors, publicacions) */
   --text-3xl:  3.2rem;   /* títol principal del logo de text */
@@ -169,7 +171,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-display);
   line-height: 1.15;
   color: var(--color-ink);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h1 { font-size: var(--text-3xl); }
@@ -409,7 +411,7 @@ a.accent:hover, .accent a:hover {
 
 /* Cos de l'article */
 .article-body {
-  font-size: var(--text-md);
+  font-size: var(--text-m);
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-ink-light);
@@ -543,17 +545,17 @@ a.accent:hover, .accent a:hover {
 }
 
 /* Llista d'articles a la pàgina individual d'autor o publicació */
-.lista-articulos {
+.llista-articles {
   list-style: none; /* elimina els punts de llista per defecte */
 }
 
-.lista-articulos .meta {
+.llista-articles .meta {
   color:#3d2f1a;
   font-size: large;
 }
 
 /* Cada element de la llista */
-.lista-articulos li {
+.llista-articles li {
   padding: var(--space-xs) var(--space-xs); /* espai intern vertical i horitzontal */
   border-top: 1px solid var(--color-rule);  /* línia separadora entre articles */
   font-size: var(--text-sm);                /* mida de text secundari */
@@ -561,17 +563,17 @@ a.accent:hover, .accent a:hover {
 }
 
 /* Última fila — tanca la llista amb una línia a baix */
-.lista-articulos li:last-child {
+.llista-articles li:last-child {
   border-bottom: 1px solid var(--color-rule);
 }
 
 /* Enllaç del títol de l'article — en color accent (vermell) */
-.lista-articulos a {
+.llista-articles a {
   color: var(--color-accent);
 }
 
 /* Hover — subratlla l'enllaç quan es passa el ratolí */
-.lista-articulos a:hover {
+.llista-articles a:hover {
   text-decoration: underline;
 }
 
@@ -661,89 +663,6 @@ a.accent:hover, .accent a:hover {
   color: var(--color-accent);
 }
 
-/* Responsive */
-@media (max-width: 1100px) {
-  .autors-grid { grid-template-columns: repeat(5, 1fr); }
-}
-
-@media (max-width: 900px) {
-  .autors-grid { grid-template-columns: repeat(3, 1fr); 
-    padding-bottom: var(--space-xs);
-    padding-top: var(--space-xs);
-    gap: var(--space-md);
-    padding-left: var(--space-sm);
-    padding-right: var(--space-sm);
-}
-  .autor-card__foto-wrapper,
-  .autor-card__avatar { width: 90px; height: 90px; }
-  .articles-grid { column-count: 1; }
-  .article-card__excerpt {
-    text-align: left;
-    hyphens: none;
-  }
-  .article-body {
-    line-height: 1.1;
-    font-size: 1.6rem;
-  }
-  .article-byline { flex-wrap: wrap; }
-  .article-byline__avatar { width: 60px; height: 60px; }
-  .article-byline__name { font-size: var(--text-lg); }
-  .autor-card__avatar { width: 80px; height: 80px; }
-  .article-header__title { font-size: var(--text-xl); }
-  .publicacio-header__logo { max-width: 280px; }
-  .publicacio-header__intro { font-size: 1.8rem;}
-  .article-card__title  { 
-    font-size: 1.7rem;
-    text-align: center;
-  }
-  .article-card__author { 
-    text-align: center;
-    font-size: 1.8rem;
-  }
-  .article-card__meta   { 
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  .article-card__excerpt{ font-size: 1.6rem; }
-  .article-card p {
-    font-size: 1.6rem;
-    line-height: 1.2;
-  }
-  .article-card {
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-  }
-  .articles-grid {
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-  }
-  .lista-articulos li {
-    font-size: 1.4rem;
-    line-height: 1.2;
-  }
-  .lista-articulos .meta { font-size: var(--text-sm); }
-  .autor-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .autor-header__info { text-align: center; }
-  .autor-header__name {
-    font-size: xx-large;
-    text-align: center;
-  }
-  .autor-header__text {
-    text-align: left;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-  }
-  .autor-header .wikipedia-link--left {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-}
-
 /* ── 12. GRAELLA DE PUBLICACIONS ──────────────────────────── */
 
 .publicacions-grid {
@@ -804,23 +723,6 @@ a.accent:hover, .accent a:hover {
   opacity: 1;
 }
 
-/* Responsive — adapta el nombre de columnes segons l'amplada */
-@media (max-width: 1100px) {
-  .publicacions-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 900px) {
-  .publicacions-grid { grid-template-columns: 1fr; }
-  .publicacio-card__frame { --frame-height: 90px; }
-}
-
-/* ── 13. PÀGINA INDIVIDUAL DE PUBLICACIÓ ─────────────────── */
-/*
-  Disseny tipus "portada de revista": logo gran centrat,
-  títol i recompte a sota. Diferent de la pàgina d'autor
-  que té un avatar petit circular a l'esquerra.
-*/
-
 .publicacio-header {
   text-align: center;
   margin-bottom: var(--space-lg);
@@ -837,12 +739,11 @@ a.accent:hover, .accent a:hover {
 
 
 /* ── 14. SCROLL INFINIT ───────────────────────────────────── */
-/*
-  Estat inicial de cada targeta: invisible i desplaçada 24px
+/* Estat inicial de cada targeta: invisible i desplaçada 24px
   cap avall. La transició anima l'aparició quan JS treu
   la classe "card-hidden".
-   → Degradació elegant (progressive enhancement).
-*/
+   → Degradació elegant (progressive enhancement). */
+
 .card-hidden {
   opacity: 0;
   transform: translateY(24px);
@@ -862,25 +763,103 @@ a.accent:hover, .accent a:hover {
 }
 
 
-/* ── 15. MEDIA QUERIES ──────────────────────────────────────
-  El bloc @media (max-width: 900px) viu a la secció 13 (autors)
-  on es troben la majoria de regles de mòbil consolidades.     */
+/* ── 15. MEDIA QUERIES ────────────────────────────────────── */
 @media (max-width: 1100px) {
   .articles-grid { column-count: 3; }
+  .autors-grid { grid-template-columns: repeat(5, 1fr); }
+  .publicacions-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 900px) {
-  .articles-grid { column-count: 1; }
-  .article-card__excerpt {
-    text-align: left;
-    hyphens: none;
+  .article-body {
+    line-height: 1.1;
+    font-size: var(--text-ll);
   }
+  .article-card {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .article-card p {
+    font-size: var(--text-md);
+    line-height: 1.2;
+  }
+   .article-card__author { 
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .article-card__meta   { 
+    font-size: var(--text-sm);
+    text-align: center;
+  }
+  .article-card__title  { 
+    font-size: var(--text-ll);
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .article-header__title { font-size: var(--text-xl); }
+  
   .article-byline { flex-wrap: wrap; }
   .article-byline__avatar { width: 60px; height: 60px; }
   .article-byline__name { font-size: var(--text-lg); }
-  .autor-card__avatar { width: 80px; height: 80px; }
-  .article-header__title { font-size: var(--text-xl); }
+  .article-byline__data {margin-top: -0.8rem;}
+  
+  .articles-grid {
+    column-count: 1;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  
+  .autor-bio { 
+    font-size: var(--text-md);
+    line-height: 1.2;
+    text-align: left;
+  }
+  .autor-card__foto-wrapper,
+  .autor-card__avatar { width: 90px; height: 90px; }
+  .autor-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .autor-header__info { text-align: center; }
+  .autor-header__name {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: -0.5rem;
+  }
+  .autor-header__text {
+    text-align: left;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .autor-header .wikipedia-link--left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .autors-grid { grid-template-columns: repeat(3, 1fr); 
+    padding-bottom: var(--space-xs);
+    padding-top: var(--space-xs);
+    gap: var(--space-md);
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+  
+  .page-body p { font-size: var(--text-ll); }
   .publicacio-header__logo { max-width: 280px; }
+  .publicacio-header__intro { font-size: 1.8rem;}
+  .publicacio-card__frame { --frame-height: 90px; }
+
+  .publicacions-grid { grid-template-columns: 1fr; }
+    
+  .llista-articles li {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+  .llista-articles .meta { font-size: var(--text-sm); } 
 }
 
 @media (prefers-reduced-motion: reduce) {

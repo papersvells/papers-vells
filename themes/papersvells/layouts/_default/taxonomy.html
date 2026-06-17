@@ -259,7 +259,7 @@
         A les publicacions mostrem l'autor, als autors la
         publicació (i a tots, la data).
       */}}
-      <ul class="lista-articulos">
+      <ul class="llista-articles">
         {{ range $articles.ByDate.Reverse }}
           <li>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
