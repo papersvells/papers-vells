@@ -9,7 +9,7 @@ image: "1930-06-26_mirador_joan_alavedra_-_el_perill_groc_a_barcelona.webp"
 ---
 <div class= "seccio">Una vella coneixença</div>
 
-—No fareu pas res amb els xinesos —va dir-me el jueu Lidgi mirant, amb calma, el fum de la seva pipa—. Els conec fa temps. Quan tallava bosc al Chaco, allà baix a l'Argentina, en tenia uns quants sota les meves ordres. Són gent reservada, silenciosa, unida. Així que ensumen que voleu esbrinar quelcom d'ells, es posen a somriure i a callar com uns morts. Ja podeu anar fent, ja, que ells, mutis, i vinga anar-vos prenent el pèl. Si teniu una qüestió amb un, tots plegats fan un bloc contra vostre. Us dic que en saben. Per altra part, els que hi ha a Barcelona no parlen ni un mot d'espanyol. Només «Don Miguel»…
+No fareu pas res amb els xinesos —va dir-me el jueu Lidgi mirant, amb calma, el fum de la seva pipa—. Els conec fa temps. Quan tallava bosc al Chaco, allà baix a l'Argentina, en tenia uns quants sota les meves ordres. Són gent reservada, silenciosa, unida. Així que ensumen que voleu esbrinar quelcom d'ells, es posen a somriure i a callar com uns morts. Ja podeu anar fent, ja, que ells, mutis, i vinga anar-vos prenent el pèl. Si teniu una qüestió amb un, tots plegats fan un bloc contra vostre. Us dic que en saben. Per altra part, els que hi ha a Barcelona no parlen ni un mot d'espanyol. Només «Don Miguel»…
 
 —Qui és, «Don Miguel»?
 

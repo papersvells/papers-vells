@@ -21,9 +21,9 @@
   --color-paper-dark: #ebebeb;
   --color-ink:        #1a1209;
   --color-ink-light:  #3d2f1a;
-  --color-ink-faded:  #7a6a52;
+  --color-ink-faded:  #857f76;
   --color-accent:     #973330;
-  --color-rule:       #c4b08a;
+  --color-rule:       #c6c5c5;
 
   /* Tipografia */
   --font-body:    'Alegreya', Georgia, serif;
@@ -31,8 +31,9 @@
 
   /* Mides de text */
   --text-xs:   0.85rem;  /* textos molt petits: etiquetes, meta, dates */
-  --text-sm:   1.2rem;   /* textos secundaris: autor, publicació, nav */
+  --text-ss:   1.0rem;
   --text-base: 1.1rem;   /* mida base del body — tot escala des d'aquí */
+  --text-sm:   1.2rem;   /* textos secundaris: autor, publicació, nav */
   --text-md:   1.4rem;   /* cos dels articles */
   --text-lg:   1.5rem;   /* títols de targeta a la portada */
   --text-xl:   1.7rem;   /* nom d'autor a la pàgina d'article */
@@ -89,6 +90,13 @@
   src: url('/fonts/Alegreya-BoldItalic.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-mono-one.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -195,17 +203,6 @@ a.accent:hover, .accent a:hover {
 
 
 /* ── 6. CAPÇALERA GLOBAL ──────────────────────────────────── */
-/* ── Capçalera de taxonomia global (/autors/, /publicacions/) */
-.taxonomy-header {
-  text-align: center;
-  margin-bottom: var(--space-lg);
-}
-
-.taxonomy-header__title {
-  font-size: var(--text-2xl);
-  margin: var(--space-sm) 0;
-}
-
 /* ── Bio d'autor o publicació */
 .autor-bio {
   margin-top: var(--space-sm);
@@ -230,8 +227,7 @@ a.accent:hover, .accent a:hover {
 }
 
 .wikipedia-icon {
-  width: 20px;
-  height: auto;
+  width: 80px;
   display: block;
 }
 
@@ -267,18 +263,11 @@ a.accent:hover, .accent a:hover {
   margin-bottom: var(--space-md); 
 }
 
-.article-card__meta {
-  font-size: var(--text-xs);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-  margin-bottom: var(--space-xs);
-}
-
 .article-card__title {
   font-size: var(--text-lg);
   line-height: 1.2;
   margin-bottom: var(--space-xs);
+  font-weight: 500;
 }
 
 .article-card__title a:hover {
@@ -292,18 +281,30 @@ a.accent:hover, .accent a:hover {
   margin-bottom: var(--space-sm);
 }
 
-.article-card__excerpt {
-  font-size: var(--text-xs);
-  line-height: 1.65;
-  color: var(--color-ink-light);
-  text-align: left;
-  hyphens: auto;
-}
-
 .article-card p {
   font-size: var(--text-sm);
   line-height: 1.4;
+  hyphens: auto;
+}
 
+.article-card__meta {
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+  font-size: small;
+}
+
+.meta-data {
+  font-family: 'Rubik', sans-serif;
+  font-size:small;
+  display: block;
+  letter-spacing: -0.1em;
+}
+
+.meta-publicacio {
+  font-family: 'Rubik', sans-serif;
+  font-size:small;
+  display: block;
 }
 
 
@@ -335,7 +336,7 @@ a.accent:hover, .accent a:hover {
 .article-hero__title {
   color: #ffffff;                        /* text blanc sobre el fons fosc */
   font-size: clamp(1.4rem, 3.5vw, 2.4rem);  /* mida fluida: mínim 1.4rem, màxim 2.4rem, 3.5% de l'amplada de pantalla */
-  font-weight: 450;                      /* pes de la font — entre normal (400) i seminegreta (600) */
+  font-weight: 500;                      /* pes de la font — entre normal (400) i seminegreta (600) */
   line-height: 1.1;                      /* mínim respir per evitar xocs entre descendents i majúscules */
   text-wrap: balance;                    /* equilibra les línies: evita vídues (paraula sola a l'última línia) */
   margin: 0;                             /* sense marges per no separar el títol del fons */
@@ -359,7 +360,7 @@ a.accent:hover, .accent a:hover {
 .article-header__title {
   font-size: clamp(1.6rem, 4vw, var(--text-3xl));
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: var(--space-md);
 }
 
@@ -387,14 +388,21 @@ a.accent:hover, .accent a:hover {
 }
 
 .article-byline__publication {
-  font-size: var(--text-sm);
-  color: var(--color-ink-faded);
-  margin-top: -1.4rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: var(--text-xs);
+  word-spacing: -0.2em;
+  color: var(--color-accent);
+  margin-top: -1.2rem;
+ 
+}
+.article-byline__data {
+  font-family: 'Rubik', sans-serif;
+  font-size: var(--text-xs);
+  word-spacing: -0.5em;
+  color: var(--color-accent);
+  margin-top: -0.7rem;
 }
 
-.article-byline__publication a {
-  color: var(--color-accent);
-}
 .article-byline__publication a:hover {
   text-decoration: underline;
 }
@@ -476,7 +484,7 @@ a.accent:hover, .accent a:hover {
   text-align: center;
   margin: var(--space-md) auto;
   font-size:larger;
-  font-weight: bold;
+  font-weight: 500;
   color: #973330;
 }
 
@@ -522,10 +530,11 @@ a.accent:hover, .accent a:hover {
 }
 
 .autor-header__name {
-  font-size: var(--text-2xl);
-  font-weight: 600;
+  font-size: var(--text-xl);
+  font-weight: 500;
   line-height: 1;
   margin-bottom: var(--space-xs);
+  margin-top: var(--space-md)
 }
 
 .autor-header__info {
@@ -624,11 +633,11 @@ a.accent:hover, .accent a:hover {
 }
 
 .autor-card__count {
-  color: var(--color-accent);
+  color: var(--color-paper);
   font-size: var(--text-xs);
   letter-spacing: 0.05em;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Hover: enfosquir foto i mostrar overlay */
@@ -791,10 +800,6 @@ a.accent:hover, .accent a:hover {
   background: rgba(0, 0, 0, 0.55);
 }
 
-.publicacio-card__overlay .autor-card__count {
-  color: #ffffff;
-}
-
 .publicacio-card:hover .publicacio-card__overlay {
   opacity: 1;
 }
@@ -921,7 +926,7 @@ a.accent:hover, .accent a:hover {
 
 .error-404__codi {
   font-size: 6rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-accent);
   line-height: 1;
   margin-bottom: var(--space-xs);

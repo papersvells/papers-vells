@@ -39,14 +39,15 @@
       {{ $autorSlug := $primerAutor | urlize }}
       <div class="article-byline">
 
-        <img
+        <a href="/{{ $autorSlug }}/">
+          <img
           class="article-byline__avatar"
           src="/images/autors/{{ $autorSlug }}.webp"
           alt="Fotografia de {{ $primerAutor }}"
           width="80" height="80"
           onerror="this.style.display='none'"
-        >
-
+          >
+        </a>
         <div>
           <p class="article-byline__name">
             {{/*
@@ -66,8 +67,9 @@
                 <a href="/{{ $p | urlize }}/">{{ $p }}</a>
               {{ end }}
             {{ end }}
+          </p>
+          <p class="article-byline__data">
             {{ with $.Date }}
-              <span style="color: var(--color-ink-faded);">
                 {{- $mesos := slice "" "gener" "febrer" "març" "abril" "maig" "juny" "juliol" "agost" "setembre" "octubre" "novembre" "desembre" }}
                 {{- $mes := index $mesos .Month }}
                 {{- $prep := "de " }}
@@ -75,7 +77,6 @@
                 {{- $art := "el " }}
                 {{- if in (slice 1 11) .Day }}{{- $art = "l'" }}{{- end }}
                 {{ $art }}{{ .Day }} {{ $prep }}{{ $mes }} de {{ .Year }}
-              </span>
             {{ end }}
           </p>
         </div>
@@ -83,16 +84,12 @@
       </div>
     {{ end }}
 
-    <hr class="rule">
-
     {{/* COS DE L'ARTICLE */}}
     <div class="article-body">
       {{ .Content }}
     </div>
 
-    <hr class="rule" style="margin-top: var(--space-xl);">
-
-    {{/* NAVEGACIÓ ENTRE ARTICLES */}}
+   {{/* NAVEGACIÓ ENTRE ARTICLES */}}
     <nav style="
       display: flex;
       justify-content: space-between;

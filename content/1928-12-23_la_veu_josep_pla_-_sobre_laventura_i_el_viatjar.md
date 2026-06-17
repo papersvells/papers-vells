@@ -1,5 +1,5 @@
 ---
-title: "Sobre L’Aventura I El Viatjar"
+title: "Sobre l’aventura i el viatjar"
 autors: ["Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-23

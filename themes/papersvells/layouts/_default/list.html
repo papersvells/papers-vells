@@ -72,8 +72,8 @@
         <article class="article-card">
 
           <p class="article-card__meta">
-            {{ with .Params.publicacions }}{{ delimit . ", " }}{{ end }}
-            {{ with .Date }} · {{ .Format "02/01/2006" }}{{ end }}
+            {{ with .Params.publicacions }}<span class="meta-publicacio">{{ delimit . ", " }}</span>{{ end }}
+            {{ with .Date }}{{ .Format "02/01/2006" }}{{ end }}
           </p>
 
           <h2 class="article-card__title">

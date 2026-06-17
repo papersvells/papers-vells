@@ -7,7 +7,7 @@ slug: "francesc-madrid/el-que-diu-la-gent-d-en-cambo-i-d-en-pla"
 draft: false
 image: "1929-06-21_la_esquella_francesc_madrid_-_el_que_diu_la_gent_den_cambo_i_den_pla.webp"
 ---
-—Que ha llegit el llibre d'En Pla?
+Què ha llegit el llibre d'En Pla?
 
 —Sí, l'he llegit detingudament...
 

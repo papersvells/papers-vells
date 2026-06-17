@@ -90,7 +90,7 @@ tenyeix aquesta llaçada<br>
 dels colors més del teu grat<br>
 i amb ells amortallada<br>
 entra a la suprema estada,<br>
-seu de la immortalitat.<br>
+seu de la immortalitat.</div>
 
 <div class= "seccio">Un gabinet de lectura</div>
 
