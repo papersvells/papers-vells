@@ -2,26 +2,34 @@
 
 <article>
 
-  {{/* IMATGE DE CAPÇALERA amb títol superposat */}}
-  {{ with .Params.image }}
-    <div class="article-hero">
-      <img
-        class="article-hero__img"
-        src="/images/articles/{{ . }}"
-        alt="{{ $.Title }}"
-        width="900" height="450"
-      >
-      <div class="article-hero__overlay">
-        <h1 class="article-hero__title">{{ $.Title }}</h1>
-      </div>
-    </div>
-  {{ else }}
-    <div class="container">
-      <h1 class="article-header__title" style="padding-top: var(--space-lg);">
-        {{ .Title }}
-      </h1>
-    </div>
-  {{ end }}
+{{/* IMATGE DE CAPÇALERA — foto dalt, títol a sota sense overlay */}}
+{{ with .Params.image }}
+  <div class="article-hero">
+    <img
+      class="article-hero__img"
+      src="/images/articles/{{ . }}"
+      alt="{{ $.Title }}"
+      width="900" height="450"
+    >
+  </div>
+  <div class="container">
+    <span class="article-byline__publication">
+      {{ with $.Params.publicacions }}
+              {{ range $i, $p := . }}
+                {{ if $i }}, {{ end }}
+                <a href="/{{ $p | urlize }}/">{{ $p }}</a>
+             {{ end }}
+            {{ end }}
+    </span>
+    <div class="article-hero__title--sota">{{ $.Title }}</div>
+  </div>
+{{ else }}
+  <div class="container">
+    <h1 class="article-header__title" style="padding-top: var(--space-lg);">
+      {{ .Title }}
+    </h1>
+  </div>
+{{ end }}
 
   <div class="container">
 
@@ -60,14 +68,6 @@
             {{ end }}
           </p>
 
-          <p class="article-byline__publication">
-            {{ with $.Params.publicacions }}
-              {{ range $i, $p := . }}
-                {{ if $i }}, {{ end }}
-                <a href="/{{ $p | urlize }}/">{{ $p }}</a>
-              {{ end }}
-            {{ end }}
-          </p>
           <p class="article-byline__data">
             {{ with $.Date }}
                 {{- $mesos := slice "" "gener" "febrer" "març" "abril" "maig" "juny" "juliol" "agost" "setembre" "octubre" "novembre" "desembre" }}

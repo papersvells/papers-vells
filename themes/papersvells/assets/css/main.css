@@ -18,7 +18,6 @@
 :root {
   /* Colors */
   --color-paper:      #f7f7f7;  /* color de fons */
-  --color-paper-dark: #ebebeb;
   --color-ink:        #1a1209;
   --color-ink-light:  #3d2f1a;
   --color-ink-faded:  #857f76;
@@ -39,6 +38,7 @@
   --text-lg:   1.5rem;   /* títols de targeta a la portada */
   --text-ll:   1.6rem;
   --text-xl:   1.7rem;   /* nom d'autor a la pàgina d'article */
+  --text-xxl:  2.0rem;
   --text-2xl:  2.4rem;   /* títols de pàgina (autors, publicacions) */
   --text-3xl:  3.2rem;   /* títol principal del logo de text */
 
@@ -187,22 +187,6 @@ p { margin-bottom: var(--space-sm); }
   margin: var(--space-xs) 0;
 }
 
-/* Etiquetes de secció (ex: "Publicació · 1929") */
-.label {
-  font-size: var(--text-xs);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-}
-
-/* Enllaços amb color accent */
-a.accent, .accent a {
-  color: var(--color-accent);
-}
-a.accent:hover, .accent a:hover {
-  text-decoration: underline;
-}
-
 
 /* ── 6. CAPÇALERA GLOBAL ──────────────────────────────────── */
 /* ── Bio d'autor o publicació */
@@ -311,67 +295,40 @@ a.accent:hover, .accent a:hover {
 
 
 /* ── 9. PÀGINA D'ARTICLE ─────────────────────────────────── */
-/* Imatge de capçalera (hero) — centrada al mig de la pàgina */
+/* Imatge de capçalera (hero) — foto dalt, títol a sota */
 .article-hero {
-  position: relative;  /* permet posicionar l'overlay de manera absoluta sobre la imatge */
-  width: 100%;         /* ocupa tota l'amplada disponible */
-  max-width: 900px;    /* però mai més de 900px */
-  margin: 0 auto var(--space-sm);  /* centrat horitzontalment, amb espai a sota */
-  overflow: hidden;    /* amaga qualsevol cosa que surti dels límits del contenidor */
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .article-hero__img {
-  width: 100%;     /* la imatge ocupa tota l'amplada del contenidor */
-  height: auto;    /* l'alçada s'ajusta proporcionalment a l'amplada */
-  display: block;  /* elimina l'espai buit que els navegadors afegeixen sota les imatges inline */
-}
-
-.article-hero__overlay {
-  position: absolute;          /* es posiciona sobre la imatge, fora del flux normal */
-  bottom: 0;                   /* enganxat a la part inferior de la imatge */
-  left: 0;                     /* des de l'esquerra */
-  right: 0;                    /* fins a la dreta — ocupa tota l'amplada */
-  background: rgba(0, 0, 0, 0.7);  /* fons negre amb 70% d'opacitat — semitransparent */
-  padding: 0.8rem 1.2rem 0.5rem;   /* espai interior: 0.8rem a dalt, 1.2rem als costats i a baix */
-}
-
-.article-hero__title {
-  color: #ffffff;                        /* text blanc sobre el fons fosc */
-  font-size: clamp(1.4rem, 3.5vw, 2.4rem);  /* mida fluida: mínim 1.4rem, màxim 2.4rem, 3.5% de l'amplada de pantalla */
-  font-weight: 500;                      /* pes de la font — entre normal (400) i seminegreta (600) */
-  line-height: 1.1;                      /* mínim respir per evitar xocs entre descendents i majúscules */
-  text-wrap: balance;                    /* equilibra les línies: evita vídues (paraula sola a l'última línia) */
-  margin: 0;                             /* sense marges per no separar el títol del fons */
-}
-
-/* Capçalera de l'article: foto + nom autor + publicació */
-.article-header {
-  border-bottom: 1px solid var(--color-ink);
-  padding-bottom: var(--space-md);
-  margin-bottom: var(--space-md);
-}
-
-.article-header__kicker {
-  font-size: var(--text-xs);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-accent);
+  width: 100%;
+  height: auto;
+  display: block;
   margin-bottom: var(--space-sm);
 }
 
-.article-header__title {
-  font-size: clamp(1.6rem, 4vw, var(--text-3xl));
-  line-height: 1.1;
-  font-weight: 500;
-  margin-bottom: var(--space-md);
+.article-byline__publication {
+  font-family: 'Rubik', sans-serif;
+  font-size: var(--text-xs);
+  word-spacing: -0.2em;
+  color: var(--color-accent);
 }
 
-/* Bloc autor: foto petita + nom + publicació en fila */
+.article-hero__title--sota {
+  font-size: clamp(1.6rem, 4vw, var(--text-3xl));
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: var(--space-xs);
+  text-wrap: balance;
+}
+
 .article-byline {
   display: flex;
   align-items: center;
   gap: var(--space-md);
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
 }
 
 .article-byline__avatar {
@@ -387,26 +344,13 @@ a.accent:hover, .accent a:hover {
   font-weight: 400;
   font-style: italic;
   line-height: 2;
+  margin-bottom: var(--space-xs);
 }
 
-.article-byline__publication {
-  font-family: 'Rubik', sans-serif;
-  font-size: var(--text-xs);
-  word-spacing: -0.2em;
-  color: var(--color-accent);
-  margin-top: -1.2rem;
- 
-}
 .article-byline__data {
-  font-family: 'Rubik', sans-serif;
-  font-size: var(--text-xs);
-  word-spacing: -0.5em;
+  font-size: var(--text-sm);
   color: var(--color-accent);
-  margin-top: -0.7rem;
-}
-
-.article-byline__publication a:hover {
-  text-decoration: underline;
+  margin-top: -1rem;
 }
 
 /* Cos de l'article */
@@ -575,14 +519,6 @@ a.accent:hover, .accent a:hover {
 /* Hover — subratlla l'enllaç quan es passa el ratolí */
 .llista-articles a:hover {
   text-decoration: underline;
-}
-
-.bio {
-  font-size: var(--text-sm);
-  color: var(--color-ink-light);
-  max-width: 90ch;
-  line-height: 1.4;
-  margin-top: var(--space-xs);
 }
 
 
@@ -797,12 +733,14 @@ a.accent:hover, .accent a:hover {
     text-align: center;
   }
   
-  .article-header__title { font-size: var(--text-xl); }
-  
+  .article-hero__title--sota {
+    font-size: var(--text-xxl);
+    font-weight: 500;
+  }
   .article-byline { flex-wrap: wrap; }
   .article-byline__avatar { width: 60px; height: 60px; }
-  .article-byline__name { font-size: var(--text-lg); }
-  .article-byline__data {margin-top: -0.8rem;}
+  .article-byline__name { font-size: var(--text-md); margin-top: 0.5rem;}
+  .article-byline__data {margin-top: -1.2rem;}
   
   .articles-grid {
     column-count: 1;
@@ -982,7 +920,7 @@ a.accent:hover, .accent a:hover {
   }
 
   /* Títol de l'article gran i clar */
-  .article-header__title {
+  .article-hero__title--sota {
     font-size: 18pt;
   }
 }
