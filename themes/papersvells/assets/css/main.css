@@ -500,10 +500,30 @@ p { margin-bottom: var(--space-sm); }
 
 /* Cada element de la llista */
 .llista-articles li {
-  padding: var(--space-xs) var(--space-xs); /* espai intern vertical i horitzontal */
-  border-top: 1px solid var(--color-rule);  /* línia separadora entre articles */
-  font-size: var(--text-sm);                /* mida de text secundari */
-  line-height: 1.5;                         /* interlineat còmode per llegir */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-md);
+  padding: var(--space-xs) var(--space-xs);
+  border-top: 1px solid var(--color-rule);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.llista-articles li:last-child {
+  border-bottom: 1px solid var(--color-rule);
+}
+
+/* El títol ocupa l'espai disponible a l'esquerra */
+.llista-articles li > a {
+  color: var(--color-accent);
+}
+
+/* La meta queda a la dreta, sense partir-se */
+.llista-articles .meta {
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-align: right;
 }
 
 /* Última fila — tanca la llista amb una línia a baix */

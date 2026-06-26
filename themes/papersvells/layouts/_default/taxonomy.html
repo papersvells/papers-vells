@@ -264,13 +264,23 @@
           <li>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
             <span class="meta">
-              {{ if eq $.Type "publicacions" }}
-                {{ with .Params.autors }}{{ delimit . ", " }}{{ end }}
-              {{ else }}
-                {{ with .Params.publicacions }}{{ delimit . ", " }}{{ end }}
-              {{ end }}
-              · {{ .Date.Format "02/01/2006" }}
-            </span>
+  {{ if eq $.Type "publicacions" }}
+    {{ with .Params.autors }}
+      {{ range $i, $a := . }}
+        {{ if $i }}, {{ end }}
+        <a href="/{{ $a | urlize }}/">{{ $a }}</a>
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    {{ with .Params.publicacions }}
+      {{ range $i, $p := . }}
+        {{ if $i }}, {{ end }}
+        <a href="/{{ $p | urlize }}/">{{ $p }}</a>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  · {{ .Date.Format "02/01/2006" }}
+</span>
           </li>
         {{ else }}
           <li class="error-debug">
