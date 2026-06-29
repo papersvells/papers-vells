@@ -328,23 +328,13 @@
 
   <header class="site-header">
 
-    <a href="/" aria-label="Papers Vells — pàgina principal">
-      <picture>
-        <source
-          media="(max-width: 900px)"
-          srcset="/images/logo-vertical.webp">
-        <img
-          class="site-header__logo"
-          src="/images/logo-horitzontal.webp"
-          alt="Papers Vells"
-          width="600"
-          height="80"
-          fetchpriority="high"
-        >
-      </picture>
-    </a>
+  <button class="nav-toggle" aria-label="Obrir menú" aria-expanded="false" aria-controls="site-nav">
+    <span class="nav-toggle__bar"></span>
+    <span class="nav-toggle__bar"></span>
+    <span class="nav-toggle__bar"></span>
+  </button>
 
-    <nav class="site-nav" aria-label="Navegació principal">
+    <nav class="site-nav" id="site-nav" aria-label="Navegació principal">
       {{ range .Site.Menus.main }}
         <a href="{{ .URL }}"
           {{ if or (eq $.RelPermalink .URL) (eq $.Permalink .URL) }}aria-current="page"{{ end }}>
@@ -372,12 +362,28 @@
       </a>
     </nav>
 
+    <a href="/" aria-label="Papers Vells — pàgina principal">
+      <picture>
+        <source
+          media="(max-width: 900px)"
+          srcset="/images/logo-vertical.webp">
+        <img
+          class="site-header__logo"
+          src="/images/logo-horitzontal.webp"
+          alt="Papers Vells"
+          width="600"
+          height="80"
+          fetchpriority="high"
+        >
+      </picture>
+    </a>
+
   </header>
 
   <main class="site-main" id="main-content">
     {{- block "main" . }}{{- end }}
   </main>
-
+  <script src="/js/menu.js" defer></script>
   <script src="/js/header-scroll.js" defer></script>
 </body>
 </html>

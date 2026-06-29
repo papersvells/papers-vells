@@ -1,36 +1,40 @@
 /* ═══════════════════════════════════════════════════════════
    HEADER.CSS — capçalera global del lloc
+   Estructura:
+     1. Capçalera global (.site-header)
+     2. Logo
+     3. Navegació principal (.site-nav)
+     4. Botó hamburguesa (.nav-toggle) — ocult en desktop
+     5. Hide-on-scroll (mòbil)
+     6. Menú mòbil complet
    ═══════════════════════════════════════════════════════════ */
 
-/* ── Contenidor principal de la capçalera */
+
+/* ── 1. CAPÇALERA GLOBAL ──────────────────────────────────── */
 .site-header {
   text-align: center;
-  padding: var(--space-md) var(--space-md) 0;
+  padding: 0 var(--space-md) var(--space-md);
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: rgba(247, 247, 247, 0.92);
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px); /* Safari */
+  -webkit-backdrop-filter: blur(6px);
 }
 
-/* Logo horitzontal — escriptori */
+
+/* ── 2. LOGO ──────────────────────────────────────────────── */
 .site-header__logo {
   max-width: 800px;
   width: 100%;
   height: auto;
   display: inline-block;
-  margin-bottom: var(--space-sm);
+  margin-top: var(--space-sm);
+  margin-bottom: 0;
 }
 
-/* Logo vertical — mòbil */
-@media (max-width: 900px) {
-  .site-header__logo {
-    max-width: 280px;
-  }
-}
 
-/* ── Navegació principal */
+/* ── 3. NAVEGACIÓ PRINCIPAL ───────────────────────────────── */
 .site-nav {
   display: flex;
   justify-content: center;
@@ -44,28 +48,24 @@
   gap: 0;
 }
 
-/* Cada enllaç del menú */
 .site-nav a {
+  font-family: 'Alegreya-Sans', monospace;
   font-size: var(--text-sm);
-  font-weight: 500;
-  letter-spacing: 0.15em;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--color-ink-light);
   padding: 0 var(--space-md);
   transition: color var(--transition);
 }
 
-/* Hover */
 .site-nav a:hover {
   color: var(--color-accent);
 }
 
-/* Pàgina actual */
 .site-nav a[aria-current="page"] {
   color: var(--color-accent);
 }
 
-/* Icona de Twitter */
 .site-nav img {
   display: inline;
   vertical-align: middle;
@@ -77,31 +77,98 @@
   padding: 0 var(--space-md);
 }
 
-/* ═══════════════════════════════════════════════════════════
-   HIDE-ON-SCROLL — només en mòbil
-   ═══════════════════════════════════════════════════════════
-   El header desapareix cap amunt amb un translateY quan
-   l'usuari fa scroll cap avall. Reapareix quan fa scroll
-   cap amunt. Tota la lògica de quan amagar/mostrar és al
-   header-scroll.js — aquí només definim com es transforma.
 
-   Per què transform i no top/height:
-   - transform no força reflow (només composició al GPU)
-   - és molt més fluid en mòbils antics
-   - els elements de la pàgina no es mouen sota el header
-   ═══════════════════════════════════════════════════════════ */
+/* ── 4. BOTÓ HAMBURGUESA — ocult en desktop ───────────────── */
+.nav-toggle {
+  display: none;
+}
 
+.nav-toggle__bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-accent);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* Animació ☰ → ✕ */
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* ── 5 & 6. MÒBIL ────────────────────────────────────────── */
 @media (max-width: 900px) {
 
+  /* Capçalera en columna per acollir logo + botó */
   .site-header {
-    /* Transició suau quan s'amaga i quan reapareix */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--space-sm);
+    /* Hide-on-scroll */
     transition: transform 0.25s ease-out;
     will-change: transform;
   }
 
   .site-header.header-hidden {
-    /* L'amaguem cap amunt, fora de la pantalla */
     transform: translateY(-100%);
+  }
+
+  /* Logo més petit */
+  .site-header__logo {
+    max-width: 280px;
+  }
+
+  /* Botó hamburguesa visible i posicionat */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-sm);
+    position: absolute;
+    right: var(--space-md);
+    top: 25px;
+  }
+
+  /* Menú ocult per defecte — s'obre com a capa per sobre el contingut */
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: var(--space-md) 0;
+    gap: var(--space-sm);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(247, 247, 247, 0.97);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-top: 1px solid var(--color-rule);
+    border-bottom: 1px solid var(--color-rule);
+    z-index: 99;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav.is-open a {
+    font-size: var(--text-md);
+    padding: var(--space-xs) 0;
   }
 
 }
