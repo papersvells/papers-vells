@@ -3,6 +3,7 @@ title: "Sobre el concepte enciclopèdic de la cultura"
 autors: ["Joan Crexells"]
 publicacions: ["La Publicitat"]
 date: 1925-01-02
+publicat: "2020-04-07"
 slug: "joan-crexells/sobre-el-concepte-enciclopedic-de-la-cultura"
 draft: false
 image: "1925-01-02_la_publicitat_joan_crexells_-_sobre_el_concepte_enciclopedic_de_la_cultura.webp"

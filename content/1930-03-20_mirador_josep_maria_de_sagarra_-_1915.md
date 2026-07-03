@@ -3,6 +3,7 @@ title: "1915"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["Mirador"]
 date: 1930-03-20
+publicat: "2020-11-04"
 slug: "josep-maria-de-sagarra/1915"
 draft: false
 image: "1930-03-20_mirador_josep_maria_de_sagarra_-_1915.webp"

@@ -3,6 +3,7 @@ title: "Temes cartesians"
 autors: ["Joaquim Xirau"]
 publicacions: ["Mirador"]
 date: 1929-09-12
+publicat: "2020-04-16"
 slug: "joaquim-xirau/temes-cartesians"
 draft: false
 image: "1929-09-12_mirador_joaquim_xirau_-_temes_cartesians.webp"

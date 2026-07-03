@@ -3,6 +3,7 @@ title: "Mirador vist per dins"
 autors: ["Josep Maria Planes"]
 publicacions: ["Mirador"]
 date: 1930-01-30
+publicat: "2020-11-22"
 slug: "josep-maria-planes/mirador-vist-per-dins"
 draft: false
 image: "1930-01-30_mirador_josep_maria_planes_-_mirador_vist_per_dins.webp"

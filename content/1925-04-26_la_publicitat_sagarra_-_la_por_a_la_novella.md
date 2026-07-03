@@ -3,6 +3,7 @@ title: "La por a la novel·la"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1925-04-26
+publicat: "2021-05-17"
 slug: "josep-maria-de-sagarra/la-por-a-la-novel-la"
 draft: false
 image: "1925-04-26_la_publicitat_sagarra_-_la_por_a_la_novella.webp"

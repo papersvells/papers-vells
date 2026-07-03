@@ -3,6 +3,7 @@ title: "És així!"
 autors: ["Joan Puig i Ferreter"]
 publicacions: ["La Publicitat"]
 date: 1929-01-02
+publicat: "2019-07-01"
 slug: "joan-puig-i-ferreter/es-aixi"
 draft: false
 image: "1929-01-02_la_publicitat_puig_i_ferreter_-_es_aixi.webp"

@@ -3,6 +3,7 @@ title: "El bibliotecari del Passeig de Sant Joan fa declaracions"
 autors: ["Àngel Pons i Guitart"]
 publicacions: ["Imatges"]
 date: 1930-09-23
+publicat: "2021-01-02"
 slug: "angel-pons-i-guitart/el-bibliotecari-del-passeig-de-sant-joan-fa-declaracions"
 draft: false
 image: "1930-09-23_imatges_angel_pons_i_guitart_-_el_bibiotecari_del_passeig_de_sant_joan_fa_declaracions.webp"

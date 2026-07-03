@@ -3,6 +3,7 @@ title: "Sardanes a la plaça"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1922-10-08
+publicat: "2020-02-05"
 slug: "josep-maria-de-sagarra/sardanes-a-la-placa"
 draft: false
 image: "1922-10-08_la_publicitat_sagarra_-_sardanes_a_la_placa.webp"

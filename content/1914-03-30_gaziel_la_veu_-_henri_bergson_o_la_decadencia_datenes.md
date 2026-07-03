@@ -3,6 +3,7 @@ title: "Henri Bergson o la decadència d’Atenes"
 autors: ["Gaziel"]
 publicacions: ["La Veu de Catalunya"]
 date: 1914-03-30
+publicat: "2020-04-12"
 slug: "gaziel/henri-bergson-o-la-decadencia-d-atenes"
 draft: false
 image: "1914-03-30_gaziel_la_veu_-_henri_bergson_o_la_decadencia_datenes.webp"

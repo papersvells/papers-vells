@@ -3,6 +3,7 @@ title: "Mentre arriben els experts"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1924-01-10
+publicat: "2022-01-22"
 slug: "josep-pla/mentre-arriben-els-experts"
 draft: false
 image: "1924-01-10_la_publicitat_josep_pla_-_mentre_arriben_els_experts.webp"

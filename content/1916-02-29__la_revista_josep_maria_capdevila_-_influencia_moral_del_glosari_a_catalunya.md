@@ -3,6 +3,7 @@ title: "Influència moral del Glosari a Catalunya"
 autors: ["Josep Maria Capdevila"]
 publicacions: ["La Revista"]
 date: 1916-02-29
+publicat: "2021-01-13"
 slug: "josep-maria-capdevila/influencia-moral-del-glosari-a-catalunya"
 draft: false
 image: "1916-02-29__la_revista_josep_maria_capdevila_-_influencia_moral_del_glosari_a_catalunya.webp"

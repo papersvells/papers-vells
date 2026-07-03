@@ -3,6 +3,7 @@ title: "Adéu al carril de Sarrià"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1929-04-25
+publicat: "2020-07-01"
 slug: "carles-soldevila/adeu-al-carril-de-sarria"
 draft: false
 image: "1929-04-25_la_publicitat_carles_soldevila_-_adeu_al_carril_de_sarria.webp"

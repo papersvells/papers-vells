@@ -3,6 +3,7 @@ title: "De la boira i de l’inesperat"
 autors: ["Josep Carner"]
 publicacions: ["La Publicitat"]
 date: 1928-12-25
+publicat: "2021-04-21"
 slug: "josep-carner/de-la-boira-i-de-l-inesperat"
 draft: false
 image: "1928-12-25_la_publicitat_josep_carner_-_de_la_boira_i_linesperat.webp"

@@ -3,6 +3,7 @@ title: "Una generació sense novel·la"
 autors: ["Carles Riba"]
 publicacions: ["La Veu de Catalunya"]
 date: 1925-06-07
+publicat: "2021-05-16"
 slug: "carles-riba/una-generacio-sense-novel-la"
 draft: false
 image: "1925-06-07_la_veu_carles_riba_-_una_generacio_sense_novella.webp"

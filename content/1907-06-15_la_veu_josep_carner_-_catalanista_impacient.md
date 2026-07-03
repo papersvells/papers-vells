@@ -3,6 +3,7 @@ title: "Catalanista impacient"
 autors: ["Josep Carner"]
 publicacions: ["La Veu de Catalunya"]
 date: 1907-06-15
+publicat: "2021-08-18"
 slug: "josep-carner/catalanista-impacient"
 draft: false
 image: "1907-06-15_la_veu_josep_carner_-_catalanista_impacient.webp"

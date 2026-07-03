@@ -3,6 +3,7 @@ title: "Indiscrecions sobre el Premi Crexells"
 autors: ["Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-28
+publicat: "2019-06-28"
 slug: "josep-pla/indiscrecions-sobre-el-premi-crexells"
 draft: false
 image: "1928-12-28_la_veu_josep_pla_-_indiscrecions_sobre_el_premi_crexells.webp"

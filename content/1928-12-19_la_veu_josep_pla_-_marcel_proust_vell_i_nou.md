@@ -3,6 +3,7 @@ title: "Marcel Proust vell i nou"
 autors: ["Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-19
+publicat: "2019-10-02"
 slug: "josep-pla/marcel-proust-vell-i-nou"
 draft: false
 image: "1928-12-19_la_veu_josep_pla_-_marcel_proust_vell_i_nou.webp"

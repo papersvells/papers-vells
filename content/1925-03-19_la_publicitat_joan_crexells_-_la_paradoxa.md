@@ -3,6 +3,7 @@ title: "La paradoxa"
 autors: ["Joan Crexells"]
 publicacions: ["La Publicitat"]
 date: 1925-03-19
+publicat: "2019-05-15"
 slug: "joan-crexells/la-paradoxa"
 draft: false
 image: "1925-03-19_la_publicitat_joan_crexells_-_la_paradoxa.webp"

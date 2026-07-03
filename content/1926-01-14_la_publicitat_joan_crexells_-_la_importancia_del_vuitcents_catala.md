@@ -3,6 +3,7 @@ title: "La importància del vuit-cents català"
 autors: ["Joan Crexells"]
 publicacions: ["La Publicitat"]
 date: 1926-01-14
+publicat: "2020-10-24"
 slug: "joan-crexells/la-importancia-del-vuit-cents-catala"
 draft: false
 image: "1926-01-14_la_publicitat_joan_crexells_-_la_importancia_del_vuitcents_catala.webp"

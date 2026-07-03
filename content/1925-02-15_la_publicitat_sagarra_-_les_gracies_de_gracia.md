@@ -3,6 +3,7 @@ title: "Les gràcies de Gràcia"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1925-02-15
+publicat: "2020-02-19"
 slug: "josep-maria-de-sagarra/les-gracies-de-gracia"
 draft: false
 image: "1925-02-15_la_publicitat_sagarra_-_les_gracies_de_gracia.webp"

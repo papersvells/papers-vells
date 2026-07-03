@@ -3,6 +3,7 @@ title: "El geni i el sant"
 autors: ["Joan Llongueras"]
 publicacions: ["La Veu de Catalunya"]
 date: 1926-06-11
+publicat: "2020-06-07"
 slug: "joan-llongueras/el-geni-i-el-sant"
 draft: false
 image: "1926-06-11_la_veu_joan_llongueras_-_el_geni_i_el_sant.webp"

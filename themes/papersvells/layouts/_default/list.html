@@ -21,6 +21,11 @@
   IMPORTANT: els camps "autors" i "publicacions" del frontmatter
   són ARRAYS, per això s'accedeix amb "delimit ... ', '" per
   concatenar-los com a text llegible.
+
+  ORDENACIÓ: reordenem .Pages per .Params.publicat (data en què
+  l'article es va penjar al lloc) ABANS de paginar, perquè la
+  paginació respecti aquest ordre. Per això usem $articlesOrdenats
+  + .Paginate en lloc de .Paginator directe.
 */}}
 
 
@@ -62,12 +67,17 @@
     Reutilitzem la mateixa graella d'articles que a la portada
     per mantenir consistència visual.
 
-    .Paginator.Pages = articles d'aquesta pàgina de paginació.
+    Ordenem per .Params.publicat i després paginem manualment
+    amb .Paginate, ja que .Paginator per defecte no respecta
+    aquest ordre personalitzat.
   */}}
+  {{ $articlesOrdenats := .Pages.ByParam.publicat.Reverse }}
+  {{ $paginator := .Paginate $articlesOrdenats }}
+
   {{ if .Pages }}
 
     <div class="articles-grid">
-      {{ range .Paginator.Pages }}
+      {{ range $paginator.Pages }}
 
         <article class="article-card">
 
@@ -93,10 +103,10 @@
       ─────────────────────────────────────────────────────────
       PAGINACIÓ
       ─────────────────────────────────────────────────────────
-      Mateixa lògica que a index.html.
-      Quan tinguem 300 articles, aquí sortiran 25 pàgines de 12.
+      Fem servir $paginator (generat amb .Paginate sobre la
+      llista ja ordenada) en lloc de .Paginator directe.
     */}}
-    {{ with .Paginator }}
+    {{ with $paginator }}
       {{ if gt .TotalPages 1 }}
 
         <nav class="pagination" aria-label="Paginació" style="

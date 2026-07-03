@@ -3,6 +3,7 @@ title: "La deshumanització del gest"
 autors: ["Guillem Díaz-Plaja"]
 publicacions: ["Mirador"]
 date: 1930-03-13
+publicat: "2020-04-05"
 slug: "guillem-diaz-plaja/la-deshumanitzacio-del-gest"
 draft: false
 image: "1930-03-13_mirador_guillem_diaz-plaja_-_la_deshumanitzacio_del_gest.webp"

@@ -3,6 +3,7 @@ title: "Art-Evolució"
 autors: ["Joaquim Torres-García"]
 publicacions: ["Un enemic del poble"]
 date: 1917-11-01
+publicat: "2020-06-08"
 slug: "joaquim-torres-garcia/art-evolucio"
 draft: false
 image: "1917-11-01_un_enemic_del_poble_torres-garcia_-_art-evolucio.webp"

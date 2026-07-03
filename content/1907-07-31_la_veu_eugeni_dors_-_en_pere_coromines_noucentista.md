@@ -3,6 +3,7 @@ title: "En Pere Coromines, noucentista"
 autors: ["Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1907-07-31
+publicat: "2020-12-20"
 slug: "eugeni-d'ors/en-pere-coromines-noucentista"
 draft: false
 image: "1907-07-31_la_veu_eugeni_dors_-_en_pere_coromines_noucentista.webp"

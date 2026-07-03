@@ -3,6 +3,7 @@ title: "Els Ideals Catalans"
 autors: ["Francesc Pujols"]
 publicacions: ["L'Instant"]
 date: 1919-09-15
+publicat: "2019-04-05"
 slug: "francesc-pujols/els-ideals-catalans"
 draft: false
 image: "1919-09-15_linstant_francesc_pujols_-_els_ideals_catalans.webp"

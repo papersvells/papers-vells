@@ -3,6 +3,7 @@ title: "Joan Crexells: Les seves tendències ideològiques"
 autors: ["Josep Maria Capdevila"]
 publicacions: ["La Nova Revista"]
 date: 1927-02-01
+publicat: "2020-05-07"
 slug: "josep-maria-capdevila/joan-crexells-les-seves-tendencies-ideologiques"
 draft: false
 image: "1927-02-01_la_nova_revista_josep_maria_capdevila_-_les_seves_tendencies_ideologiques.webp"

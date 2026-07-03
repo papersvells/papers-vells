@@ -761,7 +761,7 @@ p { margin-bottom: var(--space-sm); }
     font-weight: 500;
   }
   .article-byline { flex-wrap: wrap; }
-  .article-byline__avatar { width: 60px; height: 60px; }
+  .article-byline__avatar { width: 70px; height: 70px; }
   .article-byline__name { font-size: var(--text-md); margin-top: 0.5rem;}
   .article-byline__data {margin-top: -1.2rem;}
   

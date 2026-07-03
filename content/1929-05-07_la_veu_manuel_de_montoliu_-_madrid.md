@@ -3,6 +3,7 @@ title: "Josep Pla. Madrid. Un dietari"
 autors: ["Manuel de Montoliu"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-05-07
+publicat: "2020-05-13"
 slug: "manuel-de-montoliu/josep-pla-madrid-un-dietari"
 draft: false
 image: "1929-05-07_la_veu_manuel_de_montoliu_-_madrid.webp"

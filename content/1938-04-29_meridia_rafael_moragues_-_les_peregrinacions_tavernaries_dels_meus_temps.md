@@ -3,6 +3,7 @@ title: "Les peregrinacions tavernàries dels meus temps"
 autors: ["Rafael Moragas"]
 publicacions: ["Meridià"]
 date: 1938-04-29
+publicat: "2021-08-24"
 slug: "rafael-moragas/les-peregrinacions-tavernaries-dels-meus-temps"
 draft: false
 image: "1938-04-29_meridia_rafael_moragues_-_les_peregrinacions_tavernaries_dels_meus_temps.webp"

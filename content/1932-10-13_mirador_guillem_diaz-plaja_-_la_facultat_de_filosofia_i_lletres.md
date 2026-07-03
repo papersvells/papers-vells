@@ -3,6 +3,7 @@ title: "La Facultat de Filosofia i lletres"
 autors: ["Guillem Díaz-Plaja"]
 publicacions: ["Mirador"]
 date: 1932-10-13
+publicat: "2020-07-02"
 slug: "guillem-diaz-plaja/la-facultat-de-filosofia-i-lletres"
 draft: false
 image: "1932-10-13_mirador_guillem_diaz-plaja_-_la_facultat_de_filosofia_i_lletres.webp"

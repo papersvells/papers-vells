@@ -3,6 +3,7 @@ title: "Catalònia"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1924-05-09
+publicat: "2019-05-08"
 slug: "carles-soldevila/catalonia"
 draft: false
 image: "1924-05-09_la_publicitat_carles_soldevila_-_catalonia.webp"

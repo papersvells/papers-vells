@@ -3,6 +3,7 @@ title: "Expressionisme"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["Mirador"]
 date: 1929-05-02
+publicat: "2020-05-08"
 slug: "josep-maria-de-sagarra/expressionisme"
 draft: false
 image: "1929-05-02_mirador_sagarra_-_expressionisme.webp"

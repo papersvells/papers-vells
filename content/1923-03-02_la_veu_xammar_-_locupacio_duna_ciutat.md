@@ -3,6 +3,7 @@ title: "L’ocupació d’una ciutat"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-02
+publicat: "2019-12-28"
 slug: "eugeni-xammar/l-ocupacio-d-una-ciutat"
 draft: false
 image: "1923-03-02_la_veu_xammar_-_locupacio_duna_ciutat.webp"

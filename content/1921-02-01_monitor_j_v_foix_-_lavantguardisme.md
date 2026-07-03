@@ -3,6 +3,7 @@ title: "L’avantguardisme"
 autors: ["J V Foix"]
 publicacions: ["Monitor"]
 date: 1921-02-01
+publicat: "2020-07-22"
 slug: "j-v-foix/l-avantguardisme"
 draft: false
 image: "1921-02-01_monitor_j_v_foix_-_lavantguardisme.webp"

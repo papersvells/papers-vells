@@ -3,6 +3,7 @@ title: "En començar l’any nou: el bon vell temps de l’absolutisme"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1923-01-12
+publicat: "2024-05-15"
 slug: "josep-pla/en-comencar-l-any-nou-el-bon-vell-temps-de-l-absolutisme"
 draft: false
 image: "1923-01-12_la_publicitat_josep_pla_-_en_comencar_lany_nou_el_bon_vell_temps_de_labsolutisme.webp"

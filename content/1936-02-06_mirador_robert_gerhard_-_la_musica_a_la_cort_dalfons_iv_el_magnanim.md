@@ -3,6 +3,7 @@ title: "La música a la cort d’Alfons IV el Magnànim"
 autors: ["Robert Gerhard"]
 publicacions: ["Mirador"]
 date: 1936-02-06
+publicat: "2020-09-24"
 slug: "robert-gerhard/la-musica-a-la-cort-d-alfons-iv-el-magnanim"
 draft: false
 image: "1936-02-06_mirador_robert_gerhard_-_la_musica_a_la_cort_dalfons_iv_el_magnanim.webp"

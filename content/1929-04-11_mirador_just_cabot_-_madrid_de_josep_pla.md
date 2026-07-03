@@ -3,6 +3,7 @@ title: "Madrid (un dietari), de Josep Pla"
 autors: ["Just Cabot"]
 publicacions: ["Mirador"]
 date: 1929-04-11
+publicat: "2020-05-17"
 slug: "just-cabot/madrid-un-dietari-de-josep-pla"
 draft: false
 image: "1929-04-11_mirador_just_cabot_-_madrid_de_josep_pla.webp"

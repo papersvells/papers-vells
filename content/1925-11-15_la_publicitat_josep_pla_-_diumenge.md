@@ -3,6 +3,7 @@ title: "Diumenge"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1925-11-15
+publicat: "2019-03-10"
 slug: "josep-pla/diumenge"
 draft: false
 image: "1925-11-15_la_publicitat_josep_pla_-_diumenge.webp"

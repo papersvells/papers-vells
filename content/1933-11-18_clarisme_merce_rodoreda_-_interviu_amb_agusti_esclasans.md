@@ -3,6 +3,7 @@ title: "Intervius: Agustí Esclasans"
 autors: ["Mercè Rodoreda"]
 publicacions: ["Clarisme"]
 date: 1933-11-18
+publicat: "2020-01-26"
 slug: "merce-rodoreda/intervius-agusti-esclasans"
 draft: false
 image: "1933-11-18_clarisme_merce_rodoreda_-_interviu_amb_agusti_esclasans.webp"

@@ -3,6 +3,7 @@ title: "Els llibres i el bar"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["Mirador"]
 date: 1929-04-25
+publicat: "2019-03-13"
 slug: "josep-maria-de-sagarra/els-llibres-i-el-bar"
 draft: false
 image: "1929-04-25_mirador_sagarra_-_els_llibres_i_el_bar.webp"

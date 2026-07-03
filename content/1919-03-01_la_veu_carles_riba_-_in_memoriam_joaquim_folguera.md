@@ -3,6 +3,7 @@ title: "In Memoriam"
 autors: ["Carles Riba"]
 publicacions: ["La Veu de Catalunya"]
 date: 1919-03-01
+publicat: "2020-05-29"
 slug: "carles-riba/in-memoriam"
 draft: false
 image: "1919-03-01_la_veu_carles_riba_-_in_memoriam_joaquim_folguera.webp"

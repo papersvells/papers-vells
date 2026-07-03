@@ -3,6 +3,7 @@ title: "Una visita an en Jaussely"
 autors: ["Josep Pous i Pagès"]
 publicacions: ["El Poble Català"]
 date: 1907-10-13
+publicat: "2020-09-16"
 slug: "josep-pous-i-pages/una-visita-an-en-jaussely"
 draft: false
 image: "1907-10-13_el_poble_catala_pous_i_pages_-_una_visita_a_en_jaussely.webp"

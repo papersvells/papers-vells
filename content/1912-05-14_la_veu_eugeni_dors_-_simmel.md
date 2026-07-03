@@ -3,6 +3,7 @@ title: "Simmel"
 autors: ["Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1912-05-14
+publicat: "2020-04-28"
 slug: "eugeni-d'ors/simmel"
 draft: false
 image: "1912-05-14_la_veu_eugeni_dors_-_simmel.webp"

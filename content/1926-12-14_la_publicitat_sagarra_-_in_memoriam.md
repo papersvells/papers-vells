@@ -3,6 +3,7 @@ title: "In Memoriam"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1926-12-14
+publicat: "2020-05-29"
 slug: "josep-maria-de-sagarra/in-memoriam"
 draft: false
 image: "1926-12-14_la_publicitat_sagarra_-_in_memoriam.webp"

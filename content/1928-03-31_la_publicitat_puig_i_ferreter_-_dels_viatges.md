@@ -3,6 +3,7 @@ title: "Dels viatges"
 autors: ["Joan Puig i Ferreter"]
 publicacions: ["La Publicitat"]
 date: 1928-03-31
+publicat: "2019-11-04"
 slug: "joan-puig-i-ferreter/dels-viatges"
 draft: false
 image: "1928-03-31_la_publicitat_puig_i_ferreter_-_dels_viatges.webp"

@@ -3,6 +3,7 @@ title: "Els grecs a Empúries i el classicisme tolerable"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1925-11-18
+publicat: "2019-07-28"
 slug: "josep-pla/els-grecs-a-empuries-i-el-classicisme-tolerable"
 draft: false
 image: "1925-11-18_la_publicitat_josep_pla_-_els_grecs_a_empuries_i_el_classicisme_tolerable.webp"

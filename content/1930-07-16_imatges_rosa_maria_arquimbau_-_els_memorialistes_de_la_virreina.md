@@ -3,6 +3,7 @@ title: "Els memorialistes de la Virreina"
 autors: ["Rosa Maria Arquimbau"]
 publicacions: ["Imatges"]
 date: 1930-07-16
+publicat: "2021-06-09"
 slug: "rosa-maria-arquimbau/els-memorialistes-de-la-virreina"
 draft: false
 image: "1930-07-16_imatges_rosa_maria_arquimbau_-_els_memorialistes_de_la_virreina.webp"

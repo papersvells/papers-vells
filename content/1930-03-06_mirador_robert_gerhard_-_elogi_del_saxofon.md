@@ -3,6 +3,7 @@ title: "Elogi del saxofon"
 autors: ["Robert Gerhard"]
 publicacions: ["Mirador"]
 date: 1930-03-06
+publicat: "2020-09-24"
 slug: "robert-gerhard/elogi-del-saxofon"
 draft: false
 image: "1930-03-06_mirador_robert_gerhard_-_elogi_del_saxofon.webp"

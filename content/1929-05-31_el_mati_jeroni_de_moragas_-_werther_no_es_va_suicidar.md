@@ -3,6 +3,7 @@ title: "Werther no es va suïcidar"
 autors: ["Jeroni de Moragas"]
 publicacions: ["El Matí"]
 date: 1929-05-31
+publicat: "2020-05-25"
 slug: "jeroni-de-moragas/werther-no-es-va-suicidar"
 draft: false
 image: "1929-05-31_el_mati_jeroni_de_moragas_-_werther_no_es_va_suicidar.webp"

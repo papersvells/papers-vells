@@ -3,6 +3,7 @@ title: "Nadal"
 autors: ["Mercè Rodoreda"]
 publicacions: ["Clarisme"]
 date: 1933-12-23
+publicat: "2020-12-23"
 slug: "merce-rodoreda/nadal"
 draft: false
 image: "1933-12-23_clarisme_merce_rodoreda_-_nadal.webp"

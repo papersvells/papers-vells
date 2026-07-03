@@ -3,6 +3,7 @@ title: "Un premi-aniversari"
 autors: ["Josep Maria Junoy"]
 publicacions: ["La Veu de Catalunya"]
 date: 1927-12-11
+publicat: "2019-06-15"
 slug: "josep-maria-junoy/un-premi-aniversari"
 draft: false
 image: "1927-12-11_la_veu_junoy_-_un_premi-aniversari.webp"

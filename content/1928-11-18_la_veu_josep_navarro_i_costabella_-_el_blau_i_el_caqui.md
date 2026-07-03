@@ -3,6 +3,7 @@ title: "El blau i el caqui"
 autors: ["Josep Navarro i Costabella"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-18
+publicat: "2019-09-29"
 slug: "josep-navarro-i-costabella/el-blau-i-el-caqui"
 draft: false
 image: "1928-11-18_la_veu_josep_navarro_i_costabella_-_el_blau_i_el_caqui.webp"

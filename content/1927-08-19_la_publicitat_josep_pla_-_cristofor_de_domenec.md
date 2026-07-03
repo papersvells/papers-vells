@@ -3,6 +3,7 @@ title: "Cristòfor de Domènec"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1927-08-19
+publicat: "2020-05-01"
 slug: "josep-pla/cristofor-de-domenec"
 draft: false
 image: "1927-08-19_la_publicitat_josep_pla_-_cristofor_de_domenec.webp"

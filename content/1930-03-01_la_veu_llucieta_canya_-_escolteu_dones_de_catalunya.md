@@ -3,6 +3,7 @@ title: "Escolteu, dones de Catalunya!"
 autors: ["Llucieta Canyà"]
 publicacions: ["La Veu de Catalunya"]
 date: 1930-03-01
+publicat: "2021-01-17"
 slug: "llucieta-canya/escolteu-dones-de-catalunya"
 draft: false
 image: "1930-03-01_la_veu_llucieta_canya_-_escolteu_dones_de_catalunya.webp"

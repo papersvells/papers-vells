@@ -3,6 +3,7 @@ title: "Palla"
 autors: ["Modest Urgell"]
 publicacions: ["Joventut"]
 date: 1900-05-24
+publicat: "2020-11-05"
 slug: "modest-urgell/palla"
 draft: false
 image: "1900-05-24_joventut_modest_urgell_-_palla.webp"

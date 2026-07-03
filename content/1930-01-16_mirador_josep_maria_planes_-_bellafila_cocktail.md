@@ -3,6 +3,7 @@ title: "Bellafila Cocktail"
 autors: ["Josep Maria Planes"]
 publicacions: ["Mirador"]
 date: 1930-01-16
+publicat: "2020-11-03"
 slug: "josep-maria-planes/bellafila-cocktail"
 draft: false
 image: "1930-01-16_mirador_josep_maria_planes_-_bellafila_cocktail.webp"

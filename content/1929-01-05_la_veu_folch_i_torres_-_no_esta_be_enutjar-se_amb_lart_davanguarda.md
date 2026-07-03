@@ -3,6 +3,7 @@ title: "No està bé d’enutjar-se contra l’art d’avantguarda"
 autors: ["Joaquim Folch i Torres"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-01-05
+publicat: "2019-06-07"
 slug: "joaquim-folch-i-torres/no-esta-be-d-enutjar-se-contra-l-art-d-avantguarda"
 draft: false
 image: "1929-01-05_la_veu_folch_i_torres_-_no_esta_be_enutjar-se_amb_lart_davanguarda.webp"

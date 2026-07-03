@@ -3,6 +3,7 @@ title: "Conversa amb el Sr. Francesc Pujols"
 autors: ["Francesc Madrid"]
 publicacions: ["Mirador"]
 date: 1929-02-07
+publicat: "2020-01-18"
 slug: "francesc-madrid/conversa-amb-el-sr-francesc-pujols"
 draft: false
 image: "1929-02-07_mirador_francesc_madrid_-_conversa_amb_el_sr_francesc_pujols.webp"

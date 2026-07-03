@@ -3,6 +3,7 @@ title: "La defensa de l’idioma"
 autors: ["Ferran Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1936-02-07
+publicat: "2022-06-08"
 slug: "ferran-soldevila/la-defensa-de-l-idioma"
 draft: false
 image: "1936-02-07_la_publicitat_ferran_soldevila_-_la_defensa_de_lidioma.webp"

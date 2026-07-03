@@ -3,6 +3,7 @@ title: "Conversa amb el professor Joaquim Xirau"
 autors: ["Josep Navarro i Costabella"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-03-15
+publicat: "2020-03-19"
 slug: "josep-navarro-i-costabella/conversa-amb-el-professor-joaquim-xirau"
 draft: false
 image: "1929-03-15_la_veu_navarro_costabella_-_conversa_amb_el_professor_joaquim_xirau.webp"

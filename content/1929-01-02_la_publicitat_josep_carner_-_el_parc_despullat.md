@@ -3,6 +3,7 @@ title: "El parc despullat"
 autors: ["Josep Carner"]
 publicacions: ["La Publicitat"]
 date: 1929-01-02
+publicat: "2019-03-30"
 slug: "josep-carner/el-parc-despullat"
 draft: false
 image: "1929-01-02_la_publicitat_josep_carner_-_el_parc_despullat.webp"

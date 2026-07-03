@@ -3,6 +3,7 @@ title: "El diví Plató en català"
 autors: ["Cristòfor de Domènec"]
 publicacions: ["La Veu de Catalunya"]
 date: 1924-05-23
+publicat: "2020-04-27"
 slug: "cristofor-de-domenec/el-divi-plato-en-catala"
 draft: false
 image: "1924-05-23_la_veu_cristofor_de_domenec_-_el_divi_plato_en_catala.webp"

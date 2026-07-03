@@ -3,6 +3,7 @@ title: "Lucreci en català"
 autors: ["Lluís Nicolau d'Olwer"]
 publicacions: ["La Publicitat"]
 date: 1923-03-06
+publicat: "2020-06-03"
 slug: "lluis-nicolau-d'olwer/lucreci-en-catala"
 draft: false
 image: "1923-03-06_la_publicitat_lluis_nicolau_dolwer_-_lucreci_en_catala.webp"

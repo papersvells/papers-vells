@@ -3,6 +3,7 @@ title: "Als governants d’Espanya"
 autors: ["Josep Puig i Cadafalch"]
 publicacions: ["La Veu de Catalunya"]
 date: 1899-10-26
+publicat: "2020-12-07"
 slug: "josep-puig-i-cadafalch/als-governants-d-espanya"
 draft: false
 image: "1899-10-26_la_veu_puig_i_cadafalch_-_als_governants_despanya.webp"

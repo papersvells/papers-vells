@@ -3,6 +3,7 @@ title: "Parlant amb S. Joan Arbó"
 autors: ["Mercè Rodoreda"]
 publicacions: ["Clarisme"]
 date: 1933-11-11
+publicat: "2020-09-06"
 slug: "merce-rodoreda/parlant-amb-s-joan-arbo"
 draft: false
 image: "1933-11-11_clarisme_merce_rodoreda_-_interviu_amb_joan_s._arbo.webp"

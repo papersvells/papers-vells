@@ -3,6 +3,7 @@ title: "Beethoven"
 autors: ["Lluís Millet"]
 publicacions: ["Revista Musical Catalana"]
 date: 1927-03-01
+publicat: "2020-12-16"
 slug: "lluis-millet/beethoven"
 draft: false
 image: "1927-03-01_revista_musical_catalana_lluis_millet_-_beethoven.webp"

@@ -3,6 +3,7 @@ title: "L’expansió literària de Catalunya"
 autors: ["Tomàs Garcés"]
 publicacions: ["La Publicitat"]
 date: 1922-10-11
+publicat: "2019-12-09"
 slug: "tomas-garces/l-expansio-literaria-de-catalunya"
 draft: false
 image: "1922-10-11_la_publicitat_tomas_garces_-_lexpansio_literaria_de_catalunya.webp"

@@ -3,6 +3,7 @@ title: "La lliçó del mar i la muntanya"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1922-10-01
+publicat: "2019-09-04"
 slug: "josep-maria-de-sagarra/la-llico-del-mar-i-la-muntanya"
 draft: false
 image: "1922-10-01_la_publicitat_sagarra_-_la_llico_del_mar_i_la_muntanya.webp"

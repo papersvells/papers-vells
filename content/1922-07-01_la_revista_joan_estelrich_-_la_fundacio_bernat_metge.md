@@ -3,6 +3,7 @@ title: "La fundació Bernat Metge"
 autors: ["Joan Estelrich"]
 publicacions: ["La Revista"]
 date: 1922-07-01
+publicat: "2020-03-04"
 slug: "joan-estelrich/la-fundacio-bernat-metge"
 draft: false
 image: "1922-07-01_la_revista_joan_estelrich_-_la_fundacio_bernat_metge.webp"

@@ -3,6 +3,7 @@ title: "L’encallada"
 autors: ["Prudenci Bertrana"]
 publicacions: ["La Publicitat"]
 date: 1920-12-03
+publicat: "2020-12-02"
 slug: "prudenci-bertrana/l-encallada"
 draft: false
 image: "1920-12-03_la_publicitat_prudenci_bertrana_-_lencallada.webp"

@@ -3,6 +3,7 @@ title: "La nostra pedanteria"
 autors: ["Joan Marlet"]
 publicacions: ["Mirador"]
 date: 1929-03-21
+publicat: "2019-05-19"
 slug: "joan-marlet/la-nostra-pedanteria"
 draft: false
 image: "1929-03-21_mirador_joan_marlet_-_la_nostra_pedanteria.webp"

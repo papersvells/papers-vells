@@ -3,6 +3,7 @@ title: "Un festival de pensament"
 autors: ["Josep Farran i Mayoral"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-03-08
+publicat: "2020-03-30"
 slug: "josep-farran-i-mayoral/un-festival-de-pensament"
 draft: false
 image: "1929-03-08_la_veu_farran_i_mayoral_-_un_festival_de_pensament.webp"

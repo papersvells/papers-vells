@@ -3,6 +3,7 @@ title: "L’estudiant de Ca’n Tona"
 autors: ["Anton Busquets i Punset"]
 publicacions: ["Joventut"]
 date: 1902-05-29
+publicat: "2020-12-29"
 slug: "anton-busquets-i-punset/l-estudiant-de-ca-n-tona"
 draft: false
 image: "1902-05-29_joventut_anton_busquets_i_punset_-_lestudiant_de_can_tona.webp"

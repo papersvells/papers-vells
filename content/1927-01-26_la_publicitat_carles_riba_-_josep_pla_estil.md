@@ -3,6 +3,7 @@ title: "Josep Pla. L’estil"
 autors: ["Carles Riba"]
 publicacions: ["La Publicitat"]
 date: 1927-01-26
+publicat: "2021-09-11"
 slug: "carles-riba/josep-pla-l-estil"
 draft: false
 image: "1927-01-26_la_publicitat_carles_riba_-_josep_pla_estil.webp"

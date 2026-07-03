@@ -3,6 +3,7 @@ title: "El problema de la crítica"
 autors: ["Lluís Nicolau d'Olwer"]
 publicacions: ["La Publicitat"]
 date: 1929-01-03
+publicat: "2020-06-22"
 slug: "lluis-nicolau-d'olwer/el-problema-de-la-critica"
 draft: false
 image: "1929-01-03_la_publicitat_nicolau_dolwer_-_el_problema_de_la_critica.webp"

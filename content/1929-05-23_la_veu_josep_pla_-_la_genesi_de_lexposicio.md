@@ -3,6 +3,7 @@ title: "La gènesi de l’Exposició"
 autors: ["Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-05-23
+publicat: "2020-05-20"
 slug: "josep-pla/la-genesi-de-l-exposicio"
 draft: false
 image: "1929-05-23_la_veu_josep_pla_-_la_genesi_de_lexposicio.webp"

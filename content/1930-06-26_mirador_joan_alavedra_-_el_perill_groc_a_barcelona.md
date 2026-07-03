@@ -3,6 +3,7 @@ title: "El “perill groc” a Barcelona"
 autors: ["Joan Alavedra"]
 publicacions: ["Mirador"]
 date: 1930-06-26
+publicat: "2021-06-09"
 slug: "joan-alavedra/el-perill-groc-a-barcelona"
 draft: false
 image: "1930-06-26_mirador_joan_alavedra_-_el_perill_groc_a_barcelona.webp"

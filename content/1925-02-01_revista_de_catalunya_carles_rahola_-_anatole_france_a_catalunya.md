@@ -3,6 +3,7 @@ title: "Anatole France a Catalunya"
 autors: ["Carles Rahola"]
 publicacions: ["Revista de Catalunya"]
 date: 1925-02-01
+publicat: "2020-04-17"
 slug: "carles-rahola/anatole-france-a-catalunya"
 draft: false
 image: "1925-02-01_revista_de_catalunya_carles_rahola_-_anatole_france_a_catalunya.webp"

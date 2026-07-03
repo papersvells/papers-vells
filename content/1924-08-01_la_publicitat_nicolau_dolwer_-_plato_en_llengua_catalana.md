@@ -3,6 +3,7 @@ title: "Plató en llengua catalana"
 autors: ["Lluís Nicolau d'Olwer"]
 publicacions: ["La Publicitat"]
 date: 1924-08-01
+publicat: "2020-04-26"
 slug: "lluis-nicolau-d'olwer/plato-en-llengua-catalana"
 draft: false
 image: "1924-08-01_la_publicitat_nicolau_dolwer_-_plato_en_llengua_catalana.webp"

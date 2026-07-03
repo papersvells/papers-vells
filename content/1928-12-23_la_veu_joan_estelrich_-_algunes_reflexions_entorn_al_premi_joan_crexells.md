@@ -3,6 +3,7 @@ title: "Algunes reflexions. Entorn del “Premi Crexells”"
 autors: ["Joan Estelrich"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-23
+publicat: "2019-06-27"
 slug: "joan-estelrich/algunes-reflexions-entorn-del-premi-crexells"
 draft: false
 image: "1928-12-23_la_veu_joan_estelrich_-_algunes_reflexions_entorn_al_premi_joan_crexells.webp"

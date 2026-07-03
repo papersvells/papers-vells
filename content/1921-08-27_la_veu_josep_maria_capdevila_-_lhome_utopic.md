@@ -3,6 +3,7 @@ title: "L’home utòpic"
 autors: ["Josep Maria Capdevila"]
 publicacions: ["La Veu de Catalunya"]
 date: 1921-08-27
+publicat: "2020-06-23"
 slug: "josep-maria-capdevila/l-home-utopic"
 draft: false
 image: "1921-08-27_la_veu_josep_maria_capdevila_-_lhome_utopic.webp"

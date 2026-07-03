@@ -3,6 +3,7 @@ title: "Un premi literari"
 autors: ["Francesc Madrid"]
 publicacions: ["L'Esquella de la torratxa"]
 date: 1928-01-27
+publicat: "2019-06-16"
 slug: "francesc-madrid/un-premi-literari"
 draft: false
 image: "1928-01-27_lesquella_de_la_torratxa_francesc_madrid_-_un_premi_literari.webp"

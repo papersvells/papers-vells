@@ -3,6 +3,7 @@ title: "Una conversa amb Robert Gerhard"
 autors: ["Francesc Trabal"]
 publicacions: ["Mirador"]
 date: 1929-12-19
+publicat: "2022-03-17"
 slug: "francesc-trabal/una-conversa-amb-robert-gerhard"
 draft: false
 image: "1929-12-19_mirador_francesc_trabal_-_conversa_amb_robert_gerhard.webp"

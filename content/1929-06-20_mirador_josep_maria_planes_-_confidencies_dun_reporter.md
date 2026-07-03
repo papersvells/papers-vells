@@ -3,6 +3,7 @@ title: "Confidències d’un repòrter"
 autors: ["Josep Maria Planes"]
 publicacions: ["Mirador"]
 date: 1929-06-20
+publicat: "2020-05-06"
 slug: "josep-maria-planes/confidencies-d-un-reporter"
 draft: false
 image: "1929-06-20_mirador_josep_maria_planes_-_confidencies_dun_reporter.webp"

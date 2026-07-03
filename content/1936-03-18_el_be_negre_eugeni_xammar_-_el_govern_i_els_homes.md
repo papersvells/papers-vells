@@ -3,6 +3,7 @@ title: "El Govern i els homes"
 autors: ["Eugeni Xammar"]
 publicacions: ["El Be Negre"]
 date: 1936-03-18
+publicat: "2021-05-25"
 slug: "eugeni-xammar/el-govern-i-els-homes"
 draft: false
 image: "1936-03-18_el_be_negre_eugeni_xammar_-_el_govern_i_els_homes.webp"

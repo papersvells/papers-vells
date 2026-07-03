@@ -3,6 +3,7 @@ title: "Per a la Sagrada Família"
 autors: ["Josep Carner"]
 publicacions: ["La Veu de Catalunya"]
 date: 1906-01-20
+publicat: "2021-12-01"
 slug: "josep-carner/per-a-la-sagrada-familia"
 draft: false
 image: "1906-01-20_la_veu_josep_carner_-_per_a_la_sagrada_familia.webp"

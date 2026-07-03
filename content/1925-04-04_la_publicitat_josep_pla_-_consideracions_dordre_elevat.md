@@ -3,6 +3,7 @@ title: "Consideracions d’ordre elevat"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1925-04-04
+publicat: "2019-05-16"
 slug: "josep-pla/consideracions-d-ordre-elevat"
 draft: false
 image: "1925-04-04_la_publicitat_josep_pla_-_consideracions_dordre_elevat.webp"

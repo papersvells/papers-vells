@@ -3,6 +3,7 @@ title: "Un poble estrany"
 autors: ["Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-15
+publicat: "2019-12-06"
 slug: "josep-pla/un-poble-estrany"
 draft: false
 image: "1928-11-15_la_veu_josep_pla_-_un_poble_estrany.webp"

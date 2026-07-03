@@ -3,6 +3,7 @@ title: "Primeres notes sobre Ulysses"
 autors: ["Lluís Montanyà"]
 publicacions: ["Hèlix"]
 date: 1930-02-01
+publicat: "2020-07-18"
 slug: "lluis-montanya/primeres-notes-sobre-ulysses"
 draft: false
 image: "1930-02-01_helix_lluis_montanya_-_primeres_notes_sobre_ulysses.webp"

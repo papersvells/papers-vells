@@ -3,6 +3,7 @@ title: "La venda d’obres d’art del Govern dels Soviets"
 autors: ["Joaquim Folch i Torres"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-30
+publicat: "2020-07-07"
 slug: "joaquim-folch-i-torres/la-venda-d-obres-d-art-del-govern-dels-soviets"
 draft: false
 image: "1928-11-30_la_veu_joaquim_folch_i_torres_-_la_venda_dobres_dart_del_govern_dels_soviets.webp"

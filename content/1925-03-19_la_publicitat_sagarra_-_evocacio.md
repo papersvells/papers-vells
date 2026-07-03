@@ -3,6 +3,7 @@ title: "Evocació"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1925-03-19
+publicat: "2021-03-24"
 slug: "josep-maria-de-sagarra/evocacio"
 draft: false
 image: "1925-03-19_la_publicitat_sagarra_-_evocacio.webp"

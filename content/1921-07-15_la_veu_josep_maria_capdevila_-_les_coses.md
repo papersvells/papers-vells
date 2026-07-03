@@ -3,6 +3,7 @@ title: "Les coses"
 autors: ["Josep Maria Capdevila"]
 publicacions: ["La Veu de Catalunya"]
 date: 1921-07-15
+publicat: "2020-04-03"
 slug: "josep-maria-capdevila/les-coses"
 draft: false
 image: "1921-07-15_la_veu_josep_maria_capdevila_-_les_coses.webp"

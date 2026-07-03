@@ -3,6 +3,7 @@ title: "Una Exposició de la raça llatina"
 autors: ["Pere Coromines"]
 publicacions: ["La Veu de Catalunya"]
 date: 1907-07-02
+publicat: "2020-12-23"
 slug: "pere-coromines/una-exposicio-de-la-raca-llatina"
 draft: false
 image: "1907-07-02_la_veu_pere_coromines_-_una_exposicio_de_la_raca_llatina.webp"

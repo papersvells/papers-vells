@@ -3,6 +3,7 @@ title: "L’estàtua descoberta"
 autors: ["Raimon Casellas"]
 publicacions: ["La Veu de Catalunya"]
 date: 1910-07-21
+publicat: "2020-02-26"
 slug: "raimon-casellas/l-estatua-descoberta"
 draft: false
 image: "1910-07-21_la_veu_raimon_casellas_-_lestatua_descoberta.webp"

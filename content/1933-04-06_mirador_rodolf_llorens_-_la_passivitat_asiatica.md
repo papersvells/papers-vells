@@ -3,6 +3,7 @@ title: "La passivitat asiàtica"
 autors: ["Rodolf Llorens"]
 publicacions: ["Mirador"]
 date: 1933-04-06
+publicat: "2020-07-16"
 slug: "rodolf-llorens/la-passivitat-asiatica"
 draft: false
 image: "1933-04-06_mirador_rodolf_llorens_-_la_passivitat_asiatica.webp"

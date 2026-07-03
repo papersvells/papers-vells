@@ -3,6 +3,7 @@ title: "A la cacera de quatre paraules amb el Sr. Cambó"
 autors: ["Irene Polo"]
 publicacions: ["Imatges"]
 date: 1930-11-12
+publicat: "2019-11-27"
 slug: "irene-polo/a-la-cacera-de-quatre-paraules-amb-el-sr-cambo"
 draft: false
 image: "1930-11-12_imatges_irene_polo_-_a_la_cacera_de_quatre_paraules_amb_el_sr_cambo.webp"

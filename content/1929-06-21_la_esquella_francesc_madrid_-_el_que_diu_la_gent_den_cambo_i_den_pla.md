@@ -3,6 +3,7 @@ title: "El que diu la gent d’en Cambó i d’en Pla"
 autors: ["Francesc Madrid"]
 publicacions: ["L'esquella de la torratxa"]
 date: 1929-06-21
+publicat: "2019-08-21"
 slug: "francesc-madrid/el-que-diu-la-gent-d-en-cambo-i-d-en-pla"
 draft: false
 image: "1929-06-21_la_esquella_francesc_madrid_-_el_que_diu_la_gent_den_cambo_i_den_pla.webp"

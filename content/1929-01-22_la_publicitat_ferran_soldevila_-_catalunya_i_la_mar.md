@@ -3,6 +3,7 @@ title: "Catalunya i la mar"
 autors: ["Ferran Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1929-01-22
+publicat: "2020-02-04"
 slug: "ferran-soldevila/catalunya-i-la-mar"
 draft: false
 image: "1929-01-22_la_publicitat_ferran_soldevila_-_catalunya_i_la_mar.webp"

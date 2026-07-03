@@ -3,6 +3,7 @@ title: "Restauració de monuments"
 autors: ["Feliu Elias"]
 publicacions: ["La Publicitat"]
 date: 1928-12-16
+publicat: "2021-04-22"
 slug: "feliu-elias/restauracio-de-monuments"
 draft: false
 image: "1928-12-16_la_publicitat_feliu_elias_-_restauracio_de_monuments.webp"

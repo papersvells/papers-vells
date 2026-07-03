@@ -3,6 +3,7 @@ title: "Amadeu Hurtado"
 autors: ["Agustí Esclasans"]
 publicacions: ["La Humanitat"]
 date: 1933-05-26
+publicat: "2021-05-26"
 slug: "agusti-esclasans/amadeu-hurtado"
 draft: false
 image: "1933-05-26_la_humanitat_agusti_esclasans_-_amadeu_hurtado.webp"

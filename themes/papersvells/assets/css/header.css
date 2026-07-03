@@ -125,10 +125,12 @@
   /* Logo més petit */
   .site-header__logo {
     max-width: 280px;
+    order: 2;
   }
 
   /* Botó hamburguesa visible i posicionat */
   .nav-toggle {
+    order: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,12 +146,13 @@
 
   /* Menú ocult per defecte — s'obre com a capa per sobre el contingut */
   .site-nav {
+    order: 3;
     display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: var(--space-md) 0;
-    gap: var(--space-sm);
+    gap: var(--space-xs);
     position: absolute;
     top: 100%;
     left: 0;

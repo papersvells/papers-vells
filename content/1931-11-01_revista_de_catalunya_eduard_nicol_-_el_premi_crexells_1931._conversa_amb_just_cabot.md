@@ -3,6 +3,7 @@ title: "El Premi Crexells 1931"
 autors: ["Eduard Nicol"]
 publicacions: ["Revista de Catalunya"]
 date: 1931-11-01
+publicat: "2020-07-12"
 slug: "eduard-nicol/el-premi-crexells-1931"
 draft: false
 image: "1931-11-01_revista_de_catalunya_eduard_nicol_-_el_premi_crexells_1931._conversa_amb_just_cabot.webp"

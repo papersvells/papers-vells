@@ -3,6 +3,7 @@ title: "Després de l’acord"
 autors: ["Francesc Madrid"]
 publicacions: ["L'Esquella de la torratxa"]
 date: 1928-12-21
+publicat: "2019-06-26"
 slug: "francesc-madrid/despres-de-l-acord"
 draft: false
 image: "1928-12-21_lesquella_de_la_torratxa_francesc_madrid_-_despres_de_lacord.webp"

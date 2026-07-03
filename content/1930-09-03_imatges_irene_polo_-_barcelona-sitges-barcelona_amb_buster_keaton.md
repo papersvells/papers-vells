@@ -3,6 +3,7 @@ title: "Barcelona-Sitges-Barcelona, amb Buster Keaton, Lluís Alonso i Norma i N
 autors: ["Irene Polo"]
 publicacions: ["Imatges"]
 date: 1930-09-03
+publicat: "2020-01-30"
 slug: "irene-polo/barcelona-sitges-barcelona-amb-buster-keaton-lluis-alonso-i-norma-i-natalia-talmadge"
 draft: false
 image: "1930-09-03_imatges_irene_polo_-_barcelona-sitges-barcelona_amb_buster_keaton.webp"

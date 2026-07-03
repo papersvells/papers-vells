@@ -3,6 +3,7 @@ title: "Església catòlica i estat feixista"
 autors: ["Antoni Rovira i Virgili"]
 publicacions: ["La Publicitat"]
 date: 1928-03-31
+publicat: "2020-12-22"
 slug: "antoni-rovira-i-virgili/esglesia-catolica-i-estat-feixista"
 draft: false
 image: "1928-03-31_la_publicitat_rovira_i_virgili_-_esglesia_catolica_i_estat_feixista.webp"

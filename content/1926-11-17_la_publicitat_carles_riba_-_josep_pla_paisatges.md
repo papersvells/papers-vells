@@ -3,6 +3,7 @@ title: "Josep Pla. Paisatges"
 autors: ["Carles Riba"]
 publicacions: ["La Publicitat"]
 date: 1926-11-17
+publicat: "2021-09-11"
 slug: "carles-riba/josep-pla-paisatges"
 draft: false
 image: "1926-11-17_la_publicitat_carles_riba_-_josep_pla_paisatges.webp"

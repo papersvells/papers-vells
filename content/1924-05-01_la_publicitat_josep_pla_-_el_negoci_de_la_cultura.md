@@ -3,6 +3,7 @@ title: "El negoci de la cultura"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1924-05-01
+publicat: "2021-12-29"
 slug: "josep-pla/el-negoci-de-la-cultura"
 draft: false
 image: "1924-05-01_la_publicitat_josep_pla_-_el_negoci_de_la_cultura.webp"

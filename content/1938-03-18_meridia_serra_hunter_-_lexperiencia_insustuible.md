@@ -3,6 +3,7 @@ title: "L’experiència insubstituïble"
 autors: ["Jaume Serra Húnter"]
 publicacions: ["Meridià"]
 date: 1938-03-18
+publicat: "2021-11-24"
 slug: "jaume-serra-hunter/l-experiencia-insubstituible"
 draft: false
 image: "1938-03-18_meridia_serra_hunter_-_lexperiencia_insustuible.webp"

@@ -3,6 +3,7 @@ title: "L’ortografia i els nous rètols"
 autors: ["Josep Maria Corredor"]
 publicacions: ["L'Autonomista"]
 date: 1931-10-21
+publicat: "2021-07-31"
 slug: "josep-maria-corredor/l-ortografia-i-els-nous-retols"
 draft: false
 image: "1931-10-21_l_autonomista_josep_maria_corredor_-_l_ortografia_i_els_nous_retols.webp"

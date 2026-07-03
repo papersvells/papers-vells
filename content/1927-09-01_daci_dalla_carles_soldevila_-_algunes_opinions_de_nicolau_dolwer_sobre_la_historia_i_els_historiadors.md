@@ -3,6 +3,7 @@ title: "Algunes opinions de Nicolau d’Olwer sobre la història i els historiad
 autors: ["Carles Soldevila"]
 publicacions: ["D'ací i d'allà"]
 date: 1927-09-01
+publicat: "2020-12-15"
 slug: "carles-soldevila/algunes-opinions-de-nicolau-d-olwer-sobre-la-historia-i-els-historiadors"
 draft: false
 image: "1927-09-01_daci_dalla_carles_soldevila_-_algunes_opinions_de_nicolau_dolwer_sobre_la_historia_i_els_historiadors.webp"

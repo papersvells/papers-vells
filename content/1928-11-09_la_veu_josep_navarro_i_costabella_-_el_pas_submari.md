@@ -3,6 +3,7 @@ title: "El pas submarí"
 autors: ["Josep Navarro i Costabella"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-09
+publicat: "2020-04-15"
 slug: "josep-navarro-i-costabella/el-pas-submari"
 draft: false
 image: "1928-11-09_la_veu_josep_navarro_i_costabella_-_el_pas_submari.webp"

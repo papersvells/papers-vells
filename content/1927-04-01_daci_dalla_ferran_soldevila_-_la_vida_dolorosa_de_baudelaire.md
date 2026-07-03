@@ -3,6 +3,7 @@ title: "La vida dolorosa de Baudelaire"
 autors: ["Ferran Soldevila"]
 publicacions: ["D'ací i d'allà"]
 date: 1927-04-01
+publicat: "2020-11-10"
 slug: "ferran-soldevila/la-vida-dolorosa-de-baudelaire"
 draft: false
 image: "1927-04-01_daci_dalla_ferran_soldevila_-_la_vida_dolorosa_de_baudelaire.webp"

@@ -3,6 +3,7 @@ title: "Beethoven i les seves amades"
 autors: ["Rossend Llates"]
 publicacions: ["D'ací i d'allà"]
 date: 1927-03-01
+publicat: "2020-12-16"
 slug: "rossend-llates/beethoven-i-les-seves-amades"
 draft: false
 image: "1927-03-01_daci_dalla_rossend_llates_-_beethoven_i_les_seves_amades.webp"

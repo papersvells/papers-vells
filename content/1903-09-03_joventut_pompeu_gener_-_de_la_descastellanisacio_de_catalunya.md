@@ -3,6 +3,7 @@ title: "De la descastellanisació de Catalunya"
 autors: ["Pompeu Gener"]
 publicacions: ["Joventut"]
 date: 1903-09-03
+publicat: "2022-01-05"
 slug: "pompeu-gener/de-la-descastellanisacio-de-catalunya"
 draft: false
 image: "1903-09-03_joventut_pompeu_gener_-_de_la_descastellanisacio_de_catalunya.webp"

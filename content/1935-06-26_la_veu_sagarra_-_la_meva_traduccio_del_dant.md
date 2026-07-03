@@ -3,6 +3,7 @@ title: "La meva traducció del Dant"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Veu de Catalunya"]
 date: 1935-06-26
+publicat: "2020-03-25"
 slug: "josep-maria-de-sagarra/la-meva-traduccio-del-dant"
 draft: false
 image: "1935-06-26_la_veu_sagarra_-_la_meva_traduccio_del_dant.webp"

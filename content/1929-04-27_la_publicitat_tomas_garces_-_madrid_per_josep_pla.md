@@ -3,6 +3,7 @@ title: "“Madrid”, per Josep Pla"
 autors: ["Tomàs Garcés"]
 publicacions: ["La Publicitat"]
 date: 1929-04-27
+publicat: "2020-05-16"
 slug: "tomas-garces/madrid-per-josep-pla"
 draft: false
 image: "1929-04-27_la_publicitat_tomas_garces_-_madrid_per_josep_pla.webp"

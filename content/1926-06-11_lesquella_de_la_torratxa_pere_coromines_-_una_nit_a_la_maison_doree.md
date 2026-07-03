@@ -3,6 +3,7 @@ title: "Una nit a la “Maison Dorée”"
 autors: ["Pere Coromines"]
 publicacions: ["L'Esquella de la torratxa"]
 date: 1926-06-11
+publicat: "2020-09-02"
 slug: "pere-coromines/una-nit-a-la-maison-doree"
 draft: false
 image: "1926-06-11_lesquella_de_la_torratxa_pere_coromines_-_una_nit_a_la_maison_doree.webp"

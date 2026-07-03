@@ -3,6 +3,7 @@ title: "Temps antics: Dalí"
 autors: ["J V Foix"]
 publicacions: ["La Publicitat"]
 date: 1934-10-05
+publicat: "2022-01-29"
 slug: "j-v-foix/temps-antics-dali"
 draft: false
 image: "1934-10-05_la_publicitat_j_v_foix_-_temps_antics_dali.webp"

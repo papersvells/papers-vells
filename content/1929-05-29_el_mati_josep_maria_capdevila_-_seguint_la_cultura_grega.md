@@ -3,6 +3,7 @@ title: "Seguint la cultura grega"
 autors: ["Josep Maria Capdevila"]
 publicacions: ["El Matí"]
 date: 1929-05-29
+publicat: "2020-07-29"
 slug: "josep-maria-capdevila/seguint-la-cultura-grega"
 draft: false
 image: "1929-05-29_el_mati_josep_maria_capdevila_-_seguint_la_cultura_grega.webp"

@@ -3,6 +3,7 @@ title: "De la nova guerra a la nova pau"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-27
+publicat: "2020-01-08"
 slug: "eugeni-xammar/de-la-nova-guerra-a-la-nova-pau"
 draft: false
 image: "1923-03-27_la_veu_xammar_-_de_la_nova_guerra_a_la_nova_pau.webp"

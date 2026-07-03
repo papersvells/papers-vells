@@ -3,6 +3,7 @@ title: "Una conversa amb Joan Miró"
 autors: ["Francesc Trabal"]
 publicacions: ["La Publicitat"]
 date: 1928-07-14
+publicat: "2020-05-31"
 slug: "francesc-trabal/una-conversa-amb-joan-miro"
 draft: false
 image: "1928-07-14_la_publicitat_francesc_trabal_-_una_conversa_amb_joan_miro.webp"

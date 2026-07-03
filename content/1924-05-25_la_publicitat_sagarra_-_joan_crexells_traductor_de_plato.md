@@ -3,6 +3,7 @@ title: "Joan Crexells traductor de Plató"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1924-05-25
+publicat: "2020-04-27"
 slug: "josep-maria-de-sagarra/joan-crexells-traductor-de-plato"
 draft: false
 image: "1924-05-25_la_publicitat_sagarra_-_joan_crexells_traductor_de_plato.webp"

@@ -3,6 +3,7 @@ title: "En la diada del llibre"
 autors: ["Ferran Valls i Taberner"]
 publicacions: ["La Veu de Catalunya"]
 date: 1932-04-23
+publicat: "2020-04-23"
 slug: "ferran-valls-i-taberner/en-la-diada-del-llibre"
 draft: false
 image: "1932-04-23_la_veu_valls_taberner_-_la_diada_del_llibre.webp"

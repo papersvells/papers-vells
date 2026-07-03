@@ -3,6 +3,7 @@ title: "El gran Coromines"
 autors: ["Francesc Pujols"]
 publicacions: ["Picarol"]
 date: 1912-02-24
+publicat: "2021-04-16"
 slug: "francesc-pujols/el-gran-coromines"
 draft: false
 image: "1912-02-24_picarol_francesc_pujols_-_el_gran_corominas.webp"

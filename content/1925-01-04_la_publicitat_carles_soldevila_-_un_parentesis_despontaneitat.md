@@ -3,6 +3,7 @@ title: "Un parèntesi d’espontaneïtat"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1925-01-04
+publicat: "2022-03-12"
 slug: "carles-soldevila/un-parentesi-d-espontaneitat"
 draft: false
 image: "1925-01-04_la_publicitat_carles_soldevila_-_un_parentesis_despontaneitat.webp"

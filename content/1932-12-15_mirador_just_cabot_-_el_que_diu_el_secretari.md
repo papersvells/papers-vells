@@ -3,6 +3,7 @@ title: "El que diu el secretari"
 autors: ["Just Cabot"]
 publicacions: ["Mirador"]
 date: 1932-12-15
+publicat: "2020-04-18"
 slug: "just-cabot/el-que-diu-el-secretari"
 draft: false
 image: "1932-12-15_mirador_just_cabot_-_el_que_diu_el_secretari.webp"

@@ -3,6 +3,7 @@ title: "Els Compositors Independents"
 autors: ["Rossend Llates"]
 publicacions: ["Mirador"]
 date: 1931-07-09
+publicat: "2021-01-26"
 slug: "rossend-llates/els-compositors-independents"
 draft: false
 image: "1931-07-09_mirador_rossend_llates_-_els_compositors_independents.webp"

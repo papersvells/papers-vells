@@ -3,6 +3,7 @@ title: "Valéry–Maragall"
 autors: ["Tomàs Garcés"]
 publicacions: ["La Publicitat"]
 date: 1928-12-25
+publicat: "2021-04-27"
 slug: "tomas-garces/valery-maragall"
 draft: false
 image: "1928-12-25_la_publicitat_tomas_garces_-_valery-maragall.webp"

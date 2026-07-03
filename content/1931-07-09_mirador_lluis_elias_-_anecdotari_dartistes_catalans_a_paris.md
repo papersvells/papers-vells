@@ -3,6 +3,7 @@ title: "Anecdotari d’artistes catalans a París"
 autors: ["Lluís Elias"]
 publicacions: ["Mirador"]
 date: 1931-07-09
+publicat: "2021-01-06"
 slug: "lluis-elias/anecdotari-d-artistes-catalans-a-paris"
 draft: false
 image: "1931-07-09_mirador_lluis_elias_-_anecdotari_dartistes_catalans_a_paris.webp"

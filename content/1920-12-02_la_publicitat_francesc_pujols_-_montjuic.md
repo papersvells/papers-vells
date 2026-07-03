@@ -3,6 +3,7 @@ title: "Montjuïc"
 autors: ["Francesc Pujols"]
 publicacions: ["La Publicitat"]
 date: 1920-12-02
+publicat: "2020-11-24"
 slug: "francesc-pujols/montjuic"
 draft: false
 image: "1920-12-02_la_publicitat_francesc_pujols_-_montjuic.webp"

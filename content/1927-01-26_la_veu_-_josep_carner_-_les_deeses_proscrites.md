@@ -3,6 +3,7 @@ title: "Les deesses proscrites"
 autors: ["Josep Carner"]
 publicacions: ["La Veu de Catalunya"]
 date: 1927-01-26
+publicat: "2019-07-08"
 slug: "josep-carner/les-deesses-proscrites"
 draft: false
 image: "1927-01-26_la_veu_-_josep_carner_-_les_deeses_proscrites.webp"

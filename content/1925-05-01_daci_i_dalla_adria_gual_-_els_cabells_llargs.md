@@ -3,6 +3,7 @@ title: "Els cabells llargs"
 autors: ["Adrià Gual"]
 publicacions: ["D'ací i d'allà"]
 date: 1925-05-01
+publicat: "2019-08-04"
 slug: "adria-gual/els-cabells-llargs"
 draft: false
 image: "1925-05-01_daci_i_dalla_adria_gual_-_els_cabells_llargs.webp"

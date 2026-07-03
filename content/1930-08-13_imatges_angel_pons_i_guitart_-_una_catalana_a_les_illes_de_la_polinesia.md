@@ -3,6 +3,7 @@ title: "Una catalana a les illes de la Polinèsia"
 autors: ["Àngel Pons i Guitart"]
 publicacions: ["Imatges"]
 date: 1930-08-13
+publicat: "2020-12-06"
 slug: "angel-pons-i-guitart/una-catalana-a-les-illes-de-la-polinesia"
 draft: false
 image: "1930-08-13_imatges_angel_pons_i_guitart_-_una_catalana_a_les_illes_de_la_polinesia.webp"

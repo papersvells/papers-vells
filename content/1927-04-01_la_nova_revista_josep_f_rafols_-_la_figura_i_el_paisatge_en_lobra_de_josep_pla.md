@@ -3,6 +3,7 @@ title: "La figura i el paisatge en l’obra de Josep Pla"
 autors: ["Josep F Ràfols"]
 publicacions: ["La Nova Revista"]
 date: 1927-04-01
+publicat: "2020-06-25"
 slug: "josep-f-rafols/la-figura-i-el-paisatge-en-l-obra-de-josep-pla"
 draft: false
 image: "1927-04-01_la_nova_revista_josep_f_rafols_-_la_figura_i_el_paisatge_en_lobra_de_josep_pla.webp"

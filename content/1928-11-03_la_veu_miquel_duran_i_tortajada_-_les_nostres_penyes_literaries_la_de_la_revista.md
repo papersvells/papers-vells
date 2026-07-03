@@ -3,6 +3,7 @@ title: "Les nostres penyes literàries: La de “La Revista”"
 autors: ["Miquel Duran i Tortajada"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-03
+publicat: "2019-11-23"
 slug: "miquel-duran-i-tortajada/les-nostres-penyes-literaries-la-de-la-revista"
 draft: false
 image: "1928-11-03_la_veu_miquel_duran_i_tortajada_-_les_nostres_penyes_literaries_la_de_la_revista.webp"

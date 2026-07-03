@@ -3,6 +3,7 @@ title: "Copets a l’espatlla"
 autors: ["Rosa Maria Arquimbau"]
 publicacions: ["La Rambla"]
 date: 1932-01-18
+publicat: "2021-11-28"
 slug: "rosa-maria-arquimbau/copets-a-l-espatlla"
 draft: false
 image: "1932-01-18_rosa_maria_arquimbau_-_copets_a_lespatlla.webp"

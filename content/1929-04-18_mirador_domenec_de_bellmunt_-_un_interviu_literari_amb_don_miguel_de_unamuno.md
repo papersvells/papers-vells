@@ -3,6 +3,7 @@ title: "Un interviu literari amb Don Miguel de Unamuno"
 autors: ["Domènec de Bellmunt"]
 publicacions: ["Mirador"]
 date: 1929-04-18
+publicat: "2021-05-20"
 slug: "domenec-de-bellmunt/un-interviu-literari-amb-don-miguel-de-unamuno"
 draft: false
 image: "1929-04-18_mirador_domenec_de_bellmunt_-_un_interviu_literari_amb_don_miguel_de_unamuno.webp"

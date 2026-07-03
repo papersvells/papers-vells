@@ -3,6 +3,7 @@ title: "Sobre una rèplica de Pla"
 autors: ["Amadeu Hurtado"]
 publicacions: ["Mirador"]
 date: 1929-07-11
+publicat: "2020-08-25"
 slug: "amadeu-hurtado/sobre-una-replica-de-pla"
 draft: false
 image: "1929-07-11_mirador_amadeu_hurtado_-_sobre_una_replica_de_pla.webp"

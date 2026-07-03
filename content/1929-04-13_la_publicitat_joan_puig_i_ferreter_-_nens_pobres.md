@@ -3,6 +3,7 @@ title: "Nens pobres"
 autors: ["Joan Puig i Ferreter"]
 publicacions: ["La Publicitat"]
 date: 1929-04-13
+publicat: "2019-06-02"
 slug: "joan-puig-i-ferreter/nens-pobres"
 draft: false
 image: "1929-04-13_la_publicitat_joan_puig_i_ferreter_-_nens_pobres.webp"

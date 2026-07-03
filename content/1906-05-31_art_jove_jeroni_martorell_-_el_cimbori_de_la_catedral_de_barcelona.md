@@ -3,6 +3,7 @@ title: "El cimbori de la Catedral de Barcelona"
 autors: ["Jeroni Martorell"]
 publicacions: ["Art Jove"]
 date: 1906-05-31
+publicat: "2021-04-13"
 slug: "jeroni-martorell/el-cimbori-de-la-catedral-de-barcelona"
 draft: false
 image: "1906-05-31_art_jove_jeroni_martorell_-_el_cimbori_de_la_catedral_de_barcelona.webp"

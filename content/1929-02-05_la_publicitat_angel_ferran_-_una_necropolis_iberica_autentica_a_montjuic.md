@@ -3,6 +3,7 @@ title: "Una necròpolis ibèrica autèntica a Montjuïc"
 autors: ["Àngel Ferran"]
 publicacions: ["La Publicitat"]
 date: 1929-02-05
+publicat: "2020-01-12"
 slug: "angel-ferran/una-necropolis-iberica-autentica-a-montjuic"
 draft: false
 image: "1929-02-05_la_publicitat_angel_ferran_-_una_necropolis_iberica_autentica_a_montjuic.webp"

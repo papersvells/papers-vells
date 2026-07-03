@@ -3,6 +3,7 @@ title: "La diada d’Innocents"
 autors: ["Josep Navarro i Costabella"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-28
+publicat: "2020-12-28"
 slug: "josep-navarro-i-costabella/la-diada-d-innocents"
 draft: false
 image: "1928-12-28_la_veu_navarro_i_costabella-_la_diada_dels_innocents.webp"

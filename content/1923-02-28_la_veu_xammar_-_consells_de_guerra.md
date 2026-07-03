@@ -3,6 +3,7 @@ title: "Consells de guerra"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-02-28
+publicat: "2019-12-26"
 slug: "eugeni-xammar/consells-de-guerra"
 draft: false
 image: "1923-02-28_la_veu_xammar_-_consells_de_guerra.webp"

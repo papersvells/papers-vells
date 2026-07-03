@@ -3,6 +3,7 @@ title: "La descoberta de Catalunya"
 autors: ["Joaquim Folch i Torres"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-01-12
+publicat: "2020-04-11"
 slug: "joaquim-folch-i-torres/la-descoberta-de-catalunya"
 draft: false
 image: "1929-01-12_la_veu_folch_i_torres_-_la_descoberta_de_catalunya.webp"

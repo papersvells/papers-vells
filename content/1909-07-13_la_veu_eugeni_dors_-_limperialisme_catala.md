@@ -3,6 +3,7 @@ title: "L’imperialisme català"
 autors: ["Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1909-07-13
+publicat: "2021-02-09"
 slug: "eugeni-dors/l-imperialisme-catala"
 draft: false
 image: "1909-07-13_la_veu_eugeni_dors_-_limperialisme_catala.webp"

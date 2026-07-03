@@ -3,6 +3,7 @@ title: "Mallorca i Catalunya"
 autors: ["Àngel Pons i Guitart"]
 publicacions: ["La Veu de Catalunya"]
 date: 1936-06-04
+publicat: "2021-06-02"
 slug: "angel-pons-i-guitart/mallorca-i-catalunya"
 draft: false
 image: "1936-06-04_la_veu_angel_pons_i_guitart_-_mallorca_i_catalunya.webp"

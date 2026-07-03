@@ -3,6 +3,7 @@ title: "Josep Pla. Homes"
 autors: ["Carles Riba"]
 publicacions: ["La Publicitat"]
 date: 1926-10-13
+publicat: "2021-09-11"
 slug: "carles-riba/josep-pla-homes"
 draft: false
 image: "1926-10-13_la_publicitat_carles_riba_-_josep_pla_homes.webp"
