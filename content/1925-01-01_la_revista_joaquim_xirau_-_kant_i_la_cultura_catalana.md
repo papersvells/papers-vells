@@ -1,6 +1,7 @@
 ---
 title: "Kant i la cultura catalana"
 autors: ["Joaquim Xirau"]
+autors_citats: ["Joan Maragall"]
 publicacions: ["La Revista"]
 date: 1925-01-01
 publicat: "2020-11-21"

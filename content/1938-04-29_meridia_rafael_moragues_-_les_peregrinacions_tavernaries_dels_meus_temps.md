@@ -1,6 +1,7 @@
 ---
 title: "Les peregrinacions tavernàries dels meus temps"
 autors: ["Rafael Moragas"]
+autors_citats: ["Francesc Pujols", "Màrius Aguilar"]
 publicacions: ["Meridià"]
 date: 1938-04-29
 publicat: "2021-08-24"

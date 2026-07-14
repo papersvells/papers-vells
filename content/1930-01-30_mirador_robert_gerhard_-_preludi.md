@@ -1,6 +1,7 @@
 ---
 title: "Preludi"
 autors: ["Robert Gerhard"]
+autors_citats: ["Rossend Llates"]
 publicacions: ["Mirador"]
 date: 1930-01-30
 publicat: "2020-08-04"

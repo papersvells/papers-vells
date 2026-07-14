@@ -1,6 +1,7 @@
 ---
 title: "El Premi Crexells 1931"
 autors: ["Eduard Nicol"]
+autors_citats: ["Francesc Trabal", "Carles Soldevila", "Jeroni de Moragas", "Carles Capdevila", "Joan Puig i Ferreter", "Josep Navarro i Costabella", "Alexandre Plana", "Prudenci Bertrana", "Just Cabot"]
 publicacions: ["Revista de Catalunya"]
 date: 1931-11-01
 publicat: "2020-07-12"

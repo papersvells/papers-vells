@@ -1,6 +1,7 @@
 ---
 title: "Per què no tenim novel·la"
 autors: ["Carles Soldevila"]
+autors_citats: ["Joan Puig i Ferreter", "Josep Pous i Pagès"]
 publicacions: ["La Publicitat"]
 date: 1928-12-19
 publicat: "2019-06-23"

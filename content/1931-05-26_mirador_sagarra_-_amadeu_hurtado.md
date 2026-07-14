@@ -1,6 +1,7 @@
 ---
 title: "Amadeu Hurtado"
 autors: ["Josep Maria de Sagarra"]
+autors_citats: ["Amadeu Hurtado"]
 publicacions: ["Mirador"]
 date: 1931-05-26
 publicat: "2021-01-27"

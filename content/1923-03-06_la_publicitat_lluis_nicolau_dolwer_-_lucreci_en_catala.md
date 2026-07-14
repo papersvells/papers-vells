@@ -1,6 +1,7 @@
 ---
 title: "Lucreci en català"
 autors: ["Lluís Nicolau d'Olwer"]
+autors_citats: ["Joaquim Balcells", "Joan Estelrich"]
 publicacions: ["La Publicitat"]
 date: 1923-03-06
 publicat: "2020-06-03"

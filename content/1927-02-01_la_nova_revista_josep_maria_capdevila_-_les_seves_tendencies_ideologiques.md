@@ -1,6 +1,7 @@
 ---
 title: "Joan Crexells: Les seves tendències ideològiques"
 autors: ["Josep Maria Capdevila"]
+autors_citats: ["Joan Crexells", "Jaume Serra Húnter"]
 publicacions: ["La Nova Revista"]
 date: 1927-02-01
 publicat: "2020-05-07"

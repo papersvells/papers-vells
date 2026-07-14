@@ -1,6 +1,7 @@
 ---
 title: "Del sublim badar"
 autors: ["Feliu Elias"]
+autors_citats: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1929-03-06
 publicat: "2019-06-05"

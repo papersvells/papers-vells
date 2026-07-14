@@ -1,6 +1,7 @@
 ---
 title: "L’estil"
 autors: ["Just Cabot"]
+autors_citats: ["Manuel de Montoliu", "Josep Carner", "Josep Pla"]
 publicacions: ["Mirador"]
 date: 1929-05-30
 publicat: "2020-05-15"

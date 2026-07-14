@@ -1,6 +1,7 @@
 ---
 title: "Què fa en Rusiñol de les quatre de la tarda a les cinc de la matinada?"
 autors: ["Melcior Font"]
+autors_citats: ["Francesc Pujols"]
 publicacions: ["Imatges"]
 date: 1930-05-25
 publicat: "2021-11-18"

@@ -1,6 +1,7 @@
 ---
 title: "Josep Pla. L’humor"
 autors: ["Carles Riba"]
+autors_citats: ["Francesc Pujols", "Josep Pla", "Agustí Esclasans"]
 publicacions: ["La Publicitat"]
 date: 1926-09-08
 publicat: "2021-09-11"

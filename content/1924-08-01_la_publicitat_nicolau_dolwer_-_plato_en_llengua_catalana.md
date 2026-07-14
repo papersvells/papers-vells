@@ -1,6 +1,7 @@
 ---
 title: "Plató en llengua catalana"
 autors: ["Lluís Nicolau d'Olwer"]
+autors_citats: ["Carles Riba", "Joan Crexells"]
 publicacions: ["La Publicitat"]
 date: 1924-08-01
 publicat: "2020-04-26"

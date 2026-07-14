@@ -1,6 +1,7 @@
 ---
 title: "Un festival de pensament"
 autors: ["Josep Farran i Mayoral"]
+autors_citats: ["Jaume Serra Húnter", "Pere Coromines", "Pompeu Gener"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-03-08
 publicat: "2020-03-30"

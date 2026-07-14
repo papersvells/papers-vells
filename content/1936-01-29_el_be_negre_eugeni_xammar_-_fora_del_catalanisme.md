@@ -1,6 +1,7 @@
 ---
 title: "Fora del catalanisme"
 autors: ["Eugeni Xammar"]
+autors_citats: ["Ferran Valls i Taberner", "Josep Puig i Cadafalch", "Joan Estelrich"]
 publicacions: ["El Be Negre"]
 date: 1936-01-29
 publicat: "2021-09-15"

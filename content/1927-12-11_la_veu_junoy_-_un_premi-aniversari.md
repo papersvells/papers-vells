@@ -1,6 +1,7 @@
 ---
 title: "Un premi-aniversari"
 autors: ["Josep Maria Junoy"]
+autors_citats: ["Carles Capdevila", "Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1927-12-11
 publicat: "2019-06-15"

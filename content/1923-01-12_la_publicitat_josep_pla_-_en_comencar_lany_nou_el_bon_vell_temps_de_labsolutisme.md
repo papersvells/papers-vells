@@ -1,6 +1,7 @@
 ---
 title: "En començar l’any nou: el bon vell temps de l’absolutisme"
 autors: ["Josep Pla"]
+autors_citats: ["Josep Carner"]
 publicacions: ["La Publicitat"]
 date: 1923-01-12
 publicat: "2024-05-15"

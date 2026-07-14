@@ -1,6 +1,7 @@
 ---
 title: "No ens ve pas d’un any…"
 autors: ["Josep Pla"]
+autors_citats: ["Manuel de Montoliu", "Josep Carner", "Josep Farran i Mayoral", "Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-12
 publicat: "2021-09-01"

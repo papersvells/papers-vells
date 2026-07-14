@@ -10,5 +10,6 @@ El criteri de selecció ha estat, especialment, el gust personal. Hi ha hagut ta
 Tots els articles han estat obtinguts de la pàgina de la Biblioteca Nacional de Catalunya.
 
 [![ARCA|BNC](/images/arca.webp)](https://www.bnc.cat/digital/arca)
- 
-Fins ara, disposem d’un total de 296 articles i 100 autors.
+
+<hr class="rule-term"> 
+{{< estadistiques >}}

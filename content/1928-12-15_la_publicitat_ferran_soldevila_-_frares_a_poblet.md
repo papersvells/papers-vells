@@ -1,6 +1,7 @@
 ---
 title: "Frares a Poblet?"
 autors: ["Ferran Soldevila"]
+autors_citats: ["Antoni Rovira i Virgili"]
 publicacions: ["La Publicitat"]
 date: 1928-12-15
 publicat: "2020-07-20"

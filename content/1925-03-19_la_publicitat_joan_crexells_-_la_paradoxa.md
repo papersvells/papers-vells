@@ -1,6 +1,7 @@
 ---
 title: "La paradoxa"
 autors: ["Joan Crexells"]
+autors_citats: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1925-03-19
 publicat: "2019-05-15"

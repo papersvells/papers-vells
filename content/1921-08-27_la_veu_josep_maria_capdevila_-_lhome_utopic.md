@@ -1,6 +1,7 @@
 ---
 title: "L’home utòpic"
 autors: ["Josep Maria Capdevila"]
+autors_citats: ["Joan Maragall"]
 publicacions: ["La Veu de Catalunya"]
 date: 1921-08-27
 publicat: "2020-06-23"

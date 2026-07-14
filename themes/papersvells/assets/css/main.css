@@ -43,6 +43,7 @@
   --text-3xl:  3.2rem;   /* títol principal del logo de text */
 
   /* Espaiat */
+  --space-xxs: 0.2rem;
   --space-xs:  0.4rem;
   --space-sm:  0.8rem;
   --space-md:  1.5rem;
@@ -194,6 +195,45 @@ p { margin-bottom: var(--space-sm); }
   margin: var(--space-xs) 0;
 }
 
+/* ── Línia divisòria a la pàgina individual de terme */
+.rule--term {
+  margin: var(--space-sm) 0;
+}
+
+.rule--citats {
+  height: 1px;
+  background: var(--color-border);
+  margin-block: var(--space-xl);
+}
+
+/* ── Estadístiques del projecte ───────────────────────────── */
+
+.estadistiques {
+  margin-top: var(--space-lg);
+}
+
+.estadistiques__llista {
+  display: grid;
+  gap: var(--space-xxs);
+  margin-top: var(--space-md);
+}
+
+.estadistiques__fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: .25rem 0;
+}
+
+.estadistiques__fila dt {
+  margin: 0;
+}
+
+.estadistiques__fila dd {
+  margin: 0;
+  color: var(--color-accent);
+  font-weight: 500;
+}
 
 /* ── 6. CAPÇALERA GLOBAL ──────────────────────────────────── */
 /* ── Bio d'autor o publicació */
@@ -201,11 +241,6 @@ p { margin-bottom: var(--space-sm); }
   margin-top: var(--space-sm);
   font-style: italic;
   line-height: 1.5;
-}
-
-/* ── Línia divisòria a la pàgina individual de terme */
-.rule--term {
-  margin: var(--space-sm) 0;
 }
 
 /* ── Icona Viquipèdia */

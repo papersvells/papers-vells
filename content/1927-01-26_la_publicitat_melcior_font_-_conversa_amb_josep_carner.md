@@ -1,6 +1,7 @@
 ---
 title: "Conversa amb Josep Carner"
 autors: ["Melcior Font"]
+autors_citats: ["Josep Carner"]
 publicacions: ["La Publicitat"]
 date: 1927-02-26
 publicat: "2022-11-12"

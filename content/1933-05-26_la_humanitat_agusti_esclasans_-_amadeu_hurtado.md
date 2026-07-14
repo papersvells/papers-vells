@@ -1,6 +1,7 @@
 ---
 title: "Amadeu Hurtado"
 autors: ["Agustí Esclasans"]
+autors_citats: ["Amadeu Hurtado", "Pere Coromines"]
 publicacions: ["La Humanitat"]
 date: 1933-05-26
 publicat: "2021-05-26"

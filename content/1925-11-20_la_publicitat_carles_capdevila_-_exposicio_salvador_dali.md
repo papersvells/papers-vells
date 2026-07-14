@@ -1,6 +1,7 @@
 ---
 title: "Exposició Salvador Dalí"
 autors: ["Carles Capdevila"]
+autors_citats: ["Joan Salvat-Papasseit"]
 publicacions: ["La Publicitat"]
 date: 1925-11-20
 publicat: "2024-06-05"

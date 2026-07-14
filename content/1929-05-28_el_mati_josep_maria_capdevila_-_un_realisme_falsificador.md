@@ -1,6 +1,7 @@
 ---
 title: "Un realisme falsificador"
 autors: ["Josep Maria Capdevila"]
+autors_citats: ["Raimon Casellas"]
 publicacions: ["El Matí"]
 date: 1929-05-28
 publicat: "2020-05-18"

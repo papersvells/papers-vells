@@ -1,6 +1,7 @@
 ---
 title: "A n’en Pere Coromines"
 autors: ["Joan Maragall"]
+autors_citats: ["Pere Coromines"]
 publicacions: ["La Veu de Catalunya"]
 date: 1907-07-11
 publicat: "2020-12-26"

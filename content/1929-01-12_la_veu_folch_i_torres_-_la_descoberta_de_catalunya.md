@@ -1,6 +1,7 @@
 ---
 title: "La descoberta de Catalunya"
 autors: ["Joaquim Folch i Torres"]
+autors_citats: ["Domènec de Bellmunt", "Pere Coromines"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-01-12
 publicat: "2020-04-11"

@@ -1,6 +1,7 @@
 ---
 title: "L’epistolari d’En Milà i Fontanals"
 autors: ["Ferran Soldevila"]
+autors_citats: ["Lluís Nicolau d'Olwer"]
 publicacions: ["La Publicitat"]
 date: 1922-10-21
 publicat: "2020-07-08"

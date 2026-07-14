@@ -1,6 +1,7 @@
 ---
 title: "Josep Pla. Homes"
 autors: ["Carles Riba"]
+autors_citats: ["Josep Maria Junoy", "Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1926-10-13
 publicat: "2021-09-11"

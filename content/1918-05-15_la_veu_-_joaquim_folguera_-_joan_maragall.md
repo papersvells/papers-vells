@@ -1,6 +1,7 @@
 ---
 title: "Joan Maragall"
 autors: ["Joaquim Folguera"]
+autors_citats: ["Joan Maragall"]
 publicacions: ["La Veu de Catalunya"]
 date: 1918-05-15
 publicat: "2020-10-27"

@@ -1,6 +1,7 @@
 ---
 title: "Catalònia"
 autors: ["Carles Soldevila"]
+autors_citats: ["Josep Carner", "Antoni Rovira i Virgili", "Joan Maragall", "Joan Salvat-Papasseit"]
 publicacions: ["La Publicitat"]
 date: 1924-05-09
 publicat: "2019-05-08"

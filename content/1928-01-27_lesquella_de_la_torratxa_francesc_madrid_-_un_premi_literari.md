@@ -1,6 +1,7 @@
 ---
 title: "Un premi literari"
 autors: ["Francesc Madrid"]
+autors_citats: ["Carles Riba", "Josep Carner", "Joan Crexells"]
 publicacions: ["L'Esquella de la torratxa"]
 date: 1928-01-27
 publicat: "2019-06-16"

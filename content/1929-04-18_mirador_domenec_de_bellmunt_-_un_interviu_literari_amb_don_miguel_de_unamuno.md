@@ -1,6 +1,7 @@
 ---
 title: "Un interviu literari amb Don Miguel de Unamuno"
 autors: ["Domènec de Bellmunt"]
+autors_citats: ["Francesc Madrid", "Josep Pla", "Josep Maria de Sagarra", "Eugeni d'Ors", "Lluís Nicolau d'Olwer", "Alexandre Plana", "Pere Coromines", "Josep Pous i Pagès"]
 publicacions: ["Mirador"]
 date: 1929-04-18
 publicat: "2021-05-20"
@@ -22,7 +23,7 @@ El nostre interlocutor ens va mirar sorprès, potser amb una mirada de reconvenc
 
 —Ja ho crec que el conec! Qui no el coneix a Hendaya? Si voleu parlar-hi, veniu aquesta tarda al cafè X… de dues a tres…
 
-El trist del cas era que jo no podia esperar-me a Hendaya fi ns a les tres de la tarda, car havia de tornar a Biarritz amb el tren de dos quarts de dotze. Vaig decidir adreçar-me a un xofer de taxi i li vaig fer la mateixa pregunta. Ens contesta:
+El trist del cas era que jo no podia esperar-me a Hendaya fins a les tres de la tarda, car havia de tornar a Biarritz amb el tren de dos quarts de dotze. Vaig decidir adreçar-me a un xofer de taxi i li vaig fer la mateixa pregunta. Ens contesta:
 
 —Don Miguel acostuma a anar al cafè X... de dues a tres de la tarda...
 

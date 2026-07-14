@@ -1,6 +1,7 @@
 ---
 title: "El gran Coromines"
 autors: ["Francesc Pujols"]
+autors_citats: ["Amadeu Hurtado", "Pere Coromines"]
 publicacions: ["Picarol"]
 date: 1912-02-24
 publicat: "2021-04-16"

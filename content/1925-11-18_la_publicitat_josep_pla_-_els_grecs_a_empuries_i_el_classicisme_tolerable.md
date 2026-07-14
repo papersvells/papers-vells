@@ -1,6 +1,7 @@
 ---
 title: "Els grecs a Empúries i el classicisme tolerable"
 autors: ["Josep Pla"]
+autors_citats: ["Josep Carner", "Manuel Brunet"]
 publicacions: ["La Publicitat"]
 date: 1925-11-18
 publicat: "2019-07-28"

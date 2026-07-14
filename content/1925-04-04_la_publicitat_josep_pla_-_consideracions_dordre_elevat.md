@@ -1,6 +1,7 @@
 ---
 title: "Consideracions d’ordre elevat"
 autors: ["Josep Pla"]
+autors_citats: ["Joan Crexells"]
 publicacions: ["La Publicitat"]
 date: 1925-04-04
 publicat: "2019-05-16"

@@ -1,6 +1,7 @@
 ---
 title: "Un llibre llastimós"
 autors: ["Amadeu Hurtado"]
+autors_citats: ["Josep Pla"]
 publicacions: ["Mirador"]
 date: 1929-06-20
 publicat: "2020-08-08"

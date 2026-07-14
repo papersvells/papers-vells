@@ -1,6 +1,7 @@
 ---
 title: "El «Premi Joan Crexells»"
 autors: ["Manuel Brunet"]
+autors_citats: ["Carles Riba", "Francesc Trabal", "Josep Maria Junoy", "Joan Puig i Ferreter", "Josep Pla", "Carles Rahola", "Agustí Esclasans", "Just Cabot", "Gaziel"]
 publicacions: ["La Publicitat"]
 date: 1928-12-14
 publicat: "2019-06-17"

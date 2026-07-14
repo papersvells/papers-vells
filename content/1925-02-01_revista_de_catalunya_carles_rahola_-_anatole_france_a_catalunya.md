@@ -1,6 +1,7 @@
 ---
 title: "Anatole France a Catalunya"
 autors: ["Carles Rahola"]
+autors_citats: ["Carles Soldevila", "Joan Maragall"]
 publicacions: ["Revista de Catalunya"]
 date: 1925-02-01
 publicat: "2020-04-17"

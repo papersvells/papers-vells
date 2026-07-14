@@ -1,6 +1,7 @@
 ---
 title: "Goethe i Maragall"
 autors: ["Manuel de Montoliu"]
+autors_citats: ["Joan Maragall"]
 publicacions: ["La Revista"]
 date: 1932-01-01
 publicat: "2020-09-30"

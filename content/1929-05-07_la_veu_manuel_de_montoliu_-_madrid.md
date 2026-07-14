@@ -1,6 +1,7 @@
 ---
 title: "Josep Pla. Madrid. Un dietari"
 autors: ["Manuel de Montoliu"]
+autors_citats: ["Joan Crexells", "Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-05-07
 publicat: "2020-05-13"

@@ -1,6 +1,7 @@
 ---
 title: "Josep Pla. Paisatges"
 autors: ["Carles Riba"]
+autors_citats: ["Feliu Elias", "Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1926-11-17
 publicat: "2021-09-11"

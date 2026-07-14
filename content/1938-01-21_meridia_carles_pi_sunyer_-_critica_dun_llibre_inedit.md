@@ -1,6 +1,7 @@
 ---
 title: "Crítica d’un llibre inèdit"
 autors: ["Carles Pi i Sunyer"]
+autors_citats: ["Mercè Rodoreda"]
 publicacions: ["Meridià"]
 date: 1938-01-21
 publicat: "2021-01-22"

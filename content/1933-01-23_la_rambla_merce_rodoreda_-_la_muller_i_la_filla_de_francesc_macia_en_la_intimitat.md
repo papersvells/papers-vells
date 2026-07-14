@@ -1,6 +1,7 @@
 ---
 title: "La muller i la filla de Francesc Macià en la intimitat"
 autors: ["Mercè Rodoreda"]
+autors_citats: ["Jaume Serra Húnter"]
 publicacions: ["La Rambla"]
 date: 1933-01-23
 publicat: "2020-10-30"

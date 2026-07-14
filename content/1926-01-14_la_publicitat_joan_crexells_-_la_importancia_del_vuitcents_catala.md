@@ -1,6 +1,7 @@
 ---
 title: "La importància del vuit-cents català"
 autors: ["Joan Crexells"]
+autors_citats: ["Carles Riba", "Josep Maria Capdevila", "Jaume Serra Húnter", "Eugeni d'Ors"]
 publicacions: ["La Publicitat"]
 date: 1926-01-14
 publicat: "2020-10-24"

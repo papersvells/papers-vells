@@ -1,6 +1,7 @@
 ---
 title: "Les «Elegies» de Rilke"
 autors: ["Marià Manent"]
+autors_citats: ["Joan Crexells"]
 publicacions: ["La Veu de Catalunya"]
 date: 1933-09-23
 publicat: "2020-09-01"

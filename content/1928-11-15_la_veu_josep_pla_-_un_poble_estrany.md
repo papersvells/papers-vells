@@ -1,6 +1,7 @@
 ---
 title: "Un poble estrany"
 autors: ["Josep Pla"]
+autors_citats: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-15
 publicat: "2019-12-06"

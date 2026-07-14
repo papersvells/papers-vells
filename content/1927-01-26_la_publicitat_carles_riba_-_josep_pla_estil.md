@@ -1,6 +1,7 @@
 ---
 title: "Josep Pla. L’estil"
 autors: ["Carles Riba"]
+autors_citats: ["Francesc Pujols", "Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1927-01-26
 publicat: "2021-09-11"

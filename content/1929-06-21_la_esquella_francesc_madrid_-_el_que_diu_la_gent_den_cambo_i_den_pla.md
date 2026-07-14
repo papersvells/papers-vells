@@ -1,6 +1,7 @@
 ---
 title: "El que diu la gent d’en Cambó i d’en Pla"
 autors: ["Francesc Madrid"]
+autors_citats: ["Antoni Rovira i Virgili", "Josep Pla", "Josep Maria de Sagarra", "Joan Estelrich"]
 publicacions: ["L'esquella de la torratxa"]
 date: 1929-06-21
 publicat: "2019-08-21"

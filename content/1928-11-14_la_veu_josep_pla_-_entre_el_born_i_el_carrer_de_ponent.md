@@ -1,6 +1,7 @@
 ---
 title: "Entre el Born i el carrer de Ponent"
 autors: ["Josep Pla"]
+autors_citats: ["Pere Coromines"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-14
 publicat: "2021-03-02"

@@ -1,6 +1,7 @@
 ---
 title: "Conversa amb el Sr. Francesc Pujols"
 autors: ["Francesc Madrid"]
+autors_citats: ["Josep Maria Junoy", "Francesc Pujols", "Joan Puig i Ferreter", "Amadeu Hurtado", "Josep Maria de Sagarra", "Màrius Aguilar", "Joaquim Folguera"]
 publicacions: ["Mirador"]
 date: 1929-02-07
 publicat: "2020-01-18"

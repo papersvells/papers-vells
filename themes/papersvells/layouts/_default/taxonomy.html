@@ -288,9 +288,47 @@
           </li>
         {{ end }}
       </ul>
+      {{/* ----------------------------------------------------------------
+      Articles on aquest autor és citat
+      ---------------------------------------------------------------- */}}
+
+      {{ if eq .Data.Plural "autors" }}
+
+        {{ $autor := .Title }}
+        {{ $citats := where site.RegularPages "Params.autors_citats" "intersect" (slice $autor) }}
+
+        {{/* Eliminem els articles del mateix autor perquè no surtin duplicats */}}
+        {{ $citats = $citats | complement .Pages }}
+
+      {{ if gt (len $citats) 0 }}
+      
+        <hr class="rule--citats">
+      
+        <h1 class="autor-header__name">Ha estat citat en {{ len $citats }} articles:</h1>
+
+        <ul class="llista-articles">
+          {{ range $citats.ByDate.Reverse }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+              <span class="meta">
+                {{ with .Params.autors }}
+                {{ range $i, $a := . }}
+                {{ if $i }}, {{ end }}
+                  <a href="/autors/{{ $a | urlize }}/">{{ $a }}</a>
+                {{ end }}
+                {{ end }}
+                · {{ .Date.Format "02/01/2006" }}
+              </span>
+            </li>
+          {{ end }}
+        </ul>
+
+      {{ end }}
+
+    {{ end }}
     </div>
 
-  {{ end }}
+    {{ end }}
 
 </div>
 {{ end }}

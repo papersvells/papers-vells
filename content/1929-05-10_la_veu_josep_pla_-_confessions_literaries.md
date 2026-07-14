@@ -1,6 +1,7 @@
 ---
 title: "Confessions literàries"
 autors: ["Josep Pla"]
+autors_citats: ["Manuel de Montoliu", "Manuel Brunet"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-05-10
 publicat: "2020-05-14"

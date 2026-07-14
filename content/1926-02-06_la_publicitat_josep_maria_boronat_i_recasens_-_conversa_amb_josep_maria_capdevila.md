@@ -1,6 +1,7 @@
 ---
 title: "Una conversa amb Josep M. Capdevila"
 autors: ["Josep Maria Boronat i Recasens"]
+autors_citats: ["Carles Riba", "Carles Soldevila", "Josep Maria Capdevila", "Josep Maria de Sagarra", "Melcior Font", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1926-02-06
 publicat: "2021-05-26"

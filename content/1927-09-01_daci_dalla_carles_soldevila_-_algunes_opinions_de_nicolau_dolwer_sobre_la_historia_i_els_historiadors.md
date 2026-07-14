@@ -1,6 +1,7 @@
 ---
 title: "Algunes opinions de Nicolau d’Olwer sobre la història i els historiadors"
 autors: ["Carles Soldevila"]
+autors_citats: ["Ferran Valls i Taberner", "Josep Carner", "Antoni Rovira i Virgili", "Lluís Nicolau d'Olwer", "Jeroni Martorell"]
 publicacions: ["D'ací i d'allà"]
 date: 1927-09-01
 publicat: "2020-12-15"

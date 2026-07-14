@@ -1,6 +1,7 @@
 ---
 title: "Indiscrecions sobre el Premi Crexells"
 autors: ["Josep Pla"]
+autors_citats: ["Francesc Trabal", "Joan Puig i Ferreter", "Prudenci Bertrana"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-28
 publicat: "2019-06-28"

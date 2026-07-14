@@ -1,6 +1,7 @@
 ---
 title: "És així!"
 autors: ["Joan Puig i Ferreter"]
+autors_citats: ["Gaziel", "Francesc Madrid", "Carles Capdevila", "Josep Farran i Mayoral", "Josep Pla", "Josep Maria de Sagarra", "Josep Navarro i Costabella", "Joan Estelrich", "Prudenci Bertrana", "Agustí Esclasans"]
 publicacions: ["La Publicitat"]
 date: 1929-01-02
 publicat: "2019-07-01"

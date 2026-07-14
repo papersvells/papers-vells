@@ -1,6 +1,7 @@
 ---
 title: "Les nostres penyes literàries: La de “La Revista”"
 autors: ["Miquel Duran i Tortajada"]
+autors_citats: ["Carles Riba", "Carles Soldevila", "Joan Crexells", "Josep Farran i Mayoral", "Josep Maria de Sagarra", "J V Foix", "Joan Estelrich", "Alexandre Plana", "Joan Salvat-Papasseit", "Agustí Esclasans", "Joaquim Folguera", "Francesc Domingo"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-03
 publicat: "2019-11-23"

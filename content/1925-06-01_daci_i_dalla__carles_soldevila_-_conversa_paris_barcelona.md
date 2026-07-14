@@ -1,6 +1,7 @@
 ---
 title: "Conversa París-Barcelona"
 autors: ["Carles Soldevila"]
+autors_citats: ["Josep Carner", "Joan Puig i Ferreter", "Josep Pla", "Josep Maria de Sagarra", "Alexandre Plana", "Prudenci Bertrana"]
 publicacions: ["D'ací i d'allà"]
 date: 1925-06-01
 publicat: "2019-09-18"

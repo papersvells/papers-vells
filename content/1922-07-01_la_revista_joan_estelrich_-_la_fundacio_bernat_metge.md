@@ -1,6 +1,7 @@
 ---
 title: "La fundació Bernat Metge"
 autors: ["Joan Estelrich"]
+autors_citats: ["Carles Riba", "Lluís Nicolau d'Olwer"]
 publicacions: ["La Revista"]
 date: 1922-07-01
 publicat: "2020-03-04"

@@ -1,6 +1,7 @@
 ---
 title: "Una generació sense novel·la"
 autors: ["Carles Riba"]
+autors_citats: ["Carles Soldevila", "Josep Carner", "Josep Maria Junoy", "Joan Puig i Ferreter", "Josep Pla", "Josep Maria de Sagarra", "Joan Maragall", "Alexandre Plana"]
 publicacions: ["La Veu de Catalunya"]
 date: 1925-06-07
 publicat: "2021-05-16"

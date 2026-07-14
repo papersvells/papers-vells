@@ -1,6 +1,7 @@
 ---
 title: "Valéry–Maragall"
 autors: ["Tomàs Garcés"]
+autors_citats: ["Carles Soldevila", "Josep Maria de Sagarra", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1928-12-25
 publicat: "2021-04-27"

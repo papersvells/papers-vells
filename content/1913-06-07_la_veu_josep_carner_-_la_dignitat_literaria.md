@@ -1,6 +1,7 @@
 ---
 title: "La dignitat literària"
 autors: ["Josep Carner"]
+autors_citats: ["Josep Pijoan", "Joan Maragall"]
 publicacions: ["La Veu de Catalunya"]
 date: 1913-06-07
 publicat: "2021-09-24"

@@ -1,6 +1,7 @@
 ---
 title: "Sobre una rèplica de Pla"
 autors: ["Amadeu Hurtado"]
+autors_citats: ["Josep Pla"]
 publicacions: ["Mirador"]
 date: 1929-07-11
 publicat: "2020-08-25"

@@ -1,6 +1,7 @@
 ---
 title: "Conversa amb el professor Joaquim Xirau"
 autors: ["Josep Navarro i Costabella"]
+autors_citats: ["Joaquim Xirau", "Josep Farran i Mayoral"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-03-15
 publicat: "2020-03-19"

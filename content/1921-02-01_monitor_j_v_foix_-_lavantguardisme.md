@@ -1,6 +1,7 @@
 ---
 title: "L’avantguardisme"
 autors: ["J V Foix"]
+autors_citats: ["Carles Soldevila"]
 publicacions: ["Monitor"]
 date: 1921-02-01
 publicat: "2020-07-22"

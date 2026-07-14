@@ -1,6 +1,7 @@
 ---
 title: "És redimible el Palau de la Música Catalana?"
 autors: ["Manuel Brunet"]
+autors_citats: ["Joan Maragall"]
 publicacions: ["Mirador"]
 date: 1929-02-21
 publicat: "2020-02-15"

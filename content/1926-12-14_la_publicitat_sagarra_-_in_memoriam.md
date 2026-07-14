@@ -1,6 +1,7 @@
 ---
 title: "In Memoriam"
 autors: ["Josep Maria de Sagarra"]
+autors_citats: ["Joan Crexells"]
 publicacions: ["La Publicitat"]
 date: 1926-12-14
 publicat: "2020-05-29"

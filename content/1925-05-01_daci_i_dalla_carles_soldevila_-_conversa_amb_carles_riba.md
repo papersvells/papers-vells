@@ -1,6 +1,7 @@
 ---
 title: "Conversa amb Carles Riba"
 autors: ["Carles Soldevila"]
+autors_citats: ["Carles Riba", "Josep Maria Capdevila", "Joan Maragall"]
 publicacions: ["D'ací i d'allà"]
 date: 1925-05-01
 publicat: "2020-02-13"

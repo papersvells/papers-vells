@@ -1,6 +1,7 @@
 ---
 title: "L’expansió literària de Catalunya"
 autors: ["Tomàs Garcés"]
+autors_citats: ["Josep Maria Junoy", "Josep Puig i Cadafalch", "Joan Estelrich"]
 publicacions: ["La Publicitat"]
 date: 1922-10-11
 publicat: "2019-12-09"

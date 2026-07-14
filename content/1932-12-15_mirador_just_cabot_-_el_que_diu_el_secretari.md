@@ -1,6 +1,7 @@
 ---
 title: "El que diu el secretari"
 autors: ["Just Cabot"]
+autors_citats: ["Carles Riba", "Josep Maria Junoy", "Josep Maria de Sagarra", "Carles Rahola", "Gaziel"]
 publicacions: ["Mirador"]
 date: 1932-12-15
 publicat: "2020-04-18"

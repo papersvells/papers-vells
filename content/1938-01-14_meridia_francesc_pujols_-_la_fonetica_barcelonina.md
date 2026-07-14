@@ -1,6 +1,7 @@
 ---
 title: "La fonètica barcelonina"
 autors: ["Francesc Pujols"]
+autors_citats: ["Eugeni d'Ors"]
 publicacions: ["Meridià"]
 date: 1938-01-14
 publicat: "2021-01-19"

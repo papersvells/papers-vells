@@ -1,6 +1,7 @@
 ---
 title: "Conversa amb Joaquim Ruyra"
 autors: ["Tomàs Garcés"]
+autors_citats: ["Carles Soldevila", "Josep Carner", "Joan Maragall", "Prudenci Bertrana"]
 publicacions: ["Revista de Catalunya"]
 date: 1926-04-01
 publicat: "2022-03-06"

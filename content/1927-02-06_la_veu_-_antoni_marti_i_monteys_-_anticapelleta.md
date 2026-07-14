@@ -1,6 +1,7 @@
 ---
 title: "Anticapelleta"
 autors: ["Antoni Martí i Monteys"]
+autors_citats: ["Josep Maria Junoy"]
 publicacions: ["La Veu de Catalunya"]
 date: 1927-02-06
 publicat: "2020-03-28"

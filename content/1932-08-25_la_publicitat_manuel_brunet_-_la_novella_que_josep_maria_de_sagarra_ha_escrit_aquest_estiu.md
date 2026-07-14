@@ -1,6 +1,7 @@
 ---
 title: "La novel·la que Josep Maria de Sagarra ha escrit aquest estiu"
 autors: ["Manuel Brunet"]
+autors_citats: ["Josep Carner", "Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1932-08-25
 publicat: "2024-06-10"
@@ -10,7 +11,7 @@ image: "1932-08-25_la_publicitat_manuel_brunet_-_la_novella_que_josep_maria_de_s
 ---
 Tota la literatura catalana contemporània és obra de gent que s'ha de guanyar la vida.
 
-Escrit aquest concepte m'adono que potser ho he fet massa fort, que potser he plantejat el tema d'una enquesta. Segurament duen haver-hi excepcions. Se m'acuden dos noms: Ruyra i Víctor Català. Però resolc l'objecció contestant-me que aquests dos eminents literats i propietaris no se sentiran molestats si dic que ja no són ben bé d'aquesta generació.
+Escrit aquest concepte m'adono que potser ho he fet massa fort, que potser he plantejat el tema d'una enquesta. Segurament duen haver-hi excepcions. Se m'acuden dos noms: Ruyra i [Víctor Català](/victor-catala/). Però resolc l'objecció contestant-me que aquests dos eminents literats i propietaris no se sentiran molestats si dic que ja no són ben bé d'aquesta generació.
 
 Potser trobaríem altres excepcions no pas molt significatives, i haurem de reconèixer que algunes persones benestants es dediquen a treballs d'erudició.
 
@@ -34,7 +35,7 @@ El llibre té dues parts, quinze capítols a la primera part i catorze a la sego
 
 Lloc de l'acció: Barcelona. Temps: es fan llargues referències retrospectives, però l'acció, en el primer volum, es desenrotlla en cinc mesos, abans de l'Exposició de Montjuïc, en plena Dictadura. En el segon volum els fets passen durant la República.
 
-Transiten per l'obra setanta o vuitanta personatges, sense comptar-hi els comparses. La família central, els Lloberola, són vuit… És una antiga família aristocràtica arruïnada. Al costat d'ella hi ha banquers i plutocràcia pervinguda. Entre els personatges hi ha duquesses, comtesses, marquesos, polítics, capellans, banquers, jesuïtes, dones que exerceixen la prostitució, canonges mitjancers, col·laboradors de la Fundació Bernat Metge, ballarines, actrius, modistes, etc., etc., “És una línia vertical —em diu En Sagarra— que va des del més alt de la sang i el diner, fins als llocs més putrefactes del districte v.” Hi surt tothom, “dels carlins als nudistes”.
+Transiten per l'obra setanta o vuitanta personatges, sense comptar-hi els comparses. La família central, els Lloberola, són vuit… És una antiga família aristocràtica arruïnada. Al costat d'ella hi ha banquers i plutocràcia pervinguda. Entre els personatges hi ha duquesses, comtesses, marquesos, polítics, capellans, banquers, jesuïtes, dones que exerceixen la prostitució, canonges mitjancers, col·laboradors de la Fundació Bernat Metge, ballarines, actrius, modistes, etc., etc., “És una línia vertical —em diu En Sagarra— que va des del més alt de la sang i el diner, fins als llocs més putrefactes del districte V.” Hi surt tothom, “dels carlins als nudistes”.
 
 —I l'argument?
 

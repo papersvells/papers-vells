@@ -1,6 +1,7 @@
 ---
 title: "En Pere Coromines, noucentista"
 autors: ["Eugeni d'Ors"]
+autors_citats: ["Pere Coromines"]
 publicacions: ["La Veu de Catalunya"]
 date: 1907-07-31
 publicat: "2020-12-20"

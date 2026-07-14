@@ -1,6 +1,7 @@
 ---
 title: "Marcel Proust vell i nou"
 autors: ["Josep Pla"]
+autors_citats: ["Francesc Pujols"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-19
 publicat: "2019-10-02"

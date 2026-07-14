@@ -1,6 +1,7 @@
 ---
 title: "El diví Plató en català"
 autors: ["Cristòfor de Domènec"]
+autors_citats: ["Joan Crexells"]
 publicacions: ["La Veu de Catalunya"]
 date: 1924-05-23
 publicat: "2020-04-27"

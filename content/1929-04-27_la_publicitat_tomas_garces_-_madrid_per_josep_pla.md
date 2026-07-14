@@ -1,6 +1,7 @@
 ---
 title: "“Madrid”, per Josep Pla"
 autors: ["Tomàs Garcés"]
+autors_citats: ["Joan Crexells", "Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1929-04-27
 publicat: "2020-05-16"

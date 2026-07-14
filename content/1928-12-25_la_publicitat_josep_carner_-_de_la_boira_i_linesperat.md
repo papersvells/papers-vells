@@ -1,6 +1,7 @@
 ---
 title: "De la boira i de l’inesperat"
 autors: ["Josep Carner"]
+autors_citats: ["Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1928-12-25
 publicat: "2021-04-21"

@@ -1,6 +1,7 @@
 ---
 title: "Una resposta a Eugeni d’Ors"
 autors: ["Tomàs Garcés"]
+autors_citats: ["Josep Carner", "Josep Maria de Sagarra", "Eugeni d'Ors", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1923-02-25
 publicat: "2020-10-28"

@@ -1,6 +1,7 @@
 ---
 title: "Conversa amb Víctor Català"
 autors: ["Tomàs Garcés"]
+autors_citats: ["Josep Maria de Sagarra", "Joan Maragall", "Raimon Casellas", "Prudenci Bertrana", "Pere Coromines"]
 publicacions: ["Revista de Catalunya"]
 date: 1926-08-01
 publicat: "2020-07-14"

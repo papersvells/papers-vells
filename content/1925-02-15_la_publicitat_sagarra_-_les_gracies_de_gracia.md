@@ -1,6 +1,7 @@
 ---
 title: "Les gràcies de Gràcia"
 autors: ["Josep Maria de Sagarra"]
+autors_citats: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1925-02-15
 publicat: "2020-02-19"

@@ -1,6 +1,7 @@
 ---
 title: "La figura i el paisatge en l’obra de Josep Pla"
 autors: ["Josep F Ràfols"]
+autors_citats: ["Josep Carner", "Josep Pla", "Josep Maria de Sagarra"]
 publicacions: ["La Nova Revista"]
 date: 1927-04-01
 publicat: "2020-06-25"

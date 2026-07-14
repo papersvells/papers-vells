@@ -1,6 +1,7 @@
 ---
 title: "La Facultat de Filosofia i lletres"
 autors: ["Guillem Díaz-Plaja"]
+autors_citats: ["Carles Riba", "Manuel de Montoliu", "Ferran Valls i Taberner", "Ferran Soldevila", "Joan Puig i Ferreter", "Joaquim Balcells", "Antoni Rovira i Virgili", "Lluís Nicolau d'Olwer", "Joan Estelrich"]
 publicacions: ["Mirador"]
 date: 1932-10-13
 publicat: "2020-07-02"

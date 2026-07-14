@@ -1,6 +1,7 @@
 ---
 title: "Feminisme"
 autors: ["Josep Pla"]
+autors_citats: ["Josep Carner"]
 publicacions: ["La Publicitat"]
 date: 1927-06-14
 publicat: "2020-04-04"

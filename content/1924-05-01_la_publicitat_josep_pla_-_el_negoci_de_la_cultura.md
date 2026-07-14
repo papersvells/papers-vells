@@ -1,6 +1,7 @@
 ---
 title: "El negoci de la cultura"
 autors: ["Josep Pla"]
+autors_citats: ["Josep Carner", "Alexandre Plana", "Prudenci Bertrana"]
 publicacions: ["La Publicitat"]
 date: 1924-05-01
 publicat: "2021-12-29"

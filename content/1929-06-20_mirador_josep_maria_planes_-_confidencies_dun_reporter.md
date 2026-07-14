@@ -1,6 +1,7 @@
 ---
 title: "Confidències d’un repòrter"
 autors: ["Josep Maria Planes"]
+autors_citats: ["Adrià Gual"]
 publicacions: ["Mirador"]
 date: 1929-06-20
 publicat: "2020-05-06"

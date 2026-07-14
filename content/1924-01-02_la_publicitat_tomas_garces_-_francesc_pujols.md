@@ -1,6 +1,7 @@
 ---
 title: "Francesc Pujols"
 autors: ["Tomàs Garcés"]
+autors_citats: ["Francesc Pujols", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1924-01-02
 publicat: "2021-02-16"

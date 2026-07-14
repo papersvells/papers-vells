@@ -1,0 +1,44 @@
+{{ $articles := len site.RegularPages }}
+
+{{ $autors := len (where site.Pages "Params.cognom" "!=" nil) }}
+
+{{ $publicacions := where site.Pages "Section" "publicacions" }}
+{{ $publicacions = where $publicacions "Params.bio" "!=" nil }}
+{{ $numPublicacions := len $publicacions }}
+
+{{ $articles := site.RegularPages }}
+{{ $primer := index ($articles.ByDate) 0 }}
+{{ $ultim := index ($articles.ByDate.Reverse) 0 }}
+{{ $anyInicial := $primer.Date.Year }}
+{{ $anyFinal := $ultim.Date.Year }}
+{{ $anys := add (sub $anyFinal $anyInicial) 1 }}
+
+<div class="estadistiques">
+
+  <h3>El projecte en xifres</h3>
+
+  <dl class="estadistiques__llista">
+
+    <div class="estadistiques__fila">
+      <dt>Articles digitalitzats</dt>
+      <dd>{{len $articles }}</dd>
+    </div>
+
+    <div class="estadistiques__fila">
+      <dt>Autors catalogats</dt>
+      <dd>{{ $autors }}</dd>
+    </div>
+
+    <div class="estadistiques__fila">
+      <dt>Publicacions catalogades</dt>
+      <dd>{{ $numPublicacions }}</dd>
+    </div>
+
+    <div class="estadistiques__fila">
+      <dt>Període documentat</dt>
+      <dd>{{ $anys }} anys ({{ $anyInicial }}–{{ $anyFinal }})</dd>
+    </div>
+
+  </dl>
+
+</div>

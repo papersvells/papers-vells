@@ -1,6 +1,7 @@
 ---
 title: "La meva traducció del Dant"
 autors: ["Josep Maria de Sagarra"]
+autors_citats: ["Manuel de Montoliu", "Manuel Brunet"]
 publicacions: ["La Veu de Catalunya"]
 date: 1935-06-26
 publicat: "2020-03-25"

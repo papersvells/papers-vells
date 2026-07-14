@@ -1,6 +1,7 @@
 ---
 title: "Algunes reflexions. Entorn del “Premi Crexells”"
 autors: ["Joan Estelrich"]
+autors_citats: ["Carles Riba", "Carles Soldevila", "Gaziel", "Carles Capdevila", "Josep Farran i Mayoral", "Josep Maria de Sagarra", "Prudenci Bertrana", "Agustí Esclasans", "Manuel Brunet"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-23
 publicat: "2019-06-27"

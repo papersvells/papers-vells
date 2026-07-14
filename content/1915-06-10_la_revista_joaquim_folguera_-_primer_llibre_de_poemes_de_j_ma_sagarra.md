@@ -1,6 +1,7 @@
 ---
 title: "Primer llibre de poemes, de Josep Mª de Sagarra"
 autors: ["Joaquim Folguera"]
+autors_citats: ["Josep Maria de Sagarra", "Joan Maragall"]
 publicacions: ["La Revista"]
 date: 1915-06-10
 publicat: "2021-04-07"

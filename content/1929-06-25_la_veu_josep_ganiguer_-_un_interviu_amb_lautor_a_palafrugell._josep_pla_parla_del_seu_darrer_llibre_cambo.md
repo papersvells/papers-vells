@@ -1,6 +1,7 @@
 ---
 title: "Un interviu amb l’autor a Palafrugell"
 autors: ["Josep Ganiguer"]
+autors_citats: ["Amadeu Hurtado", "Antoni Rovira i Virgili", "Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-06-25
 publicat: "2020-08-16"

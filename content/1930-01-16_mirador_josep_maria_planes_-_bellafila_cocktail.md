@@ -1,6 +1,7 @@
 ---
 title: "Bellafila Cocktail"
 autors: ["Josep Maria Planes"]
+autors_citats: ["Josep Carner", "Josep Maria de Sagarra", "Rossend Llates"]
 publicacions: ["Mirador"]
 date: 1930-01-16
 publicat: "2020-11-03"
@@ -8,7 +9,7 @@ slug: "josep-maria-planes/bellafila-cocktail"
 draft: false
 image: "1930-01-16_mirador_josep_maria_planes_-_bellafila_cocktail.webp"
 ---
-―I doncs, què feu els joves? ―ens pregunta En [Josep Carner](/josep-carner/).
+I doncs, què feu els joves? ―ens pregunta En [Josep Carner](/josep-carner/).
 
 Aquesta és una d'aquelles preguntes que no hi ha manera de contestar com no sigui amb un arronsament d'espatlles o un somriure ple de vaguetat.
 
@@ -41,7 +42,7 @@ mes ell, era valencià!</div>
 
 ―No puc suportar les penyes de literats. La constant discussió d'afers professionals, em molesta. Jo voto per una penya de gent trempada...
 
-Estem passejant per la Rambla En Carner, [Sagarra](/josep-maria-de-sagarra/), Llates i el que escriu. En Carner fa una pausa, i:
+Estem passejant per la Rambla En Carner, [Sagarra](/josep-maria-de-sagarra/), [Llates](/rossend-llates/) i el que escriu. En Carner fa una pausa, i:
 
 ―Nosaltres quatre, per exemple, som gent trempada, i famosa. Sobretot vosaltres tres...
 

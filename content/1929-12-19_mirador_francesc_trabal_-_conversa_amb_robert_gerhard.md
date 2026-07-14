@@ -1,6 +1,7 @@
 ---
 title: "Una conversa amb Robert Gerhard"
 autors: ["Francesc Trabal"]
+autors_citats: ["Josep Carner", "Josep Maria Junoy", "Robert Gerhard", "Joan Salvat-Papasseit"]
 publicacions: ["Mirador"]
 date: 1929-12-19
 publicat: "2022-03-17"

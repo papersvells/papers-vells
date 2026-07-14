@@ -1,6 +1,7 @@
 ---
 title: "Un certamen solemne"
 autors: ["Tomàs Garcés"]
+autors_citats: ["Josep Carner", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1925-11-07
 publicat: "2019-05-22"

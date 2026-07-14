@@ -1,6 +1,7 @@
 ---
 title: "La institució del premi “Joan Crexells”"
 autors: ["Josep Pla"]
+autors_citats: ["Carles Capdevila"]
 publicacions: ["La Publicitat"]
 date: 1927-12-09
 publicat: "2019-06-14"

@@ -1,6 +1,7 @@
 ---
 title: "Després de l’acord"
 autors: ["Francesc Madrid"]
+autors_citats: ["Carles Riba", "Joan Puig i Ferreter", "Josep Pla", "Lluís Nicolau d'Olwer", "Agustí Esclasans", "Manuel Brunet"]
 publicacions: ["L'Esquella de la torratxa"]
 date: 1928-12-21
 publicat: "2019-06-26"

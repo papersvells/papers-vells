@@ -1,6 +1,7 @@
 ---
 title: "Una gràcia de qualitat, per l’amor de Déu!"
 autors: ["Sebastià Gasch"]
+autors_citats: ["Francesc Pujols", "Francesc Domingo"]
 publicacions: ["Anti"]
 date: 1931-05-01
 publicat: "2020-07-28"

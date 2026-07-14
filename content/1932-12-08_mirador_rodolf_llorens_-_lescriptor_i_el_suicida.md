@@ -1,6 +1,7 @@
 ---
 title: "L’escriptor i el suïcida"
 autors: ["Rodolf Llorens"]
+autors_citats: ["Carles Soldevila"]
 publicacions: ["Mirador"]
 date: 1932-12-08
 publicat: "2019-11-30"

@@ -1,6 +1,7 @@
 ---
 title: "Una necròpolis ibèrica autèntica a Montjuïc"
 autors: ["Àngel Ferran"]
+autors_citats: ["Jeroni Martorell"]
 publicacions: ["La Publicitat"]
 date: 1929-02-05
 publicat: "2020-01-12"

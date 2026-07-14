@@ -1,6 +1,7 @@
 ---
 title: "L’amable Eugeni d’Ors ensenyant la Llògica"
 autors: ["Pere Coromines"]
+autors_citats: ["Eugeni d'Ors"]
 publicacions: ["El Poble Català"]
 date: 1910-01-09
 publicat: "2020-11-30"

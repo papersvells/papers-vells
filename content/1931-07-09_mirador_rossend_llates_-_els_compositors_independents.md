@@ -1,6 +1,7 @@
 ---
 title: "Els Compositors Independents"
 autors: ["Rossend Llates"]
+autors_citats: ["Frederic Mompou", "Robert Gerhard"]
 publicacions: ["Mirador"]
 date: 1931-07-09
 publicat: "2021-01-26"

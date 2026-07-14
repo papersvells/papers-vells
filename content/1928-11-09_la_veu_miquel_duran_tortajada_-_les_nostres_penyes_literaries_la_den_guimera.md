@@ -1,6 +1,7 @@
 ---
 title: "Les nostres penyes literàries: La d’En Guimerà"
 autors: ["Miquel Duran i Tortajada"]
+autors_citats: ["Carles Capdevila"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-09
 publicat: "2019-11-24"

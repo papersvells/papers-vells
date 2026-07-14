@@ -1,6 +1,7 @@
 ---
 title: "Influència moral del Glosari a Catalunya"
 autors: ["Josep Maria Capdevila"]
+autors_citats: ["Eugeni d'Ors"]
 publicacions: ["La Revista"]
 date: 1916-02-29
 publicat: "2021-01-13"
@@ -36,7 +37,7 @@ I, havent dit de Flaubert, una nota d'ell és preciosa: Hi ha, diu, dues menes d
 
 De l'experimentació de la primera en fou meditador, fins intentà escriure'n el procés, Stendhal.
 
-Entrem a la labor moral de Xenius. Contra la primacia del desig, la primacia de la voluntat. Contra la primacia del plaer, la primacia de l'amor.
+Entrem a la labor moral de [Xenius](/eugeni-dors/). Contra la primacia del desig, la primacia de la voluntat. Contra la primacia del plaer, la primacia de l'amor.
 
 Però el nostre tema és la influència de l'obra del glosador. I aquesta magna influencia fóra estada nul·la o escassíssima si no hagués mostrat, demés objectes a l'amor.
 
