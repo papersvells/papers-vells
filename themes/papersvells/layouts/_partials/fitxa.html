@@ -148,19 +148,24 @@
 </aside>
 
 <script>
-  // En mòbil (≤ 900px), tanquem el details
-  document.querySelectorAll(".fitxa__expandible").forEach(d => {
-    if (window.innerWidth <= 900) d.removeAttribute("open");
-  });
-  
-  // Si es redimensiona la finestra, actualitza
-  window.addEventListener("resize", function() {
-    document.querySelectorAll(".fitxa__expandible").forEach(d => {
-      if (window.innerWidth <= 900) {
-        d.removeAttribute("open");
-      } else {
-        d.setAttribute("open", "");
+(() => {
+  const media = window.matchMedia("(max-width: 900px)");
+  const fitxes = document.querySelectorAll(".fitxa__expandible");
+
+  function actualitza() {
+    const shouldOpen = !media.matches;
+
+    fitxes.forEach(fitxa => {
+      if (fitxa.open !== shouldOpen) {
+        fitxa.open = shouldOpen;
       }
     });
-  });
+  }
+
+  // Estat inicial
+  actualitza();
+
+  // Només quan es canvia entre mòbil i escriptori
+  media.addEventListener("change", actualitza);
+})();
 </script>
