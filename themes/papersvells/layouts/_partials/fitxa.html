@@ -1,0 +1,166 @@
+{{/* =====================================================================
+     Fitxa documental
+===================================================================== */}}
+
+{{ $autor := index .Params.autors 0 }}
+{{ $publicacio := index .Params.publicacions 0 }}
+{{ $categoria := .Params.categoria }}
+{{ $tema := .Params.tema }}
+{{ $serie := .Params.serie }}
+{{ $responA := .Params.respon_a }}
+{{ $respostes := .Params.respostes }}
+{{ $pagina := . }}
+
+<aside class="fitxa" aria-label="Fitxa documental">
+ <div class="fitxa__resum"> 
+  {{ with .Date }}
+  <section class="fitxa__bloc fitxa__bloc--principal">
+    <h3 class="fitxa__camp">Data</h3>
+    <p class="fitxa__data">
+    {{ with $.Date }}
+        {{- $mesos := slice "" "gener" "febrer" "març" "abril" "maig" "juny" "juliol" "agost" "setembre" "octubre" "novembre" "desembre" }}
+        {{- $mes := index $mesos .Month }}
+        {{- $prep := "de " }}
+        {{- if in (slice "abril" "agost" "octubre") $mes }}{{- $prep = "d'" }}{{- end }}
+        {{ .Day }} {{ $prep }}{{ $mes }} de {{ .Year }}
+    {{ end }}
+    </p>
+  </section>
+  {{ end }}
+
+  {{ with $publicacio }}
+  <section class="fitxa__bloc fitxa__bloc--principal">
+    <h3 class="fitxa__camp">Publicació</h3>
+    <p>
+      <a class="fitxa__publicacio" href="/{{ . | urlize }}/">
+        {{ . }}
+      </a>
+    </p>
+  </section>
+  {{ end }}
+
+  <section class="fitxa__bloc fitxa__bloc--principal">
+    <h3 class="fitxa__camp">Autor</h3>
+    {{ $autorSlug := $autor | urlize }}
+    <div class="fitxa__autor">
+      <div class="fitxa__avatar">
+        <a class="fitxa__autor" href="/{{ $autorSlug }}/">
+          <img
+            class="article-byline__avatar"
+            src="/images/autors/{{ $autorSlug }}.webp"
+            alt="Fotografia de {{ $autor }}"
+            width="80"
+            height="80"
+            onerror="this.style.display='none'">
+        </a>
+      </div>
+      <div>
+        <a href="/{{ $autorSlug }}/">
+          {{ $autor }}
+        </a>
+      </div>
+    </div>
+  </section>
+  </div>
+  <!-- L'ACORDIÓ COMPLET COMENÇA AQUÍ -->
+  <details class="fitxa__expandible" open>
+    <summary class="fitxa__summary">Més informació</summary>
+
+    <!-- Envolcallant el contingut per controlar-lo fàcilment amb CSS -->
+    <div class="fitxa__contingut-ocult">
+
+  <section class="fitxa__bloc">
+      <h3 class="fitxa__camp">Temps de lectura</h3>
+      <p>{{ .ReadingTime }} min</p>
+  </section>
+
+  
+
+      {{ with $categoria }}
+      <section class="fitxa__bloc">
+        <h3 class="fitxa__camp">Categoria</h3>
+        <p>{{ . }}</p>
+      </section>
+      {{ end }}
+
+      {{ if or $serie $tema }}
+      <section class="fitxa__bloc">
+        <h3 class="fitxa__camp">Context</h3>
+        {{ with $serie }}
+          <p>Forma part de <strong>{{ . }}</strong></p>
+        {{ end }}
+        {{ with $tema }}
+          <p>{{ . }}</p>
+        {{ end }}
+      </section>
+      {{ end }}
+
+      {{ if or $responA $respostes }}
+      <section class="fitxa__bloc">
+        <h3 class="fitxa__camp">Debat</h3>
+        {{ with $responA }}
+          <p>Respon a {{ . }}</p>
+        {{ end }}
+        {{ with $respostes }}
+          <p>Va generar respostes</p>
+        {{ end }}
+      </section>
+      {{ end }}
+
+      {{ with $autor }}
+      <section class="fitxa__bloc">
+        <h3 class="fitxa__camp">Més articles de {{ $autor }}</h3>
+        {{ $paginaActual := $pagina }}
+        {{ $articlesAutor := slice }}
+
+        {{ range site.RegularPages }}
+          {{ if and (ne .RelPermalink $paginaActual.RelPermalink) (in .Params.autors $autor) }}
+            {{ $articlesAutor = $articlesAutor | append . }}
+          {{ end }}
+        {{ end }}
+
+        {{ $articlesAutor = first 3 (sort $articlesAutor "Date" "desc") }}
+
+        {{ if gt (len $articlesAutor) 0 }}
+          <ul class="fitxa__llista">
+            {{ range $articlesAutor }}
+              <li>
+                <a href="{{ .RelPermalink }}">· {{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </section>
+      {{ end }}
+
+      <section class="fitxa__bloc">
+        <h3 class="fitxa__camp">Difon aquest article</h3>
+        <div class="fitxa__compartir">
+          <a href="#">📋</a>
+          <a href="#">𝕏</a>
+          <a href="#">f</a>
+        </div>
+      </section>
+
+    </div>
+  </details>
+
+</aside>
+
+<script>
+  // En mòbil (≤ 900px), tanquem el details
+  document.querySelectorAll(".fitxa__expandible").forEach(d => {
+    if (window.innerWidth <= 900) d.removeAttribute("open");
+  });
+  
+  // Si es redimensiona la finestra, actualitza
+  window.addEventListener("resize", function() {
+    document.querySelectorAll(".fitxa__expandible").forEach(d => {
+      if (window.innerWidth <= 900) {
+        d.removeAttribute("open");
+      } else {
+        d.setAttribute("open", "");
+      }
+    });
+  });
+</script>

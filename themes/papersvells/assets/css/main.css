@@ -2,6 +2,7 @@
    PAPERS VELLS — main.css
    Estructura:
     1  Variables          9  Pàgina d'article
+    9.b Fitxa documental
     2  Font Face         10  Pàgina d'autor
     3  Reset mínim       11  Graella d'autors
     4  Base              12  Graella de publicacions
@@ -48,7 +49,11 @@
   --space-sm:  0.8rem;
   --space-md:  1.5rem;
   --space-lg:  2.5rem;
-  --space-xl:  4rem;
+  --space-xl:  4.0rem;
+
+  /* Radi de les cantonades */
+  --radius-lg: 12px;
+  
 
   /* Amplades */
   --max-content: 900px;
@@ -363,6 +368,7 @@ p { margin-bottom: var(--space-sm); }
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: var(--space-xs);
+  margin-top: var(--space-md);
   text-wrap: balance;
 }
 
@@ -404,7 +410,9 @@ p { margin-bottom: var(--space-sm); }
   text-align: left;
   hyphens: auto;
   max-width: 900px;      
-  margin-inline: auto;   /* centra la caixa */
+  margin-inline: 0;   /* centra la caixa */
+  justify-self: end; 
+  margin-top: var(--space-lg);
 }
 
 .article-body p {
@@ -429,6 +437,201 @@ p { margin-bottom: var(--space-sm); }
   color: var(--color-accent);
 }
 
+/* ==========================================================
+   FITXA DOCUMENTAL
+   ========================================================== */
+
+.article-layout {
+  display: grid;                                           /* Crea una graella de dues columnes */
+  grid-template-columns: minmax(0, 1fr) 250px;             /* Article flexible + fitxa de 250 px */
+  gap: var(--space-lg);                                    /* Espai entre l'article i la fitxa */
+  align-items: start;                                      /* Alinea la fitxa amb l'inici de l'article */
+  width: min(80%, var(--max-wide));                        /* Amplada màxima del conjunt */
+  margin-inline: auto;                                     /* Centra el conjunt horitzontalment */
+}
+
+.fitxa {
+  position: sticky;
+  top: calc(var(--space-xl) + 6rem);
+  padding: var(--space-xxs);
+  background: color-mix(in srgb, var(--color-accent) 6%, white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-top: var(--space-lg);
+}
+
+.fitxa__bloc + .fitxa__bloc {
+  margin-top: var(--space-md);
+}
+
+.fitxa__camp {
+  margin-bottom: .25rem;
+  font-size: var(--text-sm);
+  line-height: 1;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.fitxa__autor {
+  display: flex;
+  font-weight: 500;
+  gap: .50rem;
+  align-items: center;
+}
+
+.fitxa__avatar {
+  width: 80px;
+  height: 80px;
+  background: var(--color-border);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.fitxa__compartir {
+  display: flex;
+  gap: .75rem;
+}
+
+.fitxa__compartir a {
+  text-decoration: none;
+}
+
+.fitxa__llista a {
+  display: block;
+  color: var(--color-ink);
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.2;
+}
+
+.fitxa__llista a:hover {
+  color: var(--color-accent);
+  list-style: none;
+}
+
+.fitxa__llista li {
+  margin-bottom: var(--space-xs);
+  list-style: none;
+}
+
+/* ===========================
+   COMPORTAMENT DEL DETAILS
+=========================== */
+
+/* Per defecte: contingut amagat */
+.fitxa__expandible .fitxa__contingut-ocult {
+  display: none;
+}
+
+/* Quan [open], contingut visible */
+.fitxa__expandible[open] .fitxa__contingut-ocult {
+  display: block;
+}
+
+/* Estils del summary */
+.fitxa__summary {
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  padding: var(--space-xs) 0;
+  margin: var(--space-md) 0 0 0;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+}
+
+.fitxa__summary::-webkit-details-marker {
+  display: none;
+}
+
+.fitxa__summary::before {
+  content: "▶ ";
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.fitxa__expandible[open] .fitxa__summary::before {
+  transform: rotate(90deg);
+}
+
+
+/* ===========================
+   DESKTOP (> 900px)
+=========================== */
+@media (min-width: 901px) {
+  /* Amaguem el summary */
+  .fitxa__summary {
+    display: none;
+  }
+
+  /* El details es comporta com un div normal */
+  .fitxa__expandible {
+    display: block;
+  }
+
+  /* Contingut sempre visible */
+  .fitxa__expandible .fitxa__contingut-ocult {
+    display: block;
+  }
+}
+
+
+/* ===========================
+   MÒBIL (≤ 900px)
+=========================== */
+@media (max-width: 900px) {
+
+  .article-layout {
+    grid-template-columns: 1fr;
+    margin-left: 0.6rem;
+    width: min(92%, var(--max-wide));    
+  }
+
+  .article-columna {
+    order: 2;
+  }
+
+  .fitxa {
+    order: 1;
+    position: static;
+    margin-top: var(--space-sm);
+    background: var(--color-paper);
+  }
+
+  .fitxa__bloc--principal .fitxa__camp {
+    display: none;
+   
+  }
+  .fitxa__resum {
+    display:flex;
+    flex-direction:column;
+    gap:0rem;
+}
+  .fitxa__publicacio {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+    
+}
+  .fitxa__autor {
+    font-style: italic;
+    font-size:x-large;
+  }
+  .fitxa__data {
+    font-weight: 500;
+    font-size: x-large;
+  }
+
+  /* En mòbil, mostrem el summary */
+  .fitxa__summary {
+    display: list-item;
+  }
+  
+}
+
+/* Formats especials */
 .article-body .poema p::first-letter,
 .article-body .autor-poema p::first-letter {
   font-size: inherit;
