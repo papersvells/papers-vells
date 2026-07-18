@@ -3,7 +3,8 @@ title: "Traspuament de la llum"
 autors: ["Josep Carner"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-07-04
-publicat: "2020-03-31"
+categoria: "Opinió"
+publicat: 2020-03-31
 slug: "josep-carner/traspuament-de-la-llum"
 draft: false
 image: "1923-07-04_la_veu_josep_carner_-_traspuament_de_la_llum.webp"

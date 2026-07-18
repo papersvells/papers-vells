@@ -3,7 +3,8 @@ title: "Fer coneixença"
 autors: ["Josep Carner"]
 publicacions: ["La Publicitat"]
 date: 1929-07-12
-publicat: "2020-09-23"
+categoria: "Opinió"
+publicat: 2020-09-23
 slug: "josep-carner/fer-coneixenca"
 draft: false
 image: "1929-07-12_la_publicitat_josep_carner_-_fer_coneixenca.webp"

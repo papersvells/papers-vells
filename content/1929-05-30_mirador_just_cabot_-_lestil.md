@@ -4,7 +4,8 @@ autors: ["Just Cabot"]
 autors_citats: ["Manuel de Montoliu", "Josep Carner", "Josep Pla"]
 publicacions: ["Mirador"]
 date: 1929-05-30
-publicat: "2020-05-15"
+categoria: "Opinió"
+publicat: 2020-05-15
 slug: "just-cabot/l-estil"
 draft: false
 image: "1929-05-30_mirador_just_cabot_-_lestil.webp"

@@ -4,7 +4,8 @@ autors: ["Miquel Duran i Tortajada"]
 autors_citats: ["Carles Capdevila"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-09
-publicat: "2019-11-24"
+categoria: "Entrevista"
+publicat: 2019-11-24
 slug: "miquel-duran-i-tortajada/les-nostres-penyes-literaries-la-d-en-guimera"
 draft: false
 image: "1928-11-09_la_veu_miquel_duran_tortajada_-_les_nostres_penyes_literaries_la_den_guimera.webp"

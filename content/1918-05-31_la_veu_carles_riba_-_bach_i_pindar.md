@@ -3,7 +3,8 @@ title: "Bach i Píndar"
 autors: ["Carles Riba"]
 publicacions: ["La Veu de Catalunya"]
 date: 1918-05-31
-publicat: "2019-12-04"
+categoria: "Opinió"
+publicat: 2019-12-04
 slug: "carles-riba/bach-i-pindar"
 draft: false
 image: "1918-05-31_la_veu_carles_riba_-_bach_i_pindar.webp"

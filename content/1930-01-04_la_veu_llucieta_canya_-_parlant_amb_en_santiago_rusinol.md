@@ -3,7 +3,8 @@ title: "Parlant amb en Santiago Rusiñol"
 autors: ["Llucieta Canyà"]
 publicacions: ["La Veu de Catalunya"]
 date: 1930-01-04
-publicat: "2021-01-20"
+categoria: "Entrevista"
+publicat: 2021-01-20
 slug: "llucieta-canya/parlant-amb-en-santiago-rusinol"
 draft: false
 image: "1930-01-04_la_veu_llucieta_canya_-_parlant_amb_en_santiago_rusinol.webp"

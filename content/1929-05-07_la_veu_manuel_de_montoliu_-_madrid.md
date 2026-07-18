@@ -1,14 +1,17 @@
 ---
+
 title: "Josep Pla. Madrid. Un dietari"
 autors: ["Manuel de Montoliu"]
 autors_citats: ["Joan Crexells", "Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-05-07
-publicat: "2020-05-13"
+publicat: 2020-05-13
 slug: "manuel-de-montoliu/josep-pla-madrid-un-dietari"
 draft: false
 image: "1929-05-07_la_veu_manuel_de_montoliu_-_madrid.webp"
+categoria: Revisar
 ---
+
 <div class= "seccio">I</div>
 
 Pocs escriptors trobaríem a casa nostra tan ben dotats com [Josep Pla](/josep-pla/) pel conreu d'aquest gènere literari que té per objecte l'observació directa dels fets vius, de la vida en tota la seva dispersa multiformitat. Aquest dietari n'és una nova i esplèndida confirmació. Josep Pla posseeix en grau superlatiu les dues qualitats que jutgem indispensables en un escriptor que vulgui excel·lir en aquesta mena de literatura; d'una banda, una fina sensibilitat, una receptivitat extraordinària enfront de tota vibració de vida en l'ambient físic i en el moral i social; d'altra banda, la qualitat complementària d'una força notable de penetració observadora i intel·lectual que ve a ésser com la força de reacció del pensament, amb la qual l'esperit de l'escriptor elabora i interpreta el caòtic material de les seves espontànies impressions. Josep Pla ha arribat ja a posseir i aplica, potser inconscientment, tot un mètode a la seva tasca d'interpretació intel·lectual dels fets vius al través del seu temperament, sense que per això minvi ni sofreixi l'acuïtat i la frescor de la seva impressionable sensibilitat. Volem apuntar esquemàticament algunes de les principals característiques d'aquest mètode. Començarem per observar que Josep Pla és un hàbil arreplegador i seleccionador d'anècdotes; els fets anecdòtics que ell recull i selecciona són sempre d'una gran significació i transcendència per a la vida individual o social per ell observada; àdhuc, de vegades arriben a posseir una força simbòlica. Més important que aquest aspecte de la seva tècnica, és l'audàcia amb què ell inventa les anècdotes quan ell ho creu necessari per arribar a una més intensa caracterització dels fets observats. Insistirem més endavant sobre aquest aspecte tan important de la personalitat del nostre escriptor. Ell sap treure, de més a més, un esplèndid rendiment del to d'àgil superficialitat i d'ironia despreocupada que ell dóna sistemàticament a les seves observacions. Aquest rendiment comença per mostrar-se en la variada i llarga galeria de retrats i paisatges inoblidables que trobem escampats en els seus llibres. Art difícil aquest, segons ell mateix confessa en el seu darrer llibre, quan diu: «Una cosa difícil de fer en literatura és un paisatge. Més difícil encara és fer un retrat, un bon retrat». I bé, en aquest volum hi ha un bell enfilall de notables retrats, executats amb uns pocs trets de ploma sobris i incisius que ens graven a la imaginació la fesomia moral de la persona retratada; recordarem els de Jori, Crexells, Unamuno, Ortega Gasset, Camba, Lerroux, Gómez de la Serna, Mella, i diferents personalitats polítiques i diputats a Corts. Els paisatges, poc nombrosos en aquest volum, no són menys notables. Hi trobem una impressió originalíssima i una interpretació força aguda del paisatge de Castella, i més particularment d'Àvila i Toledo. La sensibilitat que per al paisatge té el nostre escriptor s'estén, però, a això tan vagorós i indeterminat que en diem «clima», i és una de les pàgines més interessants i suggestives del llibre la que l'autor dedica a glossar espiritualment el clima de Madrid.

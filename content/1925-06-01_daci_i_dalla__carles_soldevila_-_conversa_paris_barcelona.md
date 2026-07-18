@@ -4,7 +4,8 @@ autors: ["Carles Soldevila"]
 autors_citats: ["Josep Carner", "Joan Puig i Ferreter", "Josep Pla", "Josep Maria de Sagarra", "Alexandre Plana", "Prudenci Bertrana"]
 publicacions: ["D'ací i d'allà"]
 date: 1925-06-01
-publicat: "2019-09-18"
+categoria: "Entrevista"
+publicat: 2019-09-18
 slug: "carles-soldevila/conversa-paris-barcelona"
 draft: false
 image: "1925-06-01_daci_i_dalla__carles_soldevila_-_conversa_paris_barcelona.webp"

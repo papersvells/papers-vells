@@ -4,7 +4,8 @@ autors: ["Pere Coromines"]
 autors_citats: ["Eugeni d'Ors"]
 publicacions: ["El Poble Català"]
 date: 1910-01-09
-publicat: "2020-11-30"
+categoria: "Opinió"
+publicat: 2020-11-30
 slug: "pere-coromines/l-amable-eugeni-d-ors-ensenyant-la-llogica"
 draft: false
 image: "1910-01-09_el_poble_catala_pere_coromines_-_lamable_eugeni_dors_ensenyant_la_llogica.webp"

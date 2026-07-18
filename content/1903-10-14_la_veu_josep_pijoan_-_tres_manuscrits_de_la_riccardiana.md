@@ -3,7 +3,8 @@ title: "Crónicas d’Italia"
 autors: ["Josep Pijoan"]
 publicacions: ["La Veu de Catalunya"]
 date: 1903-10-14
-publicat: "2022-01-20"
+categoria: "Reportatge"
+publicat: 2022-01-20
 slug: "josep-pijoan/cronicas-d-italia"
 draft: false
 image: "1903-10-14_la_veu_josep_pijoan_-_tres_manuscrits_de_la_riccardiana.webp"

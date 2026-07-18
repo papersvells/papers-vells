@@ -3,7 +3,8 @@ title: "Les nostres penyes: La d’En Guimerà, encara"
 autors: ["Miquel Duran i Tortajada"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-16
-publicat: "2019-11-25"
+categoria: "Entrevista"
+publicat: 2019-11-25
 slug: "miquel-duran-i-tortajada/les-nostres-penyes-la-d-en-guimera-encara"
 draft: false
 image: "1928-11-16_la_veu_miquel_duran_tortajada_-_les_nostres_penyes_literaries_la_den_guimera_encara.webp"

@@ -4,7 +4,8 @@ autors: ["Tomàs Garcés"]
 autors_citats: ["Josep Carner", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1925-11-07
-publicat: "2019-05-22"
+categoria: "Ressenya"
+publicat: 2019-05-22
 slug: "tomas-garces/un-certamen-solemne"
 draft: false
 image: "1925-11-07_la_publicitat_tomas_garces_-_un_certamen_solemne.webp"

@@ -3,7 +3,8 @@ title: "Converses amb gent de poca importància"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-17
-publicat: "2019-12-31"
+categoria: "Reportatge"
+publicat: 2019-12-31
 slug: "eugeni-xammar/converses-amb-gent-de-poca-importancia"
 draft: false
 image: "1923-03-17_la_veu_xammar_-_converses_amb_gent_de_poca_importancia.webp"

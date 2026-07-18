@@ -3,7 +3,8 @@ title: "Sobre les emocions de l’aire"
 autors: ["Joan Crexells"]
 publicacions: ["La Publicitat"]
 date: 1925-12-05
-publicat: "2020-04-14"
+categoria: "Opinió"
+publicat: 2020-04-14
 slug: "joan-crexells/sobre-les-emocions-de-l-aire"
 draft: false
 image: "1925-12-05_la_publicitat_joan_crexells_-_sobre_les_emocions_de_laire.webp"

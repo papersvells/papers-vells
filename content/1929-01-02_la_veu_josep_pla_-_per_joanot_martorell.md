@@ -4,7 +4,8 @@ autors: ["Josep Pla"]
 autors_citats: ["Gaziel", "Joan Crexells"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-01-02
-publicat: "2019-07-05"
+categoria: "Opinió"
+publicat: 2019-07-05
 slug: "josep-pla/per-joanot-martorell"
 draft: false
 image: "1929-01-02_la_veu_josep_pla_-_per_joanot_martorell.webp"

@@ -3,7 +3,8 @@ title: "La Tórtola Valencia, ballarina noucentista"
 autors: ["Alexandre Plana"]
 publicacions: ["Picarol"]
 date: 1912-02-10
-publicat: "2021-04-03"
+categoria: "Ressenya"
+publicat: 2021-04-03
 slug: "alexandre-plana/la-tortola-valencia-ballarina-noucentista"
 draft: false
 image: "1912-02-10_picarol_alexandre_plana_-_la_tortola_valencia_ballarina_noucentista.webp"

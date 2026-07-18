@@ -3,7 +3,8 @@ title: "El catalanisme"
 autors: ["Lluís Marsans"]
 publicacions: ["Joventut"]
 date: 1900-02-15
-publicat: "2020-10-25"
+categoria: "Opinió"
+publicat: 2020-10-25
 slug: "lluis-marsans/el-catalanisme"
 draft: false
 image: "1900-02-15_joventut_lluis_marsans_-_el_catalanisme.webp"

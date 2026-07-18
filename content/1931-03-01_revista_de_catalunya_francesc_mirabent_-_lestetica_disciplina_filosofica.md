@@ -3,7 +3,8 @@ title: "L’estètica, disciplina filosòfica"
 autors: ["Francesc Mirabent"]
 publicacions: ["Revista de Catalunya"]
 date: 1931-03-01
-publicat: "2020-05-21"
+categoria: "Opinió"
+publicat: 2020-05-21
 slug: "francesc-mirabent/l-estetica-disciplina-filosofica"
 draft: false
 image: "1931-03-01_revista_de_catalunya_francesc_mirabent_-_lestetica_disciplina_filosofica.webp"

@@ -4,7 +4,8 @@ autors: ["Tomàs Garcés"]
 autors_citats: ["Josep Maria de Sagarra", "Joan Maragall", "Raimon Casellas", "Prudenci Bertrana", "Pere Coromines"]
 publicacions: ["Revista de Catalunya"]
 date: 1926-08-01
-publicat: "2020-07-14"
+categoria: "Entrevista"
+publicat: 2020-07-14
 slug: "tomas-garces/conversa-amb-victor-catala"
 draft: false
 image: "1926-08-01_revista_de_catalunya_tomas_garces_-_conversa_amb_victor_catala.webp"

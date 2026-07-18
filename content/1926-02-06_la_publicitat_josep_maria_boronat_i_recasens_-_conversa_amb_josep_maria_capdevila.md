@@ -4,7 +4,8 @@ autors: ["Josep Maria Boronat i Recasens"]
 autors_citats: ["Carles Riba", "Carles Soldevila", "Josep Maria Capdevila", "Josep Maria de Sagarra", "Melcior Font", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1926-02-06
-publicat: "2021-05-26"
+categoria: "Entrevista"
+publicat: 2021-05-26
 slug: "josep-maria-boronat-i-recasens/una-conversa-amb-josep-m-capdevila"
 draft: false
 image: "1926-02-06_la_publicitat_josep_maria_boronat_i_recasens_-_conversa_amb_josep_maria_capdevila.webp"

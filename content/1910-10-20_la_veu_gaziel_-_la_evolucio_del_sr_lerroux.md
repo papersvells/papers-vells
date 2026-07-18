@@ -3,7 +3,8 @@ title: "La evolució del Sr. Lerroux"
 autors: ["Gaziel"]
 publicacions: ["La Veu de Catalunya"]
 date: 1910-10-20
-publicat: "2022-01-18"
+categoria: "Opinió"
+publicat: 2022-01-18
 slug: "gaziel/la-evolucio-del-sr-lerroux"
 draft: false
 image: "1910-10-20_la_veu_gaziel_-_la_evolucio_del_sr_lerroux.webp"

@@ -79,7 +79,11 @@
       {{ with $categoria }}
       <section class="fitxa__bloc">
         <h3 class="fitxa__camp">Categoria</h3>
-        <p>{{ . }}</p>
+        <p>
+          <a class="fitxa__categoria" href="/categoria/{{ . | urlize }}/">
+            {{ . }}
+          </a>
+        </p>
       </section>
       {{ end }}
 

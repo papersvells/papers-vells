@@ -3,7 +3,8 @@ title: "Això pot durar anys"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1927-01-12
-publicat: "2021-07-04"
+categoria: "Opinió"
+publicat: 2021-07-04
 slug: "josep-pla/aixo-pot-durar-anys"
 draft: false
 image: "1927-01-12_la_publicitat_-_josep_pla_-_aixo_pot_durar_anys.webp"

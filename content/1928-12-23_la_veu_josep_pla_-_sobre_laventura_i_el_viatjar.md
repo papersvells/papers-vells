@@ -3,7 +3,8 @@ title: "Sobre l’aventura i el viatjar"
 autors: ["Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-23
-publicat: "2019-05-17"
+categoria: "Opinió"
+publicat: 2019-05-17
 slug: "josep-pla/sobre-l-aventura-i-el-viatjar"
 draft: false
 image: "1928-12-23_la_veu_josep_pla_-_sobre_laventura_i_el_viatjar.webp"

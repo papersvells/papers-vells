@@ -3,7 +3,8 @@ title: "Els infants prodigi"
 autors: ["Feliu Elias"]
 publicacions: ["Mirador"]
 date: 1932-06-02
-publicat: "2020-10-10"
+categoria: "Opinió"
+publicat: 2020-10-10
 slug: "feliu-elias/els-infants-prodigi"
 draft: false
 image: "1932-06-02_mirador_feliu_elias_-_els_infants_prodigi.webp"

@@ -3,7 +3,8 @@ title: "Eckermann"
 autors: ["Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1918-05-15
-publicat: "2020-09-22"
+categoria: "Opinió"
+publicat: 2020-09-22
 slug: "eugeni-d'ors/eckermann"
 draft: false
 image: "1918-05-15_la_veu_eugeni_dors_-_eckermann.webp"

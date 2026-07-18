@@ -3,7 +3,8 @@ title: "El patrimoni de tots"
 autors: ["Lluís Nicolau d'Olwer"]
 publicacions: ["La Publicitat"]
 date: 1929-04-27
-publicat: "2021-03-20"
+categoria: "Opinió"
+publicat: 2021-03-20
 slug: "lluis-nicolau-d'olwer/el-patrimoni-de-tots"
 draft: false
 image: "1929-04-27_la_publicitat_nicolau_dolwer_-_el_patrimoni_de_tots.webp"

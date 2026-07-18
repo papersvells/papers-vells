@@ -4,7 +4,8 @@ autors: ["Joan Maragall"]
 autors_citats: ["Pere Coromines"]
 publicacions: ["La Veu de Catalunya"]
 date: 1907-07-11
-publicat: "2020-12-26"
+categoria: "Opinió"
+publicat: 2020-12-26
 slug: "joan-maragall/a-n-en-pere-coromines"
 draft: false
 image: "1907-07-11_la_veu_joan_maragall_-_a_nen_pere_coromines.webp"

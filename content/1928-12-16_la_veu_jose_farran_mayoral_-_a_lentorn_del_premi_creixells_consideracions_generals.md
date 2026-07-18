@@ -3,7 +3,8 @@ title: "Consideracions generals a l’entorn del Premi Crexells"
 autors: ["Josep Farran i Mayoral"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-16
-publicat: "2019-06-19"
+categoria: "Opinió"
+publicat: 2019-06-19
 slug: "josep-farran-i-mayoral/consideracions-generals-a-l-entorn-del-premi-crexells"
 draft: false
 image: "1928-12-16_la_veu_jose_farran_mayoral_-_a_lentorn_del_premi_creixells_consideracions_generals.webp"

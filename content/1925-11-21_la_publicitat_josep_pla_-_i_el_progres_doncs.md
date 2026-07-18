@@ -3,7 +3,8 @@ title: "I el progrés, doncs?"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1925-11-21
-publicat: "2020-12-25"
+categoria: "Opinió"
+publicat: 2020-12-25
 slug: "josep-pla/i-el-progres-doncs"
 draft: false
 image: "1925-11-21_la_publicitat_josep_pla_-_i_el_progres_doncs.webp"

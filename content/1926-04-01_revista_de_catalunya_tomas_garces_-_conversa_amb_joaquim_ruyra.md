@@ -4,7 +4,8 @@ autors: ["Tomàs Garcés"]
 autors_citats: ["Carles Soldevila", "Josep Carner", "Joan Maragall", "Prudenci Bertrana"]
 publicacions: ["Revista de Catalunya"]
 date: 1926-04-01
-publicat: "2022-03-06"
+categoria: "Entrevista"
+publicat: 2022-03-06
 slug: "tomas-garces/conversa-amb-joaquim-ruyra"
 draft: false
 image: "1926-04-01_revista_de_catalunya_tomas_garces_-_conversa_amb_joaquim_ruyra.webp"

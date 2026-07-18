@@ -4,7 +4,8 @@ autors: ["Josep Maria Planes"]
 autors_citats: ["Francesc Trabal", "Feliu Elias", "Llucieta Canyà", "Carles Soldevila", "Rosa Maria Arquimbau", "Francesc Pujols", "Francesc Madrid", "Josep Maria de Sagarra", "Aurora Bertrana", "Josep Pous i Pagès", "Manuel Brunet", "Just Cabot", "Rossend Llates"]
 publicacions: ["Mirador"]
 date: 1930-01-30
-publicat: "2020-11-22"
+categoria: "Reportatge"
+publicat: 2020-11-22
 slug: "josep-maria-planes/mirador-vist-per-dins"
 draft: false
 image: "1930-01-30_mirador_josep_maria_planes_-_mirador_vist_per_dins.webp"

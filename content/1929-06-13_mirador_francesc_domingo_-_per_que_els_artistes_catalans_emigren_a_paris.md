@@ -3,7 +3,8 @@ title: "Per què els artistes catalans emigren a París?"
 autors: ["Francesc Domingo"]
 publicacions: ["Mirador"]
 date: 1929-06-13
-publicat: "2020-03-17"
+categoria: "Opinió"
+publicat: 2020-03-17
 slug: "francesc-domingo/per-que-els-artistes-catalans-emigren-a-paris"
 draft: false
 image: "1929-06-13_mirador_francesc_domingo_-_per_que_els_artistes_catalans_emigren_a_paris.webp"

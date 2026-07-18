@@ -3,7 +3,8 @@ title: "Una visita a l’Oller"
 autors: ["Josep Morató"]
 publicacions: ["Garba"]
 date: 1905-12-16
-publicat: "2021-01-26"
+categoria: "Reportatge"
+publicat: 2021-01-26
 slug: "josep-morato/una-visita-a-l-oller"
 draft: false
 image: "1905-12-16_garba_josep_morato_-_una_visita_a_loller.webp"

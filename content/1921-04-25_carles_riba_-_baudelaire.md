@@ -3,7 +3,8 @@ title: "Baudelaire"
 autors: ["Carles Riba"]
 publicacions: ["La Veu de Catalunya"]
 date: 1921-04-25
-publicat: "2019-11-06"
+categoria: "Opinió"
+publicat: 2019-11-06
 slug: "carles-riba/baudelaire"
 draft: false
 image: "1921-04-25_carles_riba_-_baudelaire.webp"

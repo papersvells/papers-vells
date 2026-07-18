@@ -3,7 +3,8 @@ title: "La història a l’inrevés"
 autors: ["Joan Crexells"]
 publicacions: ["Revista de Catalunya"]
 date: 1925-01-01
-publicat: "2020-03-24"
+categoria: "Reportatge"
+publicat: 2020-03-24
 slug: "joan-crexells/la-historia-a-l-inreves"
 draft: false
 image: "1925-01-01_revista_de_catalunya_joan_crexells_-_lhistoria_a_linreves.webp"

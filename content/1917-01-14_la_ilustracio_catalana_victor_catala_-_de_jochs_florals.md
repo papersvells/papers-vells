@@ -3,7 +3,8 @@ title: "De Jochs Florals"
 autors: ["Víctor Català"]
 publicacions: ["La Ilustració Catalana"]
 date: 1917-01-14
-publicat: "2019-05-21"
+categoria: "Opinió"
+publicat: 2019-05-21
 slug: "victor-catala/de-jochs-florals"
 draft: false
 image: "1917-01-14_la_ilustracio_catalana_victor_catala_-_de_jochs_florals.webp"

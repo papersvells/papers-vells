@@ -3,7 +3,8 @@ title: "Passat, present i pervindre dels ideals artístics"
 autors: ["Francesc Pujols"]
 publicacions: ["La Publicitat"]
 date: 1920-05-11
-publicat: "2020-05-27"
+categoria: "Opinió"
+publicat: 2020-05-27
 slug: "francesc-pujols/passat-present-i-pervindre-dels-ideals-artistics"
 draft: false
 image: "1920-05-11_la_publicitat_francesc_pujols_-_passat_present_i_pervindre_dels_ideals_artistics.webp"

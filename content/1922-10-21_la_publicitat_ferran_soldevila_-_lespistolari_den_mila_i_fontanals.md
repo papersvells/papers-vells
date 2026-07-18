@@ -4,7 +4,8 @@ autors: ["Ferran Soldevila"]
 autors_citats: ["Lluís Nicolau d'Olwer"]
 publicacions: ["La Publicitat"]
 date: 1922-10-21
-publicat: "2020-07-08"
+categoria: "Ressenya"
+publicat: 2020-07-08
 slug: "ferran-soldevila/l-epistolari-d-en-mila-i-fontanals"
 draft: false
 image: "1922-10-21_la_publicitat_ferran_soldevila_-_lespistolari_den_mila_i_fontanals.webp"

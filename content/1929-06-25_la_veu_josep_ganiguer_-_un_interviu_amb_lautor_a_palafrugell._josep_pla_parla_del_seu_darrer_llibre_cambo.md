@@ -4,7 +4,8 @@ autors: ["Josep Ganiguer"]
 autors_citats: ["Amadeu Hurtado", "Antoni Rovira i Virgili", "Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-06-25
-publicat: "2020-08-16"
+categoria: "Entrevista"
+publicat: 2020-08-16
 slug: "josep-ganiguer/un-interviu-amb-l-autor-a-palafrugell"
 draft: false
 image: "1929-06-25_la_veu_josep_ganiguer_-_un_interviu_amb_lautor_a_palafrugell._josep_pla_parla_del_seu_darrer_llibre_cambo.webp"

@@ -4,7 +4,8 @@ autors: ["Josep Pla"]
 autors_citats: ["Josep Carner"]
 publicacions: ["La Publicitat"]
 date: 1927-06-14
-publicat: "2020-04-04"
+categoria: "Opinió"
+publicat: 2020-04-04
 slug: "josep-pla/feminisme"
 draft: false
 image: "1927-06-14_la_publicitat_josep_pla_-_feminisme.webp"

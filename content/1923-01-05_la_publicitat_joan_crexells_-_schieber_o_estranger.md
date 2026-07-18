@@ -3,7 +3,8 @@ title: "El “Schieber” i l’estranger"
 autors: ["Joan Crexells"]
 publicacions: ["La Publicitat"]
 date: 1923-01-05
-publicat: "2019-05-12"
+categoria: "Opinió"
+publicat: 2019-05-12
 slug: "joan-crexells/el-schieber-i-l-estranger"
 draft: false
 image: "1923-01-05_la_publicitat_joan_crexells_-_schieber_o_estranger.webp"

@@ -3,7 +3,8 @@ title: "Fum al subterrani"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1925-11-06
-publicat: "2019-08-10"
+categoria: "Opinió"
+publicat: 2019-08-10
 slug: "carles-soldevila/fum-al-subterrani"
 draft: false
 image: "1925-11-06_la_publicitat_carles_soldevila_-_fum_al_soterrani.webp"

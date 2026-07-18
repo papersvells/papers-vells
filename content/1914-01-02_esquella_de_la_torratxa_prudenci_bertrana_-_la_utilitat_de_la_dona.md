@@ -3,7 +3,8 @@ title: "De l’utilitat de la dona"
 autors: ["Prudenci Bertrana"]
 publicacions: ["L'Esquella de la torratxa"]
 date: 1914-01-02
-publicat: "2022-01-30"
+categoria: "Opinió"
+publicat: 2022-01-30
 slug: "prudenci-bertrana/de-l-utilitat-de-la-dona"
 draft: false
 image: "1914-01-02_esquella_de_la_torratxa_prudenci_bertrana_-_la_utilitat_de_la_dona.webp"

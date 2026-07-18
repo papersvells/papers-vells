@@ -3,7 +3,8 @@ title: "Un cultivador de clavells català"
 autors: ["Àngel Pons i Guitart"]
 publicacions: ["Mirador"]
 date: 1929-07-11
-publicat: "2020-12-01"
+categoria: "Entrevista"
+publicat: 2020-12-01
 slug: "angel-pons-i-guitart/un-cultivador-de-clavells-catala"
 draft: false
 image: "1929-07-11_mirador_angel_pons_i_guitart_-_un_cultivador_de_clavells_catala.webp"

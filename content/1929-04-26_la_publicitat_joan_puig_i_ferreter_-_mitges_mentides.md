@@ -3,7 +3,8 @@ title: "Mitges mentides"
 autors: ["Joan Puig i Ferreter"]
 publicacions: ["La Publicitat"]
 date: 1929-04-26
-publicat: "2020-04-24"
+categoria: "Opinió"
+publicat: 2020-04-24
 slug: "joan-puig-i-ferreter/mitges-mentides"
 draft: false
 image: "1929-04-26_la_publicitat_joan_puig_i_ferreter_-_mitges_mentides.webp"

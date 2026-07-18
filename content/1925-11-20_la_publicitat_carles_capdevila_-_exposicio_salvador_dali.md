@@ -4,7 +4,8 @@ autors: ["Carles Capdevila"]
 autors_citats: ["Joan Salvat-Papasseit"]
 publicacions: ["La Publicitat"]
 date: 1925-11-20
-publicat: "2024-06-05"
+categoria: "Ressenya"
+publicat: 2024-06-05
 slug: "carles-capdevila/exposicio-salvador-dali"
 draft: false
 image: "1925-11-20_la_publicitat_carles_capdevila_-_exposicio_salvador_dali.webp"

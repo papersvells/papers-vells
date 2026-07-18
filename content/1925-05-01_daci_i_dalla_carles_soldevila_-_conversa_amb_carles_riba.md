@@ -4,7 +4,8 @@ autors: ["Carles Soldevila"]
 autors_citats: ["Carles Riba", "Josep Maria Capdevila", "Joan Maragall"]
 publicacions: ["D'ací i d'allà"]
 date: 1925-05-01
-publicat: "2020-02-13"
+categoria: "Entrevista"
+publicat: 2020-02-13
 slug: "carles-soldevila/conversa-amb-carles-riba"
 draft: false
 image: "1925-05-01_daci_i_dalla_carles_soldevila_-_conversa_amb_carles_riba.webp"

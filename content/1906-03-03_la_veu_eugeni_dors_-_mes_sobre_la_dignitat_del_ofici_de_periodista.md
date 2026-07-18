@@ -3,7 +3,8 @@ title: "Més sobre la dignitat del ofici de periodista"
 autors: ["Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1906-03-03
-publicat: "2019-06-13"
+categoria: "Opinió"
+publicat: 2019-06-13
 slug: "eugeni-dors/mes-sobre-la-dignitat-del-ofici-de-periodista"
 draft: false
 image: "1906-03-03_la_veu_eugeni_dors_-_mes_sobre_la_dignitat_del_ofici_de_periodista.webp"

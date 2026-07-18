@@ -4,7 +4,8 @@ autors: ["Eugeni Xammar"]
 autors_citats: ["Ferran Valls i Taberner", "Josep Puig i Cadafalch", "Joan Estelrich"]
 publicacions: ["El Be Negre"]
 date: 1936-01-29
-publicat: "2021-09-15"
+categoria: "Opinió"
+publicat: 2021-09-15
 slug: "eugeni-xammar/fora-del-catalanisme"
 draft: false
 image: "1936-01-29_el_be_negre_eugeni_xammar_-_fora_del_catalanisme.webp"

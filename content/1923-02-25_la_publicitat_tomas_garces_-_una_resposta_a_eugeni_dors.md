@@ -4,7 +4,8 @@ autors: ["Tomàs Garcés"]
 autors_citats: ["Josep Carner", "Josep Maria de Sagarra", "Eugeni d'Ors", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1923-02-25
-publicat: "2020-10-28"
+categoria: "Opinió"
+publicat: 2020-10-28
 slug: "tomas-garces/una-resposta-a-eugeni-d-ors"
 draft: false
 image: "1923-02-25_la_publicitat_tomas_garces_-_una_resposta_a_eugeni_dors.webp"

@@ -4,7 +4,8 @@ autors: ["Francesc Madrid"]
 autors_citats: ["Carles Riba", "Joan Puig i Ferreter", "Josep Pla", "Lluís Nicolau d'Olwer", "Agustí Esclasans", "Manuel Brunet"]
 publicacions: ["L'Esquella de la torratxa"]
 date: 1928-12-21
-publicat: "2019-06-26"
+categoria: "Opinió"
+publicat: 2019-06-26
 slug: "francesc-madrid/despres-de-l-acord"
 draft: false
 image: "1928-12-21_lesquella_de_la_torratxa_francesc_madrid_-_despres_de_lacord.webp"

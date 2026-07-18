@@ -3,7 +3,8 @@ title: "Els llibres de memòries"
 autors: ["Joan Puig i Ferreter"]
 publicacions: ["La Publicitat"]
 date: 1928-03-10
-publicat: "2019-09-01"
+categoria: "Opinió"
+publicat: 2019-09-01
 slug: "joan-puig-i-ferreter/els-llibres-de-memories"
 draft: false
 image: "1928-03-10_la_publicitat_joan_puig_i_ferreter_-_els_llibres_de_memories.webp"

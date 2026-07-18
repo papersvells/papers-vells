@@ -3,7 +3,8 @@ title: "La cuina catalana"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1925-03-18
-publicat: "2019-05-14"
+categoria: "Opinió"
+publicat: 2019-05-14
 slug: "josep-pla/la-cuina-catalana"
 draft: false
 image: "1925-03-18_la_publicitat_josep_pla_-_la_cuina_catalana.webp"

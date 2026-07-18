@@ -3,7 +3,8 @@ title: "El «Charleston»"
 autors: ["Prudenci Bertrana"]
 publicacions: ["La Veu de Catalunya"]
 date: 1927-02-13
-publicat: "2019-05-09"
+categoria: "Opinió"
+publicat: 2019-05-09
 slug: "prudenci-bertrana/el-charleston"
 draft: false
 image: "1927-02-13_la_veu_prudenci_bertrana_-_charleston.webp"

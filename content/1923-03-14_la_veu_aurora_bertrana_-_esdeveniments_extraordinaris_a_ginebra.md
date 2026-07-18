@@ -3,7 +3,8 @@ title: "Esdeveniments extraordinaris a Ginebra"
 autors: ["Aurora Bertrana"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-14
-publicat: "2020-09-13"
+categoria: "Reportatge"
+publicat: 2020-09-13
 slug: "aurora-bertrana/esdeveniments-extraordinaris-a-ginebra"
 draft: false
 image: "1923-03-14_la_veu_aurora_bertrana_-_esdeveniments_extraordinaris_a_ginebra.webp"

@@ -4,7 +4,8 @@ autors: ["Manuel Brunet"]
 autors_citats: ["Joan Maragall"]
 publicacions: ["Mirador"]
 date: 1929-02-21
-publicat: "2020-02-15"
+categoria: "Opinió"
+publicat: 2020-02-15
 slug: "manuel-brunet/es-redimible-el-palau-de-la-musica-catalana"
 draft: false
 image: "1929-02-21_mirador_manuel_brunet_-_es_redimible_el_palau_de_la_musica_catalana.webp"

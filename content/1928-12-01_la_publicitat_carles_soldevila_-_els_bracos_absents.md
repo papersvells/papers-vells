@@ -3,7 +3,8 @@ title: "Els braços absents"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1928-12-01
-publicat: "2019-09-23"
+categoria: "Opinió"
+publicat: 2019-09-23
 slug: "carles-soldevila/els-bracos-absents"
 draft: false
 image: "1928-12-01_la_publicitat_carles_soldevila_-_els_bracos_absents.webp"

@@ -4,7 +4,8 @@ autors: ["Tomàs Garcés"]
 autors_citats: ["Francesc Pujols", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1924-01-02
-publicat: "2021-02-16"
+categoria: "Ressenya"
+publicat: 2021-02-16
 slug: "tomas-garces/francesc-pujols"
 draft: false
 image: "1924-01-02_la_publicitat_tomas_garces_-_francesc_pujols.webp"

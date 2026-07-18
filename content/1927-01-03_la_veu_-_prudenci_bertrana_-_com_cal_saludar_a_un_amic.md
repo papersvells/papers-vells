@@ -3,7 +3,8 @@ title: "Com cal saludar un amic?"
 autors: ["Prudenci Bertrana"]
 publicacions: ["La Veu de Catalunya"]
 date: 1927-01-03
-publicat: "2020-01-29"
+categoria: "Opinió"
+publicat: 2020-01-29
 slug: "prudenci-bertrana/com-cal-saludar-un-amic"
 draft: false
 image: "1927-01-03_la_veu_-_prudenci_bertrana_-_com_cal_saludar_a_un_amic.webp"

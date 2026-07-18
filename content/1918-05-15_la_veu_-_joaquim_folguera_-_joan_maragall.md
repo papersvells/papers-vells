@@ -4,7 +4,8 @@ autors: ["Joaquim Folguera"]
 autors_citats: ["Joan Maragall"]
 publicacions: ["La Veu de Catalunya"]
 date: 1918-05-15
-publicat: "2020-10-27"
+categoria: "Opinió"
+publicat: 2020-10-27
 slug: "joaquim-folguera/joan-maragall"
 draft: false
 image: "1918-05-15_la_veu_-_joaquim_folguera_-_joan_maragall.webp"

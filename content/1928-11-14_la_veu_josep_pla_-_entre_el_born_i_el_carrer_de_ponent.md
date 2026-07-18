@@ -4,7 +4,8 @@ autors: ["Josep Pla"]
 autors_citats: ["Pere Coromines"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-14
-publicat: "2021-03-02"
+categoria: "Opinió"
+publicat: 2021-03-02
 slug: "josep-pla/entre-el-born-i-el-carrer-de-ponent"
 draft: false
 image: "1928-11-14_la_veu_josep_pla_-_entre_el_born_i_el_carrer_de_ponent.webp"

@@ -3,7 +3,8 @@ title: "Fi o mitjà?"
 autors: ["Carles Cardó"]
 publicacions: ["El Matí"]
 date: 1929-07-02
-publicat: "2021-06-15"
+categoria: "Opinió"
+publicat: 2021-06-15
 slug: "carles-cardo/fi-o-mitja"
 draft: false
 image: "1929-07-02_el_mati_carles_cardo_-_fi_o_mitja.webp"

@@ -4,7 +4,8 @@ autors: ["Carles Pi i Sunyer"]
 autors_citats: ["Mercè Rodoreda"]
 publicacions: ["Meridià"]
 date: 1938-01-21
-publicat: "2021-01-22"
+categoria: "Ressenya"
+publicat: 2021-01-22
 slug: "carles-pi-i-sunyer/critica-d-un-llibre-inedit"
 draft: false
 image: "1938-01-21_meridia_carles_pi_sunyer_-_critica_dun_llibre_inedit.webp"

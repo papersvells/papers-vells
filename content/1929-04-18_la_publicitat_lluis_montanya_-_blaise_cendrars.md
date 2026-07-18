@@ -3,7 +3,8 @@ title: "Blaise Cendrars"
 autors: ["Lluís Montanyà"]
 publicacions: ["La Publicitat"]
 date: 1929-04-18
-publicat: "2020-03-22"
+categoria: "Ressenya"
+publicat: 2020-03-22
 slug: "lluis-montanya/blaise-cendrars"
 draft: false
 image: "1929-04-18_la_publicitat_lluis_montanya_-_blaise_cendrars.webp"

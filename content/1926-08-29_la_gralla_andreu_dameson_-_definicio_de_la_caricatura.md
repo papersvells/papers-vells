@@ -3,7 +3,8 @@ title: "Definició de la caricatura"
 autors: ["Andreu Dameson"]
 publicacions: ["La Gralla"]
 date: 1926-08-29
-publicat: "2020-04-30"
+categoria: "Opinió"
+publicat: 2020-04-30
 slug: "andreu-dameson/definicio-de-la-caricatura"
 draft: false
 image: "1926-08-29_la_gralla_andreu_dameson_-_definicio_de_la_caricatura.webp"

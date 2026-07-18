@@ -4,7 +4,8 @@ autors: ["Manuel de Montoliu"]
 autors_citats: ["Joan Maragall"]
 publicacions: ["La Revista"]
 date: 1932-01-01
-publicat: "2020-09-30"
+categoria: "Opinió"
+publicat: 2020-09-30
 slug: "manuel-de-montoliu/goethe-i-maragall"
 draft: false
 image: "1932-01-01_la_revista_manuel_de_montoliu_-_maragall_i_goethe.webp"

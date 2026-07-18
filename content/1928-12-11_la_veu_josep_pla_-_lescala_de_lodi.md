@@ -3,7 +3,8 @@ title: "L’escala de l’odi"
 autors: ["Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-11
-publicat: "2021-12-04"
+categoria: "Opinió"
+publicat: 2021-12-04
 slug: "josep-pla/l-escala-de-l-odi"
 draft: false
 image: "1928-12-11_la_veu_josep_pla_-_lescala_de_lodi.webp"

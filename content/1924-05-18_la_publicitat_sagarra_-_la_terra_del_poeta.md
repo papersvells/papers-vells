@@ -3,7 +3,8 @@ title: "La terra del poeta"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1924-05-18
-publicat: "2019-05-25"
+categoria: "Opinió"
+publicat: 2019-05-25
 slug: "josep-maria-de-sagarra/la-terra-del-poeta"
 draft: false
 image: "1924-05-18_la_publicitat_sagarra_-_la_terra_del_poeta.webp"

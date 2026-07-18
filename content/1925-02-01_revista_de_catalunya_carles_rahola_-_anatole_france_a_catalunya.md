@@ -4,7 +4,8 @@ autors: ["Carles Rahola"]
 autors_citats: ["Carles Soldevila", "Joan Maragall"]
 publicacions: ["Revista de Catalunya"]
 date: 1925-02-01
-publicat: "2020-04-17"
+categoria: "Reportatge"
+publicat: 2020-04-17
 slug: "carles-rahola/anatole-france-a-catalunya"
 draft: false
 image: "1925-02-01_revista_de_catalunya_carles_rahola_-_anatole_france_a_catalunya.webp"

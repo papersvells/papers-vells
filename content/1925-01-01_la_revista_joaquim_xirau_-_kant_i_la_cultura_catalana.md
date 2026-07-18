@@ -4,7 +4,8 @@ autors: ["Joaquim Xirau"]
 autors_citats: ["Joan Maragall"]
 publicacions: ["La Revista"]
 date: 1925-01-01
-publicat: "2020-11-21"
+categoria: "Opinió"
+publicat: 2020-11-21
 slug: "joaquim-xirau/kant-i-la-cultura-catalana"
 draft: false
 image: "1925-01-01_la_revista_joaquim_xirau_-_kant_i_la_cultura_catalana.webp"

@@ -3,7 +3,8 @@ title: "Bastir-se un clos"
 autors: ["Josep Carner"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-09-18
-publicat: "2019-06-03"
+categoria: "Opinió"
+publicat: 2019-06-03
 slug: "josep-carner/bastir-se-un-clos"
 draft: false
 image: "1928-09-18_la_veu_josep_carner_-_bastir-se_un_clos.webp"

@@ -4,7 +4,8 @@ autors: ["Mercè Rodoreda"]
 autors_citats: ["Jaume Serra Húnter"]
 publicacions: ["La Rambla"]
 date: 1933-01-23
-publicat: "2020-10-30"
+categoria: "Entrevista"
+publicat: 2020-10-30
 slug: "merce-rodoreda/la-muller-i-la-filla-de-francesc-macia-en-la-intimitat"
 draft: false
 image: "1933-01-23_la_rambla_merce_rodoreda_-_la_muller_i_la_filla_de_francesc_macia_en_la_intimitat.webp"

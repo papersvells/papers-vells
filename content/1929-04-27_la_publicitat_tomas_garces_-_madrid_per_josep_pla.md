@@ -4,7 +4,8 @@ autors: ["Tomàs Garcés"]
 autors_citats: ["Joan Crexells", "Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1929-04-27
-publicat: "2020-05-16"
+categoria: "Ressenya"
+publicat: 2020-05-16
 slug: "tomas-garces/madrid-per-josep-pla"
 draft: false
 image: "1929-04-27_la_publicitat_tomas_garces_-_madrid_per_josep_pla.webp"

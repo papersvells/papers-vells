@@ -3,7 +3,8 @@ title: "El panell"
 autors: ["Modest Urgell"]
 publicacions: ["Joventut"]
 date: 1902-01-02
-publicat: "2021-02-02"
+categoria: "Opinió"
+publicat: 2021-02-02
 slug: "modest-urgell/el-panell"
 draft: false
 image: "1902-01-02_joventut_modest_urgell_-_el_panell.webp"

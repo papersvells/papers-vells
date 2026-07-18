@@ -3,7 +3,8 @@ title: "Consagració o estímul?"
 autors: ["Carles Capdevila"]
 publicacions: ["La Publicitat"]
 date: 1928-12-18
-publicat: "2019-06-22"
+categoria: "Opinió"
+publicat: 2019-06-22
 slug: "carles-capdevila/consagracio-o-estimul"
 draft: false
 image: "1928-12-18_la_publicitat_carles_capdevila_-_consagracio_o_estimul.webp"

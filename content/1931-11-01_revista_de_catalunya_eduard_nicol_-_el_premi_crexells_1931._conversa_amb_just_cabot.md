@@ -4,7 +4,8 @@ autors: ["Eduard Nicol"]
 autors_citats: ["Francesc Trabal", "Carles Soldevila", "Jeroni de Moragas", "Carles Capdevila", "Joan Puig i Ferreter", "Josep Navarro i Costabella", "Alexandre Plana", "Prudenci Bertrana", "Just Cabot"]
 publicacions: ["Revista de Catalunya"]
 date: 1931-11-01
-publicat: "2020-07-12"
+categoria: "Entrevista"
+publicat: 2020-07-12
 slug: "eduard-nicol/el-premi-crexells-1931"
 draft: false
 image: "1931-11-01_revista_de_catalunya_eduard_nicol_-_el_premi_crexells_1931._conversa_amb_just_cabot.webp"
@@ -15,7 +16,7 @@ El 13 de desembre serà concedit el tercer Premi Crexells. La concessió d'aques
 
 Aquest any el Jurat qualificador està format pels senyors [Just Cabot](/just-cabot/) (secretari), [Carles Capdevila](/carles-capdevila/), Estanislau Duran i Reynals, Miquel Llor, [Alexandre Plana](/alexandre-plana/), [J. Puig i Ferreter](/joan-puig-i-ferreter/) i Vicenç Solé de Sojo. El senyor Cabot, reelegit del Jurat anterior, ha actuat de Secretari en totes les deliberacions que compta la història del Premi. Aquesta sola circumstància, àdhuc deixant de banda la perspicàcia d'informació i de judici del senyor Cabot, el faria l'home més indicat per a pronunciar un comentari sobre el Premi.
 
-El senyor Cabot diu que la crisi del llibre no sembla haver influït en l'ànim dels concursants al Premi, i això prova un aspecte de la seva eficàcia. El Jurat ha rebut aproximadament el mateix nombre de manuscrits que en anys anteriors: una quinzena. Segons acord de l'any 1929, no es pot divulgar el nom dels autors. Es pot recordar, perquè ja s'ha anunciat per altra banda, que Prudenci Bertrana, Francesc Trabal i Jeroni de Moragas han escrit sengles novelles que es publicaran, probablement, abans del Premi.
+El senyor Cabot diu que la crisi del llibre no sembla haver influït en l'ànim dels concursants al Premi, i això prova un aspecte de la seva eficàcia. El Jurat ha rebut aproximadament el mateix nombre de manuscrits que en anys anteriors: una quinzena. Segons acord de l'any 1929, no es pot divulgar el nom dels autors. Es pot recordar, perquè ja s'ha anunciat per altra banda, que [Prudenci Bertrana](/prudenci-bertrana/), [Francesc Trabal](/francesc-trabal/) i [Jeroni de Moragas](/jeroni-de-moragas/) han escrit sengles novel·les que es publicaran, probablement, abans del Premi.
 
 Les ja publicades són:
 
@@ -40,7 +41,7 @@ En definitiva, la persistència del Premi ha aconseguit estimular i regularitzar
 
 ―....?
 
-―En general, els nostres autors no han aprofitat aquesta pedrera de novel·les que és la història barcelonina. Potser els fets són massa recents, i per tant, massa vius en el record per a poder objectivar-los en la narració literària. Com sigui, el fet és que rarament les lluites socials, el terrorisme, el renaixement patriòtic, etc., han servit de tema als nostres novel·listes. Recordem com a excepció *Quan mataven pels carrers*, d'Oller i Rabassa, alguns episodis de Navarro Costabella, Trabal. *Eva*, de Soldevila, dedica un capítol a descriure fets recents. Però són casos isolats. La gairebé totalitat dels nostres novel·listes imaginen intrigues que es descabdellen en un temps i un lloc imprecisos, que s'identifiquen per mitjà de detalls accessoris: un carrer, una marca de cigarretes, etc. Els temes *pairals* acostumen a trobar-se en manuscrits de concursants remots o fantàstics.
+―En general, els nostres autors no han aprofitat aquesta pedrera de novel·les que és la història barcelonina. Potser els fets són massa recents, i per tant, massa vius en el record per a poder objectivar-los en la narració literària. Com sigui, el fet és que rarament les lluites socials, el terrorisme, el renaixement patriòtic, etc., han servit de tema als nostres novel·listes. Recordem com a excepció *Quan mataven pels carrers*, d'Oller i Rabassa, alguns episodis de [Navarro Costabella](/josep-navarro-i-costabella/), Trabal. *Eva*, de Soldevila, dedica un capítol a descriure fets recents. Però són casos isolats. La gairebé totalitat dels nostres novel·listes imaginen intrigues que es descabdellen en un temps i un lloc imprecisos, que s'identifiquen per mitjà de detalls accessoris: un carrer, una marca de cigarretes, etc. Els temes *pairals* acostumen a trobar-se en manuscrits de concursants remots o fantàstics.
 
 Pot afirmar-se que la nostra novella no té un caràcter peculiar, en allò que es refereix als temes. La influència de les literatures estrangeres es revela, però no en un conjunt d'autors, formant escola, sinó diversament en cada autor. No hi ha oposició d'escoles, ni tan sols escoles. Una divisió de camps, com s'insinuava en el teatre, com hi hagué fa anys entre popularistes i no popularistes, entre vells i joves, no es veu actualment en la novel·la.
 

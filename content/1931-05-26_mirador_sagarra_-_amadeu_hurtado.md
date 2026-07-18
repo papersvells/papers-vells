@@ -4,7 +4,8 @@ autors: ["Josep Maria de Sagarra"]
 autors_citats: ["Amadeu Hurtado"]
 publicacions: ["Mirador"]
 date: 1931-05-26
-publicat: "2021-01-27"
+categoria: "Opinió"
+publicat: 2021-01-27
 slug: "josep-maria-de-sagarra/amadeu-hurtado"
 draft: false
 image: "1931-05-26_mirador_sagarra_-_amadeu_hurtado.webp"

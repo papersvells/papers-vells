@@ -4,7 +4,8 @@ autors: ["Josep F Ràfols"]
 autors_citats: ["Josep Carner", "Josep Pla", "Josep Maria de Sagarra"]
 publicacions: ["La Nova Revista"]
 date: 1927-04-01
-publicat: "2020-06-25"
+categoria: "Ressenya"
+publicat: 2020-06-25
 slug: "josep-f-rafols/la-figura-i-el-paisatge-en-l-obra-de-josep-pla"
 draft: false
 image: "1927-04-01_la_nova_revista_josep_f_rafols_-_la_figura_i_el_paisatge_en_lobra_de_josep_pla.webp"

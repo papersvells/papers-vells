@@ -4,7 +4,8 @@ autors: ["Tomàs Garcés"]
 autors_citats: ["Carles Soldevila", "Josep Maria de Sagarra", "Joan Maragall"]
 publicacions: ["La Publicitat"]
 date: 1928-12-25
-publicat: "2021-04-27"
+categoria: "Opinió"
+publicat: 2021-04-27
 slug: "tomas-garces/valery-maragall"
 draft: false
 image: "1928-12-25_la_publicitat_tomas_garces_-_valery-maragall.webp"

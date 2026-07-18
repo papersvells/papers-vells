@@ -3,7 +3,8 @@ title: "Pablo R. Picasso"
 autors: ["Miquel Utrillo"]
 publicacions: ["Pèl i Ploma"]
 date: 1901-06-01
-publicat: "2021-06-26"
+categoria: "Opinió"
+publicat: 2021-06-26
 slug: "miquel-utrillo/pablo-r-picasso"
 draft: false
 image: "1901-06-01_pel_i_ploma_miquel_utrillo_-_pablo_r_picasso.webp"

@@ -4,7 +4,8 @@ autors: ["Tomàs Garcés"]
 autors_citats: ["Josep Maria Junoy", "Josep Puig i Cadafalch", "Joan Estelrich"]
 publicacions: ["La Publicitat"]
 date: 1922-10-11
-publicat: "2019-12-09"
+categoria: "Opinió"
+publicat: 2019-12-09
 slug: "tomas-garces/l-expansio-literaria-de-catalunya"
 draft: false
 image: "1922-10-11_la_publicitat_tomas_garces_-_lexpansio_literaria_de_catalunya.webp"

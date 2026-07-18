@@ -4,7 +4,8 @@ autors: ["Ferran Soldevila"]
 autors_citats: ["Antoni Rovira i Virgili"]
 publicacions: ["La Publicitat"]
 date: 1928-12-15
-publicat: "2020-07-20"
+categoria: "Opinió"
+publicat: 2020-07-20
 slug: "ferran-soldevila/frares-a-poblet"
 draft: false
 image: "1928-12-15_la_publicitat_ferran_soldevila_-_frares_a_poblet.webp"

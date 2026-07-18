@@ -3,7 +3,8 @@ title: "No podem tenir novel·la?"
 autors: ["Josep Navarro i Costabella"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-15
-publicat: "2019-06-18"
+categoria: "Opinió"
+publicat: 2019-06-18
 slug: "josep-navarro-i-costabella/no-podem-tenir-novel-la"
 draft: false
 image: "1928-12-15_la_veu_josep_navarro_i_costabella_-_no_podem_tenir_novela.webp"

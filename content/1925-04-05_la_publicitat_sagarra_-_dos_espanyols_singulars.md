@@ -3,7 +3,8 @@ title: "Dos espanyols singulars"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1925-04-05
-publicat: "2019-06-12"
+categoria: "Opinió"
+publicat: 2019-06-12
 slug: "josep-maria-de-sagarra/dos-espanyols-singulars"
 draft: false
 image: "1925-04-05_la_publicitat_sagarra_-_dos_espanyols_singulars.webp"

@@ -3,7 +3,8 @@ title: "Cursa vers l’absurd"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1925-02-27
-publicat: "2019-12-21"
+categoria: "Opinió"
+publicat: 2019-12-21
 slug: "carles-soldevila/cursa-vers-l-absurd"
 draft: false
 image: "1925-02-27_la_publicitat_carles_soldevila_-_cursa_vers_labsurd.webp"

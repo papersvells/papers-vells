@@ -1,13 +1,16 @@
 ---
+
 title: "L’estudiant de Ca’n Tona"
 autors: ["Anton Busquets i Punset"]
 publicacions: ["Joventut"]
 date: 1902-05-29
-publicat: "2020-12-29"
+publicat: 2020-12-29
 slug: "anton-busquets-i-punset/l-estudiant-de-ca-n-tona"
 draft: false
 image: "1902-05-29_joventut_anton_busquets_i_punset_-_lestudiant_de_can_tona.webp"
+categoria: Revisar
 ---
+
 Setze anys devia tenir en Cinto quan trencá'l viarany que seguia per'anar al Seminari, de Folgarolas estant. Quatre'n feya que la seva bona y santa mare li amania cada matí la fiambrera ―qu'ell duya á la esquena penjada ab el feix de llibres― y l'aconduhia ab l'afecte qu'es de suposar en una mare de montanya. Fins allavors potser pochs el coneixian á n'el noy d'en Pep de Torrents, descomptantne'ls companys y gent del poble ahont nasqué. Si bé es cert que ja somniava y's sentia vibrar son ánima de poeta, els fruyts de son aprenentatje de copler se li quedavan la majoria en el mateix cervell, y'ls pochs que n'eixian no passavan del rotllo de companys de caramellas que'ls aprenian pera corrandejar, en arribant la Pasqua, pels indrets del Nort al llevant de la Plana de Vich.
 
 Donchs al trencar de viarany cambiá de vida: deixà la de familia pera pendre la de llogat, que si bé'l retenia més en obligacions, li deixava més llibertat pera entregarse als encisos de la dolsa poesia... «A casa no'm podian mantenir y no'm tocà més remey qu'anarmen pera mestre á una masia, ahont hi trobí una galán gent.» Fou á Ca'n Tona, una casa de pagès humil, ahont se llogà pera passar á la maynada y al servey. A trench de jorn saltava del llit, y á la tasca; quedantli poch temps pera estudiar la amohinosa filosofía, que moltas vegadas li enterbolí'l celatje pur de sas inspiracions; y ab el paquet de llibres y'l recapte, feya'l camí de Vich travessant els gemats camps de Riudeperas y Colldetenas, entrant pel pont de Gurri, sol, sense formar ab la colla de confrares seus que ab la gatzara que feyan no podian apreciar la font de bellesa y de poesia qu'enclóu aquell indret de Plana, ab el Montseny per una banda y'l Pirineu per l'altra. En Cinto prou la hi sentia, gosanthi de debó y fent llargas reposadas á la Torre de Morgadés, en quina font, y á l'ombra d'un hermós desmay, havia concebut sas primeras intentonas poéticas. Ell havia anat á l'aula de retórica quan hi explicava'l doctor Cortés, condeixeble d'en Milà y Fontanals y ademés devot de sas obras, qu'allavors ja eran admiradas de tot Catalunya; y no cal dir si seria en bé dels deixebles aquell empenyo en mostrárloshi'ls joyells de nostra poesia popular, que per aquells temps recullí en son *Romancerillo Catalán* el gran mestre. Moltas eran las horas que'ls entretenia ab la lectura d'aquells cants, assadollantse l'ànima d'en Verdaguer ab el perfum delicat, al ensemps que mascle, de la poesia popular, que fou la seva llet y sa obra de consulta y estudi.

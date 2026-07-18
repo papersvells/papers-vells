@@ -4,7 +4,8 @@ autors: ["Francesc Pujols"]
 autors_citats: ["Eugeni d'Ors"]
 publicacions: ["Meridià"]
 date: 1938-01-14
-publicat: "2021-01-19"
+categoria: "Opinió"
+publicat: 2021-01-19
 slug: "francesc-pujols/la-fonetica-barcelonina"
 draft: false
 image: "1938-01-14_meridia_francesc_pujols_-_la_fonetica_barcelonina.webp"

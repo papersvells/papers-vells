@@ -3,7 +3,8 @@ title: "La passió de la veritat"
 autors: ["Carles Cardó"]
 publicacions: ["El Matí"]
 date: 1929-06-13
-publicat: "2020-09-17"
+categoria: "Opinió"
+publicat: 2020-09-17
 slug: "carles-cardo/la-passio-de-la-veritat"
 draft: false
 image: "1929-06-13_el_mati_carles_cardo_-_la_passio_de_la_veritat.webp"

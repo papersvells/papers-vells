@@ -3,7 +3,8 @@ title: "Intermedi a Düsseldorf"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-14
-publicat: "2019-12-30"
+categoria: "Reportatge"
+publicat: 2019-12-30
 slug: "eugeni-xammar/intermedi-a-dusseldorf"
 draft: false
 image: "1923-03-14_la_veu_xammar_-_intermedi_a_dusseldorf.webp"

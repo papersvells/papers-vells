@@ -4,7 +4,8 @@ autors: ["Adrià Gual"]
 autors_citats: ["Lluís Millet", "Carles Soldevila", "Francesc Pujols", "Carles Capdevila", "Joan Llongueras", "Joan Maragall", "Miquel Utrillo", "Eugeni d'Ors"]
 publicacions: ["D'ací i d'allà"]
 date: 1925-05-01
-publicat: "2019-08-04"
+categoria: "Opinió"
+publicat: 2019-08-04
 slug: "adria-gual/els-cabells-llargs"
 draft: false
 image: "1925-05-01_daci_i_dalla_adria_gual_-_els_cabells_llargs.webp"

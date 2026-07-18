@@ -4,7 +4,8 @@ autors: ["Alexandre Plana"]
 autors_citats: ["Carles Riba", "Josep Carner", "Josep Maria de Sagarra", "Joan Maragall", "Eugeni d'Ors"]
 publicacions: ["La Revista"]
 date: 1915-05-15
-publicat: "2020-12-20"
+categoria: "Opinió"
+publicat: 2020-12-20
 slug: "alexandre-plana/les-valors-del-nostre-renaixement"
 draft: false
 image: "1915-05-15_la_revista_alexandre_plana_-_les_valors_del_nostre_renaixement.webp"

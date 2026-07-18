@@ -4,7 +4,8 @@ autors: ["Manuel Brunet"]
 autors_citats: ["Carles Riba", "Francesc Trabal", "Josep Maria Junoy", "Joan Puig i Ferreter", "Josep Pla", "Carles Rahola", "Agustí Esclasans", "Just Cabot", "Gaziel"]
 publicacions: ["La Publicitat"]
 date: 1928-12-14
-publicat: "2019-06-17"
+categoria: "Reportatge"
+publicat: 2019-06-17
 slug: "manuel-brunet/el-premi-joan-crexells"
 draft: false
 image: "1928-12-14_la_publicitat_manuel_brunet_-_el_premi_joan_crexells.webp"

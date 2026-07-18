@@ -3,7 +3,8 @@ title: "Defensa de la capsa de mistos contra l’encenedor automàtic"
 autors: ["Alexandre Plana"]
 publicacions: ["Picarol"]
 date: 1912-03-02
-publicat: "2021-04-20"
+categoria: "Opinió"
+publicat: 2021-04-20
 slug: "alexandre-plana/defensa-de-la-capsa-de-mistos-contra-l-encenedor-automatic"
 draft: false
 image: "1912-03-02_picarol_alexandre_plana_-_defensa_de_la_capsa_de_mistos_contra_lencenedor_automatic.webp"

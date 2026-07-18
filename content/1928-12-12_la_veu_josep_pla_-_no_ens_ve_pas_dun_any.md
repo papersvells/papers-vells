@@ -4,7 +4,8 @@ autors: ["Josep Pla"]
 autors_citats: ["Manuel de Montoliu", "Josep Carner", "Josep Farran i Mayoral", "Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-12
-publicat: "2021-09-01"
+categoria: "Opinió"
+publicat: 2021-09-01
 slug: "josep-pla/no-ens-ve-pas-d-un-any"
 draft: false
 image: "1928-12-12_la_veu_josep_pla_-_no_ens_ve_pas_dun_any.webp"

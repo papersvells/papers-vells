@@ -4,7 +4,8 @@ autors: ["Josep Maria Capdevila"]
 autors_citats: ["Raimon Casellas"]
 publicacions: ["El Matí"]
 date: 1929-05-28
-publicat: "2020-05-18"
+categoria: "Opinió"
+publicat: 2020-05-18
 slug: "josep-maria-capdevila/un-realisme-falsificador"
 draft: false
 image: "1929-05-28_el_mati_josep_maria_capdevila_-_un_realisme_falsificador.webp"

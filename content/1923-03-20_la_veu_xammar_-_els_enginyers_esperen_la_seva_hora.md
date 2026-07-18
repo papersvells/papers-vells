@@ -3,7 +3,8 @@ title: "Els enginyers esperen la seva hora"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-20
-publicat: "2020-01-05"
+categoria: "Entrevista"
+publicat: 2020-01-05
 slug: "eugeni-xammar/els-enginyers-esperen-la-seva-hora"
 draft: false
 image: "1923-03-20_la_veu_xammar_-_els_enginyers_esperen_la_seva_hora.webp"

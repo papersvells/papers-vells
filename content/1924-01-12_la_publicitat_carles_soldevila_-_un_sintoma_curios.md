@@ -3,7 +3,8 @@ title: "Un símptoma curiós"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1924-01-12
-publicat: "2019-07-11"
+categoria: "Opinió"
+publicat: 2019-07-11
 slug: "carles-soldevila/un-simptoma-curios"
 draft: false
 image: "1924-01-12_la_publicitat_carles_soldevila_-_un_sintoma_curios.webp"

@@ -4,7 +4,8 @@ autors: ["Amadeu Hurtado"]
 autors_citats: ["Josep Pla"]
 publicacions: ["Mirador"]
 date: 1929-06-20
-publicat: "2020-08-08"
+categoria: "Opinió"
+publicat: 2020-08-08
 slug: "amadeu-hurtado/un-llibre-llastimos"
 draft: false
 image: "1929-06-20_mirador_amadeu_hurtado_-_un_llibre_llastimos.webp"

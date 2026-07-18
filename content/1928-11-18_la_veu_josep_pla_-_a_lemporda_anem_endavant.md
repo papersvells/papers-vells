@@ -3,7 +3,8 @@ title: "A l’Empordà anem endavant"
 autors: ["Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-18
-publicat: "2019-06-08"
+categoria: "Opinió"
+publicat: 2019-06-08
 slug: "josep-pla/a-l-emporda-anem-endavant"
 draft: false
 image: "1928-11-18_la_veu_josep_pla_-_a_lemporda_anem_endavant.webp"

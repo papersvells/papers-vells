@@ -4,7 +4,8 @@ autors: ["Francesc Madrid"]
 autors_citats: ["Josep Maria Junoy", "Francesc Pujols", "Joan Puig i Ferreter", "Amadeu Hurtado", "Josep Maria de Sagarra", "Màrius Aguilar", "Joaquim Folguera"]
 publicacions: ["Mirador"]
 date: 1929-02-07
-publicat: "2020-01-18"
+categoria: "Entrevista"
+publicat: 2020-01-18
 slug: "francesc-madrid/conversa-amb-el-sr-francesc-pujols"
 draft: false
 image: "1929-02-07_mirador_francesc_madrid_-_conversa_amb_el_sr_francesc_pujols.webp"

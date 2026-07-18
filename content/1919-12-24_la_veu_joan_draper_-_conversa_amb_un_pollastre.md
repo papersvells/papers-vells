@@ -3,7 +3,8 @@ title: "Conversa amb un pollastre"
 autors: ["Joan Draper"]
 publicacions: ["La Veu de Catalunya"]
 date: 1919-12-24
-publicat: "2021-05-24"
+categoria: "Opinió"
+publicat: 2021-05-24
 slug: "joan-draper/conversa-amb-un-pollastre"
 draft: false
 image: "1919-12-24_la_veu_joan_draper_-_conversa_amb_un_pollastre.webp"

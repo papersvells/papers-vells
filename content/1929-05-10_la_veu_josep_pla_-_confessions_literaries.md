@@ -4,7 +4,8 @@ autors: ["Josep Pla"]
 autors_citats: ["Manuel de Montoliu", "Manuel Brunet"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-05-10
-publicat: "2020-05-14"
+categoria: "Opinió"
+publicat: 2020-05-14
 slug: "josep-pla/confessions-literaries"
 draft: false
 image: "1929-05-10_la_veu_josep_pla_-_confessions_literaries.webp"

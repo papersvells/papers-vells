@@ -3,7 +3,8 @@ title: "Port de la Selva"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1923-01-07
-publicat: "2019-12-18"
+categoria: "Reportatge"
+publicat: 2019-12-18
 slug: "josep-maria-de-sagarra/port-de-la-selva"
 draft: false
 image: "1923-01-07_la_publicitat_sagarra_-_port_de_la_selva.webp"

@@ -3,7 +3,8 @@ title: "La flonjor barcelonina"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1925-05-10
-publicat: "2019-05-27"
+categoria: "Opinió"
+publicat: 2019-05-27
 slug: "carles-soldevila/la-flonjor-barcelonina"
 draft: false
 image: "1925-05-10_la_publicitat_carles_soldevila_-_la_flonjor_barcelonina.webp"

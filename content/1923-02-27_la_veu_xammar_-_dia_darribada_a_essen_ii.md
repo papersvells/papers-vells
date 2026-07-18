@@ -3,7 +3,8 @@ title: "Dia d’arribada a Essen II"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-02-27
-publicat: "2019-12-26"
+categoria: "Reportatge"
+publicat: 2019-12-26
 slug: "eugeni-xammar/dia-d-arribada-a-essen-ii"
 draft: false
 image: "1923-02-27_la_veu_xammar_-_dia_darribada_a_essen_ii.webp"

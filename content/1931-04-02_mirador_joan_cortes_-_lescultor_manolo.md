@@ -3,7 +3,8 @@ title: "L’escultor Manolo"
 autors: ["Joan Cortés"]
 publicacions: ["Mirador"]
 date: 1931-04-02
-publicat: "2020-08-03"
+categoria: "Reportatge"
+publicat: 2020-08-03
 slug: "joan-cortes/l-escultor-manolo"
 draft: false
 image: "1931-04-02_mirador_joan_cortes_-_lescultor_manolo.webp"

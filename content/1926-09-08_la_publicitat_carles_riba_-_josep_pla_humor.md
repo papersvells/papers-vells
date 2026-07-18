@@ -4,7 +4,8 @@ autors: ["Carles Riba"]
 autors_citats: ["Francesc Pujols", "Josep Pla", "Agustí Esclasans"]
 publicacions: ["La Publicitat"]
 date: 1926-09-08
-publicat: "2021-09-11"
+categoria: "Ressenya"
+publicat: 2021-09-11
 slug: "carles-riba/josep-pla-l-humor"
 draft: false
 image: "1926-09-08_la_publicitat_carles_riba_-_josep_pla_humor.webp"

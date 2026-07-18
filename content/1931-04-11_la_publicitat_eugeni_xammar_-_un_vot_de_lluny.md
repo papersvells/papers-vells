@@ -3,7 +3,8 @@ title: "Un vot de lluny"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Publicitat"]
 date: 1931-04-11
-publicat: "2019-06-05"
+categoria: "Opinió"
+publicat: 2019-06-05
 slug: "eugeni-xammar/un-vot-de-lluny"
 draft: false
 image: "1931-04-11_la_publicitat_eugeni_xammar_-_un_vot_de_lluny.webp"

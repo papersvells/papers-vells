@@ -3,7 +3,8 @@ title: "La celebritat i l’extravagància"
 autors: ["Prudenci Bertrana"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-17
-publicat: "2019-06-09"
+categoria: "Opinió"
+publicat: 2019-06-09
 slug: "prudenci-bertrana/la-celebritat-i-l-extravagancia"
 draft: false
 image: "1928-11-17_la_veu_prudenci_bertrana_-_la_celebritat_i_lextravagancia.webp"

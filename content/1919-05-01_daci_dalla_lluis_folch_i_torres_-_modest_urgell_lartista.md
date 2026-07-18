@@ -3,7 +3,8 @@ title: "Modest Urgell. L’artista"
 autors: ["Lluís Folch i Torres"]
 publicacions: ["D'ací i d'allà"]
 date: 1919-05-01
-publicat: "2020-10-06"
+categoria: "Opinió"
+publicat: 2020-10-06
 slug: "lluis-folch-i-torres/modest-urgell-l-artista"
 draft: false
 image: "1919-05-01_daci_dalla_lluis_folch_i_torres_-_modest_urgell_lartista.webp"

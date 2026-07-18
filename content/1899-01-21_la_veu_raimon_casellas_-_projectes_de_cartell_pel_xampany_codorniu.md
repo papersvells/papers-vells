@@ -3,7 +3,8 @@ title: "Projectes de cartell pel xampany Codorniu"
 autors: ["Raimon Casellas"]
 publicacions: ["La Veu de Catalunya"]
 date: 1899-01-21
-publicat: "2019-08-14"
+categoria: "Ressenya"
+publicat: 2019-08-14
 slug: "raimon-casellas/projectes-de-cartell-pel-xampany-codorniu"
 draft: false
 image: "1899-01-21_la_veu_raimon_casellas_-_projectes_de_cartell_pel_xampany_codorniu.webp"

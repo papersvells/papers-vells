@@ -3,7 +3,8 @@ title: "La qüestió separatista"
 autors: ["Josep Puig i Cadafalch"]
 publicacions: ["La Veu de Catalunya"]
 date: 1899-02-25
-publicat: "2019-09-11"
+categoria: "Opinió"
+publicat: 2019-09-11
 slug: "josep-puig-i-cadafalch/la-questio-separatista"
 draft: false
 image: "1899-02-25_la_veu_puig_i_cadafalch_-_la_questio_separatista.webp"

@@ -3,7 +3,8 @@ title: "Un manifest literari"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1925-02-25
-publicat: "2019-05-23"
+categoria: "Opinió"
+publicat: 2019-05-23
 slug: "josep-pla/un-manifest-literari"
 draft: false
 image: "1925-02-25_la_publicitat_josep_pla_-_un_manifest_literari.webp"

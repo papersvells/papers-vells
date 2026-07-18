@@ -3,7 +3,8 @@ title: "Una pintura de Fortuny"
 autors: ["Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1920-01-08
-publicat: "2020-05-04"
+categoria: "Ressenya"
+publicat: 2020-05-04
 slug: "eugeni-d'ors/una-pintura-de-fortuny"
 draft: false
 image: "1920-01-08_la_veu_eugeni_dors_-_una_pintura_de_fortuny.webp"

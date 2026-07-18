@@ -3,7 +3,8 @@ title: "El problema econòmic del novel·lista"
 autors: ["Josep Navarro i Costabella"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-16
-publicat: "2019-06-21"
+categoria: "Opinió"
+publicat: 2019-06-21
 slug: "josep-navarro-i-costabella/el-problema-economic-del-novel-lista"
 draft: false
 image: "1928-12-16_la_veu_josep_navarro_i_costabella_-_el_problema_economic_del_novellista.webp"

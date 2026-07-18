@@ -3,7 +3,8 @@ title: "La resistència dels minaires"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-19
-publicat: "2020-01-03"
+categoria: "Reportatge"
+publicat: 2020-01-03
 slug: "eugeni-xammar/la-resistencia-dels-minaires"
 draft: false
 image: "1923-03-19_la_veu_xammar_-_la_resistencia_dels_minaires.webp"

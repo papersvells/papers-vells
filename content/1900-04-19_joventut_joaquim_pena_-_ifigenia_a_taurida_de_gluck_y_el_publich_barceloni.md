@@ -3,7 +3,8 @@ title: "«Ifigenia a Taurida» de Gluck, y el públich barceloní"
 autors: ["Joaquim Pena"]
 publicacions: ["Joventut"]
 date: 1900-04-19
-publicat: "2020-11-28"
+categoria: "Ressenya"
+publicat: 2020-11-28
 slug: "joaquim-pena/ifigenia-a-taurida-de-gluck-y-el-publich-barceloni"
 draft: false
 image: "1900-04-19_joventut_joaquim_pena_-_ifigenia_a_taurida_de_gluck_y_el_publich_barceloni.webp"

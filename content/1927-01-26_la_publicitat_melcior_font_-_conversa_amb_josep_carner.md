@@ -4,7 +4,8 @@ autors: ["Melcior Font"]
 autors_citats: ["Josep Carner"]
 publicacions: ["La Publicitat"]
 date: 1927-02-26
-publicat: "2022-11-12"
+categoria: "Entrevista"
+publicat: 2022-11-12
 slug: "melcior-font/conversa-amb-josep-carner"
 draft: false
 image: "1927-01-26_la_publicitat_melcior_font_-_conversa_amb_josep_carner.webp"

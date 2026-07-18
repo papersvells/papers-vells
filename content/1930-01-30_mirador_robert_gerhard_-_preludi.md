@@ -4,7 +4,8 @@ autors: ["Robert Gerhard"]
 autors_citats: ["Rossend Llates"]
 publicacions: ["Mirador"]
 date: 1930-01-30
-publicat: "2020-08-04"
+categoria: "Opinió"
+publicat: 2020-08-04
 slug: "robert-gerhard/preludi"
 draft: false
 image: "1930-01-30_mirador_robert_gerhard_-_preludi.webp"

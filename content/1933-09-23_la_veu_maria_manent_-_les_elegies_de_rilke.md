@@ -4,7 +4,8 @@ autors: ["Marià Manent"]
 autors_citats: ["Joan Crexells"]
 publicacions: ["La Veu de Catalunya"]
 date: 1933-09-23
-publicat: "2020-09-01"
+categoria: "Ressenya"
+publicat: 2020-09-01
 slug: "maria-manent/les-elegies-de-rilke"
 draft: false
 image: "1933-09-23_la_veu_maria_manent_-_les_elegies_de_rilke.webp"

@@ -3,7 +3,8 @@ title: "La meva música"
 autors: ["Frederic Mompou"]
 publicacions: ["Hèlix"]
 date: 1930-01-01
-publicat: "2020-07-21"
+categoria: "Opinió"
+publicat: 2020-07-21
 slug: "frederic-mompou/la-meva-musica"
 draft: false
 image: "1930-01-01_helix_frederic_mompou_-_la_meva_musica.webp"

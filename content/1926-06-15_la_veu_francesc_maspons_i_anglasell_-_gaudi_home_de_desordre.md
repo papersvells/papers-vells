@@ -3,7 +3,8 @@ title: "Gaudí home de desordre"
 autors: ["Francesc Maspons i Anglasell"]
 publicacions: ["La Veu de Catalunya"]
 date: 1926-06-15
-publicat: "2019-06-10"
+categoria: "Reportatge"
+publicat: 2019-06-10
 slug: "francesc-maspons-i-anglasell/gaudi-home-de-desordre"
 draft: false
 image: "1926-06-15_la_veu_francesc_maspons_i_anglasell_-_gaudi_home_de_desordre.webp"

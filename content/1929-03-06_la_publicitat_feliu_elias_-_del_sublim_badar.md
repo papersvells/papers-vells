@@ -4,7 +4,8 @@ autors: ["Feliu Elias"]
 autors_citats: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1929-03-06
-publicat: "2019-06-05"
+categoria: "Opinió"
+publicat: 2019-06-05
 slug: "feliu-elias/del-sublim-badar"
 draft: false
 image: "1929-03-06_la_publicitat_feliu_elias_-_del_sublim_badar.webp"

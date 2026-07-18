@@ -4,7 +4,8 @@ autors: ["Miquel Duran i Tortajada"]
 autors_citats: ["Carles Riba", "Carles Soldevila", "Joan Crexells", "Josep Farran i Mayoral", "Josep Maria de Sagarra", "J V Foix", "Joan Estelrich", "Alexandre Plana", "Joan Salvat-Papasseit", "Agustí Esclasans", "Joaquim Folguera", "Francesc Domingo"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-11-03
-publicat: "2019-11-23"
+categoria: "Reportatge"
+publicat: 2019-11-23
 slug: "miquel-duran-i-tortajada/les-nostres-penyes-literaries-la-de-la-revista"
 draft: false
 image: "1928-11-03_la_veu_miquel_duran_i_tortajada_-_les_nostres_penyes_literaries_la_de_la_revista.webp"

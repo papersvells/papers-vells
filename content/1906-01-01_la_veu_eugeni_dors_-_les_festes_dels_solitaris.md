@@ -3,7 +3,8 @@ title: "Les festes dels solitaris"
 autors: ["Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1906-01-01
-publicat: "2020-12-13"
+categoria: "Opinió"
+publicat: 2020-12-13
 slug: "eugeni-d'ors/les-festes-dels-solitaris"
 draft: false
 image: "1906-01-01_la_veu_eugeni_dors_-_les_festes_dels_solitaris.webp"

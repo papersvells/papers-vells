@@ -3,7 +3,8 @@ title: "La vaga forçosa"
 autors: ["Màrius Aguilar"]
 publicacions: ["La campana de Gràcia"]
 date: 1921-04-09
-publicat: "2020-09-08"
+categoria: "Opinió"
+publicat: 2020-09-08
 slug: "marius-aguilar/la-vaga-forcosa"
 draft: false
 image: "1921-04-09_la_campana_de_gracia_marius_aguilar_-_la_vaga_forcosa.webp"

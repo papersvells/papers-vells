@@ -3,7 +3,8 @@ title: "Entorn de Virgili"
 autors: ["Joaquim Balcells"]
 publicacions: ["El Matí"]
 date: 1930-12-23
-publicat: "2020-05-30"
+categoria: "Opinió"
+publicat: 2020-05-30
 slug: "joaquim-balcells/entorn-de-virgili"
 draft: false
 image: "1930-12-23_el_mati_joaquim_balcells_-_entorn_de_virgili.webp"

@@ -3,7 +3,8 @@ title: "La premsa catalana"
 autors: ["Antoni Rovira i Virgili"]
 publicacions: ["La Revista"]
 date: 1915-05-15
-publicat: "2021-01-03"
+categoria: "Opinió"
+publicat: 2021-01-03
 slug: "antoni-rovira-i-virgili/la-premsa-catalana"
 draft: false
 image: "1915-05-15_la_revista_rovira_i_virgili_-_la_premsa_catalana.webp"

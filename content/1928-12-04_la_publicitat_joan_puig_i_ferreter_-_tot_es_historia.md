@@ -3,7 +3,8 @@ title: "Tot és història"
 autors: ["Joan Puig i Ferreter"]
 publicacions: ["La Publicitat"]
 date: 1928-12-04
-publicat: "2019-03-08"
+categoria: "Opinió"
+publicat: 2019-03-08
 slug: "joan-puig-i-ferreter/tot-es-historia"
 draft: false
 image: "1928-12-04_la_publicitat_joan_puig_i_ferreter_-_tot_es_historia.webp"

@@ -3,7 +3,8 @@ title: "Lletres a un altre aprenent"
 autors: ["Víctor Català"]
 publicacions: ["Joventut"]
 date: 1906-09-27
-publicat: "2022-01-09"
+categoria: "Opinió"
+publicat: 2022-01-09
 slug: "victor-catala/lletres-a-un-altre-aprenent"
 draft: false
 image: "1906-09-27_joventut_victor_catala_-_lletres_a_un_altre_aprenent.webp"

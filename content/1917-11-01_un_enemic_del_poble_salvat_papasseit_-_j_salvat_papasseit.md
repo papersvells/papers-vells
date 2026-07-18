@@ -3,7 +3,8 @@ title: "J. Salvat Papasseit"
 autors: ["Joan Salvat-Papasseit"]
 publicacions: ["Un enemic del poble"]
 date: 1917-11-01
-publicat: "2020-05-22"
+categoria: "Opinió"
+publicat: 2020-05-22
 slug: "joan-salvat-papasseit/j-salvat-papasseit"
 draft: false
 image: "1917-11-01_un_enemic_del_poble_salvat_papasseit_-_j_salvat_papasseit.webp"

@@ -4,7 +4,8 @@ autors: ["Josep Maria de Sagarra"]
 autors_citats: ["Pere Coromines"]
 publicacions: ["Mirador"]
 date: 1929-10-31
-publicat: "2020-11-26"
+categoria: "Reportatge"
+publicat: 2020-11-26
 slug: "josep-maria-de-sagarra/pere-coromines"
 draft: false
 image: "1929-10-31_mirador_josep_maria_de_sagarra_-_pere_coromines.webp"

@@ -3,7 +3,8 @@ title: "Einstein"
 autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1923-03-04
-publicat: "2019-05-29"
+categoria: "Opinió"
+publicat: 2019-05-29
 slug: "josep-maria-de-sagarra/einstein"
 draft: false
 image: "1923-03-04_la_publicitat_sagarra_-_einstein.webp"

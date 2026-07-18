@@ -3,7 +3,8 @@ title: "El deure de tots"
 autors: ["Just Cabot"]
 publicacions: ["Mirador"]
 date: 1936-08-13
-publicat: "2020-11-13"
+categoria: "Opinió"
+publicat: 2020-11-13
 slug: "just-cabot/el-deure-de-tots"
 draft: false
 image: "1936-08-13_mirador_just_cabot_-_el_deure_de_tots.webp"

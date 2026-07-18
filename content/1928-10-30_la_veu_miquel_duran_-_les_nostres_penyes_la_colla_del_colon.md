@@ -3,7 +3,8 @@ title: "Les nostres penyes literàries: La Colla del “Colón”"
 autors: ["Miquel Duran i Tortajada"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-10-30
-publicat: "2019-11-20"
+categoria: "Reportatge"
+publicat: 2019-11-20
 slug: "miquel-duran-i-tortajada/les-nostres-penyes-literaries-la-colla-del-colon"
 draft: false
 image: "1928-10-30_la_veu_miquel_duran_-_les_nostres_penyes_la_colla_del_colon.webp"

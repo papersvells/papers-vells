@@ -3,7 +3,8 @@ title: "Un Bonaparte catalanista"
 autors: ["Carles Rahola"]
 publicacions: ["La Publicitat"]
 date: 1922-12-16
-publicat: "2020-12-07"
+categoria: "Reportatge"
+publicat: 2020-12-07
 slug: "carles-rahola/un-bonaparte-catalanista"
 draft: false
 image: "1922-12-16_la_publicitat_carles_rahola_-_un_bonaparte_catalanista.webp"

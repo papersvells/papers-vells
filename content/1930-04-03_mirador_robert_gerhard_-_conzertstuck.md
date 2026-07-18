@@ -3,7 +3,8 @@ title: "Conzertstück"
 autors: ["Robert Gerhard"]
 publicacions: ["Mirador"]
 date: 1930-04-03
-publicat: "2021-06-01"
+categoria: "Opinió"
+publicat: 2021-06-01
 slug: "robert-gerhard/conzertstuck"
 draft: false
 image: "1930-04-03_mirador_robert_gerhard_-_conzertstuck.webp"

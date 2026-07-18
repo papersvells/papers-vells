@@ -3,7 +3,8 @@ title: "De la influència dels homes de lletres"
 autors: ["J V Foix"]
 publicacions: ["La Publicitat"]
 date: 1932-12-29
-publicat: "2020-04-02"
+categoria: "Opinió"
+publicat: 2020-04-02
 slug: "j-v-foix/de-la-influencia-dels-homes-de-lletres"
 draft: false
 image: "1932-12-29_la_publicitat_j_v_foix_-_la_infuencia_dels_homes_de_lletres.webp"

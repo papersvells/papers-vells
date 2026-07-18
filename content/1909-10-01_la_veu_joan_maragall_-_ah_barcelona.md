@@ -3,7 +3,8 @@ title: "Ah! Barcelona..."
 autors: ["Joan Maragall"]
 publicacions: ["La Veu de Catalunya"]
 date: 1909-10-01
-publicat: "2021-02-24"
+categoria: "Opinió"
+publicat: 2021-02-24
 slug: "joan-maragall/ah-barcelona"
 draft: false
 image: "1909-10-01_la_veu_joan_maragall_-_ah_barcelona.webp"

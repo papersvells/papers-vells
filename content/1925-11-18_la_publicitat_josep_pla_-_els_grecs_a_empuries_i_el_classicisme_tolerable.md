@@ -4,7 +4,8 @@ autors: ["Josep Pla"]
 autors_citats: ["Josep Carner", "Manuel Brunet"]
 publicacions: ["La Publicitat"]
 date: 1925-11-18
-publicat: "2019-07-28"
+categoria: "Ressenya"
+publicat: 2019-07-28
 slug: "josep-pla/els-grecs-a-empuries-i-el-classicisme-tolerable"
 draft: false
 image: "1925-11-18_la_publicitat_josep_pla_-_els_grecs_a_empuries_i_el_classicisme_tolerable.webp"

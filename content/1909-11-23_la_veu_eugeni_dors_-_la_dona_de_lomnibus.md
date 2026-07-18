@@ -3,7 +3,8 @@ title: "La dona de l’òmnibus"
 autors: ["Eugeni d'Ors"]
 publicacions: ["La Veu de Catalunya"]
 date: 1909-11-23
-publicat: "2019-05-30"
+categoria: "Opinió"
+publicat: 2019-05-30
 slug: "eugeni-dors/la-dona-de-l-omnibus"
 draft: false
 image: "1909-11-23_la_veu_eugeni_dors_-_la_dona_de_lomnibus.webp"

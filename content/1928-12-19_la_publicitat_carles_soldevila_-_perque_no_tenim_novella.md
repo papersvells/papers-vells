@@ -4,7 +4,8 @@ autors: ["Carles Soldevila"]
 autors_citats: ["Joan Puig i Ferreter", "Josep Pous i Pagès"]
 publicacions: ["La Publicitat"]
 date: 1928-12-19
-publicat: "2019-06-23"
+categoria: "Opinió"
+publicat: 2019-06-23
 slug: "carles-soldevila/per-que-no-tenim-novel-la"
 draft: false
 image: "1928-12-19_la_publicitat_carles_soldevila_-_perque_no_tenim_novella.webp"

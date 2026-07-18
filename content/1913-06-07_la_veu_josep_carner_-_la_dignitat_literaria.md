@@ -4,7 +4,8 @@ autors: ["Josep Carner"]
 autors_citats: ["Josep Pijoan", "Joan Maragall"]
 publicacions: ["La Veu de Catalunya"]
 date: 1913-06-07
-publicat: "2021-09-24"
+categoria: "Opinió"
+publicat: 2021-09-24
 slug: "josep-carner/la-dignitat-literaria"
 draft: false
 image: "1913-06-07_la_veu_josep_carner_-_la_dignitat_literaria.webp"

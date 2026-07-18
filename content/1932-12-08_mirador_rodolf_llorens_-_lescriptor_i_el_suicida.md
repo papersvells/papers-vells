@@ -4,7 +4,8 @@ autors: ["Rodolf Llorens"]
 autors_citats: ["Carles Soldevila"]
 publicacions: ["Mirador"]
 date: 1932-12-08
-publicat: "2019-11-30"
+categoria: "Opinió"
+publicat: 2019-11-30
 slug: "rodolf-llorens/l-escriptor-i-el-suicida"
 draft: false
 image: "1932-12-08_mirador_rodolf_llorens_-_lescriptor_i_el_suicida.webp"

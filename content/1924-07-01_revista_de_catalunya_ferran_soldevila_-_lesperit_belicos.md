@@ -3,7 +3,8 @@ title: "L’esperit bel·licós"
 autors: ["Ferran Soldevila"]
 publicacions: ["Revista de Catalunya"]
 date: 1924-07-01
-publicat: "2020-03-16"
+categoria: "Opinió"
+publicat: 2020-03-16
 slug: "ferran-soldevila/l-esperit-bel-licos"
 draft: false
 image: "1924-07-01_revista_de_catalunya_ferran_soldevila_-_lesperit_belicos.webp"

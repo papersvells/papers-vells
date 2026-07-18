@@ -4,7 +4,8 @@ autors: ["Manuel Brunet"]
 autors_citats: ["Josep Carner", "Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1932-08-25
-publicat: "2024-06-10"
+categoria: "Entrevista"
+publicat: 2024-06-10
 slug: "manuel-brunet/la-novel-la-que-josep-maria-de-sagarra-ha-escrit-aquest-estiu"
 draft: false
 image: "1932-08-25_la_publicitat_manuel_brunet_-_la_novella_que_josep_maria_de_sagarra_ha_escrit_aquest_estiu.webp"

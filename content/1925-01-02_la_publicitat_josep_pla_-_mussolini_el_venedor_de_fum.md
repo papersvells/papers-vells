@@ -3,7 +3,8 @@ title: "Mussolini, venedor de fum"
 autors: ["Josep Pla"]
 publicacions: ["La Publicitat"]
 date: 1925-01-02
-publicat: "2020-01-20"
+categoria: "Opinió"
+publicat: 2020-01-20
 slug: "josep-pla/mussolini-venedor-de-fum"
 draft: false
 image: "1925-01-02_la_publicitat_josep_pla_-_mussolini_el_venedor_de_fum.webp"

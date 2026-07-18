@@ -3,7 +3,8 @@ title: "Filologia"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1924-01-11
-publicat: "2021-10-02"
+categoria: "Opinió"
+publicat: 2021-10-02
 slug: "carles-soldevila/filologia"
 draft: false
 image: "1924-01-11_la_publicitat_carles_soldevila_-_filologia.webp"

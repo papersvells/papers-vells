@@ -3,7 +3,8 @@ title: "La cruïlla de camins"
 autors: ["Eugeni Xammar"]
 publicacions: ["Mirador"]
 date: 1931-07-23
-publicat: "2022-01-21"
+categoria: "Opinió"
+publicat: 2022-01-21
 slug: "eugeni-xammar/la-cruilla-de-camins"
 draft: false
 image: "1931-07-23_mirador_eugeni_xammar_-_la_cruilla_de_camins.webp"

@@ -4,7 +4,8 @@ autors: ["Guillem Díaz-Plaja"]
 autors_citats: ["Carles Riba", "Manuel de Montoliu", "Ferran Valls i Taberner", "Ferran Soldevila", "Joan Puig i Ferreter", "Joaquim Balcells", "Antoni Rovira i Virgili", "Lluís Nicolau d'Olwer", "Joan Estelrich"]
 publicacions: ["Mirador"]
 date: 1932-10-13
-publicat: "2020-07-02"
+categoria: "Opinió"
+publicat: 2020-07-02
 slug: "guillem-diaz-plaja/la-facultat-de-filosofia-i-lletres"
 draft: false
 image: "1932-10-13_mirador_guillem_diaz-plaja_-_la_facultat_de_filosofia_i_lletres.webp"

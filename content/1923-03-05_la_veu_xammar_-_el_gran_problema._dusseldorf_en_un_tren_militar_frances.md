@@ -3,7 +3,8 @@ title: "El gran problema. D’Essen a Düsseldorf en un tren militar francès"
 autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-05
-publicat: "2019-12-29"
+categoria: "Reportatge"
+publicat: 2019-12-29
 slug: "eugeni-xammar/el-gran-problema-d-essen-a-dusseldorf-en-un-tren-militar-frances"
 draft: false
 image: "1923-03-05_la_veu_xammar_-_el_gran_problema._dusseldorf_en_un_tren_militar_frances.webp"

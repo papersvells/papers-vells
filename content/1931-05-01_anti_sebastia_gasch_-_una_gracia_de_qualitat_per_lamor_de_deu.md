@@ -4,7 +4,8 @@ autors: ["Sebastià Gasch"]
 autors_citats: ["Francesc Pujols", "Francesc Domingo"]
 publicacions: ["Anti"]
 date: 1931-05-01
-publicat: "2020-07-28"
+categoria: "Opinió"
+publicat: 2020-07-28
 slug: "sebastia-gasch/una-gracia-de-qualitat-per-l-amor-de-deu"
 draft: false
 image: "1931-05-01_anti_sebastia_gasch_-_una_gracia_de_qualitat_per_lamor_de_deu.webp"

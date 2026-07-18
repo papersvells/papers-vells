@@ -3,7 +3,8 @@ title: "Stravinski a l’Ateneu"
 autors: ["Jeroni de Moragas"]
 publicacions: ["La Publicitat"]
 date: 1924-03-20
-publicat: "2020-02-12"
+categoria: "Reportatge"
+publicat: 2020-02-12
 slug: "jeroni-de-moragas/stravinski-a-l-ateneu"
 draft: false
 image: "1924-03-20_la_publicitat_jeroni_de_moragas_-_stravinski_a_lateneu.webp"

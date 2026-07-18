@@ -3,7 +3,8 @@ title: "Els vagabunds de Barcelona"
 autors: ["Domènec de Bellmunt"]
 publicacions: ["Mirador"]
 date: 1929-12-05
-publicat: "2021-04-28"
+categoria: "Reportatge"
+publicat: 2021-04-28
 slug: "domenec-de-bellmunt/els-vagabunds-de-barcelona"
 draft: false
 image: "1929-12-05_mirador_domenec_de_bellmunt_-_els_vagabunds_de_barcelona.webp"

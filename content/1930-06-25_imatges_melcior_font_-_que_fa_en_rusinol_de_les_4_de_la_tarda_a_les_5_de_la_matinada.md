@@ -4,7 +4,8 @@ autors: ["Melcior Font"]
 autors_citats: ["Francesc Pujols"]
 publicacions: ["Imatges"]
 date: 1930-05-25
-publicat: "2021-11-18"
+categoria: "Reportatge"
+publicat: 2021-11-18
 slug: "melcior-font/que-fa-en-rusinol-de-les-quatre-de-la-tarda-a-les-cinc-de-la-matinada"
 draft: false
 image: "1930-06-25_imatges_melcior_font_-_que_fa_en_rusinol_de_les_4_de_la_tarda_a_les_5_de_la_matinada.webp"

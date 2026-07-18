@@ -10,9 +10,10 @@ enableRobotsTXT = true
   pagerSize = 1000
 
 [taxonomies]
-  autors      = 'autors'
+  autors       = 'autors'
   publicacions = 'publicacions'
-  tags        = 'tags'
+  tags         = 'tags'
+  categoria    = 'categoria'
 
 [params]
   description = "Arxiu d'articles de premsa antiga catalana"
@@ -47,6 +48,7 @@ enableRobotsTXT = true
   [permalinks.term]
     autors       = "/:slug/"
     publicacions = "/:slug/"
+    categoria    = "/categoria/:slug/"
 
 [minify]
   minifyOutput = true

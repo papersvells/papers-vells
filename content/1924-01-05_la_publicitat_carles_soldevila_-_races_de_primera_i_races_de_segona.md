@@ -3,7 +3,8 @@ title: "Races de primera i races de segona"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1924-01-05
-publicat: "2019-08-16"
+categoria: "Opinió"
+publicat: 2019-08-16
 slug: "carles-soldevila/races-de-primera-i-races-de-segona"
 draft: false
 image: "1924-01-05_la_publicitat_carles_soldevila_-_races_de_primera_i_races_de_segona.webp"

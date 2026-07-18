@@ -3,7 +3,8 @@ title: "Una planxa"
 autors: ["Josep Pous i Pagès"]
 publicacions: ["Catalunya Artística"]
 date: 1902-05-22
-publicat: "2021-01-04"
+categoria: "Opinió"
+publicat: 2021-01-04
 slug: "josep-pous-i-pages/una-planxa"
 draft: false
 image: "1902-05-22_catalunya_artistica_josep_pous_i_pages_-_una_planxa.webp"

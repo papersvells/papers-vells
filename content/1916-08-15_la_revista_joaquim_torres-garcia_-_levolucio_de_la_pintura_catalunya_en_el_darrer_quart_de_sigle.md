@@ -3,7 +3,8 @@ title: "L’evolució de la pintura a Catalunya en el darrer quart de sigle"
 autors: ["Joaquim Torres-García"]
 publicacions: ["La Revista"]
 date: 1916-08-15
-publicat: "2020-10-21"
+categoria: "Opinió"
+publicat: 2020-10-21
 slug: "joaquim-torres-garcia/l-evolucio-de-la-pintura-a-catalunya-en-el-darrer-quart-de-sigle"
 draft: false
 image: "1916-08-15_la_revista_joaquim_torres-garcia_-_levolucio_de_la_pintura_catalunya_en_el_darrer_quart_de_sigle.webp"

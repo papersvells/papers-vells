@@ -3,7 +3,8 @@ title: "Maneres d’envanir-se"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1928-12-16
-publicat: "2020-03-16"
+categoria: "Opinió"
+publicat: 2020-03-16
 slug: "carles-soldevila/maneres-d-envanir-se"
 draft: false
 image: "1928-12-16_la_publicitat_carles_soldevila_-_maneres_denvanir-se.webp"

@@ -4,7 +4,8 @@ autors: ["Antoni Martí i Monteys"]
 autors_citats: ["Josep Maria Junoy"]
 publicacions: ["La Veu de Catalunya"]
 date: 1927-02-06
-publicat: "2020-03-28"
+categoria: "Opinió"
+publicat: 2020-03-28
 slug: "antoni-marti-i-monteys/anticapelleta"
 draft: false
 image: "1927-02-06_la_veu_-_antoni_marti_i_monteys_-_anticapelleta.webp"

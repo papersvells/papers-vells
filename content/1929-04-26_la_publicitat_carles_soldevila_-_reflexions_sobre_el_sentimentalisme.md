@@ -3,7 +3,8 @@ title: "Reflexions sobre el sentimentalisme"
 autors: ["Carles Soldevila"]
 publicacions: ["La Publicitat"]
 date: 1929-04-26
-publicat: "2020-09-20"
+categoria: "Opinió"
+publicat: 2020-09-20
 slug: "carles-soldevila/reflexions-sobre-el-sentimentalisme"
 draft: false
 image: "1929-04-26_la_publicitat_carles_soldevila_-_reflexions_sobre_el_sentimentalisme.webp"
