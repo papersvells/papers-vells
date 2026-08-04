@@ -13,7 +13,7 @@
 /* ── 1. CAPÇALERA GLOBAL ──────────────────────────────────── */
 .site-header {
   text-align: center;
-  padding: 0 var(--space-md) var(--space-md);
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -54,7 +54,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--color-ink-light);
-  padding: 0 var(--space-md);
+  padding: 0 var(--space-mm);
   transition: color var(--transition);
 }
 
@@ -74,7 +74,7 @@
 .site-nav__twitter {
   display: flex;
   align-items: center;
-  padding: 0 var(--space-md);
+  padding: 0 var(--space-xs);
 }
 
 

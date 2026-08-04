@@ -4,6 +4,7 @@ autors: ["Josep Farran i Mayoral"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-16
 categoria: "Opinió"
+questions: ["Premi Crexells de 1928"]
 publicat: 2019-06-19
 slug: "josep-farran-i-mayoral/consideracions-generals-a-l-entorn-del-premi-crexells"
 draft: false

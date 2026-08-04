@@ -5,6 +5,7 @@ autors_citats: ["Carles Riba", "Carles Soldevila", "Gaziel", "Carles Capdevila",
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-23
 categoria: "Opinió"
+questions: ["Premi Crexells de 1928"]
 publicat: 2019-06-27
 slug: "joan-estelrich/algunes-reflexions-entorn-del-premi-crexells"
 draft: false

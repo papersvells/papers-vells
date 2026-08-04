@@ -4,6 +4,7 @@ autors: ["Carles Capdevila"]
 publicacions: ["La Publicitat"]
 date: 1928-12-18
 categoria: "Opinió"
+questions: ["Premi Crexells de 1928"]
 publicat: 2019-06-22
 slug: "carles-capdevila/consagracio-o-estimul"
 draft: false

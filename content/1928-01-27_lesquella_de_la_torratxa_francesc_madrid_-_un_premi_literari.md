@@ -5,6 +5,7 @@ autors_citats: ["Carles Riba", "Josep Carner", "Joan Crexells"]
 publicacions: ["L'Esquella de la torratxa"]
 date: 1928-01-27
 categoria: "Opinió"
+questions: ["La Creació del Premi Crexells"]
 publicat: 2019-06-16
 slug: "francesc-madrid/un-premi-literari"
 draft: false

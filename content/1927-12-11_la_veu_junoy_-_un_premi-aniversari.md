@@ -5,6 +5,7 @@ autors_citats: ["Carles Capdevila", "Josep Pla"]
 publicacions: ["La Veu de Catalunya"]
 date: 1927-12-11
 categoria: "Opinió"
+questions: ["La Creació del Premi Crexells"]
 publicat: 2019-06-15
 slug: "josep-maria-junoy/un-premi-aniversari"
 draft: false

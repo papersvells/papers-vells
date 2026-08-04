@@ -40,6 +40,7 @@
   --text-ll:   1.6rem;
   --text-xl:   1.7rem;   /* nom d'autor a la pàgina d'article */
   --text-xxl:  2.0rem;
+  --text-xxxl: 2.2rem;
   --text-2xl:  2.4rem;   /* títols de pàgina (autors, publicacions) */
   --text-3xl:  3.2rem;   /* títol principal del logo de text */
 
@@ -47,6 +48,7 @@
   --space-xxs: 0.2rem;
   --space-xs:  0.4rem;
   --space-sm:  0.8rem;
+  --space-mm:  1.1rem;
   --space-md:  1.5rem;
   --space-lg:  2.5rem;
   --space-xl:  4.0rem;
@@ -191,8 +193,6 @@ h1 { font-size: var(--text-3xl); }
 h2 { font-size: var(--text-2xl); }
 h3 { font-size: var(--text-xl);  }
 h4 { font-size: var(--text-lg);  }
-
-p { margin-bottom: var(--space-sm); }
 
 /* Línia divisòria ornamental */
 .rule {
@@ -437,6 +437,53 @@ p { margin-bottom: var(--space-sm); }
   color: var(--color-accent);
 }
 
+/* ── QÜESTIONS — graella de targetes ──────────────────────── */
+  .questions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* més columnes → targetes més estretes */
+    align-items: start;        /* ← nou: evita l'estirament vertical */
+    grid-auto-rows: min-content; /* ← nou: la fila només ocupa l'alt necessari */
+    gap: var(--space-lg);
+    padding: var(--space-md);
+  }
+
+  .questio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--space-sm);
+    aspect-ratio: 3 / 4;               /* força la proporció vertical */
+    padding: var(--space-lg) var(--space-sm);
+    border: 1px solid var(--color-rule);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color var(--transition), transform var(--transition);
+  }
+
+.questio-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
+}
+
+.questio-card__title {
+  font-size: var(--text-lg);
+  line-height: 1.2;
+}
+
+.questio-card__anys {
+  font-family: 'Rubik', sans-serif;
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+}
+
+.questio-card__count {
+  font-size: var(--text-xs);
+  color: var(--color-ink-faded);
+}
+
 /* ==========================================================
    FITXA DOCUMENTAL
    ========================================================== */
@@ -452,22 +499,24 @@ p { margin-bottom: var(--space-sm); }
 
 .fitxa {
   position: sticky;
-  top: calc(var(--space-xl) + 6rem);
+  top: calc(var(--space-xl) + 5rem);
   padding: var(--space-xxs);
   background: color-mix(in srgb, var(--color-accent) 6%, white);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  margin-top: var(--space-lg);
+  
 }
 
 .fitxa__bloc + .fitxa__bloc {
   margin-top: var(--space-md);
 }
+.fitxa__bloc--principal p {
+  margin-bottom: 0;
+}
 
 .fitxa__camp {
-  margin-bottom: .25rem;
   font-size: var(--text-sm);
-  line-height: 1;
+  line-height: 0.95;
   font-weight: 600;
   color: var(--color-accent);
 }
@@ -596,40 +645,61 @@ p { margin-bottom: var(--space-sm); }
   .fitxa {
     order: 1;
     position: static;
-    margin-top: var(--space-sm);
+    margin-top: var(--space-xxs);
     background: var(--color-paper);
   }
 
   .fitxa__bloc--principal .fitxa__camp {
     display: none;
-   
+
   }
+ 
+  .fitxa__bloc--principal p {
+  margin-bottom: 0;
+}
+  .fitxa__bloc--principal {
+    margin: 0 !important;
+  }
+ 
+
   .fitxa__resum {
     display:flex;
     flex-direction:column;
     gap:0rem;
-}
+  }
   .fitxa__publicacio {
   color: var(--color-accent);
   text-decoration: none;
   font-family: 'Rubik', sans-serif;
-    
-}
+  
+  }
+  
   .fitxa__autor {
     font-style: italic;
-    font-size:x-large;
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-md);
   }
+
+  .fitxa__avatar {
+    margin: 0;
+  }
+
   .fitxa__data {
     font-weight: 500;
     font-size: x-large;
+    margin-bottom: 0;
   }
 
-  /* En mòbil, mostrem el summary */
   .fitxa__summary {
     display: list-item;
+    padding: 0;
+    margin: 0;
   }
   
 }
+
+
+
 
 /* Formats especials */
 .article-body .poema p::first-letter,
@@ -995,11 +1065,12 @@ p { margin-bottom: var(--space-sm); }
   }
   
   .article-hero__title--sota {
-    font-size: var(--text-xxl);
+    font-size: var(--text-xxxl);
     font-weight: 500;
+    margin-top: 0;
   }
   .article-byline { flex-wrap: wrap; }
-  .article-byline__avatar { width: 70px; height: 70px; }
+  .article-byline__avatar { width: 80px; height: 80px; }
   .article-byline__name { font-size: var(--text-md); margin-top: 0.5rem;}
   .article-byline__data {margin-top: -1.2rem;}
   
@@ -1070,8 +1141,57 @@ p { margin-bottom: var(--space-sm); }
   text-decoration: none;
   pointer-events: none;
   }
- 
+
+  /* ── Qüestions — índex mòbil ─────────────────────────── */
+  .questions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    padding: var(--space-sm);
+  }
+
+  .questio-card {
+    padding: var(--space-md) var(--space-xs);
+  }
+
+  .questio-card__title {
+    font-size: var(--text-md);
+  }
+
+  .questio-card__anys {
+  letter-spacing: -0.08em;
+  font-size: var(--text-ss);
+  }
+  
+  .questio-item a {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-xs);
+  }
+
+  .questio-item__num {
+    width: auto;
+    font-size: var(--text-md);
+  }
+
+  .questio-item__title {
+    font-size: var(--text-lg);
+    line-height: 1.2;
+  }
+
+  .questio-item__count {
+    font-size: var(--text-xs);
+  }
+
+  /* ── Qüestions — capçalera mòbil ──────────────────────── */
+  .questio-header__title {
+    font-size: xx-large;
+    margin-top: -0.5rem;
+  }
+
 }
+
+
 
 @media (prefers-reduced-motion: reduce) {
 

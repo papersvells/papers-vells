@@ -5,6 +5,7 @@ autors_citats: ["Gaziel", "Joan Crexells"]
 publicacions: ["La Veu de Catalunya"]
 date: 1929-01-02
 categoria: "Opinió"
+questions: ["La Creació del Premi Crexells"]
 publicat: 2019-07-05
 slug: "josep-pla/per-joanot-martorell"
 draft: false

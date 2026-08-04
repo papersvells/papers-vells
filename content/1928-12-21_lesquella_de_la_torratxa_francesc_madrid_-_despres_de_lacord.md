@@ -5,6 +5,7 @@ autors_citats: ["Carles Riba", "Joan Puig i Ferreter", "Josep Pla", "Lluís Nico
 publicacions: ["L'Esquella de la torratxa"]
 date: 1928-12-21
 categoria: "Opinió"
+questions: ["Premi Crexells de 1928"]
 publicat: 2019-06-26
 slug: "francesc-madrid/despres-de-l-acord"
 draft: false

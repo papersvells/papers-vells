@@ -5,6 +5,7 @@
 {{ $autor := index .Params.autors 0 }}
 {{ $publicacio := index .Params.publicacions 0 }}
 {{ $categoria := .Params.categoria }}
+{{ $questio := index .Params.questions 0 }}
 {{ $tema := .Params.tema }}
 {{ $serie := .Params.serie }}
 {{ $responA := .Params.respon_a }}
@@ -13,6 +14,18 @@
 
 <aside class="fitxa" aria-label="Fitxa documental">
  <div class="fitxa__resum"> 
+  
+  {{ with $publicacio }}
+  <section class="fitxa__bloc fitxa__bloc--principal">
+    <h3 class="fitxa__camp">Publicació</h3>
+    <p>
+      <a class="fitxa__publicacio" href="/{{ . | urlize }}/">
+        {{ . }}
+      </a>
+    </p>
+  </section>
+  {{ end }}
+
   {{ with .Date }}
   <section class="fitxa__bloc fitxa__bloc--principal">
     <h3 class="fitxa__camp">Data</h3>
@@ -24,17 +37,6 @@
         {{- if in (slice "abril" "agost" "octubre") $mes }}{{- $prep = "d'" }}{{- end }}
         {{ .Day }} {{ $prep }}{{ $mes }} de {{ .Year }}
     {{ end }}
-    </p>
-  </section>
-  {{ end }}
-
-  {{ with $publicacio }}
-  <section class="fitxa__bloc fitxa__bloc--principal">
-    <h3 class="fitxa__camp">Publicació</h3>
-    <p>
-      <a class="fitxa__publicacio" href="/{{ . | urlize }}/">
-        {{ . }}
-      </a>
     </p>
   </section>
   {{ end }}
@@ -62,6 +64,7 @@
     </div>
   </section>
   </div>
+
   <!-- L'ACORDIÓ COMPLET COMENÇA AQUÍ -->
   <details class="fitxa__expandible" open>
     <summary class="fitxa__summary">Més informació</summary>
@@ -74,13 +77,22 @@
       <p>{{ .ReadingTime }} min</p>
   </section>
 
-  
-
       {{ with $categoria }}
       <section class="fitxa__bloc">
         <h3 class="fitxa__camp">Categoria</h3>
         <p>
           <a class="fitxa__categoria" href="/categoria/{{ . | urlize }}/">
+            {{ . }}
+          </a>
+        </p>
+      </section>
+      {{ end }}
+
+      {{ with $questio }}
+      <section class="fitxa__bloc">
+        <h3 class="fitxa__camp">Qüestió</h3>
+        <p>
+          <a class="fitxa__questio" href="/questions/{{ . | urlize }}/">
             {{ . }}
           </a>
         </p>
@@ -112,8 +124,6 @@
       {{ end }}
 
       {{ with $autor }}
-      <section class="fitxa__bloc">
-        <h3 class="fitxa__camp">Més articles de {{ $autor }}</h3>
         {{ $paginaActual := $pagina }}
         {{ $articlesAutor := slice }}
 
@@ -126,6 +136,8 @@
         {{ $articlesAutor = first 3 (sort $articlesAutor "Date" "desc") }}
 
         {{ if gt (len $articlesAutor) 0 }}
+      <section class="fitxa__bloc">
+        <h3 class="fitxa__camp">Més articles de {{ $autor }}</h3>
           <ul class="fitxa__llista">
             {{ range $articlesAutor }}
               <li>
@@ -133,8 +145,8 @@
               </li>
             {{ end }}
           </ul>
-        {{ end }}
       </section>
+        {{ end }}
       {{ end }}
 
       <section class="fitxa__bloc">

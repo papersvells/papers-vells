@@ -5,6 +5,7 @@ autors_citats: ["Carles Riba", "Francesc Trabal", "Josep Maria Junoy", "Joan Pui
 publicacions: ["La Publicitat"]
 date: 1928-12-14
 categoria: "Reportatge"
+questions: ["Premi Crexells de 1928"]
 publicat: 2019-06-17
 slug: "manuel-brunet/el-premi-joan-crexells"
 draft: false

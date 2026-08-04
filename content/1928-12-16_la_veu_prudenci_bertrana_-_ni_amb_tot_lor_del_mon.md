@@ -4,6 +4,7 @@ autors: ["Prudenci Bertrana"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-16
 categoria: "Opinió"
+questions: ["Premi Crexells de 1928"]
 publicat: 2019-06-19
 slug: "prudenci-bertrana/ni-amb-tot-l-or-del-mon"
 draft: false

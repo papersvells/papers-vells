@@ -5,6 +5,7 @@ autors_citats: ["Carles Capdevila"]
 publicacions: ["La Publicitat"]
 date: 1927-12-09
 categoria: "Opinió"
+questions: ["La Creació del Premi Crexells"]
 publicat: 2019-06-14
 slug: "josep-pla/la-institucio-del-premi-joan-crexells"
 draft: false

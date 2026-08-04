@@ -1,25 +1,31 @@
 {{/*
   ═══════════════════════════════════════════════════════════
-  TAXONOMY.HTML — autors i publicacions
+  TAXONOMY.HTML — autors, publicacions i qüestions
   ═══════════════════════════════════════════════════════════
-  Aquest fitxer fa tres feines diferents segons el context:
+  Aquest fitxer fa quatre feines diferents segons el context:
 
   1. VISTA GLOBAL D'AUTORS (/autors/)
      Graella d'avatars circulars en blanc i negre.
      Detecció: .Data.Terms existeix i .Type == "autors"
 
-  2. VISTA GLOBAL DE PUBLICACIONS (/publicacions/)
+  2. VISTA GLOBAL DE QÜESTIONS (/questions/)
+     Llista numerada en xifres romanes, a mode d'expedients
+     d'arxiu. Sense imatge — el títol és el protagonista.
+     Detecció: .Data.Terms existeix i .Type == "questions"
+
+  3. VISTA GLOBAL DE PUBLICACIONS (/publicacions/)
      Graella de capçaleres respectant les seves proporcions
      naturals. Cada logo viu en una "fila" d'alçada fixa amb
      amplada flexible. Sota, una línia ornamental fa de
      costura visual que unifica el conjunt.
-     Detecció: .Data.Terms existeix i .Type != "autors"
+     Detecció: .Data.Terms existeix i .Type != "autors"/"questions"
 
-  3. VISTA INDIVIDUAL (/lluis-marsans/, /la-veu/, etc.)
-     Capçalera del terme + bio + icona Viquipèdia + llista d'articles.
+  4. VISTA INDIVIDUAL (/lluis-marsans/, /la-veu/, /premi-crexells-de-1928/)
+     Capçalera del terme + llista d'articles.
      Detecció: .Data.Terms és buit (nil)
      Bifurcació interna: autors → avatar circular esquerra
                          publicacions → logo gran centrat
+                         questions → sense imatge, amb rang d'anys
 
   CLAU TÈCNICA PER EVITAR DUPLICATS:
   Iterem per .Data.Terms.Alphabetical (no per .Data.Pages) i
@@ -94,6 +100,88 @@
         {{ end }}
       </div>
 
+    {{ else if eq .Type "questions" }}
+
+      {{/*
+        ─────────────────────────────────────────────────────
+        QÜESTIONS — targetes amb títol i any(s)
+        ─────────────────────────────────────────────────────
+        No hi ha imatge: cada targeta mostra el títol de la
+        qüestió i l'any (o rang d'anys) dels articles que la
+        tracten. Fem servir el mateix sistema de doble recerca
+        que a la vista individual, per si Hugo no relaciona
+        directament .Pages amb el terme (accents, etc.).
+      */}}
+      <div class="questions-grid">
+        {{ range .Data.Terms.Alphabetical }}
+
+          {{ $termPage := .Page }}
+          {{ $count := .Count }}
+
+          {{/* Recerca dels articles de la qüestió, amb fallback manual */}}
+          {{ $pagesQ := $termPage.Pages }}
+          {{ if eq (len $pagesQ) 0 }}
+            {{ $nomBuscat := $termPage.Title }}
+            {{ $slugBuscat := $termPage.Title | urlize }}
+            {{ $pagesQ = where site.RegularPages "Params.questions" "intersect" (slice $nomBuscat) }}
+            {{ if eq (len $pagesQ) 0 }}
+              {{ range site.RegularPages }}
+                {{ $page := . }}
+                {{ range .Params.questions }}
+                  {{ if eq (. | urlize) $slugBuscat }}
+                    {{ $pagesQ = $pagesQ | append $page }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{/* Càlcul de l'any (o rang d'anys) a partir dels articles trobats */}}
+          {{ $anyInici := "" }}
+          {{ $anyFinal := "" }}
+          {{ if gt (len $pagesQ) 0 }}
+            {{ $pagesOrdenades := $pagesQ.ByDate }}
+            {{ $anyInici = (index $pagesOrdenades 0).Date.Format "2006" }}
+            {{ $anyFinal = (index $pagesOrdenades (sub (len $pagesOrdenades) 1)).Date.Format "2006" }}
+          {{ end }}
+
+          <a class="questio-card" href="{{ $termPage.Permalink }}">
+            <h2 class="questio-card__title">{{ $termPage.Title }}</h2>
+            {{ if and $anyInici $anyFinal }}
+              <p class="questio-card__anys">
+                {{ if eq $anyInici $anyFinal }}{{ $anyInici }}{{ else }}{{ $anyInici }}–{{ $anyFinal }}{{ end }}
+              </p>
+            {{ end }}
+            <p class="questio-card__count">{{ $count }} articles</p>
+          </a>
+
+        {{ end }}
+      </div>
+
+    {{ else if eq .Type "categoria" }}
+
+      {{/*
+        ─────────────────────────────────────────────────────
+        CATEGORIA — targetes amb títol i recompte, sense any
+        ─────────────────────────────────────────────────────
+        Reutilitzem les mateixes classes que "questions"
+        (.questions-grid / .questio-card): la targeta és
+        idèntica, simplement no emplenem el paràgraf de l'any.
+      */}}
+      <div class="questions-grid">
+        {{ range .Data.Terms.Alphabetical }}
+
+          {{ $termPage := .Page }}
+          {{ $count := .Count }}
+
+          <a class="questio-card" href="{{ $termPage.Permalink }}">
+            <h2 class="questio-card__title">{{ $termPage.Title }}</h2>
+            <p class="questio-card__count">{{ $count }} articles</p>
+          </a>
+
+        {{ end }}
+      </div>
+
     {{ else }}
 
       {{/*
@@ -136,11 +224,11 @@
 
     {{/*
       ═══════════════════════════════════════════════════════
-      VISTA INDIVIDUAL: /lluis-marsans/, /la-veu/, etc.
+      VISTA INDIVIDUAL: /lluis-marsans/, /la-veu/, /premi-crexells-de-1928/, etc.
       ═══════════════════════════════════════════════════════
       Quan .Data.Terms és nil, estem a la pàgina d'un terme
-      concret. Mostrem la capçalera (avatar/logo + nom + bio
-      + icona Viquipèdia) i la llista d'articles associats.
+      concret. Mostrem la capçalera (avatar/logo/text + nom
+      + bio + icona Viquipèdia) i la llista d'articles associats.
 
       Sistema de doble recerca: primer intentem .Pages.
       Si retorna 0 articles, fem una recerca manual filtrant
@@ -167,6 +255,18 @@
         {{ end }}
       {{ end }}
     {{ end }}
+  {{ else if eq .Type "questions" }}
+    {{ $articles = where .Site.RegularPages "Params.questions" "intersect" (slice $nomBuscat) }}
+    {{ if eq (len $articles) 0 }}
+      {{ range .Site.RegularPages }}
+        {{ $page := . }}
+        {{ range .Params.questions }}
+          {{ if eq (. | urlize) $slugBuscat }}
+            {{ $articles = $articles | append $page }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
   {{ else }}
     {{ $articles = where .Site.RegularPages "Params.autors" "intersect" (slice $nomBuscat) }}
     {{ if eq (len $articles) 0 }}
@@ -185,7 +285,8 @@
       {{/*
         Bifurcació de capçalera segons el tipus:
         - publicacions → logo gran centrat
-        - autors → avatar petit circular a l'esquerra
+        - questions     → sense imatge, amb rang d'anys
+        - autors        → avatar petit circular a l'esquerra
       */}}
       {{ if eq .Type "publicacions" }}
 
@@ -214,6 +315,44 @@
                    alt="Viquipèdia"
                    class="wikipedia-icon">
             </a>
+          {{ end }}
+        </header>
+
+      {{ else if eq .Type "questions" }}
+
+        {{/*
+          CAPÇALERA DE QÜESTIÓ — sense imatge, amb rang d'anys
+          ─────────────────────────────────────────────────
+          Calculem l'any del primer i el darrer article de la
+          qüestió per donar-hi context temporal d'un cop d'ull
+          (ex: "1928–1929"). Si tots són del mateix any, en
+          mostrem només un.
+        */}}
+        {{ $articlesPerData := $articles.ByDate }}
+        {{ $anyInici := "" }}
+        {{ $anyFinal := "" }}
+        {{ if gt (len $articlesPerData) 0 }}
+          {{ $anyInici = (index $articlesPerData 0).Date.Format "2006" }}
+          {{ $anyFinal = (index $articlesPerData (sub (len $articlesPerData) 1)).Date.Format "2006" }}
+        {{ end }}
+
+        <header class="questio-header">
+          <p class="questio-header__eyebrow">Qüestió</p>
+          <h1 class="questio-header__title">{{ .Title }}</h1>
+          <p class="autor-header__info">
+            {{ len $articles }} articles publicats
+            {{ if and $anyInici $anyFinal }}
+              {{ if eq $anyInici $anyFinal }}
+                · {{ $anyInici }}
+              {{ else }}
+                · {{ $anyInici }}–{{ $anyFinal }}
+              {{ end }}
+            {{ end }}
+          </p>
+          {{ with .Params.bio }}
+            <div class="autor-bio">
+              {{ . | markdownify }}
+            </div>
           {{ end }}
         </header>
 
@@ -255,12 +394,20 @@
       <hr class="rule rule--term">
 
       {{/*
-        Llista d'articles ordenats per data descendent.
+        Llista d'articles.
         A les publicacions mostrem l'autor, als autors la
         publicació (i a tots, la data).
+        A les qüestions mostrem autor + publicació, i les
+        ordenem cronològicament ascendent (no descendent) per
+        llegir-se com una narració que avança en el temps.
       */}}
+      {{ $articlesEnOrdre := $articles.ByDate.Reverse }}
+      {{ if eq .Type "questions" }}
+        {{ $articlesEnOrdre = $articles.ByDate }}
+      {{ end }}
+
       <ul class="llista-articles">
-        {{ range $articles.ByDate.Reverse }}
+        {{ range $articlesEnOrdre }}
           <li>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
             <span class="meta">
@@ -269,6 +416,19 @@
       {{ range $i, $a := . }}
         {{ if $i }}, {{ end }}
         <a href="/{{ $a | urlize }}/">{{ $a }}</a>
+      {{ end }}
+    {{ end }}
+  {{ else if eq $.Type "questions" }}
+    {{ with .Params.autors }}
+      {{ range $i, $a := . }}
+        {{ if $i }}, {{ end }}
+        <a href="/{{ $a | urlize }}/">{{ $a }}</a>
+      {{ end }}
+    {{ end }}
+    {{ with .Params.publicacions }}
+      {{ range $i, $p := . }}
+        {{ if $i }} · {{ end }}
+        <a href="/{{ $p | urlize }}/">{{ $p }}</a>
       {{ end }}
     {{ end }}
   {{ else }}

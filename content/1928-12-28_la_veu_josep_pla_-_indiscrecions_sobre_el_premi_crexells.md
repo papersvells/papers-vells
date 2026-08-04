@@ -5,6 +5,7 @@ autors_citats: ["Francesc Trabal", "Joan Puig i Ferreter", "Prudenci Bertrana"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-28
 categoria: "Opinió"
+questions: ["Premi Crexells de 1928"]
 publicat: 2019-06-28
 slug: "josep-pla/indiscrecions-sobre-el-premi-crexells"
 draft: false

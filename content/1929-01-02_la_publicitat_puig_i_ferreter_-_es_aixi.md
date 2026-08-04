@@ -5,6 +5,7 @@ autors_citats: ["Gaziel", "Francesc Madrid", "Carles Capdevila", "Josep Farran i
 publicacions: ["La Publicitat"]
 date: 1929-01-02
 categoria: "Opinió"
+questions: ["Premi Crexells de 1928"]
 publicat: 2019-07-01
 slug: "joan-puig-i-ferreter/es-aixi"
 draft: false

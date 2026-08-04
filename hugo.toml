@@ -5,6 +5,7 @@ theme             = 'papersvells'
 removePathAccents = true
 preserveTaxonomyNames = true
 enableRobotsTXT = true
+capitalizeListTitles = false
 
 [pagination]
   pagerSize = 1000
@@ -14,6 +15,7 @@ enableRobotsTXT = true
   publicacions = 'publicacions'
   tags         = 'tags'
   categoria    = 'categoria'
+  questions    = 'questions'
 
 [params]
   description = "Arxiu d'articles de premsa antiga catalana"
@@ -25,30 +27,41 @@ enableRobotsTXT = true
       unsafe = true
 
 [[menus.main]]
-  name   = 'Articles'
+  name   = 'Inici'
   url    = '/'
   weight = 1
 
 [[menus.main]]
-  name   = 'El diari'
-  url    = '/el-diari/'
-  weight = 2
-
-[[menus.main]]
   name   = 'Autors'
   url    = '/autors/'
-  weight = 3
+  weight = 2
 
 [[menus.main]]
   name   = 'Publicacions'
   url    = '/publicacions/'
+  weight = 3
+
+[[menus.main]]
+  name   = 'Qüestions'
+  url    = '/questions/'
   weight = 4
+
+[[menus.main]]
+  name   = 'Categories'
+  url    = '/categoria/'
+  weight = 5
+
+[[menus.main]]
+  name   = 'Diari'
+  url    = '/el-diari/'
+  weight = 6
 
 [permalinks]
   [permalinks.term]
     autors       = "/:slug/"
     publicacions = "/:slug/"
     categoria    = "/categoria/:slug/"
+    questions    = "/questions/:slug/"
 
 [minify]
   minifyOutput = true

@@ -4,6 +4,7 @@ autors: ["Josep Navarro i Costabella"]
 publicacions: ["La Veu de Catalunya"]
 date: 1928-12-15
 categoria: "Opinió"
+questions: ["Premi Crexells de 1928"]
 publicat: 2019-06-18
 slug: "josep-navarro-i-costabella/no-podem-tenir-novel-la"
 draft: false
