@@ -124,15 +124,13 @@
       {{ end }}
 
       {{ with $autor }}
-        {{ $paginaActual := $pagina }}
-        {{ $articlesAutor := slice }}
-
-        {{ range site.RegularPages }}
-          {{ if and (ne .RelPermalink $paginaActual.RelPermalink) (in .Params.autors $autor) }}
-            {{ $articlesAutor = $articlesAutor | append . }}
-          {{ end }}
-        {{ end }}
-
+        {{/* 1. Cerca robusta d'articles per autor (segura amb accents) */}}
+        {{ $articlesAutor := where site.RegularPages "Params.autors" "intersect" (slice $autor) }}
+        
+        {{/* 2. Exclou l'article actual */}}
+        {{ $articlesAutor = where $articlesAutor "RelPermalink" "!=" $pagina.RelPermalink }}
+        
+        {{/* 3. Ordena del més nou al més vell i n'agafa 3 */}}
         {{ $articlesAutor = first 3 (sort $articlesAutor "Date" "desc") }}
 
         {{ if gt (len $articlesAutor) 0 }}

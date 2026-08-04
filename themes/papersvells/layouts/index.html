@@ -6,8 +6,6 @@
 
 {{ define "main" }}
 
-<div style="width: 100%;">
-
   {{/*
     ─────────────────────────────────────────────────────────
     GRAELLA D'ARTICLES
@@ -30,7 +28,7 @@
   {{ if .Pages }}
 
     {{ $articles := ((where .Pages "Type" "!=" "el-diari").ByParam "publicat").Reverse }}
-    
+
     <div class="articles-grid" id="articles-grid">
       {{ range $articles }}
 
@@ -60,13 +58,11 @@
 
   {{ else }}
 
-    <p style="text-align:center; color:var(--color-ink-faded); padding: var(--space-xl) 0;">
+    <p class="section-empty">
       Encara no hi ha articles publicats.
     </p>
 
   {{ end }}
-
-</div>
 
 
 {{/*

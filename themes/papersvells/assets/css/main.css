@@ -1,17 +1,16 @@
 /* =============================================================
    PAPERS VELLS — main.css
    Estructura:
-    1  Variables          9  Pàgina d'article
-    9.b Fitxa documental
-    2  Font Face         10  Pàgina d'autor
-    3  Reset mínim       11  Graella d'autors
-    4  Base              12  Graella de publicacions
-    5  Tipografia        13  Pàgina individual de publicació
-    6  Capçalera global  14  Scroll infinit
-    7  Contingut princ.  15  Media queries
-    8  Graella articles  16  Pàgines estàtiques
-                         17  Pàgina 404
-                         18  Impressió
+     01  Variables                   11  Pàgina d'autor
+     02  Font Face                   12  Graella d'autors
+     03  Reset mínim                 13  Graella de publicacions
+     04  Base                        14  Pàgina individual de publicació
+     05  Tipografia                  15  Scroll infinit
+     06  Capçalera global            16  Media queries
+     07  Contingut principal         17  Pàgines estàtiques
+     08  Graella d'articles          18  Pàgina 404
+     09  Pàgina d'article            19  Impressió
+     10  Fitxa documental
    ============================================================= */
 
 
@@ -27,8 +26,7 @@
 
   /* Tipografia */
   --font-body:    'Alegreya', Georgia, serif;
-  --font-display: 'Alegreya', Georgia, serif;
-
+ 
   /* Mides de text */
   --text-xs:   0.85rem;  /* textos molt petits: etiquetes, meta, dates */
   --text-ss:   1.0rem;
@@ -39,7 +37,6 @@
   --text-lg:   1.5rem;   /* títols de targeta a la portada */
   --text-ll:   1.6rem;
   --text-xl:   1.7rem;   /* nom d'autor a la pàgina d'article */
-  --text-xxl:  2.0rem;
   --text-xxxl: 2.2rem;
   --text-2xl:  2.4rem;   /* títols de pàgina (autors, publicacions) */
   --text-3xl:  3.2rem;   /* títol principal del logo de text */
@@ -55,7 +52,6 @@
 
   /* Radi de les cantonades */
   --radius-lg: 12px;
-  
 
   /* Amplades */
   --max-content: 900px;
@@ -152,12 +148,12 @@ body {
 
 /* Contenidor central reutilitzable */
 .container {
-  width: min(var(--max-content), 100% - 2rem);
+  width: min(var(--max-content), calc(100% - 2rem));
   margin-inline: auto;
-  }
+}
 
 .container--wide {
-  width: min(var(--max-wide), 100% - 2rem);
+  width: min(var(--max-wide), calc(100% - 2rem));
   margin-inline: auto;
 }
 
@@ -207,7 +203,6 @@ h4 { font-size: var(--text-lg);  }
 
 .rule--citats {
   height: 1px;
-  background: var(--color-border);
   margin-block: var(--space-xl);
 }
 
@@ -268,13 +263,6 @@ h4 { font-size: var(--text-lg);  }
   margin: 0 auto;
 }
 
-/* ── Missatge d'error de debug */
-.error-debug {
-  color: red;
-  padding: var(--space-sm);
-  border: 1px dashed;
-}
-
 /* ── 7. CONTINGUT PRINCIPAL ───────────────────────────────── */
 .site-main {
   padding: var(--space-sm) 0 var(--space-xl);
@@ -293,7 +281,7 @@ h4 { font-size: var(--text-lg);  }
   break-inside: avoid; /* Evita que una targeta es trenqui entre dues columnes */
   page-break-inside: avoid;
   padding: var(--space-md);
-  margin-bottom: var(--space-md); 
+  margin-bottom: var(--space-md);
 }
 
 .article-card__title {
@@ -329,14 +317,14 @@ h4 { font-size: var(--text-lg);  }
 
 .meta-data {
   font-family: 'Rubik', sans-serif;
-  font-size:small;
+  font-size: small;
   display: block;
   letter-spacing: -0.1em;
 }
 
 .meta-publicacio {
   font-family: 'Rubik', sans-serif;
-  font-size:small;
+  font-size: small;
   display: block;
 }
 
@@ -409,9 +397,8 @@ h4 { font-size: var(--text-lg);  }
   color: var(--color-ink-light);
   text-align: left;
   hyphens: auto;
-  max-width: 900px;      
-  margin-inline: 0;   /* centra la caixa */
-  justify-self: end; 
+  max-width: 900px;
+  margin-inline: 0;   /* alineat a l'esquerra dins .article-columna, no centrat */
   margin-top: var(--space-lg);
 }
 
@@ -437,40 +424,45 @@ h4 { font-size: var(--text-lg);  }
   color: var(--color-accent);
 }
 
-/* ── QÜESTIONS — graella de targetes ──────────────────────── */
-  .questions-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* més columnes → targetes més estretes */
-    align-items: start;        /* ← nou: evita l'estirament vertical */
-    grid-auto-rows: min-content; /* ← nou: la fila només ocupa l'alt necessari */
-    gap: var(--space-lg);
-    padding: var(--space-md);
-  }
+/* ── Qüestions — graella de targetes ───────────────────────── */
+.questions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* més columnes → targetes més estretes */
+  align-items: start;        /* evita l'estirament vertical */
+  grid-auto-rows: min-content; /* la fila només ocupa l'altura necessària */
+  gap: var(--space-lg);
+  padding: var(--space-md);
+}
 
-  .questio-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: var(--space-sm);
-    aspect-ratio: 3 / 4;               /* força la proporció vertical */
-    padding: var(--space-lg) var(--space-sm);
-    border: 1px solid var(--color-rule);
-    border-radius: var(--radius-lg);
-    text-decoration: none;
-    color: inherit;
-    transition: border-color var(--transition), transform var(--transition);
-  }
-
-.questio-card:hover {
-  border-color: var(--color-accent);
-  transform: translateY(-3px);
+.questio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-sm);
+  aspect-ratio: 3 / 4;
+  padding: var(--space-lg) var(--space-sm);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--transition), transform var(--transition);
+  overflow: hidden;              /* xarxa de seguretat, no hauria d'activar-se */
 }
 
 .questio-card__title {
   font-size: var(--text-lg);
   line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;         /* màxim 3 línies */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.questio-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
 }
 
 .questio-card__anys {
@@ -484,27 +476,41 @@ h4 { font-size: var(--text-lg);  }
   color: var(--color-ink-faded);
 }
 
-/* ==========================================================
-   FITXA DOCUMENTAL
-   ========================================================== */
+/* ── Navegació entre articles (single.html) ────────────────── */
+.article-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  padding: var(--space-sm) 0 var(--space-lg);
+  gap: var(--space-md);
+}
 
+.article-nav a {
+  color: var(--color-accent);
+  flex: 1;
+}
+
+.article-nav__next {
+  text-align: right;
+}
+
+/* ── 10. FITXA DOCUMENTAL ──────────────────────────────────── */
 .article-layout {
-  display: grid;                                           /* Crea una graella de dues columnes */
-  grid-template-columns: minmax(0, 1fr) 250px;             /* Article flexible + fitxa de 250 px */
-  gap: var(--space-lg);                                    /* Espai entre l'article i la fitxa */
-  align-items: start;                                      /* Alinea la fitxa amb l'inici de l'article */
-  width: min(80%, var(--max-wide));                        /* Amplada màxima del conjunt */
-  margin-inline: auto;                                     /* Centra el conjunt horitzontalment */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 250px);
+  gap: var(--space-lg);
+  align-items: start;
+  width: min(80%, var(--max-wide));
+  margin-inline: auto;
 }
 
 .fitxa {
   position: sticky;
   top: calc(var(--space-xl) + 5rem);
   padding: var(--space-xxs);
+  background: #faf6f5;   /* reserva per a navegadors sense color-mix() */
   background: color-mix(in srgb, var(--color-accent) 6%, white);
-  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  
 }
 
 .fitxa__bloc + .fitxa__bloc {
@@ -531,7 +537,6 @@ h4 { font-size: var(--text-lg);  }
 .fitxa__avatar {
   width: 80px;
   height: 80px;
-  background: var(--color-border);
   margin-top: var(--space-xs);
   margin-bottom: var(--space-sm);
 }
@@ -563,9 +568,7 @@ h4 { font-size: var(--text-lg);  }
   list-style: none;
 }
 
-/* ===========================
-   COMPORTAMENT DEL DETAILS
-=========================== */
+/* ── Comportament del <details> ─────────────────────────────── */
 
 /* Per defecte: contingut amagat */
 .fitxa__expandible .fitxa__contingut-ocult {
@@ -590,6 +593,11 @@ h4 { font-size: var(--text-lg);  }
   list-style: none;
 }
 
+.fitxa__summary:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 .fitxa__summary::-webkit-details-marker {
   display: none;
 }
@@ -606,9 +614,7 @@ h4 { font-size: var(--text-lg);  }
 }
 
 
-/* ===========================
-   DESKTOP (> 900px)
-=========================== */
+/* ── Fitxa: escriptori (≥ 901px) ───────────────────────────── */
 @media (min-width: 901px) {
   /* Amaguem el summary */
   .fitxa__summary {
@@ -627,15 +633,13 @@ h4 { font-size: var(--text-lg);  }
 }
 
 
-/* ===========================
-   MÒBIL (≤ 900px)
-=========================== */
+/* ── Fitxa: mòbil (≤ 900px) ────────────────────────────────── */
 @media (max-width: 900px) {
 
   .article-layout {
     grid-template-columns: 1fr;
     margin-left: 0.6rem;
-    width: min(92%, var(--max-wide));    
+    width: min(92%, var(--max-wide));
   }
 
   .article-columna {
@@ -651,29 +655,24 @@ h4 { font-size: var(--text-lg);  }
 
   .fitxa__bloc--principal .fitxa__camp {
     display: none;
-
   }
- 
-  .fitxa__bloc--principal p {
-  margin-bottom: 0;
-}
+
   .fitxa__bloc--principal {
     margin: 0 !important;
   }
- 
 
   .fitxa__resum {
-    display:flex;
-    flex-direction:column;
-    gap:0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
+
   .fitxa__publicacio {
-  color: var(--color-accent);
-  text-decoration: none;
-  font-family: 'Rubik', sans-serif;
-  
+    color: var(--color-accent);
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
   }
-  
+
   .fitxa__autor {
     font-style: italic;
     font-size: var(--text-xl);
@@ -695,13 +694,9 @@ h4 { font-size: var(--text-lg);  }
     padding: 0;
     margin: 0;
   }
-  
 }
 
-
-
-
-/* Formats especials */
+/* ── Formats especials (poemes, cites…) ─────────────────────── */
 .article-body .poema p::first-letter,
 .article-body .autor-poema p::first-letter {
   font-size: inherit;
@@ -737,16 +732,16 @@ h4 { font-size: var(--text-lg);  }
   text-align: center;
   margin: var(--space-md) auto;
   font-style: normal;
-  font-size:large;
+  font-size: large;
   font-variant: small-caps;
 }
 
 .seccio {
   text-align: center;
   margin: var(--space-md) auto;
-  font-size:larger;
+  font-size: larger;
   font-weight: 500;
-  color: #973330;
+  color: var(--color-accent);
 }
 
 .autor {
@@ -773,7 +768,7 @@ h4 { font-size: var(--text-lg);  }
 }
 
 
-/* ── 10. PÀGINA D'AUTOR ───────────────────────────────────── */
+/* ── 11. PÀGINA D'AUTOR ────────────────────────────────────── */
 .autor-header {
   display: flex;
   align-items: center;
@@ -795,7 +790,7 @@ h4 { font-size: var(--text-lg);  }
   font-weight: 500;
   line-height: 1;
   margin-bottom: var(--space-xs);
-  margin-top: var(--space-md)
+  margin-top: var(--space-md);
 }
 
 .autor-header__info {
@@ -809,7 +804,7 @@ h4 { font-size: var(--text-lg);  }
 }
 
 .llista-articles .meta {
-  color:#3d2f1a;
+  color: var(--color-ink-light);
   font-size: large;
 }
 
@@ -852,8 +847,7 @@ h4 { font-size: var(--text-lg);  }
   text-decoration: underline;
 }
 
-
-/* ── 11. GRAELLA D'AUTORS ─────────────────────────────────── */
+/* ── 12. GRAELLA D'AUTORS ─────────────────────────────────── */
 .autors-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -930,8 +924,7 @@ h4 { font-size: var(--text-lg);  }
   color: var(--color-accent);
 }
 
-/* ── 12. GRAELLA DE PUBLICACIONS ──────────────────────────── */
-
+/* ── 13. GRAELLA DE PUBLICACIONS ───────────────────────────── */
 .publicacions-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -990,6 +983,7 @@ h4 { font-size: var(--text-lg);  }
   opacity: 1;
 }
 
+/* ── 14. PÀGINA INDIVIDUAL DE PUBLICACIÓ ───────────────────── */
 .publicacio-header {
   text-align: center;
   margin-bottom: var(--space-lg);
@@ -1004,33 +998,28 @@ h4 { font-size: var(--text-lg);  }
   display: block;
 }
 
-
-/* ── 14. SCROLL INFINIT ───────────────────────────────────── */
+/* ── 15. SCROLL INFINIT ───────────────────────────────────── */
 /* Estat inicial de cada targeta: invisible i desplaçada 24px
-  cap avall. La transició anima l'aparició quan JS treu
-  la classe "card-hidden".
-   → Degradació elegant (progressive enhancement). */
+   cap avall. La transició anima l'aparició quan JS treu
+   la classe "card-hidden". */
 
 .card-hidden {
   opacity: 0;
   transform: translateY(24px);
-
-  /*    La transició s'aplica a opacity i transform alhora */
+  /* la transició s'aplica a opacity i transform alhora */
   transition: opacity 0.45s ease-out, transform 0.45s ease-out;
 }
 
-/*
-  Quan JS treu "card-hidden", l'element torna al seu estat
-  natural (opacity:1, sense desplaçament). La transició
-  CSS s'encarrega de l'animació automàticament.
-*/
+/* Quan JS treu "card-hidden", l'element torna al seu estat
+   natural (opacity: 1, sense desplaçament). La transició
+   CSS s'encarrega de l'animació automàticament. */
 .article-card:not(.card-hidden) {
   opacity: 1;
   transform: translateY(0);
 }
 
 
-/* ── 15. MEDIA QUERIES ────────────────────────────────────── */
+/* ── 16. MEDIA QUERIES ────────────────────────────────────── */
 @media (max-width: 1100px) {
   .articles-grid { column-count: 3; }
   .autors-grid { grid-template-columns: repeat(5, 1fr); }
@@ -1050,20 +1039,20 @@ h4 { font-size: var(--text-lg);  }
     font-size: var(--text-md);
     line-height: 1.2;
   }
-   .article-card__author { 
+  .article-card__author {
     text-align: center;
     font-size: 1.8rem;
   }
-  .article-card__meta   { 
+  .article-card__meta {
     font-size: var(--text-sm);
     text-align: center;
   }
-  .article-card__title  { 
+  .article-card__title {
     font-size: var(--text-ll);
     font-weight: 500;
     text-align: center;
   }
-  
+
   .article-hero__title--sota {
     font-size: var(--text-xxxl);
     font-weight: 500;
@@ -1071,17 +1060,16 @@ h4 { font-size: var(--text-lg);  }
   }
   .article-byline { flex-wrap: wrap; }
   .article-byline__avatar { width: 80px; height: 80px; }
-  .article-byline__name { font-size: var(--text-md); margin-top: 0.5rem;}
-  .article-byline__data {margin-top: -1.2rem;}
-  
+  .article-byline__name { font-size: var(--text-md); margin-top: 0.5rem; }
+  .article-byline__data { margin-top: -1.2rem; }
+
   .articles-grid {
     column-count: 1;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
   }
 
-  
-  .autor-bio { 
+  .autor-bio {
     font-size: var(--text-md);
     line-height: 1.2;
     text-align: left;
@@ -1110,21 +1098,22 @@ h4 { font-size: var(--text-lg);  }
     width: 100%;
   }
 
-  .autors-grid { grid-template-columns: repeat(3, 1fr); 
+  .autors-grid {
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: var(--space-xs);
     padding-top: var(--space-xs);
     gap: var(--space-md);
     padding-left: var(--space-sm);
     padding-right: var(--space-sm);
   }
-  
+
   .page-body p { font-size: var(--text-ll); }
   .publicacio-header__logo { max-width: 280px; }
-  .publicacio-header__intro { font-size: 1.8rem;}
+  .publicacio-header__intro { font-size: 1.8rem; }
   .publicacio-card__frame { --frame-height: 90px; }
 
   .publicacions-grid { grid-template-columns: 1fr; }
-    
+
   .llista-articles li {
     font-size: var(--text-lg);
     line-height: 1.2;
@@ -1137,9 +1126,9 @@ h4 { font-size: var(--text-lg);  }
     white-space: normal;
   }
   .llista-articles .meta a {
-  color: var(--color-ink);
-  text-decoration: none;
-  pointer-events: none;
+    color: var(--color-ink);
+    text-decoration: none;
+    pointer-events: none;
   }
 
   /* ── Qüestions — índex mòbil ─────────────────────────── */
@@ -1158,10 +1147,10 @@ h4 { font-size: var(--text-lg);  }
   }
 
   .questio-card__anys {
-  letter-spacing: -0.08em;
-  font-size: var(--text-ss);
+    letter-spacing: -0.08em;
+    font-size: var(--text-ss);
   }
-  
+
   .questio-item a {
     flex-direction: column;
     align-items: flex-start;
@@ -1191,8 +1180,6 @@ h4 { font-size: var(--text-lg);  }
 
 }
 
-
-
 @media (prefers-reduced-motion: reduce) {
 
   /* Elimina animacions llargues o amb moviment */
@@ -1207,13 +1194,13 @@ h4 { font-size: var(--text-lg);  }
     scroll-behavior: auto;
   }
 
-  /* Manté transicions petites si vols */
+  /* Manté transicions curtes (només color) */
   a, button {
     transition: color 0.1s ease;
   }
 }
 
-/* ── 16. PÀGINES ESTÀTIQUES (El diari) ───────────────────────── */
+/* ── 17. PÀGINES ESTÀTIQUES (El diari) ─────────────────────── */
 .page-body {
   max-width: 720px;
   margin: 0 auto;
@@ -1226,8 +1213,59 @@ h4 { font-size: var(--text-lg);  }
   margin-bottom: var(--space-md);
 }
 
+/* ── Capçalera de secció (list.html) ──────────────────────── */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
 
-/* ── 17. PÀGINA 404 ──────────────────────────────────────── */
+.section-header__title {
+  font-size: var(--text-2xl);
+  margin: var(--space-md) 0;
+}
+
+.section-header__desc {
+  max-width: 65ch;
+  margin-inline: auto;
+  color: var(--color-ink-light);
+}
+
+/* Variant compacta (el-diari) */
+.section-header--tight {
+  margin-bottom: var(--space-xs);
+}
+
+.section-header--tight .section-header__title {
+  margin: var(--space-xs) 0;
+}
+
+/* Missatge quan la secció està buida */
+.section-empty {
+  text-align: center;
+  color: var(--color-ink-faded);
+  padding: var(--space-xl) 0;
+}
+
+/* Paginació */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xl);
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+}
+
+.pagination a {
+  color: var(--color-accent);
+}
+
+.pagination__current {
+  color: var(--color-ink-faded);
+}
+
+
+/* ── 18. PÀGINA 404 ──────────────────────────────────────── */
 .error-404 {
   max-width: 720px;
   margin: var(--space-xl) auto;
@@ -1266,7 +1304,7 @@ h4 { font-size: var(--text-lg);  }
   color: var(--color-accent);
 }
 
-/* ── 18. IMPRESSIÓ ───────────────────────────────────────── */
+/* ── 19. IMPRESSIÓ ───────────────────────────────────────── */
 @media print {
 
   /* Oculta tot el que no és contingut */

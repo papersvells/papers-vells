@@ -33,22 +33,16 @@
 
     {{/* NAVEGACIÓ ENTRE ARTICLES — ara dins de article-columna,
          per allargar el contenidor sticky fins al final real de la pàgina */}}
-    <nav style="
-      display: flex;
-      justify-content: space-between;
-      font-size: var(--text-sm);
-      padding: var(--space-sm) 0 var(--space-lg);
-      gap: var(--space-md);
-    ">
+    <nav class="article-nav">
       {{ with .PrevInSection }}
-        <a href="{{ .Permalink }}" style="color:var(--color-accent); flex:1;" title="{{ .Title }}">
+        <a href="{{ .Permalink }}" title="{{ .Title }}">
           ← {{ .Title | truncate 50 "…" }}
         </a>
       {{ else }}
         <span></span>
       {{ end }}
       {{ with .NextInSection }}
-        <a href="{{ .Permalink }}" style="color:var(--color-accent); flex:1; text-align:right;" title="{{ .Title }}">
+        <a href="{{ .Permalink }}" class="article-nav__next" title="{{ .Title }}">
           {{ .Title | truncate 50 "…" }} →
         </a>
       {{ end }}
