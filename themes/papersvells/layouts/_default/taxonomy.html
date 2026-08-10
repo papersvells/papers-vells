@@ -397,9 +397,10 @@
         Llista d'articles.
         A les publicacions mostrem l'autor, als autors la
         publicació (i a tots, la data).
-        A les qüestions mostrem autor + publicació, i les
-        ordenem cronològicament ascendent (no descendent) per
-        llegir-se com una narració que avança en el temps.
+        A les qüestions i categories mostrem només autor + data.
+        A les qüestions l'ordre és cronològic ascendent (no
+        descendent) per llegir-se com una narració que avança
+        en el temps.
       */}}
       {{ $articlesEnOrdre := $articles.ByDate.Reverse }}
       {{ if eq .Type "questions" }}
@@ -425,10 +426,11 @@
         <a href="/{{ $a | urlize }}/">{{ $a }}</a>
       {{ end }}
     {{ end }}
-    {{ with .Params.publicacions }}
-      {{ range $i, $p := . }}
-        {{ if $i }} · {{ end }}
-        <a href="/{{ $p | urlize }}/">{{ $p }}</a>
+  {{ else if eq $.Type "categoria" }}
+    {{ with .Params.autors }}
+      {{ range $i, $a := . }}
+        {{ if $i }}, {{ end }}
+        <a href="/{{ $a | urlize }}/">{{ $a }}</a>
       {{ end }}
     {{ end }}
   {{ else }}
@@ -482,6 +484,98 @@
             </li>
           {{ end }}
         </ul>
+
+      {{ end }}
+
+    {{ end }}
+
+    {{/* ----------------------------------------------------------------
+      QÜESTIONS ON HA COL·LABORAT L'AUTOR
+      ----------------------------------------------------------------
+      Recorrem totes les qüestions del projecte. Si alguna conté un
+      article d'aquest autor, hi mostra una targeta amb la mateixa
+      estètica que la graella de /questions/.
+    ---------------------------------------------------------------- */}}
+    {{ if eq .Data.Plural "autors" }}
+
+      {{ $autor := .Title }}
+      {{ $qüestions := site.Taxonomies.questions }}
+
+      {{ if $qüestions }}
+
+        {{ $qüestionsAutor := slice }}
+
+        {{ range $qüestions.Alphabetical }}
+
+          {{ $termPage := .Page }}
+
+          {{/* Articles de la qüestió, amb el mateix fallback manual que la vista global */}}
+          {{ $pagesQ := $termPage.Pages }}
+          {{ if eq (len $pagesQ) 0 }}
+            {{ $nomBuscat := $termPage.Title }}
+            {{ $slugBuscat := $termPage.Title | urlize }}
+            {{ $pagesQ = where site.RegularPages "Params.questions" "intersect" (slice $nomBuscat) }}
+            {{ if eq (len $pagesQ) 0 }}
+              {{ range site.RegularPages }}
+                {{ $page := . }}
+                {{ range .Params.questions }}
+                  {{ if eq (. | urlize) $slugBuscat }}
+                    {{ $pagesQ = $pagesQ | append $page }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{/* Articles de la qüestió escrits per aquest autor */}}
+          {{ $meus := slice }}
+          {{ range $pagesQ }}
+            {{ $page := . }}
+            {{ range .Params.autors }}
+              {{ if eq (. | urlize) ($autor | urlize) }}
+                {{ $meus = $meus | append $page }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{ if gt (len $meus) 0 }}
+            {{ $qüestionsAutor = $qüestionsAutor | append (dict "page" $termPage "meus" $meus) }}
+          {{ end }}
+
+        {{ end }}
+
+        {{ if gt (len $qüestionsAutor) 0 }}
+
+          <hr class="rule--citats">
+
+          <h1 class="autor-header__name">Ha col·laborat en {{ len $qüestionsAutor }} qüestions:</h1>
+
+          <div class="questions-grid">
+            {{ range $qüestionsAutor }}
+
+              {{ $termPage := .page }}
+              {{ $meusPerData := .meus.ByDate }}
+              {{ $anyInici := "" }}
+              {{ $anyFinal := "" }}
+              {{ if gt (len $meusPerData) 0 }}
+                {{ $anyInici = (index $meusPerData 0).Date.Format "2006" }}
+                {{ $anyFinal = (index $meusPerData (sub (len $meusPerData) 1)).Date.Format "2006" }}
+              {{ end }}
+
+              <a class="questio-card" href="{{ $termPage.Permalink }}">
+                <h2 class="questio-card__title">{{ $termPage.Title }}</h2>
+                {{ if and $anyInici $anyFinal }}
+                  <p class="questio-card__anys">
+                    {{ if eq $anyInici $anyFinal }}{{ $anyInici }}{{ else }}{{ $anyInici }}–{{ $anyFinal }}{{ end }}
+                  </p>
+                {{ end }}
+                <p class="questio-card__count">{{ len .meus }} {{ cond (eq (len .meus) 1) "article" "articles" }}</p>
+              </a>
+
+            {{ end }}
+          </div>
+
+        {{ end }}
 
       {{ end }}
 

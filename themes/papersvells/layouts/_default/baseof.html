@@ -274,7 +274,8 @@
   {{- $headerCSS := resources.Get "css/header.css" -}}
   {{- $mainCSS   := resources.Get "css/main.css" -}}
   {{- $cercaCSS  := resources.Get "css/cerca.css" -}}
-  {{- $css := slice $headerCSS $mainCSS $cercaCSS | resources.Concat "css/bundle.css" | minify | fingerprint -}}
+  {{- $cronoCSS  := resources.Get "css/cronologia.css" -}}
+  {{- $css := slice $headerCSS $mainCSS $cercaCSS $cronoCSS | resources.Concat "css/bundle.css" | minify | fingerprint -}}
   <link rel="stylesheet"
         href="{{ $css.Permalink }}"
         integrity="{{ $css.Data.Integrity }}">

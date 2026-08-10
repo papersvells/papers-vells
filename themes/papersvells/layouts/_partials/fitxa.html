@@ -150,9 +150,29 @@
       <section class="fitxa__bloc">
         <h3 class="fitxa__camp">Difon aquest article</h3>
         <div class="fitxa__compartir">
-          <a href="#">📋</a>
-          <a href="#">𝕏</a>
-          <a href="#">f</a>
+          <button
+            type="button"
+            class="fitxa__copiar"
+            data-url="{{ .Permalink }}"
+            aria-label="Copiar l'enllaç de l'article"
+            title="Copiar l'enllaç"
+          ><img src="/icon-clipboard.png" alt="Copiar enllaç" width="18" height="18"></button>
+          <a
+            class="fitxa__xarxa fitxa__xarxa--x"
+            href="https://x.com/intent/post?text={{ .Title | urlquery }}&amp;url={{ .Permalink }}"
+            target="_blank"
+            rel="noopener"
+            title="Compartir a X (Twitter)"
+            aria-label="Compartir a X (Twitter)"
+          ><img src="/icon-x.png" alt="X (Twitter)" width="18" height="18"></a>
+          <a
+            class="fitxa__xarxa"
+            href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+            target="_blank"
+            rel="noopener"
+            title="Compartir a Facebook"
+            aria-label="Compartir a Facebook"
+          ><img src="/icon-facebook.png" alt="Facebook" width="18" height="18"></a>
         </div>
       </section>
 
@@ -181,5 +201,24 @@
 
   // Només quan es canvia entre mòbil i escriptori
   media.addEventListener("change", actualitza);
+
+  // Copiar l'enllaç al porta-retalls
+  const copiarBtn = document.querySelector(".fitxa__copiar");
+  if (copiarBtn) {
+    const url = copiarBtn.dataset.url;
+    copiarBtn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(url);
+        copiarBtn.classList.add("fitxa__copiar--fet");
+        copiarBtn.setAttribute("title", "Enllaç copiat");
+        setTimeout(() => {
+          copiarBtn.classList.remove("fitxa__copiar--fet");
+          copiarBtn.setAttribute("title", "Copiar l'enllaç");
+        }, 2000);
+      } catch (err) {
+        copiarBtn.setAttribute("title", "No s'ha pogut copiar");
+      }
+    });
+  }
 })();
 </script>

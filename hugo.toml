@@ -52,9 +52,14 @@ capitalizeListTitles = false
   weight = 5
 
 [[menus.main]]
+  name   = 'Cronologia'
+  url    = '/cronologia/'
+  weight = 6
+
+[[menus.main]]
   name   = 'Diari'
   url    = '/el-diari/'
-  weight = 6
+  weight = 7
 
 [permalinks]
   [permalinks.term]

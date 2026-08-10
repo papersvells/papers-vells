@@ -1,0 +1,183 @@
+{{/*
+  ═══════════════════════════════════════════════════════════
+  CRONOLOGIA — timeline vertical de tots els articles
+  ═══════════════════════════════════════════════════════════
+  Estructura:
+    1. Hero amb xifres del projecte
+    2. Barra de densitat anual (clicable → scroll a l'any)
+    3. Timeline vertical: dècades + anys + targetes en zigzag
+
+  Dades:
+    $articles = tots els articles, ordenats per data històrica
+    $grups    = agrupats per any (GroupByDate "2006"), ascendent
+    Cada grup: .Key (any) i .Pages (articles d'aquell any)
+  ═══════════════════════════════════════════════════════════
+*/}}
+
+{{ define "main" }}
+
+  {{/* ── DADES ─────────────────────────────────────────────── */}}
+  {{ $articles := site.RegularPages.ByDate }}
+  {{ $grups    := $articles.GroupByDate "2006" }}
+  {{ $grups     = sort $grups "Key" "asc" }}
+  {{ $total    := len $articles }}
+  {{ $primer   := index $articles 0 }}
+  {{ $ultim    := index $articles (sub (len $articles) 1) }}
+  {{ $numAutors := len site.Taxonomies.autors }}
+
+  {{/* Màxima densitat per escalar barres i nodes */}}
+  {{ $max := 0 }}
+  {{ range $grups }}
+    {{ $n := len .Pages }}
+    {{ if gt $n $max }}{{ $max = $n }}{{ end }}
+  {{ end }}
+
+  {{/* Mesos catalans (mateix patró que fitxa.html) */}}
+  {{ $mesos := slice "" "gener" "febrer" "març" "abril" "maig" "juny" "juliol" "agost" "setembre" "octubre" "novembre" "desembre" }}
+
+  {{/* Contador global per a l'alternança esquerra/dreta */}}
+  {{ $i := 0 }}
+  {{ $decadaPrev := -1 }}
+
+  <div class="container--wide">
+
+    {{/* ── 1. HERO ──────────────────────────────────────────── */}}
+    <header class="section-header crono-hero">
+      <h1 class="section-header__title">{{ .Title }}</h1>
+      <p class="section-header__desc crono-hero__sub">
+        {{ $primer.Date.Year }}–{{ $ultim.Date.Year }} ·
+        {{ $total }} articles ·
+        {{ $numAutors }} autors
+      </p>
+    </header>
+
+    <div class="page-body crono-intro">
+      {{ .Content }}
+    </div>
+
+  </div>
+
+  {{/* ── 2. BARRA DE DENSITAT ANUAL (fora del container, full-width) ── */}}
+  <nav class="densitat" aria-label="Articles per any. Clica un any per desplaçar-t'hi.">
+    <div class="densitat__eix">
+      {{ range $grups }}
+        {{ $n := len .Pages }}
+        {{ $barCls := "densitat--1" }}
+        {{ if gt $n 3 }}{{ $barCls = "densitat--2" }}{{ end }}
+        {{ if gt $n 8 }}{{ $barCls = "densitat--3" }}{{ end }}
+        {{ if gt $n 14 }}{{ $barCls = "densitat--4" }}{{ end }}
+        {{ if gt $n 24 }}{{ $barCls = "densitat--5" }}{{ end }}
+        {{ if gt $n 34 }}{{ $barCls = "densitat--6" }}{{ end }}
+        <a class="densitat__barra {{ $barCls }}"
+           href="#any-{{ .Key }}"
+           title="{{ $n }} articles · {{ .Key }}">
+          <span class="densitat__etiqueta">{{ .Key }}</span>
+        </a>
+      {{ end }}
+    </div>
+  </nav>
+
+  <div class="container--wide">
+
+    {{/* ── 3. TIMELINE VERTICAL ────────────────────────────── */}}
+    <div class="crono">
+      <div class="crono__linea" aria-hidden="true"></div>
+
+      <div class="crono__entrades">
+
+        {{ range $grups }}
+          {{ $any := .Key }}
+          {{ $n := len .Pages }}
+          {{ $decada := div (int $any) 10 }}
+
+          {{/* Separador de dècada quan canvia */}}
+          {{ if ne $decada $decadaPrev }}
+            {{ $decadaNom := printf "%d" (mul $decada 10) }}
+            {{ if eq $decada 189 }}{{ $decadaNom = "Anys noranta" }}
+            {{ else if eq $decada 190 }}{{ $decadaNom = "Anys de 1900" }}
+            {{ else if eq $decada 191 }}{{ $decadaNom = "Anys deu" }}
+            {{ else if eq $decada 192 }}{{ $decadaNom = "Anys vint" }}
+            {{ else if eq $decada 193 }}{{ $decadaNom = "Anys trenta" }}
+            {{ end }}
+            <div class="crono__decada">
+              <span class="crono__decada-num">{{ mul $decada 10 }}</span>
+              <span class="crono__decada-nom">{{ $decadaNom }}</span>
+            </div>
+            {{ $decadaPrev = $decada }}
+          {{ end }}
+
+          {{/* Node de l'any, dimensionat segons la densitat */}}
+          {{ $nodeCls := "crono__node--xs" }}
+          {{ if gt $n 2 }}{{ $nodeCls = "crono__node--sm" }}{{ end }}
+          {{ if gt $n 5 }}{{ $nodeCls = "crono__node--md" }}{{ end }}
+          {{ if gt $n 11 }}{{ $nodeCls = "crono__node--lg" }}{{ end }}
+          {{ if gt $n 19 }}{{ $nodeCls = "crono__node--xl" }}{{ end }}
+          {{ if gt $n 29 }}{{ $nodeCls = "crono__node--xxl" }}{{ end }}
+
+          <section class="crono__any" id="any-{{ $any }}">
+            <div class="crono__node {{ $nodeCls }}" title="{{ $n }} articles">
+              <span class="crono__node-any">{{ $any }}</span>
+              <span class="crono__node-count">{{ $n }}</span>
+            </div>
+
+            {{ range .Pages }}
+              {{ $costat := "crono-card--esq" }}
+              {{ if mod $i 2 }}{{ $costat = "crono-card--dreta" }}{{ end }}
+              {{ $i = add $i 1 }}
+
+              <article class="crono-card {{ $costat }}">
+                <a class="crono-card__link" href="{{ .Permalink }}">
+                  {{ with .Params.image }}
+                    <img class="crono-card__img"
+                         src="/images/articles/{{ . }}"
+                         alt=""
+                         width="60" height="60"
+                         loading="lazy">
+                  {{ end }}
+                  <div class="crono-card__cos">
+                    {{ $mes := index $mesos .Date.Month }}
+                    {{ $prep := "de " }}
+                    {{ if in (slice "abril" "agost" "octubre") $mes }}{{ $prep = "d'" }}{{ end }}
+                    <p class="crono-card__meta">{{ .Date.Day }} {{ $prep }}{{ $mes }} de {{ .Date.Year }}</p>
+                    <h3 class="crono-card__titol">{{ .Title }}</h3>
+                    {{ with .Params.autors }}
+                      <p class="crono-card__autor">{{ delimit . ", " }}</p>
+                    {{ end }}
+                  </div>
+                </a>
+              </article>
+            {{ end }}
+          </section>
+
+        {{ end }}
+
+      </div>
+    </div>
+
+  </div>
+
+  {{/* ── REVEAL ON SCROLL ──────────────────────────────────── */}}
+  <noscript>
+    <style>
+      .crono-card, .crono__node, .crono__decada {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+  <script>
+  (() => {
+    const observador = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observador.unobserve(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: "0px 0px -30px 0px" });
+
+    document.querySelectorAll(".crono-card, .crono__node, .crono__decada")
+      .forEach(el => observador.observe(el));
+  })();
+  </script>
+
+{{ end }}

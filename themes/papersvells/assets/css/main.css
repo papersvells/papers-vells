@@ -280,8 +280,10 @@ h4 { font-size: var(--text-lg);  }
 .article-card {
   break-inside: avoid; /* Evita que una targeta es trenqui entre dues columnes */
   page-break-inside: avoid;
+  position: relative;
   padding: var(--space-md);
   margin-bottom: var(--space-md);
+  transition: opacity 0.45s ease-out, transform 0.2s ease-out;
 }
 
 .article-card__title {
@@ -293,6 +295,18 @@ h4 { font-size: var(--text-lg);  }
 
 .article-card__title a:hover {
   color: var(--color-accent);
+}
+
+/* Tota la targeta és clicable: el link del títol s'estira sobre el card */
+.article-card__title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Lleuger moviment de la targeta en passar el ratolí (com a questions) */
+.article-card:not(.card-hidden):hover {
+  transform: translateY(-3px);
 }
 
 .article-card__author {
@@ -542,12 +556,57 @@ h4 { font-size: var(--text-lg);  }
 }
 
 .fitxa__compartir {
+  margin-top: var(--space-xs);
   display: flex;
+  align-items: center;
   gap: .75rem;
 }
 
-.fitxa__compartir a {
+.fitxa__compartir a,
+.fitxa__compartir button {
   text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-ink);
+}
+
+.fitxa__compartir .fitxa__xarxa img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.fitxa__compartir .fitxa__xarxa--x img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.fitxa__compartir .fitxa__copiar img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.fitxa__copiar--fet img {
+  display: none;
+}
+
+.fitxa__copiar--fet::after {
+  content: "✓";
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.fitxa__compartir a:hover,
+.fitxa__compartir button:hover {
+  color: var(--color-accent);
 }
 
 .fitxa__llista a {
@@ -564,7 +623,7 @@ h4 { font-size: var(--text-lg);  }
 }
 
 .fitxa__llista li {
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
   list-style: none;
 }
 
@@ -646,6 +705,9 @@ h4 { font-size: var(--text-lg);  }
     order: 2;
   }
 
+  .article-columna p {
+    margin-top: -1rem;
+  }
   .fitxa {
     order: 1;
     position: static;
@@ -653,12 +715,23 @@ h4 { font-size: var(--text-lg);  }
     background: var(--color-paper);
   }
 
+  .fitxa__camp {
+    font-size: var(--text-md);
+  }
+
   .fitxa__bloc--principal .fitxa__camp {
     display: none;
+    
   }
 
   .fitxa__bloc--principal {
     margin: 0 !important;
+    
+  }
+
+  .fitxa__bloc + .fitxa__bloc {
+  margin-top: var(--space-sm);
+  font-size: var(--text-m);
   }
 
   .fitxa__resum {
@@ -690,6 +763,7 @@ h4 { font-size: var(--text-lg);  }
   }
 
   .fitxa__summary {
+    font-size: var(--text-md);
     display: list-item;
     padding: 0;
     margin: 0;
@@ -1057,6 +1131,7 @@ h4 { font-size: var(--text-lg);  }
     font-size: var(--text-xxxl);
     font-weight: 500;
     margin-top: 0;
+    margin-bottom: 0;
   }
   .article-byline { flex-wrap: wrap; }
   .article-byline__avatar { width: 80px; height: 80px; }

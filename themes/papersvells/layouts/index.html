@@ -27,7 +27,7 @@
   */}}
   {{ if .Pages }}
 
-    {{ $articles := ((where .Pages "Type" "!=" "el-diari").ByParam "publicat").Reverse }}
+    {{ $articles := ((where .Pages "Type" "not in" (slice "el-diari" "cronologia")).ByParam "publicat").Reverse }}
 
     <div class="articles-grid" id="articles-grid">
       {{ range $articles }}
