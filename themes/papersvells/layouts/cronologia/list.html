@@ -44,11 +44,6 @@
     {{/* ── 1. HERO ──────────────────────────────────────────── */}}
     <header class="section-header crono-hero">
       <h1 class="section-header__title">{{ .Title }}</h1>
-      <p class="section-header__desc crono-hero__sub">
-        {{ $primer.Date.Year }}–{{ $ultim.Date.Year }} ·
-        {{ $total }} articles ·
-        {{ $numAutors }} autors
-      </p>
     </header>
 
     <div class="page-body crono-intro">
@@ -117,7 +112,6 @@
           <section class="crono__any" id="any-{{ $any }}">
             <div class="crono__node {{ $nodeCls }}" title="{{ $n }} articles">
               <span class="crono__node-any">{{ $any }}</span>
-              <span class="crono__node-count">{{ $n }}</span>
             </div>
 
             {{ range .Pages }}
@@ -138,7 +132,10 @@
                     {{ $mes := index $mesos .Date.Month }}
                     {{ $prep := "de " }}
                     {{ if in (slice "abril" "agost" "octubre") $mes }}{{ $prep = "d'" }}{{ end }}
-                    <p class="crono-card__meta">{{ .Date.Day }} {{ $prep }}{{ $mes }} de {{ .Date.Year }}</p>
+                    <p class="crono-card__meta">
+                      <span class="crono-card__data--escrita">{{ .Date.Day }} {{ $prep }}{{ $mes }} de {{ .Date.Year }}</span>
+                      <span class="crono-card__data--num">{{ .Date.Format "02·01·2006" }}</span>
+                    </p>
                     <h3 class="crono-card__titol">{{ .Title }}</h3>
                     {{ with .Params.autors }}
                       <p class="crono-card__autor">{{ delimit . ", " }}</p>

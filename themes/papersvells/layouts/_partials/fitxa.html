@@ -156,7 +156,7 @@
             data-url="{{ .Permalink }}"
             aria-label="Copiar l'enllaç de l'article"
             title="Copiar l'enllaç"
-          ><img src="/icon-clipboard.png" alt="Copiar enllaç" width="18" height="18"></button>
+          ><img src="/icon-clipboard.png" alt="Copiar enllaç" width="18" height="18"><span class="fitxa__copiar-avis">Enllaç copiat</span></button>
           <a
             class="fitxa__xarxa fitxa__xarxa--x"
             href="https://x.com/intent/post?text={{ .Title | urlquery }}&amp;url={{ .Permalink }}"
@@ -206,9 +206,28 @@
   const copiarBtn = document.querySelector(".fitxa__copiar");
   if (copiarBtn) {
     const url = copiarBtn.dataset.url;
+
+    async function copiarText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+      // Fallback per a contextos no segurs (HTTP, LAN, navegadors antics)
+      const aux = document.createElement("textarea");
+      aux.value = text;
+      aux.setAttribute("readonly", "");
+      aux.style.position = "fixed";
+      aux.style.opacity = "0";
+      document.body.appendChild(aux);
+      aux.select();
+      const ok = document.execCommand("copy");
+      document.body.removeChild(aux);
+      if (!ok) throw new Error("copy fallback failed");
+    }
+
     copiarBtn.addEventListener("click", async () => {
       try {
-        await navigator.clipboard.writeText(url);
+        await copiarText(url);
         copiarBtn.classList.add("fitxa__copiar--fet");
         copiarBtn.setAttribute("title", "Enllaç copiat");
         setTimeout(() => {

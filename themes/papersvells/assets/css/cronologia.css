@@ -23,17 +23,23 @@ html {
 /* ── 2. BARRA DE DENSITAT ANUAL (full-width, fora del container) ── */
 .densitat {
   margin-bottom: var(--space-xl);
-  padding: var(--space-md) 0 28px; /* espai superior per a l'etiqueta flotant */
+}
+
+.densitat__eix {
+  width: max-content;
+  margin-inline: auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  padding: var(--space-md) var(--space-sm) 28px; /* espai superior per a l'etiqueta flotant */
   border-top: 1px solid var(--color-rule);
   border-bottom: 1px solid var(--color-rule);
 }
 
-.densitat__eix {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 4px;
-  padding: 0 var(--space-sm);
+/* Les línies del widget i els nodes no han de crear scroll horitzontal */
+html:has(.densitat),
+body:has(.densitat) {
+  overflow-x: clip;
 }
 
 .densitat__barra {
@@ -246,13 +252,6 @@ html {
   line-height: 1;
 }
 
-.crono__node-count {
-  font-family: 'Rubik', sans-serif;
-  font-size: 8px;
-  line-height: 1.2;
-  opacity: 0.85;
-}
-
 /* Diàmetre segons la densitat */
 .crono__node--xs  { width: 34px; height: 34px; }
 .crono__node--sm  { width: 40px; height: 40px; }
@@ -261,12 +260,10 @@ html {
 .crono__node--xl  { width: 72px; height: 72px; }
 .crono__node--xxl { width: 84px; height: 84px; }
 
-.crono__node--xs .crono__node-any  { font-size: 11px; }
-.crono__node--sm .crono__node-any  { font-size: 12px; }
-.crono__node--md .crono__node-any  { font-size: 13px; }
-.crono__node--lg .crono__node-any  { font-size: 14px; }
-.crono__node--xl .crono__node-any  { font-size: 16px; }
-.crono__node--xxl .crono__node-any { font-size: 18px; }
+/* L'any sempre amb el mateix cos, sigui quin sigui el node */
+.crono__node-any {
+  font-size: 14px;
+}
 
 /* ── Targetes en zigzag ──────────────────────────────────── */
 .crono-card {
@@ -345,6 +342,10 @@ html {
   margin-bottom: var(--space-xxs);
 }
 
+/* Data: escrita a desktop, numèrica al mòbil */
+.crono-card__data--escrita { display: inline; }
+.crono-card__data--num { display: none; }
+
 .crono-card__titol {
   font-size: var(--text-m);
   font-weight: 500;
@@ -373,16 +374,36 @@ html {
     left: 22px;
   }
 
+  /* Nodes una mica més petits en mòbil per no envair la vora */
+  .crono__node--lg  { width: 52px; height: 52px; }
+  .crono__node--xl  { width: 60px; height: 60px; }
+  .crono__node--xxl { width: 64px; height: 64px; }
+
   .crono-card,
   .crono-card--esq,
   .crono-card--dreta {
     width: auto;
     margin: var(--space-sm) 0 var(--space-sm) 56px;
-    transform: translateX(30px);
+    transform: translateY(12px);
   }
 
   .crono-card.is-visible {
-    transform: translateX(0);
+    transform: translateY(0);
+  }
+
+  /* Data numèrica al mòbil */
+  .crono-card__data--escrita { display: none; }
+  .crono-card__data--num { display: inline; }
+
+  /* Intro més compacta en mòbil */
+  .crono-hero {
+    margin-bottom: var(--space-xs);
+  }
+
+  .crono-intro,
+  .crono-intro p {
+    font-size: var(--text-m);
+    line-height: 1.4;
   }
 
   .crono-card--esq .crono-card__link {
@@ -400,7 +421,7 @@ html {
 
   /* Barres de densitat més compactes al mòbil */
   .densitat__eix {
-    gap: 2px;
+    gap: 1px;
   }
 
   .densitat__barra {

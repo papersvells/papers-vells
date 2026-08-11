@@ -12,7 +12,7 @@ image: "1932-08-25_la_publicitat_manuel_brunet_-_la_novella_que_josep_maria_de_s
 ---
 Tota la literatura catalana contemporània és obra de gent que s'ha de guanyar la vida.
 
-Escrit aquest concepte m'adono que potser ho he fet massa fort, que potser he plantejat el tema d'una enquesta. Segurament duen haver-hi excepcions. Se m'acuden dos noms: Ruyra i [Víctor Català](/victor-catala/). Però resolc l'objecció contestant-me que aquests dos eminents literats i propietaris no se sentiran molestats si dic que ja no són ben bé d'aquesta generació.
+Escrit aquest concepte m'adono que potser ho he fet massa fort, que potser he plantejat el tema d'una enquesta. Segurament deuen haver-hi excepcions. Se m'acuden dos noms: Ruyra i [Víctor Català](/victor-catala/). Però resolc l'objecció contestant-me que aquests dos eminents literats i propietaris no se sentiran molestats si dic que ja no són ben bé d'aquesta generació.
 
 Potser trobaríem altres excepcions no pas molt significatives, i haurem de reconèixer que algunes persones benestants es dediquen a treballs d'erudició.
 
