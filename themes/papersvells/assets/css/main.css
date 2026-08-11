@@ -283,7 +283,8 @@ h4 { font-size: var(--text-lg);  }
   position: relative;
   padding: var(--space-md);
   margin-bottom: var(--space-md);
-  transition: opacity 0.45s ease-out, transform 0.2s ease-out;
+  border-radius: var(--radius-lg);
+  transition: opacity 0.45s ease-out, transform 0.2s ease-out, background-color 0.2s ease-out;
 }
 
 .article-card__title {
@@ -307,6 +308,7 @@ h4 { font-size: var(--text-lg);  }
 /* Lleuger moviment de la targeta en passar el ratolí (com a questions) */
 .article-card:not(.card-hidden):hover {
   transform: translateY(-3px);
+  background-color: rgba(151, 51, 48, 0.06);
 }
 
 .article-card__author {
