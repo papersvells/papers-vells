@@ -23,7 +23,7 @@ papersvells/
 │   │   └── <nom-slug>/_index.md
 │   ├── publicacions/          # 34 publicacions, cadascuna amb _index.md
 │   │   └── <nom-slug>/_index.md
-│   ├── el-diari/_index.md     # Pàgina estática "El Diari"
+│   ├── projecte/_index.md      # Pàgina estática "El Projecte"
 │   └── cerca/_index.md        # Pàgina de cerca (outputs: html, json)
 ├── themes/papersvells/        # El tema custom
 │   ├── layouts/
@@ -31,7 +31,7 @@ papersvells/
 │   │   ├── _partials/fitxa.html
 │   │   ├── index.html         # Portada (scroll infinit)
 │   │   ├── cerca/             # list.html (UI), list.json (índex cerca)
-│   │   ├── el-diari/list.html
+│   │   ├── projecte/list.html
 │   │   └── shortcodes/estadistiques.html
 │   ├── assets/css/            # main.css, header.css, cerca.css
 │   ├── assets/js/main.js      # Només un console.log
@@ -137,7 +137,7 @@ wikipedia: "https://ca.wikipedia.org/wiki/La_Veu_de_Catalunya"
 | `/categoria/`          | `taxonomy.html` (vista global) | Llista targetes sense anys           |
 | `/article/`            | `single.html`                  | Article amb fitxa documental sticky  |
 | `/cerca/`              | `cerca/list.html` + `list.json`| Cerca client-side                   |
-| `/el-diari/`           | `el-diari/list.html`           | Pàgina estática amb estadístiques   |
+| `/projecte/`           | `projecte/list.html`           | Pàgina estática amb estadístiques   |
 
 ## CSS i JS
 

@@ -305,10 +305,13 @@ h4 { font-size: var(--text-lg);  }
   inset: 0;
 }
 
-/* Lleuger moviment de la targeta en passar el ratolí (com a questions) */
-.article-card:not(.card-hidden):hover {
-  transform: translateY(-3px);
-  background-color: rgba(151, 51, 48, 0.06);
+/* Lleuger moviment de la targeta en passar el ratolí (només escriptori;
+   a mòbil el hover queda encallat després del toc i volem la targeta neta) */
+@media (min-width: 901px) {
+  .article-card:not(.card-hidden):hover {
+    transform: translateY(-3px);
+    background-color: rgba(151, 51, 48, 0.06);
+  }
 }
 
 .article-card__author {
@@ -1210,7 +1213,7 @@ h4 { font-size: var(--text-lg);  }
     padding-right: var(--space-sm);
   }
 
-  .page-body p { font-size: var(--text-ll); }
+  .page-body { font-size: var(--text-lg); line-height: 1.1; }
   .publicacio-header__logo { max-width: 280px; }
   .publicacio-header__intro { font-size: 1.8rem; }
   .publicacio-card__frame { --frame-height: 90px; }
@@ -1304,10 +1307,11 @@ h4 { font-size: var(--text-lg);  }
 }
 
 /* ── 17. PÀGINES ESTÀTIQUES (El diari) ─────────────────────── */
+/* Cos tipogràfic a joc amb el cos d'un article (.article-body) */
 .page-body {
   max-width: 720px;
   margin: 0 auto;
-  font-size: var(--text-md);
+  font-size: var(--text-m);
   line-height: 1.5;
   color: var(--color-ink-light);
 }
@@ -1333,7 +1337,7 @@ h4 { font-size: var(--text-lg);  }
   color: var(--color-ink-light);
 }
 
-/* Variant compacta (el-diari) */
+/* Variant compacta (projecte) */
 .section-header--tight {
   margin-bottom: var(--space-xs);
 }

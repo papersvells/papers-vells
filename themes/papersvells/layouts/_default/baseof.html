@@ -352,11 +352,31 @@
   </button>
 
     <nav class="site-nav" id="site-nav" aria-label="Navegació principal">
-      {{ range .Site.Menus.main }}
+      {{ range where .Site.Menus.main "Parent" "" }}
+        {{ if .HasChildren }}
+        <div class="site-nav__descrubre">
+          <button type="button"
+                  class="site-nav__boto"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="submenu-descobrir">
+            {{ .Name }}<span class="site-nav__fletxa" aria-hidden="true">▾</span>
+          </button>
+          <div class="site-nav__globus" id="submenu-descobrir">
+            {{ range .Children }}
+            <a href="{{ .URL }}"
+               {{ if or (eq $.RelPermalink .URL) (eq $.Permalink .URL) }}aria-current="page"{{ end }}>
+              {{ .Name }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ else }}
         <a href="{{ .URL }}"
           {{ if or (eq $.RelPermalink .URL) (eq $.Permalink .URL) }}aria-current="page"{{ end }}>
           {{ .Name }}
         </a>
+        {{ end }}
       {{ end }}
 
       <a href="/cerca/"
@@ -384,7 +404,9 @@
   <main class="site-main" id="main-content">
     {{- block "main" . }}{{- end }}
   </main>
-  <script src="/js/menu.js" defer></script>
-  <script src="/js/header-scroll.js" defer></script>
+  {{- $menuJS := resources.Get "js/menu.js" | minify | fingerprint -}}
+  {{- $headerJS := resources.Get "js/header-scroll.js" | minify | fingerprint -}}
+  <script src="{{ $menuJS.RelPermalink }}" defer></script>
+  <script src="{{ $headerJS.RelPermalink }}" defer></script>
 </body>
 </html>
