@@ -125,6 +125,18 @@ wikipedia: "https://ca.wikipedia.org/wiki/La_Veu_de_Catalunya"
 - Imatges de publicacions: `<slug>.webp`
 - Imatges d'articles: `<mateix-nom-del-fitxer-md>.webp`
 
+## IMPORTANT: carpetes de termes amb accents/apòstrofs
+
+La carpeta d'un terme (`content/autors/<nom>/`, `content/publicacions/<nom>/`) ha de tenir
+el nom **EXACTE del terme** tal com apareix als articles (ex: `Lluís Nicolau d'Olwer`,
+`Víctor Català`, `L'Amic de les arts`), amb accents i apòstrofs inclosos.
+
+- L'URL es normalitza sol (`/lluis-nicolau-dolwer/`): Hugo treu accents i apòstrofs del path
+- Si la carpeta NO coincideix exactament amb el terme, Hugo pot NO adoptar l'`_index.md`
+  (bio, wikipedia, cognom) de forma no determinista — cada build "guanya" un subconjunt
+  aleatori — o fallar sempre. És un bug conegut de la lògica de termes+contingut
+- Per afegir un terma nou: copieu el nom EXACTE del terme des d'un article (front matter)
+
 ## Layouts clau
 
 | Ruta                   | Layout                         | Què fa                              |

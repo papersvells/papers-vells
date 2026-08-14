@@ -66,11 +66,17 @@
   <meta property="og:type" content="website">
   {{- end }}
   {{- $ogImage := printf "%simages/og-default.webp" .Site.BaseURL -}}
-  {{- with .Params.imatge }}{{- $ogImage = . -}}{{- end }}
+  {{- $ogWidth := 1200 -}}
+  {{- $ogHeight := 630 -}}
+  {{- with .Params.image -}}
+    {{- $ogImage = printf "%simages/articles/%s" $.Site.BaseURL . -}}
+    {{- $ogWidth = 900 -}}
+    {{- $ogHeight = 450 -}}
+  {{- end -}}
   <meta property="og:image" content="{{ $ogImage }}">
   <meta property="og:image:type" content="image/webp">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="{{ $ogWidth }}">
+  <meta property="og:image:height" content="{{ $ogHeight }}">
 
   {{/*
     ─────────────────────────────────────────────────────────
