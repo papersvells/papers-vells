@@ -26,6 +26,7 @@
 
   /* Tipografia */
   --font-body:    'Alegreya', Georgia, serif;
+  --font-display: 'Alegreya', Georgia, serif;
  
   /* Mides de text */
   --text-xs:   0.85rem;  /* textos molt petits: etiquetes, meta, dates */
@@ -174,6 +175,19 @@ body {
 
 .skip-link:focus {
   top: var(--space-sm);
+}
+
+/* Accessibilitat — text només per a lectors de pantalla (sr-only) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 

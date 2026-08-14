@@ -1,4 +1,5 @@
 {{- $pages := where .Pages "Type" "not in" (slice "projecte" "cronologia") -}}
+{{- $pages = $pages.ByParam "publicat" | collections.Reverse -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
   {{- $pages = $pages | first $limit -}}
@@ -20,7 +21,8 @@
     <item>
       <title>{{ .Title | plainify | htmlEscape }}</title>
       <link>{{ .Permalink }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{- $pubData := .Params.publicat -}}
+<pubDate>{{ if $pubData }}{{ (time.AsTime $pubData).Format "Mon, 02 Jan 2006 15:04:05 -0700" }}{{ else }}{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}{{ end }}</pubDate>
       <guid>{{ .Permalink }}</guid>
       <description>{{ with .Description }}{{ . | html }}{{ else }}{{ .Summary | html }}{{ end }}</description>
     </item>

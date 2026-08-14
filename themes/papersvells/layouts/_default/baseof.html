@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#973330">
+  <noscript><style>.card-hidden{opacity:1;transform:none;transition:none}</style></noscript>
   
   {{/*
     ─────────────────────────────────────────────────────────
@@ -120,34 +121,36 @@
   "headline": {{ .Title | plainify | jsonify | safeJS }},
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": {{ .Permalink | jsonify }}
+    "@id": {{ .Permalink | jsonify | safeJS }}
   },
   "author": {
     "@type": "Person",
-    "name": {{ $autorNom | default "Desconegut" | jsonify }}
+    "name": {{ $autorNom | default "Desconegut" | jsonify | safeJS }}
     {{- if $autorURL }},
-    "url": {{ $autorURL | jsonify }}
+    "url": {{ $autorURL | jsonify | safeJS }}
     {{- end }}
     {{- if $autorWikipedia }},
-    "sameAs": {{ $autorWikipedia | jsonify }}
+    "sameAs": {{ $autorWikipedia | jsonify | safeJS }}
     {{- end }}
   },
-  "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify }},
+  "datePublished": {{ .Date.Format "2006-01-02" | jsonify | safeJS }},
+  {{- $dataMod := .Lastmod -}}
+  {{- with .Params.publicat }}{{ $dataMod = time.AsTime . }}{{ end -}}
+  "dateModified": {{ $dataMod.Format "2006-01-02" | jsonify | safeJS }},
   "publisher": {
     "@type": "Organization",
     "name": "Papers Vells",
     "logo": {
       "@type": "ImageObject",
-      "url": {{ "images/logo-horitzontal.webp" | absURL | jsonify }}
+      "url": {{ "images/logo-horitzontal.webp" | absURL | jsonify | safeJS }}
     }
   },
   "isPartOf": {
     "@type": "Periodical",
-    "name": {{ with .Params.publicacions }}{{ index . 0 | jsonify }}{{ else }}"Papers Vells"{{ end }}
+    "name": {{ with .Params.publicacions }}{{ index . 0 | jsonify | safeJS }}{{ else }}"Papers Vells"{{ end }}
   },
   "inLanguage": "ca",
-  "url": {{ .Permalink | jsonify }}
+  "url": {{ .Permalink | jsonify | safeJS }}
 }
 </script>
   <script type="application/ld+json">
@@ -159,27 +162,27 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Papers Vells",
-      "item": {{ .Site.BaseURL | jsonify }}
+      "item": {{ .Site.BaseURL | jsonify | safeJS }}
     }
     {{- if $autorNom }},
     {
       "@type": "ListItem",
       "position": 2,
-      "name": {{ $autorNom | jsonify }},
-      "item": {{ $autorURL | jsonify }}
+      "name": {{ $autorNom | jsonify | safeJS }},
+      "item": {{ $autorURL | jsonify | safeJS }}
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": {{ .Title | plainify | jsonify }},
-      "item": {{ .Permalink | jsonify }}
+      "name": {{ .Title | plainify | jsonify | safeJS }},
+      "item": {{ .Permalink | jsonify | safeJS }}
     }
     {{- else }},
     {
       "@type": "ListItem",
       "position": 2,
-      "name": {{ .Title | plainify | jsonify }},
-      "item": {{ .Permalink | jsonify }}
+      "name": {{ .Title | plainify | jsonify | safeJS }},
+      "item": {{ .Permalink | jsonify | safeJS }}
     }
     {{- end }}
   ]
@@ -195,14 +198,14 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Papers Vells",
-  "description": {{ .Site.Params.description | jsonify }},
-  "url": {{ .Site.BaseURL | jsonify }},
+  "description": {{ .Site.Params.description | jsonify | safeJS }},
+  "url": {{ .Site.BaseURL | jsonify | safeJS }},
   "inLanguage": "ca",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": {{ printf "%scerca/?q={search_term_string}" .Site.BaseURL | jsonify }}
+      "urlTemplate": {{ printf "%scerca/?q={search_term_string}" .Site.BaseURL | jsonify | safeJS }}
     },
     "query-input": "required name=search_term_string"
   }
@@ -229,15 +232,15 @@
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": {{ $pageTitle | jsonify }},
-  "description": {{ $desc | htmlUnescape | plainify | truncate 160 | jsonify }},
-  "url": {{ .Permalink | jsonify }},
+  "name": {{ $pageTitle | jsonify | safeJS }},
+  "description": {{ $desc | htmlUnescape | plainify | truncate 160 | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
   "inLanguage": "ca"
   {{- if $wikipedia }},
   "about": {
     "@type": {{ if eq .Type "autors" }}"Person"{{ else }}"Periodical"{{ end }},
-    "name": {{ $pageTitle | jsonify }},
-    "sameAs": {{ $wikipedia | jsonify }}
+    "name": {{ $pageTitle | jsonify | safeJS }},
+    "sameAs": {{ $wikipedia | jsonify | safeJS }}
   }
   {{- end }}
 }
@@ -252,19 +255,19 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Papers Vells",
-      "item": {{ .Site.BaseURL | jsonify }}
+      "item": {{ .Site.BaseURL | jsonify | safeJS }}
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": {{ $seccioNom | jsonify }},
-      "item": {{ $seccioURL | jsonify }}
+      "name": {{ $seccioNom | jsonify | safeJS }},
+      "item": {{ $seccioURL | jsonify | safeJS }}
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": {{ $pageTitle | jsonify }},
-      "item": {{ .Permalink | jsonify }}
+      "name": {{ $pageTitle | jsonify | safeJS }},
+      "item": {{ .Permalink | jsonify | safeJS }}
     }
   ]
 }

@@ -34,6 +34,7 @@
 
 </div>
 
-<script src="/js/cerca.js" defer></script>
+{{- $cercaJS := resources.Get "js/cerca.js" | minify | fingerprint -}}
+<script src="{{ $cercaJS.RelPermalink }}" defer></script>
 
 {{ end }}

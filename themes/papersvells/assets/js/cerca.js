@@ -17,6 +17,15 @@
 
   let index = null;
 
+  // ─── Càrrega inicial des de l'URL ────────────────────────
+  // El SearchAction de Google (i els deep-links) arriben amb
+  // ?q=... — preomplim l'input i engeguem la cerca en lloc
+  // de mostrar la pàgina amb la caixa buida.
+  const qParam = (new URLSearchParams(window.location.search).get('q') || '').trim();
+  if (qParam) {
+    input.value = qParam;
+  }
+
   // ─── Decodificació d'entitats HTML ──────────────────────
   // Hugo exporta el text amb entitats: &rsquo; &hellip; etc.
   // Les decodifiquem perquè la cerca trobi "l'elogi" dins "l&rsquo;elogi".
@@ -45,6 +54,7 @@
       }));
       estat.textContent = '';
       input.disabled = false;
+      if (qParam) cerca();
     })
     .catch(() => {
       estat.textContent = 'No s\'ha pogut carregar l\'índex. Recarrega la pàgina.';
