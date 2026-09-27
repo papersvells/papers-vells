@@ -112,7 +112,7 @@
         que a la vista individual, per si Hugo no relaciona
         directament .Pages amb el terme (accents, etc.).
       */}}
-      <div class="questions-grid">
+      <div class="questions-grid questions-grid--questio">
         {{ range .Data.Terms.Alphabetical }}
 
           {{ $termPage := .Page }}
@@ -391,7 +391,7 @@
 
       {{ end }}
 
-      <hr class="rule rule--term">
+      <br>
 
       {{/*
         Llista d'articles.
@@ -464,7 +464,7 @@
 
       {{ if gt (len $citats) 0 }}
       
-        <hr class="rule--citats">
+        <br>
       
         <h1 class="autor-header__name">Ha estat citat en {{ len $citats }} articles:</h1>
 
@@ -546,11 +546,11 @@
 
         {{ if gt (len $qüestionsAutor) 0 }}
 
-          <hr class="rule--citats">
+          <br>
 
           <h1 class="autor-header__name">Ha col·laborat en {{ len $qüestionsAutor }} qüestions:</h1>
 
-          <div class="questions-grid">
+          <div class="questions-grid questions-grid--questio">
             {{ range $qüestionsAutor }}
 
               {{ $termPage := .page }}

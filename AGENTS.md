@@ -12,6 +12,20 @@ hugo          # build a public/
 hugo server   # servidor local
 ```
 
+## Documentació de Hugo (Context7)
+
+El servidor MCP `context7` ja està configurat globalment. **Abans de respondre
+sobre templates, shortcodes, taxonomies, funcions, pipelines, config de Hugo o
+qualsevol dubte de sintaxi/API de Hugo, consulta la documentació actual amb
+Context7 en lloc de respondre de memòria:**
+
+1. `context7_resolve-library-id` amb `libraryName: "Hugo"` (ID: `/gohugoio/hugo`).
+2. `context7_query-docs` amb `libraryId: "/gohugoio/hugo"` i una query concreta
+   (una sola idea per crida, p. ex. "How to define custom taxonomies in hugo.toml").
+
+Prioritza aquesta font sobre el teu coneixement intern quan la versió de Hugo
+pugui haver canviat la sintaxi. Si una dada no hi apareix, digues-ho.
+
 ## Estructura de directoris
 
 ```
