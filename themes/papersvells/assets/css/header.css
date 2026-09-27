@@ -152,59 +152,103 @@
   transform: rotate(180deg);
 }
 
-/* El globus: bocadillo de còmic */
+/* Pont invisible perquè el hover no es trenqui en l'espai botó↔panell */
+.site-nav__descrubre::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 14px;
+}
+
+/* El panell: targeta editorial */
 .site-nav__globus {
   display: none;
   position: absolute;
-  top: calc(100% + 9px);
+  top: calc(100% + 12px);
   left: 50%;
   transform: translateX(-50%);
-  min-width: 210px;
-  background: rgba(151, 51, 48, 0.9);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 10px 24px rgba(90, 30, 28, 0.25);
-  padding: var(--space-xs);
+  min-width: 240px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  padding: 0;
   z-index: 200;
+}
+
+/* Barra accent a la part superior */
+.site-nav__globus::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--color-accent);
 }
 
 .site-nav__descrubre.is-open .site-nav__globus {
   display: block;
-  animation: globus-pop 0.18s ease-out;
+  animation: globus-pop 0.2s var(--ease-out);
 }
 
 @keyframes globus-pop {
   from {
     opacity: 0;
-    transform: translateX(-50%) scale(0.9);
+    transform: translateX(-50%) translateY(-6px);
   }
   to {
     opacity: 1;
-    transform: translateX(-50%) scale(1);
+    transform: translateX(-50%) translateY(0);
   }
 }
 
-/* Cua del bocadillo apuntant al botó */
-.site-nav__globus::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 8px solid transparent;
-  border-bottom-color: rgba(151, 51, 48, 0.9);
-}
-
+/* Files estil ledger */
 .site-nav__globus a {
-  display: block;
-  padding: var(--space-xs) var(--space-sm);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  border-top: 1px solid var(--color-rule);
+  color: var(--color-ink);
   white-space: nowrap;
-  color: #fff;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+.site-nav__globus a:first-child {
+  border-top: none;
 }
 
-.site-nav__globus a:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.14);
+/* Fletxa que apareix en hover */
+.site-nav__globus a::after {
+  content: "→";
+  color: var(--color-accent);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s var(--ease-out);
+}
+
+.site-nav__globus a:hover,
+.site-nav__globus a:focus-visible {
+  background: var(--color-accent-faint);
+  color: var(--color-accent);
+}
+.site-nav__globus a:hover::after,
+.site-nav__globus a:focus-visible::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.site-nav__globus a[aria-current="page"] {
+  color: var(--color-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav__descrubre.is-open .site-nav__globus {
+    animation: none;
+  }
 }
 
 
@@ -242,7 +286,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: var(--space-sm);
+    padding-top: var(--space-xs);
     /* Hide-on-scroll */
     transition: transform 0.25s ease-out;
     will-change: transform;
@@ -269,8 +313,9 @@
     border: none;
     cursor: pointer;
     padding: var(--space-sm);
+    padding-top: var(--space-xs);
     position: absolute;
-    right: var(--space-md);
+    right: var(--space-xs);
     top: 25px;
   }
 
@@ -293,6 +338,12 @@
     border-top: 1px solid var(--color-rule);
     border-bottom: 1px solid var(--color-rule);
     z-index: 99;
+    /* Cobreix tota l'alçada restant: de sota el logo fins a baix de la pantalla */
+    height: calc(100vh - 100%);
+    height: calc(100dvh - 100%);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .site-nav.is-open {
@@ -319,6 +370,11 @@
     width: 100%;
   }
 
+  /* Pont de hover desactivat a mòbil */
+  .site-nav__descrubre::after {
+    display: none;
+  }
+
   .site-nav__globus {
     position: static;
     transform: none;
@@ -332,6 +388,7 @@
     padding: 0;
     min-width: 0;
     gap: var(--space-xs);
+    overflow: visible;
   }
 
   .site-nav__globus::before,
@@ -341,9 +398,16 @@
 
   .site-nav__globus a,
   .site-nav__globus a:last-child {
+    display: block;
     border-bottom: none;
+    border-top: none;
     padding: var(--space-xs) 0;
     color: var(--color-ink-light);
+  }
+
+  /* Sense fletxa a mòbil */
+  .site-nav__globus a::after {
+    display: none;
   }
 
 }

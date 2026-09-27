@@ -44,7 +44,7 @@
   --text-lg:   1.5rem;   /* títols de targeta a la portada */
   --text-ll:   1.6rem;
   --text-xl:   1.7rem;   /* nom d'autor a la pàgina d'article */
-  --text-xxxl: 2.2rem;
+  --text-xxl:  2.0rem;
   --text-2xl:  2.4rem;   /* títols de pàgina (autors, publicacions) */
   --text-3xl:  3.2rem;   /* títol principal del logo de text */
 
@@ -953,7 +953,7 @@ a:hover .wikipedia-icon {
 
   .article-layout {
     grid-template-columns: 1fr;
-    margin-left: 0.6rem;
+    margin-inline: auto;
     width: min(92%, var(--max-wide));
   }
 
@@ -993,18 +993,18 @@ a:hover .wikipedia-icon {
 
   .fitxa__autor {
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: var(--text-m);
   }
 
   .fitxa__avatar {
     margin: 0;
-    width: 56px;
-    height: 56px;
+    width: 70px;
+    height: 70px;
   }
 
   .fitxa__avatar .article-byline__avatar {
-    width: 56px;
-    height: 56px;
+    width: 70px;
+    height: 70px;
   }
 
   .fitxa__data {
@@ -1403,17 +1403,40 @@ a:hover .wikipedia-icon {
 
 
 /* ── 16. MEDIA QUERIES ────────────────────────────────────── */
-@media (max-width: 1100px) {
+@media (min-width: 901px) and (max-width: 1100px) {
   .article-layout { grid-template-columns: minmax(0, 1fr) 260px; }
   .articles-grid { column-count: 3; }
   .autors-grid { grid-template-columns: repeat(5, 1fr); }
 }
 
 @media (max-width: 900px) {
+  /* Assegura una sola columna (la fitxa a dalt, sota la imatge i abans del títol) */
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+
   .article-body {
     line-height: 1.1;
     font-size: var(--text-lg);
   }
+
+  /* Navegació entre articles: apilada i amb interlínia més compacta */
+  .article-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-sm);
+    line-height: 1.3;
+  }
+  .article-nav a {
+    flex: none;
+  }
+  .article-nav span:empty {
+    display: none;
+  }
+  .article-nav__next {
+    text-align: right;
+  }
+
   .article-card {
     padding-left: 0.4rem;
     padding-right: 0.4rem;
@@ -1424,7 +1447,7 @@ a:hover .wikipedia-icon {
   }
   .article-card__author {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .article-card__meta {
     font-size: var(--text-sm);
@@ -1436,8 +1459,13 @@ a:hover .wikipedia-icon {
     text-align: center;
   }
 
+  .article-hero__img {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
   .article-hero__title--sota {
-    font-size: var(--text-xxxl);
+    font-size: var(--text-xxl);
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 0;
@@ -1528,7 +1556,14 @@ a:hover .wikipedia-icon {
   }
 
   .questio-card {
-    padding: var(--space-md) var(--space-xs);
+    /* Baixa el bloc (títol + any + comptador) per no topar amb la "Q." */
+    padding: calc(var(--space-md) + 1rem) var(--space-xs) calc(var(--space-md) - 1rem);
+  }
+
+  .questions-grid--questio .questio-card::before {
+    font-size: 1.9rem;
+    top: 0.6rem;
+    right: 0.8rem;
   }
 
   .questio-card__title {

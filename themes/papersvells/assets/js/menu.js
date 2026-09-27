@@ -25,14 +25,26 @@
 
   /* ── Desplegable "Descobrir" (només escriptori) ──────────── */
   const botoDescobrir  = document.querySelector('.site-nav__boto');
-  const globusDescobrir = document.querySelector('.site-nav__globus');
   const contenidorDescobrir = document.querySelector('.site-nav__descrubre');
-  if (botoDescobrir && globusDescobrir && contenidorDescobrir) {
+  if (botoDescobrir && contenidorDescobrir) {
 
+    function setDescobert(obert) {
+      contenidorDescobrir.classList.toggle('is-open', obert);
+      botoDescobrir.setAttribute('aria-expanded', String(obert));
+    }
+
+    /* Clic (també Enter/Space amb teclat) */
     botoDescobrir.addEventListener('click', function (event) {
       event.stopPropagation();
-      const isOpen = contenidorDescobrir.classList.toggle('is-open');
-      botoDescobrir.setAttribute('aria-expanded', isOpen);
+      setDescobert(!contenidorDescobrir.classList.contains('is-open'));
+    });
+
+    /* Hover (navegadors de punter; el pont CSS evita el parpelleig) */
+    contenidorDescobrir.addEventListener('mouseenter', function () {
+      setDescobert(true);
+    });
+    contenidorDescobrir.addEventListener('mouseleave', function () {
+      setDescobert(false);
     });
 
     /* Tanca en clicar fora del desplegable */
@@ -41,8 +53,7 @@
         contenidorDescobrir.classList.contains('is-open') &&
         !contenidorDescobrir.contains(event.target)
       ) {
-        contenidorDescobrir.classList.remove('is-open');
-        botoDescobrir.setAttribute('aria-expanded', 'false');
+        setDescobert(false);
       }
     });
 
@@ -52,8 +63,7 @@
         event.key === 'Escape' &&
         contenidorDescobrir.classList.contains('is-open')
       ) {
-        contenidorDescobrir.classList.remove('is-open');
-        botoDescobrir.setAttribute('aria-expanded', 'false');
+        setDescobert(false);
         botoDescobrir.focus();
       }
     });
