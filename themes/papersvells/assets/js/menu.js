@@ -39,13 +39,17 @@
       setDescobert(!contenidorDescobrir.classList.contains('is-open'));
     });
 
-    /* Hover (navegadors de punter; el pont CSS evita el parpelleig) */
-    contenidorDescobrir.addEventListener('mouseenter', function () {
-      setDescobert(true);
-    });
-    contenidorDescobrir.addEventListener('mouseleave', function () {
-      setDescobert(false);
-    });
+    /* Hover (navegadors de punter; el pont CSS evita el parpelleig).
+       No s'activa en tàctil: el toc dispararia mouseenter i mouria el
+       submenú sota el dit, fent que calgués un segon toc. */
+    if (window.matchMedia('(hover: hover)').matches) {
+      contenidorDescobrir.addEventListener('mouseenter', function () {
+        setDescobert(true);
+      });
+      contenidorDescobrir.addEventListener('mouseleave', function () {
+        setDescobert(false);
+      });
+    }
 
     /* Tanca en clicar fora del desplegable */
     document.addEventListener('click', function (event) {

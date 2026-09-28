@@ -298,7 +298,7 @@
                src="/images/publicacions/{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Title | urlize }}{{ end }}.webp"
                alt=""
                onerror="this.style.display='none'">
-          <p class="autor-header__info">{{ len $articles }} articles publicats</p>
+            <p class="autor-header__info">{{ len $articles }} {{ cond (eq (len $articles) 1) "article publicat" "articles publicats" }}</p>
           {{ with .Params.bio }}
             <div class="autor-bio">
               {{ . | markdownify }}
@@ -340,14 +340,7 @@
           <p class="questio-header__eyebrow">Qüestió</p>
           <h1 class="questio-header__title">{{ .Title }}</h1>
           <p class="autor-header__info">
-            {{ len $articles }} articles publicats
-            {{ if and $anyInici $anyFinal }}
-              {{ if eq $anyInici $anyFinal }}
-                · {{ $anyInici }}
-              {{ else }}
-                · {{ $anyInici }}–{{ $anyFinal }}
-              {{ end }}
-            {{ end }}
+            {{ len $articles }} {{ cond (eq (len $articles) 1) "article publicat" "articles publicats" }}{{ if and $anyInici $anyFinal }}<span class="questio-header__sep"> · </span><span class="questio-header__anys">{{ if eq $anyInici $anyFinal }}{{ $anyInici }}{{ else }}{{ $anyInici }}–{{ $anyFinal }}{{ end }}</span>{{ end }}
           </p>
           {{ with .Params.bio }}
             <div class="autor-bio">
@@ -368,7 +361,7 @@
                onerror="this.style.display='none'">
           <div class="autor-header__text">
             <h1 class="autor-header__name">{{ .Title | replaceRE `\bI\b` "i" }}</h1>
-            <p class="autor-header__info">{{ len $articles }} articles publicats</p>
+          <p class="autor-header__info">{{ len $articles }} {{ cond (eq (len $articles) 1) "article publicat" "articles publicats" }}</p>
             {{ with .Params.bio }}
               <div class="autor-bio">
                 {{ . | markdownify }}
@@ -466,7 +459,7 @@
       
         <br>
       
-        <h1 class="autor-header__name">Ha estat citat en {{ len $citats }} articles:</h1>
+        <h1 class="autor-header__name autor-header__name--accent">Ha estat citat en {{ len $citats }} {{ cond (eq (len $citats) 1) "article" "articles" }}</h1>
 
         <ul class="llista-articles">
           {{ range $citats.ByDate.Reverse }}
@@ -548,7 +541,7 @@
 
           <br>
 
-          <h1 class="autor-header__name">Ha col·laborat en {{ len $qüestionsAutor }} qüestions:</h1>
+          <h1 class="autor-header__name autor-header__name--accent">Ha col·laborat en {{ len $qüestionsAutor }} {{ cond (eq (len $qüestionsAutor) 1) "qüestió" "qüestions" }}</h1>
 
           <div class="questions-grid questions-grid--questio">
             {{ range $qüestionsAutor }}

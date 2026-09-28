@@ -481,6 +481,15 @@ a:hover .wikipedia-icon {
   margin-top: -1rem;
 }
 
+/* Cos tipogràfic compartit: cos d'un article i pàgines estàtiques.
+   Ha de quedar abans dels media queries perquè l'override mòbil (≤900px)
+   d'.article-body i .page-body pugui aplicar-se per ordre de cascada. */
+.article-body,
+.page-body {
+  font-size: var(--text-m);
+  line-height: 1.5;
+}
+
 /* Cos de l'article */
 .article-body {
   font-size: var(--text-m);
@@ -1134,6 +1143,11 @@ a:hover .wikipedia-icon {
   margin: 0 0 0.3rem;
 }
 
+/* Encapçalaments de secció a la fitxa d'autor (citacions, qüestions) */
+.autor-header__name--accent {
+  color: var(--color-accent);
+}
+
 .autor-header__info {
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -1175,6 +1189,7 @@ a:hover .wikipedia-icon {
 .llista-articles li > a {
   color: var(--color-ink);
   font-weight: 500;
+  font-size: var(--text-sm);
 }
 .llista-articles li > a:hover {
   color: var(--color-accent);
@@ -1415,7 +1430,8 @@ a:hover .wikipedia-icon {
     grid-template-columns: 1fr;
   }
 
-  .article-body {
+  .article-body,
+  .page-body {
     line-height: 1.1;
     font-size: var(--text-lg);
   }
@@ -1525,7 +1541,6 @@ a:hover .wikipedia-icon {
     padding-right: var(--space-sm);
   }
 
-  .page-body { font-size: var(--text-lg); line-height: 1.1; }
   .publicacio-header__logo { max-width: 280px; }
   .publicacio-header__intro { font-size: 1.8rem; }
   .publicacio-card__frame { --frame-height: 104px; }
@@ -1597,10 +1612,19 @@ a:hover .wikipedia-icon {
   }
 
   /* ── Qüestions — capçalera mòbil ──────────────────────── */
+  .questio-header__eyebrow {
+    margin-bottom: var(--space-sm);
+  }
+
   .questio-header__title {
     font-size: xx-large;
     margin-top: -0.5rem;
+    margin-bottom: var(--space-sm);
   }
+
+  /* Metadata en dues línies: amaga el separador i força el salt */
+  .questio-header__sep { display: none; }
+  .questio-header__anys { display: block; white-space: nowrap; }
 
 }
 
@@ -1629,8 +1653,6 @@ a:hover .wikipedia-icon {
 .page-body {
   max-width: 720px;
   margin: 0 auto;
-  font-size: var(--text-m);
-  line-height: 1.5;
   color: var(--color-ink-light);
 }
 

@@ -189,19 +189,23 @@
   background: var(--color-accent);
 }
 
-.site-nav__descrubre.is-open .site-nav__globus {
-  display: block;
-  animation: globus-pop 0.2s var(--ease-out);
-}
-
-@keyframes globus-pop {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-6px);
+/* Només escriptori: al mòbil el submenú es mostra sempre com a llista plana
+   i no ha de rebre display/animació (provocaria el desplaçament lateral). */
+@media (min-width: 901px) {
+  .site-nav__descrubre.is-open .site-nav__globus {
+    display: block;
+    animation: globus-pop 0.2s var(--ease-out);
   }
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
+
+  @keyframes globus-pop {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
   }
 }
 
@@ -245,7 +249,7 @@
   color: var(--color-accent);
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (min-width: 901px) and (prefers-reduced-motion: reduce) {
   .site-nav__descrubre.is-open .site-nav__globus {
     animation: none;
   }
