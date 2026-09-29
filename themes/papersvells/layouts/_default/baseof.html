@@ -414,9 +414,8 @@
   <main class="site-main" id="main-content">
     {{- block "main" . }}{{- end }}
   </main>
-  {{- $menuJS := resources.Get "js/menu.js" | minify | fingerprint -}}
-  {{- $headerJS := resources.Get "js/header-scroll.js" | minify | fingerprint -}}
-  <script src="{{ $menuJS.RelPermalink }}" defer></script>
-  <script src="{{ $headerJS.RelPermalink }}" defer></script>
+  {{- $js := slice (resources.Get "js/menu.js") (resources.Get "js/header-scroll.js")
+        | resources.Concat "js/principal.js" | minify | fingerprint -}}
+  <script src="{{ $js.RelPermalink }}" defer></script>
 </body>
 </html>
