@@ -21,6 +21,12 @@ capitalizeListTitles = false
   description = "Arxiu d'articles de premsa antiga catalana"
   subtitol    = 'Articles de premsa antiga catalana'
 
+[imaging]
+  anchor         = 'Center'
+  resampleFilter = 'box'
+  quality        = 75
+  hint           = 'photo'
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

@@ -70,9 +70,11 @@
   {{- $ogWidth := 1200 -}}
   {{- $ogHeight := 630 -}}
   {{- with .Params.image -}}
-    {{- $ogImage = printf "%simages/articles/%s" $.Site.BaseURL . -}}
-    {{- $ogWidth = 900 -}}
-    {{- $ogHeight = 450 -}}
+    {{- with resources.Get (printf "images/articles/%s" .) -}}
+      {{- $ogImage = .Permalink -}}
+      {{- $ogWidth = 900 -}}
+      {{- $ogHeight = 450 -}}
+    {{- end -}}
   {{- end -}}
   <meta property="og:image" content="{{ $ogImage }}">
   <meta property="og:image:type" content="image/webp">

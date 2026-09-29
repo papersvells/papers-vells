@@ -4,14 +4,18 @@
 
 {{/* IMATGE DE CAPÇALERA*/}}
 {{ with .Params.image }}
-  <div class="article-hero">
-    <img
-      class="article-hero__img"
-      src="/images/articles/{{ . }}"
-      alt="{{ $.Title }}"
-      width="900" height="450"
-    >
-  </div>
+  {{ with resources.Get (printf "images/articles/%s" .) }}
+    <div class="article-hero">
+      <img
+        class="article-hero__img"
+        src="{{ .RelPermalink }}"
+        alt="{{ $.Title }}"
+        width="900" height="450"
+        fetchpriority="high"
+        decoding="async"
+      >
+    </div>
+  {{ end }}
 {{ else }}
 {{ end }}
 
