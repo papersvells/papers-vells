@@ -186,12 +186,15 @@ body:has(.densitat) {
   background: rgba(151, 51, 48, 0.045);
   position: relative;
   z-index: 1;
-  opacity: 0;
-  transform: translateY(16px);
   transition: opacity 0.55s ease, transform 0.55s ease;
 }
 
-.crono__decada.is-visible {
+html.js .crono__decada {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+html.js .crono__decada.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -233,11 +236,14 @@ body:has(.densitat) {
   border: 2px solid var(--color-accent);
   color: var(--color-accent);
   z-index: 2;
-  opacity: 0;
   transition: opacity 0.6s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.crono__node.is-visible {
+html.js .crono__node {
+  opacity: 0;
+}
+
+html.js .crono__node.is-visible {
   opacity: 1;
 }
 
@@ -270,21 +276,32 @@ body:has(.densitat) {
   position: relative;
   width: 47%;
   margin: var(--space-md) 0;
-  opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .crono-card--esq {
   margin-right: 53%;
-  transform: translateX(-30px);
 }
 
 .crono-card--dreta {
   margin-left: 53%;
+}
+
+/* Estat amagat/desplaçat només amb JS actiu. Sense JS les targetes
+   es mostren directament a la seva posició final. */
+html.js .crono-card {
+  opacity: 0;
+}
+
+html.js .crono-card--esq {
+  transform: translateX(-30px);
+}
+
+html.js .crono-card--dreta {
   transform: translateX(30px);
 }
 
-.crono-card.is-visible {
+html.js .crono-card.is-visible {
   opacity: 1;
   transform: translateX(0);
 }
@@ -384,10 +401,15 @@ body:has(.densitat) {
   .crono-card--dreta {
     width: auto;
     margin: var(--space-sm) 0 var(--space-sm) 56px;
+  }
+
+  html.js .crono-card,
+  html.js .crono-card--esq,
+  html.js .crono-card--dreta {
     transform: translateY(12px);
   }
 
-  .crono-card.is-visible {
+  html.js .crono-card.is-visible {
     transform: translateY(0);
   }
 

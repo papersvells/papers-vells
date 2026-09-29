@@ -1401,16 +1401,16 @@ a:hover .wikipedia-icon {
    cap avall. La transició anima l'aparició quan JS treu
    la classe "card-hidden". */
 
-.card-hidden {
+html.js .card-hidden {
   opacity: 0;
   transform: translateY(24px);
-  /* la transició s'aplica a opacity i transform alhora */
-  transition: opacity 0.45s ease-out, transform 0.45s ease-out;
 }
 
 /* Quan JS treu "card-hidden", l'element torna al seu estat
-   natural (opacity: 1, sense desplaçament). La transició
-   CSS s'encarrega de l'animació automàticament. */
+   natural (opacity: 1, sense desplaçament). La transició viu a
+   .article-card (més amunt), així que l'animació es reprodueix.
+   Sense JS (html no té la classe .js) la regla d'amagat no s'aplica
+   i les targetes es veuen directament. */
 .article-card:not(.card-hidden) {
   opacity: 1;
   transform: translateY(0);
