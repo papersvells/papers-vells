@@ -277,6 +277,10 @@ html.js .crono__node.is-visible {
   width: 47%;
   margin: var(--space-md) 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
+  /* El navegador s'omet de maquetar/pintar les targetes fora de pantalla;
+     "auto 150px" és la mida de reserva fins que recorda la real. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 150px;
 }
 
 .crono-card--esq {

@@ -1177,6 +1177,9 @@ a:hover .wikipedia-icon {
   font-size: 1.08rem;
   line-height: 1.45;
   transition: background 0.18s ease;
+  /* S'ometen les files fora de pantalla; mida de reserva ~70px. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 70px;
 }
 .llista-articles li:first-child {
   border-top: none;
