@@ -1,0 +1,5 @@
+{{- $mesos := slice "" "gener" "febrer" "març" "abril" "maig" "juny" "juliol" "agost" "setembre" "octubre" "novembre" "desembre" -}}
+{{- $mes := index $mesos .Month -}}
+{{- $prep := "de " -}}
+{{- if in (slice "abril" "agost" "octubre") $mes }}{{ $prep = "d'" }}{{ end -}}
+{{- return printf "%d %s%s de %d" .Day $prep $mes .Year -}}

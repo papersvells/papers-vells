@@ -39,10 +39,13 @@
     {{- $desc = printf "%s — Articles a Papers Vells, arxiu de premsa catalana antiga." .Params.bio -}}
   {{- else if and .IsPage .Params.autors -}}
     {{- $autorsText := delimit .Params.autors ", " -}}
-    {{- $desc = printf "%s, de %s." .Title $autorsText -}}
-    {{- with .Params.publicacions }}
+    {{- $desc = printf "%s." $autorsText -}}
+    {{- with .Params.publicacions -}}
       {{- $publText := delimit . ", " -}}
-      {{- $desc = printf "%s Publicat a %s." $desc $publText -}}
+      {{- $desc = printf "%s Publicat a %s" $desc $publText -}}
+    {{- end -}}
+    {{- with .Date -}}
+      {{- $desc = printf "%s el %s." $desc (partial "data-escrita.html" .) -}}
     {{- end -}}
   {{- else if .Summary -}}
     {{- $desc = .Summary -}}

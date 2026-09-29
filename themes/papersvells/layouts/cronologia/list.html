@@ -32,9 +32,6 @@
     {{ if gt $n $max }}{{ $max = $n }}{{ end }}
   {{ end }}
 
-  {{/* Mesos catalans (mateix patró que fitxa.html) */}}
-  {{ $mesos := slice "" "gener" "febrer" "març" "abril" "maig" "juny" "juliol" "agost" "setembre" "octubre" "novembre" "desembre" }}
-
   {{/* Contador global per a l'alternança esquerra/dreta */}}
   {{ $i := 0 }}
   {{ $decadaPrev := -1 }}
@@ -132,11 +129,8 @@
                     {{ end }}
                   {{ end }}
                   <div class="crono-card__cos">
-                    {{ $mes := index $mesos .Date.Month }}
-                    {{ $prep := "de " }}
-                    {{ if in (slice "abril" "agost" "octubre") $mes }}{{ $prep = "d'" }}{{ end }}
                     <p class="crono-card__meta">
-                      <span class="crono-card__data--escrita">{{ .Date.Day }} {{ $prep }}{{ $mes }} de {{ .Date.Year }}</span>
+                      <span class="crono-card__data--escrita">{{ partial "data-escrita.html" .Date }}</span>
                       <span class="crono-card__data--num">{{ .Date.Format "02·01·2006" }}</span>
                     </p>
                     <h3 class="crono-card__titol">{{ .Title }}</h3>

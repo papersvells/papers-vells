@@ -31,11 +31,7 @@
     <h3 class="fitxa__camp">Data</h3>
     <p class="fitxa__data">
     {{ with $.Date }}
-        {{- $mesos := slice "" "gener" "febrer" "març" "abril" "maig" "juny" "juliol" "agost" "setembre" "octubre" "novembre" "desembre" }}
-        {{- $mes := index $mesos .Month }}
-        {{- $prep := "de " }}
-        {{- if in (slice "abril" "agost" "octubre") $mes }}{{- $prep = "d'" }}{{- end }}
-        {{ .Day }} {{ $prep }}{{ $mes }} de {{ .Year }}
+        {{- partial "data-escrita.html" . }}
     {{ end }}
     </p>
   </section>
