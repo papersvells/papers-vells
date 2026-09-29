@@ -332,8 +332,11 @@ a:hover .wikipedia-icon {
 
 /* ── 8. GRAELLA D'ARTICLES (portada) ──────────────────────── */
 .articles-grid {
-  column-count: 4;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   column-gap: 0;
+  row-gap: var(--space-md);
+  align-items: start;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 var(--space-md);
@@ -344,7 +347,6 @@ a:hover .wikipedia-icon {
   page-break-inside: avoid;
   position: relative;
   padding: var(--space-md);
-  margin-bottom: var(--space-md);
   border-radius: var(--radius-lg);
   transition: opacity 0.45s ease-out, transform 0.2s ease-out, background-color 0.2s ease-out;
   /* El navegador s'omet de maquetar/pintar les targetes fora de pantalla
@@ -1441,7 +1443,7 @@ html.js .card-hidden {
 /* ── 16. MEDIA QUERIES ────────────────────────────────────── */
 @media (min-width: 901px) and (max-width: 1100px) {
   .article-layout { grid-template-columns: minmax(0, 1fr) 260px; }
-  .articles-grid { column-count: 3; }
+  .articles-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .autors-grid { grid-template-columns: repeat(5, 1fr); }
 }
 
@@ -1513,7 +1515,7 @@ html.js .card-hidden {
   .article-byline__data { margin-top: -1.2rem; }
 
   .articles-grid {
-    column-count: 1;
+    grid-template-columns: 1fr;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
   }
@@ -1810,7 +1812,7 @@ html.js .card-hidden {
 
   /* Una sola columna */
   .articles-grid {
-    column-count: 1;
+    grid-template-columns: 1fr;
   }
 
   /* Cos de l'article llegible */
