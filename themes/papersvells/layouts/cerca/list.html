@@ -38,3 +38,8 @@
 <script src="{{ $cercaJS.RelPermalink }}" defer></script>
 
 {{ end }}
+
+{{ define "css-extra" }}
+  {{- $c := resources.Get "css/cerca.css" | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $c.Permalink }}" integrity="{{ $c.Data.Integrity }}">
+{{ end }}

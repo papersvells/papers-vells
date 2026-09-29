@@ -282,14 +282,13 @@
     CSS — Hugo Pipes: concat + minify + fingerprint
     ─────────────────────────────────────────────────────────
   */}}
-  {{- $headerCSS := resources.Get "css/header.css" -}}
-  {{- $mainCSS   := resources.Get "css/main.css" -}}
-  {{- $cercaCSS  := resources.Get "css/cerca.css" -}}
-  {{- $cronoCSS  := resources.Get "css/cronologia.css" -}}
-  {{- $css := slice $headerCSS $mainCSS $cercaCSS $cronoCSS | resources.Concat "css/bundle.css" | minify | fingerprint -}}
+  {{- $base := slice (resources.Get "css/header.css") (resources.Get "css/main.css")
+        | resources.Concat "css/base.css" | minify | fingerprint -}}
   <link rel="stylesheet"
-        href="{{ $css.Permalink }}"
-        integrity="{{ $css.Data.Integrity }}">
+        href="{{ $base.Permalink }}"
+        integrity="{{ $base.Data.Integrity }}">
+  {{/* CSS extra: només les plantilles que el necessiten (cerca, 404, cronologia) omplen aquest bloc */}}
+  {{- block "css-extra" . }}{{ end -}}
 
   {{/*
     ─────────────────────────────────────────────────────────

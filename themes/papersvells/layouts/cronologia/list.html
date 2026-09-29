@@ -181,3 +181,8 @@
   </script>
 
 {{ end }}
+
+{{ define "css-extra" }}
+  {{- $c := resources.Get "css/cronologia.css" | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $c.Permalink }}" integrity="{{ $c.Data.Integrity }}">
+{{ end }}
