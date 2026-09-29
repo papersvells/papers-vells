@@ -303,11 +303,6 @@ h4 { font-size: var(--text-lg);  }
 }
 
 /* ── Icona Viquipèdia */
-.wikipedia-link--center {
-  display: block;
-  margin-top: var(--space-sm);
-}
-
 .wikipedia-link--left {
   display: inline-block;
   margin-top: var(--space-sm);
@@ -323,10 +318,6 @@ h4 { font-size: var(--text-lg);  }
   padding: 0.35rem 0.6rem;
   box-shadow: var(--shadow-sm);
   transition: transform 0.25s var(--ease-out), box-shadow 0.25s ease;
-}
-
-.wikipedia-link--center .wikipedia-icon {
-  margin: 0 auto;
 }
 
 a:hover .wikipedia-icon {
@@ -1107,10 +1098,10 @@ a:hover .wikipedia-icon {
 
 
 /* ── 11. PÀGINA D'AUTOR ────────────────────────────────────── */
-.autor-header {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
+/* Targeta compartida per autor, publicació i qüestió */
+.autor-header,
+.publicacio-header,
+.questio-header {
   background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -1122,12 +1113,20 @@ a:hover .wikipedia-icon {
 }
 
 /* Barra accent vertical a l'esquerra */
-.autor-header::before {
+.autor-header::before,
+.publicacio-header::before,
+.questio-header::before {
   content: "";
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
   background: var(--color-accent);
+}
+
+.autor-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
 }
 
 .autor-header__avatar {
@@ -1394,17 +1393,28 @@ a:hover .wikipedia-icon {
 
 /* ── 14. PÀGINA INDIVIDUAL DE PUBLICACIÓ ───────────────────── */
 .publicacio-header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   margin-bottom: var(--space-lg);
 }
 
+/* Caixa de reserva del logo (alçada fixa → sense CLS).
+   El logo s'hi centra amb contain. */
+.publicacio-header__logo-wrap {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+}
+
 .publicacio-header__logo {
-  max-width: 600px;   /* mai més ample que 600px */
-  max-height: 200px;  /* mai més alt que 200px */
-  width: auto;        /* amplada automàtica segons proporcions */
-  height: auto;       /* alçada automàtica segons proporcions */
-  margin: 0 auto var(--space-md);  /* centrat + espai a sota */
-  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 /* ── 15. SCROLL INFINIT ───────────────────────────────────── */
@@ -1521,12 +1531,15 @@ html.js .card-hidden {
     text-align: center;
   }
   /* La barra accent passa a horitzontal a dalt */
-  .autor-header::before {
+  .autor-header::before,
+  .publicacio-header::before,
+  .questio-header::before {
     inset: 0 0 auto 0;
     width: auto;
     height: 4px;
   }
   .autor-header__info { text-align: center; }
+  .publicacio-header .autor-header__info { text-align: left; }
   .autor-header__name {
     font-size: 1.7rem;
     text-align: center;
@@ -1552,8 +1565,7 @@ html.js .card-hidden {
     padding-right: var(--space-sm);
   }
 
-  .publicacio-header__logo { max-width: 280px; }
-  .publicacio-header__intro { font-size: 1.8rem; }
+  .publicacio-header__logo-wrap { height: 140px; }
   .publicacio-card__frame { --frame-height: 104px; }
 
   .publicacions-grid { grid-template-columns: 1fr; max-width: 560px; }
@@ -1777,7 +1789,6 @@ html.js .card-hidden {
   .skip-link,
   .article-byline__avatar,
   .autor-header__avatar,
-  .wikipedia-link--center,
   .wikipedia-link--left,
   .fitxa__compartir {
     display: none !important;

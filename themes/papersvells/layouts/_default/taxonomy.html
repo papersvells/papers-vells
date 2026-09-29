@@ -294,31 +294,36 @@
           CAPÇALERA DE PUBLICACIÓ — logo gran centrat
         */}}
         <header class="publicacio-header">
-          <img class="publicacio-header__logo"
-               src="/images/publicacions/{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Title | urlize }}{{ end }}.webp"
-               alt=""
-               fetchpriority="high"
-               decoding="async"
-               onerror="this.style.display='none'">
+          <h1 class="sr-only">{{ .Title | replaceRE `\bI\b` "i" }}</h1>
+          <div class="publicacio-header__logo-wrap">
+            <img class="publicacio-header__logo"
+                 src="/images/publicacions/{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Title | urlize }}{{ end }}.webp"
+                 alt=""
+                 fetchpriority="high"
+                 decoding="async"
+                 onerror="this.style.display='none'">
+          </div>
+          <div class="publicacio-header__text">
             <p class="autor-header__info">{{ len $articles }} {{ cond (eq (len $articles) 1) "article publicat" "articles publicats" }}</p>
           {{ with .Params.bio }}
             <div class="autor-bio">
               {{ . | markdownify }}
             </div>
           {{ end }}
-          {{/* Icona Viquipèdia centrada — només si existeix el camp */}}
+          {{/* Icona Viquipèdia a l'esquerra — només si existeix el camp */}}
           {{ with .Params.wikipedia }}
             <a href="{{ . }}"
                target="_blank"
                rel="noopener noreferrer"
                aria-label="Article a la Viquipèdia en català"
-               class="wikipedia-link--center">
+               class="wikipedia-link--left">
               <img src="/images/wikipedia.webp"
                    alt="Viquipèdia"
                    width="457" height="80" decoding="async"
                    class="wikipedia-icon">
             </a>
           {{ end }}
+          </div>
         </header>
 
       {{ else if eq .Type "questions" }}
