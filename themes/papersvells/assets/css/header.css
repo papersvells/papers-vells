@@ -28,6 +28,7 @@
   max-width: 800px;
   width: 100%;
   height: auto;
+  aspect-ratio: 1200 / 104;
   display: inline-block;
   margin-top: var(--space-sm);
   margin-bottom: 0;
@@ -303,6 +304,7 @@
   /* Logo més petit */
   .site-header__logo {
     max-width: 280px;
+    aspect-ratio: 400 / 263;
     order: 2;
   }
 

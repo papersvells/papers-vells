@@ -349,9 +349,9 @@
           class="site-header__logo"
           src="/images/logo-horitzontal.webp"
           alt="Papers Vells"
-          width="600"
-          height="80"
-          fetchpriority="high"
+          width="1200"
+          height="104"
+          {{ if not .Params.image }}fetchpriority="high"{{ end }}
         >
       </picture>
     </a>

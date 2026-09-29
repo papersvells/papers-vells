@@ -205,7 +205,7 @@
 
           <a class="publicacio-card" href="{{ $termPage.Permalink }}">
             <div class="publicacio-card__frame">
-              <img class="publicacio-card__logo" loading="lazy"
+              <img class="publicacio-card__logo" loading="lazy" decoding="async"
                    src="/images/publicacions/{{ with $termPage.File }}{{ .ContentBaseName | urlize }}{{ else }}{{ $termPage.Title | urlize }}{{ end }}.webp"
                    alt=""
                    onerror="this.style.display='none'">
@@ -294,9 +294,11 @@
           CAPÇALERA DE PUBLICACIÓ — logo gran centrat
         */}}
         <header class="publicacio-header">
-          <img class="publicacio-header__logo" loading="lazy"
+          <img class="publicacio-header__logo"
                src="/images/publicacions/{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Title | urlize }}{{ end }}.webp"
                alt=""
+               fetchpriority="high"
+               decoding="async"
                onerror="this.style.display='none'">
             <p class="autor-header__info">{{ len $articles }} {{ cond (eq (len $articles) 1) "article publicat" "articles publicats" }}</p>
           {{ with .Params.bio }}
@@ -313,6 +315,7 @@
                class="wikipedia-link--center">
               <img src="/images/wikipedia.webp"
                    alt="Viquipèdia"
+                   width="457" height="80" decoding="async"
                    class="wikipedia-icon">
             </a>
           {{ end }}
@@ -376,6 +379,7 @@
                  class="wikipedia-link--left">
                 <img src="/images/wikipedia.webp"
                      alt="Viquipèdia"
+                     width="457" height="80" decoding="async"
                      class="wikipedia-icon">
               </a>
             {{ end }}
