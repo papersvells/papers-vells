@@ -27,6 +27,9 @@ capitalizeListTitles = false
   quality        = 75
   hint           = 'photo'
 
+[frontmatter]
+  lastmod = ['publicat', ':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
