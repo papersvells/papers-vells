@@ -1548,19 +1548,25 @@ html.js .card-hidden {
   .publicacions-grid { grid-template-columns: 1fr; max-width: 560px; }
 
   .llista-articles li {
+    position: relative;
     font-size: 1.05rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
   }
+  /* Tota la fila és clicable en mòbil: l'overlay del títol s'estira
+     sobre la fila i qualsevol toc obre l'article. */
+  .llista-articles li > a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  .llista-articles li:active {
+    background: var(--color-accent-faint);
+  }
   .llista-articles .meta {
     font-size: 0.9rem;
     white-space: normal;
-  }
-  .llista-articles .meta a {
-    color: var(--color-ink-light);
-    text-decoration: none;
-    pointer-events: none;
   }
 
   /* ── Qüestions — índex mòbil ─────────────────────────── */
