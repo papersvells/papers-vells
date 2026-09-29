@@ -208,9 +208,8 @@
               {{ $pubSlug := "" }}
               {{ with $termPage.File }}{{ $pubSlug = .ContentBaseName | urlize }}{{ else }}{{ $pubSlug = $termPage.Title | urlize }}{{ end }}
               {{ with resources.Get (printf "images/publicacions/%s.webp" $pubSlug) }}
-                {{ $logo := .Resize "600x webp" }}
                 <img class="publicacio-card__logo" loading="lazy" decoding="async"
-                     src="{{ $logo.RelPermalink }}"
+                     src="{{ .RelPermalink }}"
                      alt="">
               {{ end }}
               <div class="publicacio-card__overlay">
@@ -303,9 +302,8 @@
             {{ $pubSlug := "" }}
             {{ with .File }}{{ $pubSlug = .ContentBaseName | urlize }}{{ else }}{{ $pubSlug = .Title | urlize }}{{ end }}
             {{ with resources.Get (printf "images/publicacions/%s.webp" $pubSlug) }}
-              {{ $logo := .Resize "600x webp" }}
               <img class="publicacio-header__logo"
-                   src="{{ $logo.RelPermalink }}"
+                   src="{{ .RelPermalink }}"
                    alt=""
                    fetchpriority="high"
                    decoding="async">
