@@ -1,5 +1,6 @@
 baseURL           = 'https://papers-vells.pages.dev/'
-locale            = 'ca'
+defaultContentLanguage = 'ca'
+locale            = 'ca-ES'
 title             = 'Papers Vells'
 theme             = 'papersvells'
 removePathAccents = true
