@@ -1195,6 +1195,9 @@ a:hover .wikipedia-icon {
 
 /* El títol ocupa l'espai disponible a l'esquerra */
 .llista-articles li > a {
+  flex: 1 1 auto;      /* ocupa l'espai que deixa la meta */
+  min-width: 0;        /* permet que el text faci wrap dins del flex */
+  text-align: left;    /* alineació esquerra explícita */
   color: var(--color-ink);
   font-weight: 500;
   font-size: var(--text-sm);
