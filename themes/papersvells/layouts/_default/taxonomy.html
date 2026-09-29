@@ -469,7 +469,7 @@
                 {{ with .Params.autors }}
                 {{ range $i, $a := . }}
                 {{ if $i }}, {{ end }}
-                  <a href="/autors/{{ $a | urlize }}/">{{ $a }}</a>
+                  <a href="/{{ $a | urlize }}/">{{ $a }}</a>
                 {{ end }}
                 {{ end }}
                 · {{ .Date.Format "02/01/2006" }}
