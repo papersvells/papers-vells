@@ -355,6 +355,10 @@ a:hover .wikipedia-icon {
   margin-bottom: var(--space-md);
   border-radius: var(--radius-lg);
   transition: opacity 0.45s ease-out, transform 0.2s ease-out, background-color 0.2s ease-out;
+  /* El navegador s'omet de maquetar/pintar les targetes fora de pantalla
+     a la portada (296 targetes). Reserva ~320px fins que recorda la real. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 320px;
 }
 
 .article-card__title {
