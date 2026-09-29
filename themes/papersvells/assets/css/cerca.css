@@ -101,46 +101,6 @@
   margin: 0 0 var(--space-sm);
 }
 
-.cerca__llista {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.cerca__llista li {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: var(--space-sm);
-  padding: var(--space-xs) 0;
-  border-bottom: 1px dotted var(--color-rule);
-}
-
-.cerca__llista li:last-child {
-  border-bottom: none;
-}
-
-.cerca__llista a {
-  font-weight: 500;
-  font-size: 1.4rem;
-  color: var(--color-ink);
-  text-decoration: none;
-  transition: color var(--transition);
-}
-
-.cerca__llista a:hover {
-  color: var(--color-accent);
-}
-
-.cerca__llista .meta {
-  font-size: 1.2rem;
-  color: var(--color-ink-faded);
-  font-style: italic;
-  white-space: nowrap;
-  text-align: right;
-  flex-shrink: 0;
-}
-
 /* ── Icona de lupa al menú ─────────────────────────────── */
 .site-nav__cerca {
   display: flex;
@@ -167,13 +127,5 @@
   }
   .cerca__input {
     font-size: 1.3rem;
-  }
-  /* En mòbil el meta torna a línea nova perquè l'espai és limitat */
-  .cerca__llista li {
-    flex-wrap: wrap;
-  }
-  .cerca__llista .meta {
-    white-space: normal;
-    flex-shrink: 1;
   }
 }
