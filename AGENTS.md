@@ -32,36 +32,40 @@ pugui haver canviat la sintaxi. Si una dada no hi apareix, digues-ho.
 papersvells/
 ├── hugo.toml                  # Configuració del lloc
 ├── content/                   # TOT el contingut
-│   ├── *.md                   # ~265 articles (arrel directa, NO en subcarpetes)
-│   ├── autors/                # 100 autors, cadascun amb _index.md
+│   ├── *.md                   # ~296 articles (arrel directa, NO en subcarpetes)
+│   ├── autors/                # 101 autors, cadascun amb _index.md
 │   │   └── <nom-slug>/_index.md
 │   ├── publicacions/          # 34 publicacions, cadascuna amb _index.md
 │   │   └── <nom-slug>/_index.md
+│   ├── categoria/, questions/ # Altres taxonomies (amb _index.md)
+│   ├── cronologia/_index.md   # Pàgina del timeline
 │   ├── projecte/_index.md      # Pàgina estática "El Projecte"
 │   └── cerca/_index.md        # Pàgina de cerca (outputs: html, json)
+├── assets/                    # Recursos que Hugo processa (site-level)
+│   └── images/
+│       ├── articles/          # ~296 imatges d'article (900×450; el timeline en fa thumbs 120px)
+│       └── publicacions/      # 34 logos de publicació (600px, servits directament)
 ├── themes/papersvells/        # El tema custom
 │   ├── layouts/
-│   │   ├── _default/          # baseof.html, single.html, list.html, taxonomy.html
+│   │   ├── _default/          # baseof.html, single.html, list.html, taxonomy.html, 404.html
 │   │   ├── _partials/fitxa.html
 │   │   ├── index.html         # Portada (scroll infinit)
 │   │   ├── cerca/             # list.html (UI), list.json (índex cerca)
+│   │   ├── cronologia/list.html
 │   │   ├── projecte/list.html
 │   │   └── shortcodes/estadistiques.html
-│   ├── assets/css/            # main.css, header.css, cerca.css
-│   ├── assets/js/main.js      # Només un console.log
+│   ├── assets/
+│   │   ├── css/               # main.css, header.css, cerca.css, cronologia.css
+│   │   └── js/                # menu.js, header-scroll.js, cerca.js, portada.js, cronologia.js, fitxa.js
 │   └── static/
-│       ├── js/                # menu.js, header-scroll.js, cerca.js
-│       ├── fonts/             # Alegreya (Regular, Italic, Medium, Bold, BoldItalic), Rubik, Alegreya-Sans
+│       ├── fonts/             # Alegreya (Regular, Italic, Medium, Bold, BoldItalic), Rubik Mono One, Alegreya-Sans
 │       └── images/
 │           ├── autors/        # Fotos dels autors (webp)
-│           ├── publicacions/  # Logos de les publicacions (webp)
-│           ├── articles/      # Imatges dels articles (webp)
 │           ├── logo-horitzontal.webp
 │           ├── logo-vertical.webp
 │           ├── og-default.webp
-│           ├── lupa.webp, twpv.webp, wikipedia.webp, arca.webp
-│           └── articles/
-├── static/                    # Favicon, robots.txt, apple-touch-icon
+│           └── lupa.webp, twpv.webp, wikipedia.webp, arca.webp
+├── static/                    # Favicon, robots.txt, apple-touch-icon, _headers
 ├── public/                    # Output del build (gitignore)
 └── data/                      # Buit
 ```
@@ -136,8 +140,10 @@ wikipedia: "https://ca.wikipedia.org/wiki/La_Veu_de_Catalunya"
 
 - Articles: `YYYY-MM-DD_publicacio_autor_-_titol.md` (guions, sense accents al fitxer)
 - Imatges d'autors: `<slug-sense-accents>.webp` (mateix nom que el directori)
-- Imatges de publicacions: `<slug>.webp`
-- Imatges d'articles: `<mateix-nom-del-fitxer-md>.webp`
+- Imatges de publicacions: `<slug>.webp` — **600px d'ample** (es serveixen directament, sense
+  resize de Hugo; exporta sempre els logos nous a 600px). Virolles a `assets/images/publicacions/`
+- Imatges d'articles: `<mateix-nom-del-fitxer-md>.webp` (900×450, a `assets/images/articles/`;
+  el timeline en genera miniatures de 120px amb `images.Fill`)
 
 ## IMPORTANT: carpetes de termes amb accents/apòstrofs
 
@@ -167,9 +173,14 @@ el nom **EXACTE del terme** tal com apareix als articles (ex: `Lluís Nicolau d'
 
 ## CSS i JS
 
-- **CSS:** 3 fitxers concatenats via Hugo Pipes: `header.css` + `main.css` + `cerca.css` → `bundle.css` (minified + fingerprinted)
-- **JS (static):** `menu.js` (hamburguesa), `header-scroll.js` (hide on scroll), `cerca.js` (cerca client-side)
-- **Font principal:** Alegreya (serif) + Rubik (metadades) + Alegreya-Sans (nav)
+- **CSS:** bundles via Hugo Pipes. `base.css` = `header.css` + `main.css` (a totes les pàgines);
+  `cerca.css` (a `/cerca/` i 404) i `cronologia.css` (a `/cronologia/`) es carreguen només on cal,
+  via el bloc `css-extra` de `baseof.html`. Minified + fingerprinted.
+- **JS (`themes/papersvells/assets/js/`):** `principal.js` = concatenació de `menu.js` (hamburguesa)
+  i `header-scroll.js` (hide on scroll), a totes les pàgines. Específics: `portada.js`,
+  `cronologia.js`, `fitxa.js`, `cerca.js`. Minified + fingerprinted; només queda inline el
+  `documentElement.classList.add('js')` del `<head>`.
+- **Font principal:** Alegreya (serif) + Rubik Mono One (metadades) + Alegreya-Sans (nav)
 - **Color accent:** `#973330` (vermell fosc)
 
 ## Cerca
@@ -182,8 +193,9 @@ Funciona 100% client-side:
 ## Notes importants
 
 - L'ordenació de la portada és per `Params.publicat` (data de pujada al web), NO per `Date` (data històrica)
-- El camp `autors_citats` permet trobar articles on surt un autor esmentat (veure `taxonomy.html` línia 455+)
+- El camp `autors_citats` permet trobar articles on surt un autor esmentat (secció «Ha estat citat en…» de `taxonomy.html`)
 - El shortcode `{{< estadistiques >}}` mostra xifres del projecte (articles, autors, publicacions, període)
 - El theme NO té fitxer `theme.toml` ni `package.json` — és totalment custom
-- `public/` està al `.gitignore`
-- Script de desplegament: `pujar-a-github.sh` (git add + commit + push)
+- `.gitignore`: `public/`, `/resources/_gen/`, `/.hugo_build.lock`, `/skills-lock.json`. `public/` ja no es versiona
+- Script de desplegament (a la carpeta pare): `pujar-a-github.sh` (git add + commit + push)
+- L'Hugo local i el de Cloudflare Pages han d'anar lligats (Cloudflare: `HUGO_VERSION = 0.164.0`)
