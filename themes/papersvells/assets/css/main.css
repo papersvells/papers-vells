@@ -967,9 +967,6 @@ a:hover .wikipedia-icon {
     order: 2;
   }
 
-  .article-columna p {
-    margin-top: -1rem;
-  }
   .fitxa {
     order: 1;
     position: static;
@@ -1454,8 +1451,12 @@ html.js .card-hidden {
 
   .article-body,
   .page-body {
-    line-height: 1.1;
+    line-height: 1.2;
     font-size: var(--text-lg);
+  }
+
+  .article-body {
+    margin-top: var(--space-md);
   }
 
   /* Navegació entre articles: apilada i amb interlínia més compacta */
