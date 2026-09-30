@@ -11,7 +11,6 @@
 {{ $ultim := index ($articles.ByDate.Reverse) 0 }}
 {{ $anyInicial := $primer.Date.Year }}
 {{ $anyFinal := $ultim.Date.Year }}
-{{ $anys := add (sub $anyFinal $anyInicial) 1 }}
 
 <div class="estadistiques">
 
@@ -36,7 +35,7 @@
 
     <div class="estadistiques__fila">
       <dt>Període documentat</dt>
-      <dd>{{ $anys }} anys ({{ $anyInicial }}–{{ $anyFinal }})</dd>
+      <dd>{{ $anyInicial }}–{{ $anyFinal }}</dd>
     </div>
 
   </dl>
