@@ -210,7 +210,7 @@
               {{ with resources.Get (printf "images/publicacions/%s.webp" $pubSlug) }}
                 <img class="publicacio-card__logo" loading="lazy" decoding="async"
                      src="{{ .RelPermalink }}"
-                     alt="">
+                     alt="{{ $termPage.Title }}">
               {{ end }}
               <div class="publicacio-card__overlay">
                 <span class="autor-card__count">{{ $count }} articles</span>

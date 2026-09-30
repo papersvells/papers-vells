@@ -78,6 +78,11 @@
              0 4px 14px -8px rgba(32, 25, 19, 0.18);
 }
 
+/* ── SELECCIÓ DE TEXT ─────────────────────────────────────── */
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
 
 /* ── 2. FONT FACE ─────────────────────────────────────────── */
 @font-face {
