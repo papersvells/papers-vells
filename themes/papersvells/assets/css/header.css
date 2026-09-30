@@ -111,6 +111,12 @@
   padding: 0 var(--space-xs);
 }
 
+/* Contenidor de les icones (cerca + xarxes) */
+.site-nav__icones {
+  display: flex;
+  align-items: center;
+}
+
 /* ── DESCOBRIR: desplegable amb bocadillo còmic ───────────── */
 .site-nav__descrubre {
   position: relative;
@@ -338,7 +344,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(247, 247, 247, 0.97);
+    background-color: rgba(247, 247, 247, 0.98);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border-top: 1px solid var(--color-rule);
@@ -414,6 +420,29 @@
   /* Sense fletxa a mòbil */
   .site-nav__globus a::after {
     display: none;
+  }
+
+  /* Icones (cerca + xarxes): fila centrada, amb filete discontinu a sobre */
+  .site-nav.is-open .site-nav__icones {
+    position: relative;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-xs);
+    padding-top: var(--space-sm);
+  }
+
+  .site-nav.is-open .site-nav__icones::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3rem;
+    border-top: 1px dashed var(--color-border);
+  }
+
+  .site-nav.is-open .site-nav__icones a {
+    padding: var(--space-xs);
   }
 
 }

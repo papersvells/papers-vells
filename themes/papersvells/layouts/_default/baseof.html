@@ -406,24 +406,26 @@
         {{ end }}
       {{ end }}
 
-      <a href="/cerca/"
-         aria-label="Cerca"
-         class="site-nav__cerca"
-         {{ if eq $.RelPermalink "/cerca/" }}aria-current="page"{{ end }}>
-        <img src="/images/lupa.webp"
-             alt=""
-             width="20" height="20">
-      </a>
+      <div class="site-nav__icones">
+        <a href="/cerca/"
+           aria-label="Cerca"
+           class="site-nav__cerca"
+           {{ if eq $.RelPermalink "/cerca/" }}aria-current="page"{{ end }}>
+          <img src="/images/lupa.webp"
+               alt=""
+               width="20" height="20">
+        </a>
 
-      <a href="https://x.com/papersvells"
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Papers Vells a Twitter/X"
-         class="site-nav__twitter">
-        <img src="/images/twpv.webp"
-             alt="Twitter/X"
-             width="20" height="20">
-      </a>
+        <a href="https://x.com/papersvells"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Papers Vells a Twitter/X"
+           class="site-nav__twitter">
+          <img src="/images/twpv.webp"
+               alt="Twitter/X"
+               width="20" height="20">
+        </a>
+      </div>
     </nav>
 
   </header>
