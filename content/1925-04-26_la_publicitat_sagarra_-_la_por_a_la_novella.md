@@ -4,6 +4,7 @@ autors: ["Josep Maria de Sagarra"]
 publicacions: ["La Publicitat"]
 date: 1925-04-26
 categoria: "Opinió"
+questions: ["El debat sobre la novel·la catalana"]
 publicat: 2021-05-17
 slug: "josep-maria-de-sagarra/la-por-a-la-novel-la"
 draft: false

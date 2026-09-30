@@ -5,6 +5,7 @@ autors_citats: ["Josep Carner", "Joan Puig i Ferreter", "Josep Pla", "Josep Mari
 publicacions: ["D'ací i d'allà"]
 date: 1925-06-01
 categoria: "Entrevista"
+questions: ["El debat sobre la novel·la catalana"]
 publicat: 2019-09-18
 slug: "carles-soldevila/conversa-paris-barcelona"
 draft: false

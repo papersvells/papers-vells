@@ -5,6 +5,7 @@ autors_citats: ["Carles Soldevila", "Josep Carner", "Josep Maria Junoy", "Joan P
 publicacions: ["La Veu de Catalunya"]
 date: 1925-06-07
 categoria: "Opinió"
+questions: ["El debat sobre la novel·la catalana"]
 publicat: 2021-05-16
 slug: "carles-riba/una-generacio-sense-novel-la"
 draft: false
