@@ -105,10 +105,16 @@
   vertical-align: middle;
 }
 
-.site-nav__twitter {
+.site-nav__twitter,
+.site-nav__rss {
   display: flex;
   align-items: center;
   padding: 0 var(--space-xs);
+}
+
+.site-nav__rss img {
+  width: 20px;
+  height: 20px;
 }
 
 /* Contenidor de les icones (cerca + xarxes) */
