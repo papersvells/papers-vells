@@ -683,10 +683,6 @@ a:hover .wikipedia-icon {
 .fitxa__questio {
   font-weight: 500;
   line-height: 1.35;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.16em;
-  text-decoration-color: color-mix(in srgb, var(--color-accent) 45%, transparent);
 }
 .fitxa__publicacio:hover,
 .fitxa__categoria:hover,
