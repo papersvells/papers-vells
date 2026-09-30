@@ -112,6 +112,15 @@
         que a la vista individual, per si Hugo no relaciona
         directament .Pages amb el terme (accents, etc.).
       */}}
+      <header class="section-header">
+        <h1 class="section-header__title">{{ .Title }}</h1>
+        {{ with .Content }}
+          <div class="section-header__desc">
+            {{ . }}
+          </div>
+        {{ end }}
+      </header>
+
       <div class="questions-grid questions-grid--questio">
         {{ range .Data.Terms.Alphabetical }}
 
@@ -558,7 +567,7 @@
 
           <h1 class="autor-header__name autor-header__name--accent">Ha col·laborat en {{ len $qüestionsAutor }} {{ cond (eq (len $qüestionsAutor) 1) "qüestió" "qüestions" }}</h1>
 
-          <div class="questions-grid questions-grid--questio">
+      <div class="questions-grid questions-grid--questio">
             {{ range $qüestionsAutor }}
 
               {{ $termPage := .page }}
