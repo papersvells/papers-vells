@@ -711,7 +711,7 @@ a:hover .wikipedia-icon {
 }
 
 /* Ratlla discontínua després de l'autor (primer bloc de l'acordió) */
-.fitxa__contingut-ocult > .fitxa__bloc:first-child {
+.fitxa__contingut-inner > .fitxa__bloc:first-child {
   margin-top: 0.95rem;
   padding-top: 0.95rem;
   border-top: 1px dashed var(--color-border);
@@ -999,6 +999,25 @@ a:hover .wikipedia-icon {
   .fitxa__resum {
     display: grid;
     gap: 0.4rem;
+  }
+
+  /* Desplegament animat de l'acordió (alçada 0fr → 1fr) */
+  .fitxa__expandible .fitxa__contingut-ocult {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    transition: grid-template-rows 0.3s var(--ease-out), visibility 0s 0.3s;
+  }
+
+  .fitxa__contingut-inner {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .fitxa__expandible[open] .fitxa__contingut-ocult {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    transition-delay: 0s;
   }
 
   .fitxa__publicacio {
@@ -1691,6 +1710,11 @@ html.js .card-hidden {
   /* Evita scroll suau (pot marejar) */
   html {
     scroll-behavior: auto;
+  }
+
+  /* Acordió de la fitxa: obertura/tancament instantanis */
+  .fitxa__expandible .fitxa__contingut-ocult {
+    transition: none;
   }
 
   /* Manté transicions curtes (només color) */
