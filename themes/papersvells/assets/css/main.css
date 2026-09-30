@@ -516,13 +516,17 @@ a:hover .wikipedia-icon {
 
 /* Capital inicial (drop cap) opcional */
 .article-body p:first-of-type::first-letter {
-  font-size: 5.4rem;        /* fallback per navegadors antics */
-  font-size: 4.5lh;        /* ocupa exactament 4 línies — suport modern */
+  font-size: 5.4rem;        /* ≈ 2 línies, mida consistent a tots els navegadors */
   font-weight: 400;
   float: left;
-  line-height: 0.8;         /* compensa l'espai intern de la lletra */
-  margin: 0.06em 0.08em 0 0;
+  line-height: 0.9;         /* alineació del glif amb la primera línia */
+  margin: 0.05em 0.12em 0 0;
   color: var(--color-accent);
+}
+
+/* El segon paràgraf mai no sagna sota la capital: sempre arrenca al marge */
+.article-body p:first-of-type + p {
+  clear: left;
 }
 
 /* ── Qüestions — graella de targetes ───────────────────────── */
