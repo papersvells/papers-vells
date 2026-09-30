@@ -332,7 +332,7 @@ a:hover .wikipedia-icon {
 
 /* ── 7. CONTINGUT PRINCIPAL ───────────────────────────────── */
 .site-main {
-  padding: var(--space-sm) 0 var(--space-xl);
+  padding: var(--space-sm) 0 var(--space-md);
 }
 
 /* ── 8. GRAELLA D'ARTICLES (portada) ──────────────────────── */
