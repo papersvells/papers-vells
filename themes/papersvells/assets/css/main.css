@@ -1497,9 +1497,14 @@ html.js .card-hidden {
     text-align: center;
   }
 
+  .article-hero {
+    width: min(92%, var(--max-wide));
+    margin-inline: auto;
+  }
+
   .article-hero__img {
-    border-radius: 0;
-    box-shadow: none;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
   }
 
   .article-hero__title--sota {
