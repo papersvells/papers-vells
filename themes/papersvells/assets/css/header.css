@@ -437,8 +437,8 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 3rem;
-    border-top: 1px dashed var(--color-border);
+    width: 4.5rem;
+    border-top: 1px dashed var(--color-accent);
   }
 
   .site-nav.is-open .site-nav__icones a {
