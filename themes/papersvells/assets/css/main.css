@@ -903,6 +903,19 @@ a:hover .wikipedia-icon {
   outline-offset: 2px;
 }
 
+/* El text del summary canvia en desplegar-se */
+.fitxa__summary-text--menys {
+  display: none;
+}
+
+.fitxa__expandible[open] .fitxa__summary-text--mes {
+  display: none;
+}
+
+.fitxa__expandible[open] .fitxa__summary-text--menys {
+  display: inline;
+}
+
 .fitxa__summary::-webkit-details-marker {
   display: none;
 }
