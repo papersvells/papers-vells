@@ -623,6 +623,14 @@ a:hover .wikipedia-icon {
   border-radius: inherit;
 }
 
+/* Categoria: graella més estreta a escriptori (targetes ~20% menors) */
+@media (min-width: 901px) {
+  .questions-grid--categoria {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
 /* ── Navegació entre articles (single.html) ────────────────── */
 .article-nav {
   display: flex;
