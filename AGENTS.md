@@ -12,6 +12,17 @@ hugo          # build a public/
 hugo server   # servidor local
 ```
 
+## Git: cada commit s'ha de pujar
+
+**Sempre que es faci un commit, cal pujar-lo a GitHub immediatament** (no deixar
+commits locals pendents). El desplegament a Cloudflare Pages depèn del push a
+`origin/main`.
+
+```bash
+git push          # o bé:
+../pujar-a-github.sh   # git add + commit + push (script de desplegament)
+```
+
 ## Documentació de Hugo (Context7)
 
 El servidor MCP `context7` ja està configurat globalment. **Abans de respondre
