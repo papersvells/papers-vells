@@ -4,6 +4,7 @@ autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-19
 categoria: "Reportatge"
+questions: ["Xammar: Jornades a la conca del Ruhr"]
 publicat: 2020-01-03
 slug: "eugeni-xammar/la-resistencia-dels-minaires"
 draft: false

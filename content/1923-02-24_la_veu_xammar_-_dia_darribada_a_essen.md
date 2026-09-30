@@ -4,6 +4,7 @@ autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-02-24
 categoria: "Reportatge"
+questions: ["Xammar: Jornades a la conca del Ruhr"]
 publicat: 2019-12-25
 slug: "eugeni-xammar/dia-d-arribada-a-essen"
 draft: false

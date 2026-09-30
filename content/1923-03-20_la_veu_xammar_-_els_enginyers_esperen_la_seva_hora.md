@@ -4,6 +4,7 @@ autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-20
 categoria: "Reportatge"
+questions: ["Xammar: Jornades a la conca del Ruhr"]
 publicat: 2020-01-05
 slug: "eugeni-xammar/els-enginyers-esperen-la-seva-hora"
 draft: false

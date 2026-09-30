@@ -4,6 +4,7 @@ autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-02
 categoria: "Reportatge"
+questions: ["Xammar: Jornades a la conca del Ruhr"]
 publicat: 2019-12-28
 slug: "eugeni-xammar/l-ocupacio-d-una-ciutat"
 draft: false
