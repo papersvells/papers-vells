@@ -2,11 +2,6 @@
    CRONOLOGIA — timeline vertical (cronologia/list.html)
    ============================================================= */
 
-/* Scroll suau quan es clica un any a la barra de densitat */
-html {
-  scroll-behavior: smooth;
-}
-
 /* ── 1. HERO ─────────────────────────────────────────────── */
 .crono-hero__sub {
   font-family: 'Rubik', sans-serif;
