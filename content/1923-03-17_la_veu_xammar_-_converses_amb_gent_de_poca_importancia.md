@@ -4,7 +4,7 @@ autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-03-17
 categoria: "Reportatge"
-questions: ["Xammar: Jornades a la conca del Ruhr"]
+questions: ["Xammar — Jornades a la conca del Ruhr"]
 publicat: 2019-12-31
 slug: "eugeni-xammar/converses-amb-gent-de-poca-importancia"
 draft: false

@@ -4,7 +4,7 @@ autors: ["Eugeni Xammar"]
 publicacions: ["La Veu de Catalunya"]
 date: 1923-04-04
 categoria: "Reportatge"
-questions: ["Xammar: Jornades a la conca del Ruhr"]
+questions: ["Xammar — Jornades a la conca del Ruhr"]
 publicat: 2020-01-08
 slug: "eugeni-xammar/de-la-nova-guerra-a-la-nova-pau-ii"
 draft: false
