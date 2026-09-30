@@ -177,15 +177,23 @@
         (.questions-grid / .questio-card): la targeta és
         idèntica, simplement no emplenem el paràgraf de l'any.
       */}}
-      <div class="questions-grid">
+      {{/* Recompte màxim per escalar les barres (respecte al 100%) */}}
+      {{ $maxCount := 1 }}
+      {{ range .Data.Terms.Alphabetical }}
+        {{ if gt .Count $maxCount }}{{ $maxCount = .Count }}{{ end }}
+      {{ end }}
+
+      <div class="questions-grid questions-grid--categoria">
         {{ range .Data.Terms.Alphabetical }}
 
           {{ $termPage := .Page }}
           {{ $count := .Count }}
+          {{ $pct := math.Round (mul 100 (div (float $count) (float $maxCount))) }}
 
           <a class="questio-card" href="{{ $termPage.Permalink }}">
             <h2 class="questio-card__title">{{ $termPage.Title }}</h2>
             <p class="questio-card__count">{{ $count }} articles</p>
+            <span class="questio-card__bar"><span style="width: {{ $pct }}%"></span></span>
           </a>
 
         {{ end }}
