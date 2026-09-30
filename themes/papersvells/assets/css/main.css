@@ -1290,7 +1290,7 @@ a:hover .wikipedia-icon {
 
 /* Nom de l'autor */
 .autor-card__name {
-  font-size: var(--text-sm);
+  font-size: var(--text-ss);
   text-align: center;
   line-height: 1.3;
   min-height: calc(3 * 1.3 * 1em);
