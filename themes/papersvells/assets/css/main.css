@@ -1003,6 +1003,8 @@ a:hover .wikipedia-icon {
     /* text 720 + fitxa 290 + gap, centrat; en finestres estretes s'encongeix */
     width: min(96%, calc(var(--hero-max) + 290px + clamp(1.2rem, 3vw, 2.2rem)));
     margin-inline: auto;
+    /* més aire entre el menú i la imatge/fitxa (només article, escriptori) */
+    margin-top: var(--space-md);
   }
   .article-hero {
     grid-column: 1;
