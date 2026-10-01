@@ -30,6 +30,8 @@
 
   /* Amplada de la capçalera (logo horitzontal + filetes del menú) */
   --header-max: 720px;
+  /* Amplada de la imatge hero de l'article a escriptori */
+  --hero-max: 720px;
 
   /* Tipografia */
   --font-body:    'Alegreya', Georgia, serif;
@@ -428,6 +430,13 @@ a:hover .wikipedia-icon {
   width: 100%;
   max-width: var(--max-content);
   margin: 0 auto;
+}
+
+/* Escriptori: hero més compacte, alineat amb la capçalera (mòbil intacte) */
+@media (min-width: 901px) {
+  .article-hero {
+    max-width: var(--hero-max);
+  }
 }
 
 .article-hero__img {

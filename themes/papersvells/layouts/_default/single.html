@@ -5,15 +5,21 @@
 {{/* IMATGE DE CAPÇALERA*/}}
 {{ with .Params.image }}
   {{ with resources.Get (printf "images/articles/%s" .) }}
+    {{ $hero720 := .Resize "720x webp q82" }}
     <div class="article-hero">
-      <img
-        class="article-hero__img"
-        src="{{ .RelPermalink }}"
-        alt="{{ $.Title }}"
-        width="900" height="450"
-        fetchpriority="high"
-        decoding="async"
-      >
+      <picture>
+        <source media="(min-width: 901px)"
+                srcset="{{ $hero720.RelPermalink }}"
+                width="720" height="360">
+        <img
+          class="article-hero__img"
+          src="{{ .RelPermalink }}"
+          alt="{{ $.Title }}"
+          width="900" height="450"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </picture>
     </div>
   {{ end }}
 {{ else }}
