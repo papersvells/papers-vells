@@ -999,6 +999,11 @@ a:hover .wikipedia-icon {
 
 /* ── Fitxa: escriptori (≥ 901px) ───────────────────────────── */
 @media (min-width: 901px) {
+  /* Alineem la part superior de la fitxa amb la del títol */
+  .fitxa {
+    margin-top: var(--space-md);
+  }
+
   /* Amaguem el summary */
   .fitxa__summary {
     display: none;
