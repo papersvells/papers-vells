@@ -672,7 +672,9 @@ a:hover .wikipedia-icon {
   /* Sagnat dels valors (els camps queden a x=0) — només escriptori */
   --fitxa-indent: calc(0.6rem + 1px);
   position: sticky;
-  top: calc(var(--space-xl) + 5rem);
+  /* Just sota la capçalera (~117.6px) i per sota del top de l'article (~130px):
+     si fos més gran, el sticky desplaçaria la fitxa ja al primer píxel. */
+  top: 7.75rem;
   background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
