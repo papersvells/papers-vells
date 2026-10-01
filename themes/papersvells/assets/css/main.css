@@ -432,13 +432,6 @@ a:hover .wikipedia-icon {
   margin: 0 auto;
 }
 
-/* Escriptori: hero més compacte, alineat amb la capçalera (mòbil intacte) */
-@media (min-width: 901px) {
-  .article-hero {
-    max-width: var(--hero-max);
-  }
-}
-
 .article-hero__img {
   width: 100%;
   height: auto;
@@ -999,9 +992,33 @@ a:hover .wikipedia-icon {
 
 /* ── Fitxa: escriptori (≥ 901px) ───────────────────────────── */
 @media (min-width: 901px) {
-  /* Alineem la part superior de la fitxa amb la del títol */
+  /* Imatge i text en una sola columna (720) + fitxa a la dreta.
+     El conjunt queda centrat (sobreïx de la capçalera per esquerra i dreta). */
+  .article-layout {
+    grid-template-columns: minmax(0, var(--hero-max)) 290px;
+    grid-template-rows: auto auto;
+    row-gap: 0;
+    /* text 720 + fitxa 290 + gap, centrat; en finestres estretes s'encongeix */
+    width: min(96%, calc(var(--hero-max) + 290px + clamp(1.2rem, 3vw, 2.2rem)));
+    margin-inline: auto;
+  }
+  .article-hero {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+  .article-columna {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .article-layout--sense-hero .article-columna {
+    grid-row: 1 / span 2;
+  }
   .fitxa {
-    margin-top: var(--space-md);
+    grid-column: 2;
+    grid-row: 1 / span 2;
   }
 
   /* Amaguem el summary */
@@ -1038,16 +1055,23 @@ a:hover .wikipedia-icon {
 
   .article-layout {
     grid-template-columns: 1fr;
+    row-gap: 0;                       /* espais reproduïts amb marges */
     margin-inline: auto;
     width: min(92%, var(--max-wide));
   }
 
+  /* Ordre visual (igual que abans): imatge → fitxa → títol/cos */
+  .article-hero {
+    order: 1;
+  }
+
   .article-columna {
-    order: 2;
+    order: 3;
+    margin-top: clamp(1.2rem, 3vw, 2.2rem);  /* = row-gap antic */
   }
 
   .fitxa {
-    order: 1;
+    order: 2;
     position: static;
     margin-top: var(--space-xxs);
     background: var(--color-card);
@@ -1537,7 +1561,6 @@ html.js .card-hidden {
 
 /* ── 16. MEDIA QUERIES ────────────────────────────────────── */
 @media (min-width: 901px) and (max-width: 1100px) {
-  .article-layout { grid-template-columns: minmax(0, 1fr) 260px; }
   .articles-grid { column-count: 3; }
   .autors-grid { grid-template-columns: repeat(5, 1fr); }
 }
@@ -1598,8 +1621,8 @@ html.js .card-hidden {
   }
 
   .article-hero {
-    width: min(92%, var(--max-wide));
-    margin-inline: auto;
+    width: 100%;
+    margin: 0;
   }
 
   .article-hero__img {
