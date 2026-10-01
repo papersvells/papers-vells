@@ -592,7 +592,7 @@ a:hover .wikipedia-icon {
 
 .questio-card__anys {
   font-family: 'Rubik', sans-serif;
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
   color: var(--color-accent);
 }
 
@@ -623,10 +623,14 @@ a:hover .wikipedia-icon {
   border-radius: inherit;
 }
 
-/* Categoria: graella més estreta a escriptori (targetes ~20% menors) */
+/* A escriptori: categoria ~20% més estreta, qüestions ~10% més estretes */
 @media (min-width: 901px) {
   .questions-grid--categoria {
     width: 80%;
+    margin-inline: auto;
+  }
+  .questions-grid--questio {
+    width: 90%;
     margin-inline: auto;
   }
 }
@@ -1701,7 +1705,7 @@ html.js .card-hidden {
 
   .questio-card__anys {
     letter-spacing: -0.08em;
-    font-size: var(--text-ss);
+    font-size: var(--text-xs);
   }
 
   .questio-item a {
