@@ -28,6 +28,9 @@
   --color-rule-strong: #cbbd9f;  /* vora en hover de les targetes */
   --color-accent-faint: rgba(151, 51, 48, 0.045);  /* fons de fila en hover */
 
+  /* Amplada de la capçalera (logo horitzontal + filetes del menú) */
+  --header-max: 720px;
+
   /* Tipografia */
   --font-body:    'Alegreya', Georgia, serif;
   --font-display: 'Alegreya', Georgia, serif;
