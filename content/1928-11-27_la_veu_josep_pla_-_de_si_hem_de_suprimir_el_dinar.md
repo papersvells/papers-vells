@@ -5,7 +5,7 @@ publicacions: ["La Veu de Catalunya"]
 date: 1928-11-27
 categoria: "Reportatge"
 publicat: 2026-10-04
-slug: "josep-pla/de-si-hem-de-suprimir-el-dinar
+slug: "josep-pla/de-si-hem-de-suprimir-el-dinar"
 draft: false
 image: "1928-11-27_la_veu_josep_pla_-_de_si_hem_de_suprimir_el_dinar.webp"
 ---
