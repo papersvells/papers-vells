@@ -315,7 +315,7 @@
 
   /* Logo més petit */
   .site-header__logo {
-    max-width: 252px;
+    max-width: 200px;
     aspect-ratio: 400 / 263;
     order: 2;
   }
