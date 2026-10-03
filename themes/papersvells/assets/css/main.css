@@ -272,6 +272,21 @@ h4 { font-size: var(--text-lg);  }
   margin-block: var(--space-xl);
 }
 
+/* ── Floritura separadora de seccions (fitxa d'autor) ─────── */
+.floritura {
+  display: block;
+  margin: 2rem auto;
+  width: 150px;
+  height: auto;
+  opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+  .floritura {
+    width: 120px;
+  }
+}
+
 /* ── Estadístiques del projecte ───────────────────────────── */
 
 .estadistiques {
