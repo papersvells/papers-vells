@@ -120,6 +120,35 @@
   opacity: 0.6;
 }
 
+/* ── Pàgina 404 comprimida ─────────────────────────────── */
+/* Comprimim l'espaiat vertical i pugem una mica el "404". */
+.error-404 {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+.error-404__codi {
+  margin-bottom: 0;
+}
+.error-404__titol {
+  margin-bottom: 0.8rem;
+}
+.error-404 .floritura {
+  margin: 1.25rem auto 1.5rem;
+}
+.error-404 .cerca__form {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.error-404 .cerca__label {
+  margin-bottom: 0.5rem;
+}
+.error-404 .cerca__estat {
+  margin: 1rem 0 1.5rem;
+}
+.error-404__tornar {
+  margin-top: 1.5rem;
+}
+
 /* ── Responsive ────────────────────────────────────────── */
 @media (max-width: 900px) {
   .cerca__title {
