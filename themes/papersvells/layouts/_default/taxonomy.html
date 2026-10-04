@@ -122,6 +122,10 @@
       </header>
 
       <div class="questions-grid questions-grid--questio">
+
+        {{/* Recollim totes les targetes per ordenar-les cronològicament
+             (any d'inici → any final → títol) abans de renderitzar-les */}}
+        {{ $targetes := slice }}
         {{ range .Data.Terms.Alphabetical }}
 
           {{ $termPage := .Page }}
@@ -154,16 +158,28 @@
             {{ $anyFinal = (index $pagesOrdenades (sub (len $pagesOrdenades) 1)).Date.Format "2006" }}
           {{ end }}
 
-          <a class="questio-card" href="{{ $termPage.Permalink }}">
-            <h2 class="questio-card__title">{{ $termPage.Title }}</h2>
-            {{ if and $anyInici $anyFinal }}
+          {{/* "9999" defensiu: si una qüestió no tingués articles, va al final.
+               La clau concatena anys i títol perquè sort la faci servir d'ordre */}}
+          {{ $targetes = $targetes | append (dict
+              "page" $termPage
+              "count" $count
+              "anyInici" (default "9999" $anyInici)
+              "anyFinal" (default "9999" $anyFinal)
+              "clau" (printf "%s-%s-%s" (default "9999" $anyInici) (default "9999" $anyFinal) $termPage.Title)
+          ) }}
+
+        {{ end }}
+
+        {{ range sort $targetes "clau" "asc" }}
+          <a class="questio-card" href="{{ .page.Permalink }}">
+            <h2 class="questio-card__title">{{ .page.Title }}</h2>
+            {{ if and .anyInici .anyFinal }}
               <p class="questio-card__anys">
-                {{ if eq $anyInici $anyFinal }}{{ $anyInici }}{{ else }}{{ $anyInici }}–{{ $anyFinal }}{{ end }}
+                {{ if eq .anyInici .anyFinal }}{{ .anyInici }}{{ else }}{{ .anyInici }}–{{ .anyFinal }}{{ end }}
               </p>
             {{ end }}
-            <p class="questio-card__count">{{ $count }} articles</p>
+            <p class="questio-card__count">{{ .count }} articles</p>
           </a>
-
         {{ end }}
       </div>
 
@@ -565,7 +581,16 @@
           {{ end }}
 
           {{ if gt (len $meus) 0 }}
-            {{ $qüestionsAutor = $qüestionsAutor | append (dict "page" $termPage "meus" $meus) }}
+            {{/* Clau cronològica amb els anys dels articles de l'autor,
+                 per ordenar les qüestions del més antic al més recent */}}
+            {{ $meusPerData := $meus.ByDate }}
+            {{ $anyIniciMeu := (index $meusPerData 0).Date.Format "2006" }}
+            {{ $anyFinalMeu := (index $meusPerData (sub (len $meusPerData) 1)).Date.Format "2006" }}
+            {{ $qüestionsAutor = $qüestionsAutor | append (dict
+                "page" $termPage
+                "meus" $meus
+                "clau" (printf "%s-%s-%s" $anyIniciMeu $anyFinalMeu $termPage.Title)
+            ) }}
           {{ end }}
 
         {{ end }}
@@ -577,7 +602,7 @@
           <h1 class="autor-header__name autor-header__name--accent">Ha col·laborat en {{ len $qüestionsAutor }} {{ cond (eq (len $qüestionsAutor) 1) "qüestió" "qüestions" }}</h1>
 
       <div class="questions-grid questions-grid--questio">
-            {{ range $qüestionsAutor }}
+            {{ range sort $qüestionsAutor "clau" "asc" }}
 
               {{ $termPage := .page }}
               {{ $meusPerData := .meus.ByDate }}
