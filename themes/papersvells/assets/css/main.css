@@ -1934,6 +1934,11 @@ html.js .card-hidden {
 }
 
 /* ── 19. IMPRESSIÓ ───────────────────────────────────────── */
+@page {
+  size: A4;
+  margin: 2cm;
+}
+
 @media print {
 
   /* Oculta tot el que no és contingut */
@@ -1943,14 +1948,13 @@ html.js .card-hidden {
   .article-byline__avatar,
   .autor-header__avatar,
   .wikipedia-link--left,
-  .fitxa__compartir {
+  .fitxa__compartir,
+  .fitxa__avatar,
+  .fitxa__summary,
+  .fitxa__bloc--difon,
+  .fitxa__bloc--mes,
+  .article-nav {
     display: none !important;
-  }
-
-  /* La fitxa perd sticky i ombra en paper */
-  .fitxa {
-    position: static;
-    box-shadow: none;
   }
 
   /* Fons blanc, tinta negra */
@@ -1961,16 +1965,8 @@ html.js .card-hidden {
     line-height: 1.5;
   }
 
-  /* Una sola columna */
-  .articles-grid {
-    column-count: 1;
-  }
-
-  /* Cos de l'article llegible */
-  .article-body {
-    font-size: 11pt;
+  img {
     max-width: 100%;
-    hyphens: auto;
   }
 
   /* Els enllaços no necessiten color en paper */
@@ -1979,15 +1975,98 @@ html.js .card-hidden {
     text-decoration: none;
   }
 
+  /* Una sola columna */
+  .articles-grid {
+    column-count: 1;
+  }
+
+  /* L'article: hero a dalt, títol, cos i fitxa al final */
+  .article-layout {
+    display: block;
+    width: 100%;
+  }
+
+  .article-hero {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .article-hero__img {
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Títol de l'article gran i clar (amb i sense imatge) */
+  .article-hero__title--sota,
+  .article-titol {
+    font-size: 20pt;
+    line-height: 1.15;
+    margin: 0.6rem 0 0.8rem;
+  }
+
+  /* Cos de l'article llegible */
+  .article-body {
+    font-size: 11.5pt;
+    max-width: 100%;
+    hyphens: auto;
+  }
+
+  /* Fitxa: nota documental al final, sense capsa */
+  .fitxa {
+    position: static;
+    width: 100%;
+    margin: 1.5rem 0 0;
+    padding: 1rem 0 0;
+    background: none;
+    border: none;
+    border-top: 2px solid #000000;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 10pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .fitxa::before {
+    display: none;
+  }
+
+  .fitxa__bloc p,
+  .fitxa__bloc > .fitxa__autor,
+  .fitxa__compartir {
+    padding-left: 0;
+  }
+
+  .fitxa__meta {
+    padding-right: 0;
+  }
+
+  /* Etiquetes sempre visibles (també si es ve des de la vista mòbil) */
+  .fitxa__bloc--principal .fitxa__camp {
+    display: block;
+  }
+
+  /* L'acordió sempre desplegat, sense fletxa */
+  .fitxa__expandible {
+    display: block;
+  }
+
+  .fitxa__expandible .fitxa__contingut-ocult {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .fitxa__contingut-inner {
+    min-height: 0;
+    overflow: visible;
+  }
+
   /* Evita tallar paràgrafs entre pàgines */
   p, li {
     orphans: 3;
     widows: 3;
     page-break-inside: avoid;
-  }
-
-  /* Títol de l'article gran i clar */
-  .article-hero__title--sota {
-    font-size: 18pt;
+    break-inside: avoid;
   }
 }

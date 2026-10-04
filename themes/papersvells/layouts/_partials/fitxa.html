@@ -129,7 +129,7 @@
         {{ $articlesAutor = first 3 (sort $articlesAutor "Date" "desc") }}
 
         {{ if gt (len $articlesAutor) 0 }}
-      <section class="fitxa__bloc">
+      <section class="fitxa__bloc fitxa__bloc--mes">
         <h3 class="fitxa__camp">Més articles de {{ $autor }}</h3>
           <ul class="fitxa__llista">
             {{ range $articlesAutor }}
@@ -142,7 +142,7 @@
         {{ end }}
       {{ end }}
 
-      <section class="fitxa__bloc">
+      <section class="fitxa__bloc fitxa__bloc--difon">
         <h3 class="fitxa__camp">Difon aquest article</h3>
         <div class="fitxa__compartir">
           <button
