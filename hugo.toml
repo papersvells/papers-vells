@@ -5,7 +5,6 @@ title             = 'Papers Vells'
 theme             = 'papersvells'
 removePathAccents = true
 preserveTaxonomyNames = true
-enableRobotsTXT = true
 capitalizeListTitles = false
 
 [pagination]
