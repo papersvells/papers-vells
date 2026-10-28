@@ -17,7 +17,7 @@ Aixís passaren días y setmanas y mesos y fins anys... quan un matí'm sorpreng
 
 Aquella mateixa tarda, á posta de sol, els homes havian ja acabat sa feyna: quatre teulas novas, las vellas gratadas de molsa, y'l panell adobat... Peró de quina manera! Adressat, lluhent que semblava nou! Y cóm girava á dreta y esquerar'l malehit! Y ab quín dalit grinyolava després de tants anys de forsat silenci!... Y rim!... Y ram!... Y torna, y gira, y regira!... No vaig poderme aguantar, y més dejorn que'ls altres días vaig retirarme dels finestrons amohinat per aquell continuu grinyolar.
 
-Peró vingué l'endemá, y dematí y tada y vespre sempre'l panell, rim, ram, ara per aquí, ara per allá, ara despay, ara més depressa, no deixantme contemplar el *meu* panorama, ni bressar las mevas ilusions, ni descansar á la nit, que no feya més que somniar ab el reconsagrat panell!
+Peró vingué l'endemá, y dematí y tarda y vespre sempre'l panell, rim, ram, ara per aquí, ara per allá, ara despay, ara més depressa, no deixantme contemplar el *meu* panorama, ni bressar las mevas ilusions, ni descansar á la nit, que no feya més que somniar ab el reconsagrat panell!
 
 Tres días vaig soportarlo! Al quart, no podent més, vaig resoldre anar á la casa del devant y encararme ab el vehí propietari, que va resultar ser un senyor de bon regent, d'uns cinquanta anys, acomodat, tossut y egoísta.
 
@@ -25,7 +25,7 @@ Tres días vaig soportarlo! Al quart, no podent més, vaig resoldre anar á la c
 
 ―El propietari, sí senyor ―me va contestar. ¿Que se li ofereix?
 
-―Poca cosa ―vaig afegir ab el to més amable y melós que vaig poder trobar. A dalt al terrat, devant per devant del balcó ahont un servidor trevalla, fa tres días qu'han adobat aquell panell que sempre havía vist quiet y tranquil...
+―Poca cosa ―vaig afegir ab el to més amable y melós que vaig poder trobar. A dalt al terrat, devant per devant del balcó ahont un servidor treballa, fa tres días qu'han adobat aquell panell que sempre havía vist quiet y tranquil...
 
 ―Bé, ¿y qué? ―va contestarme aquell panxacontenta.
 

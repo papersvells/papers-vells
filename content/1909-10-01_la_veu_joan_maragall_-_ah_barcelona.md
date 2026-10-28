@@ -25,7 +25,7 @@ Aquesta hauria sigut la nostra última paraula ―y no'n caldría ni una més―
 
 Y posantnos en el món d'aquí y el de ara, comencen per preguntarnos: ―¿Còm és que, aquesta y altres coses que passen a Barcelona, no passen en tal grau en cap més banda?
 
-¿Còm és que de Barcelona se'n diu ja arreu «la ciutat de les bombes», y ara de poch se n'ha dit «la ciutat famosa infame»? No'm vinguessiu ab allò de que'ls que fàn el mal son forasters, perque llavores os hauría de dir que major infamia que en ferlo hi ha en sofrirlo. Donchs, deixemho còrrer això: som nosaltres. ¿Per què?
+¿Còm és que de Barcelona se'n diu ja arreu «la ciutat de les bombes», y ara de poch se n'ha dit «la ciutat famosa infame»? No'm vinguessiu ab allò de que'ls que fàn el mal son forasters, perque llavores os hauría de dir que major infamia que en ferlo hi ha en sofrirlo. Donchs, deixemho córrer això: som nosaltres. ¿Per què?
 
 Aquesta és una qüestió, en sustancia, d'educació y pel prompte de policía, y per tant de l'Estat, ¿no és això?; sobre tot la última. Perque si cada ciutadà s'ha de posar a fer d'espía y armarse a casa seva pera anar a trets ab el vehí o ab la turba del carrer, potser li sortiría més a compte anarsen a viure al Riff o, si vol treballar en pau, mudarse a un país més civilisat. Donchs, aquesta és una qüestió d'administració pública; però que està dominada per una causa geogràfica.
 
