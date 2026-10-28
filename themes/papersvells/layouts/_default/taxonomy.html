@@ -72,16 +72,19 @@
         */}}
         {{ $pagines := sort (where .Data.Pages "Params.cognom" "!=" nil) "Params.cognom" "asc" }}
 
+        {{/* Recompte d'articles per terme, precalculat una sola vegada.
+          Claus urlized per relacionar "Lluís" (articles) amb "lluis" (_index.md).
+        */}}
+        {{ $recompte := dict }}
+        {{ range $key, $value := $.Data.Terms }}
+          {{ $recompte = merge $recompte (dict ($key | urlize) $value.Count) }}
+        {{ end }}
+
         {{ range $pagines }}
 
-          {{/* Recompte d'articles: comparem urlize per relacionar "Lluís" (articles) amb "lluis" (_index.md) */}}
-          {{ $count := 0 }}
+          {{/* Recompte d'articles: consulta directa al diccionari precalculat */}}
           {{ $currentTitle := .Title }}
-          {{ range $key, $value := $.Data.Terms }}
-            {{ if eq ($key | urlize) ($currentTitle | urlize) }}
-              {{ $count = $value.Count }}
-            {{ end }}
-          {{ end }}
+          {{ $count := index $recompte ($currentTitle | urlize) | default 0 }}
 
           <a class="autor-card" href="{{ .Permalink }}">
             <div class="autor-card__foto-wrapper">
@@ -131,23 +134,8 @@
           {{ $termPage := .Page }}
           {{ $count := .Count }}
 
-          {{/* Recerca dels articles de la qüestió, amb fallback manual */}}
-          {{ $pagesQ := $termPage.Pages }}
-          {{ if eq (len $pagesQ) 0 }}
-            {{ $nomBuscat := $termPage.Title }}
-            {{ $slugBuscat := $termPage.Title | urlize }}
-            {{ $pagesQ = where site.RegularPages "Params.questions" "intersect" (slice $nomBuscat) }}
-            {{ if eq (len $pagesQ) 0 }}
-              {{ range site.RegularPages }}
-                {{ $page := . }}
-                {{ range .Params.questions }}
-                  {{ if eq (. | urlize) $slugBuscat }}
-                    {{ $pagesQ = $pagesQ | append $page }}
-                  {{ end }}
-                {{ end }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
+          {{/* .Pages del WeightedPages: surt del front matter, no del _index.md */}}
+          {{ $pagesQ := .Pages }}
 
           {{/* Càlcul de l'any (o rang d'anys) a partir dels articles trobats */}}
           {{ $anyInici := "" }}
@@ -276,48 +264,13 @@
       {{/* Recerca primària */}}
       {{ $articles := .Pages }}
 
-      {{/* Recerca alternativa si la primera ha fallat */}}
-{{ if eq (len $articles) 0 }}
-  {{ $nomBuscat := .Title }}
-  {{ $slugBuscat := .Title | urlize }}
-  {{ if eq .Type "publicacions" }}
-    {{ $articles = where .Site.RegularPages "Params.publicacions" "intersect" (slice $nomBuscat) }}
-    {{ if eq (len $articles) 0 }}
-      {{ range .Site.RegularPages }}
-        {{ $page := . }}
-        {{ range .Params.publicacions }}
-          {{ if eq (. | urlize) $slugBuscat }}
-            {{ $articles = $articles | append $page }}
-          {{ end }}
-        {{ end }}
+      {{/* Xarxa de seguretat: si Hugo no ha adoptat el _index.md del terme,
+           consultem el mapa de taxonomia (clau en minúscules) en lloc de
+           recórrer els 298 articles tres vegades. */}}
+      {{ if eq (len $articles) 0 }}
+        {{ $termes := index site.Taxonomies .Data.Plural }}
+        {{ $articles = ($termes.Get .Title).Pages }}
       {{ end }}
-    {{ end }}
-  {{ else if eq .Type "questions" }}
-    {{ $articles = where .Site.RegularPages "Params.questions" "intersect" (slice $nomBuscat) }}
-    {{ if eq (len $articles) 0 }}
-      {{ range .Site.RegularPages }}
-        {{ $page := . }}
-        {{ range .Params.questions }}
-          {{ if eq (. | urlize) $slugBuscat }}
-            {{ $articles = $articles | append $page }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ else }}
-    {{ $articles = where .Site.RegularPages "Params.autors" "intersect" (slice $nomBuscat) }}
-    {{ if eq (len $articles) 0 }}
-      {{ range .Site.RegularPages }}
-        {{ $page := . }}
-        {{ range .Params.autors }}
-          {{ if eq (. | urlize) $slugBuscat }}
-            {{ $articles = $articles | append $page }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end }}
       
       {{/*
         Bifurcació de capçalera segons el tipus:
@@ -551,23 +504,8 @@
 
           {{ $termPage := .Page }}
 
-          {{/* Articles de la qüestió, amb el mateix fallback manual que la vista global */}}
-          {{ $pagesQ := $termPage.Pages }}
-          {{ if eq (len $pagesQ) 0 }}
-            {{ $nomBuscat := $termPage.Title }}
-            {{ $slugBuscat := $termPage.Title | urlize }}
-            {{ $pagesQ = where site.RegularPages "Params.questions" "intersect" (slice $nomBuscat) }}
-            {{ if eq (len $pagesQ) 0 }}
-              {{ range site.RegularPages }}
-                {{ $page := . }}
-                {{ range .Params.questions }}
-                  {{ if eq (. | urlize) $slugBuscat }}
-                    {{ $pagesQ = $pagesQ | append $page }}
-                  {{ end }}
-                {{ end }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
+          {{/* Articles de la qüestió: .Pages del WeightedPages */}}
+          {{ $pagesQ := .Pages }}
 
           {{/* Articles de la qüestió escrits per aquest autor */}}
           {{ $meus := slice }}

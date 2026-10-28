@@ -119,8 +119,8 @@
       {{ end }}
 
       {{ with $autor }}
-        {{/* 1. Cerca robusta d'articles per autor (segura amb accents) */}}
-        {{ $articlesAutor := where site.RegularPages "Params.autors" "intersect" (slice $autor) }}
+        {{/* 1. Articles de l'autor via l'índex de taxonomia (consulta O(1)) */}}
+        {{ $articlesAutor := (site.Taxonomies.autors.Get $autor).Pages }}
         
         {{/* 2. Exclou l'article actual */}}
         {{ $articlesAutor = where $articlesAutor "RelPermalink" "!=" $pagina.RelPermalink }}
