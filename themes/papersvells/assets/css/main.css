@@ -353,7 +353,9 @@ h4 { font-size: var(--text-lg);  }
   background: #fff;
   border: 1px solid var(--color-border);
   border-radius: 12px;
-  padding: 0.35rem 0.6rem;
+  /* Padding asimètric a posta: el punt volat del logo fa de descendent, així que
+     el pes visual de les lletres queda alt. Baixem el logo ~2,4px dins la insígnia. */
+  padding: 0.5rem 0.6rem 0.2rem;
   box-shadow: var(--shadow-sm);
   transition: transform 0.25s var(--ease-out), box-shadow 0.25s ease;
 }
