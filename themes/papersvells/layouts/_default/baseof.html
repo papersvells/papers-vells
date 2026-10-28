@@ -121,14 +121,14 @@
   {{/*
     ── CAS 1: ARTICLE ──────────────────────────────────────
   */}}
-  {{- $autorNom := "" -}}
+  {{- $autorNom := index .Params.autors 0 | default "" -}}
   {{- $autorURL := "" -}}
   {{- $autorWikipedia := "" -}}
-  {{- with .Params.autors -}}
-    {{- $autorNom = index . 0 -}}
-    {{- $autorSlug := $autorNom | urlize -}}
-    {{- $autorPage := site.GetPage (printf "/autors/%s" $autorSlug) -}}
-    {{- with $autorPage -}}
+  {{/* .GetTerms resol la pàgina del terme directament: no cal construir cap
+       ruta amb urlize, que percent-encodeja els accents ("Víctor Català" →
+       "v%C3%ADctor...") i feia fallar site.GetPage en silenci. */}}
+  {{- with .GetTerms "autors" -}}
+    {{- with index . 0 -}}
       {{- $autorURL = .Permalink -}}
       {{- $autorWikipedia = .Params.wikipedia | default "" -}}
     {{- end -}}
