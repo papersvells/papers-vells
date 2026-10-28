@@ -10,6 +10,14 @@ capitalizeListTitles = false
 [pagination]
   pagerSize = 1000
 
+# Un sol feed RSS: el dels articles publicats a la portada (/index.xml).
+# Sense RSS a seccions ni a taxonomies: 152 fitxers que no llegia ningú.
+[outputs]
+  home     = ['html', 'rss']
+  section  = ['html']
+  taxonomy = ['html']
+  term     = ['html']
+
 [taxonomies]
   autors       = 'autors'
   publicacions = 'publicacions'

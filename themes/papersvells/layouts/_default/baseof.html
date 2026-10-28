@@ -334,21 +334,13 @@
     ─────────────────────────────────────────────────────────
     RSS — descoberta automàtica del feed
     ─────────────────────────────────────────────────────────
-    Hugo genera /index.xml automàticament. Aquesta línia
-    permet als lectors de RSS i navegadors detectar-lo.
-    En pàgines de terme (autor, publicació) apunta al feed
-    específic d'aquell terme.
+    Hi ha un sol feed, el dels articles publicats (/index.xml),
+    i s'anuncia a totes les pàgines.
     ─────────────────────────────────────────────────────────
   */}}
-  {{- if or (eq .Kind "term") (eq .Kind "taxonomy") }}
-  <link rel="alternate" type="application/rss+xml"
-        title="{{ $pageTitle }} · {{ .Site.Title }}"
-        href="{{ .Permalink }}index.xml">
-  {{- else }}
   <link rel="alternate" type="application/rss+xml"
         title="{{ .Site.Title }}"
         href="{{ .Site.BaseURL }}index.xml">
-  {{- end }}
 
 </head>
 <body>
