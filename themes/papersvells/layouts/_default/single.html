@@ -5,24 +5,23 @@
 {{/* IMATGE + COS DE L'ARTICLE + FITXA + NAVEGACIÓ (mateix contenidor sticky) */}}
 <div class="article-layout{{ if not .Params.image }} article-layout--sense-hero{{ end }}">
 
-  {{/* IMATGE DE CAPÇALERA*/}}
+  {{/* IMATGE DE CAPÇALERA
+       Una sola variant de 720 px per a tots els dispositius: la columna hero
+       fa 720 px com a màxim a l'escriptori (--hero-max) i ~400-430 px al mòbil,
+       així que 720 ja cobreix els dos casos. Abans el mòbil baixava l'original
+       de 900 px (mediana 54 KB enfront de 36 KB). */}}
   {{ with .Params.image }}
     {{ with resources.Get (printf "images/articles/%s" .) }}
       {{ $hero720 := .Resize "720x webp q82" }}
       <div class="article-hero">
-        <picture>
-          <source media="(min-width: 901px)"
-                  srcset="{{ $hero720.RelPermalink }}"
-                  width="720" height="360">
-          <img
-            class="article-hero__img"
-            src="{{ .RelPermalink }}"
-            alt="{{ $.Title }}"
-            width="900" height="450"
-            fetchpriority="high"
-            decoding="async"
-          >
-        </picture>
+        <img
+          class="article-hero__img"
+          src="{{ $hero720.RelPermalink }}"
+          alt="{{ $.Title }}"
+          width="720" height="360"
+          fetchpriority="high"
+          decoding="async"
+        >
       </div>
     {{ end }}
   {{ end }}
