@@ -75,9 +75,7 @@
 
     if (q.length < 2) {
       seccio.hidden = true;
-      estat.textContent = q.length === 0
-        ? ''
-        : '';
+      estat.textContent = '';
       return;
     }
 

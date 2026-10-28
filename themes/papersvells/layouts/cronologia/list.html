@@ -20,17 +20,6 @@
   {{ $articles := site.RegularPages.ByDate }}
   {{ $grups    := $articles.GroupByDate "2006" }}
   {{ $grups     = sort $grups "Key" "asc" }}
-  {{ $total    := len $articles }}
-  {{ $primer   := index $articles 0 }}
-  {{ $ultim    := index $articles (sub (len $articles) 1) }}
-  {{ $numAutors := len site.Taxonomies.autors }}
-
-  {{/* Màxima densitat per escalar barres i nodes */}}
-  {{ $max := 0 }}
-  {{ range $grups }}
-    {{ $n := len .Pages }}
-    {{ if gt $n $max }}{{ $max = $n }}{{ end }}
-  {{ end }}
 
   {{/* Contador global per a l'alternança esquerra/dreta */}}
   {{ $i := 0 }}

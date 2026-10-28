@@ -1,5 +1,3 @@
-{{ $articles := len site.RegularPages }}
-
 {{ $autors := len (where site.Pages "Params.cognom" "!=" nil) }}
 
 {{ $publicacions := where site.Pages "Section" "publicacions" }}
