@@ -303,18 +303,34 @@
               {{ . | markdownify }}
             </div>
           {{ end }}
-          {{/* Icona Viquipèdia a l'esquerra — només si existeix el camp */}}
-          {{ with .Params.wikipedia }}
-            <a href="{{ . }}"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Article a la Viquipèdia en català"
-               class="wikipedia-link--left">
-              <img src="/images/wikipedia.webp"
-                   alt="Viquipèdia"
-                   width="457" height="80" decoding="async"
-                   class="wikipedia-icon">
-            </a>
+          {{/* Enllaços a fonts externes: facsímil a ARCA i article a la Viquipèdia */}}
+          {{ if or .Params.arca .Params.wikipedia }}
+          <div class="enllacos-fonts">
+            {{ with .Params.arca }}
+              <a href="{{ . }}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Consulta {{ $.Title }} a ARCA (obre en una pestanya nova)"
+                 class="enllac-font">
+                <img src="/images/arca.webp"
+                     alt="ARCA"
+                     width="256" height="71" decoding="async"
+                     class="arca-icon">
+              </a>
+            {{ end }}
+            {{ with .Params.wikipedia }}
+              <a href="{{ . }}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Article a la Viquipèdia en català"
+                 class="wikipedia-link--left">
+                <img src="/images/wikipedia.webp"
+                     alt="Viquipèdia"
+                     width="457" height="80" decoding="async"
+                     class="wikipedia-icon">
+              </a>
+            {{ end }}
+          </div>
           {{ end }}
           </div>
         </header>

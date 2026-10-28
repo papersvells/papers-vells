@@ -143,8 +143,18 @@ wikipedia: "https://ca.wikipedia.org/wiki/Josep_Pla_i_Casadevall"
 title: "La Veu de Catalunya"
 bio: "La Veu de Catalunya va ser un destacat diari..."
 wikipedia: "https://ca.wikipedia.org/wiki/La_Veu_de_Catalunya"
+arca: "https://arca.bnc.cat/arcabib_pro/ca/consulta/registro.do?id=2321"
 ---
 ```
+
+- `arca` és opcional: enllaç al registre de la publicació a ARCA (Arxiu de Revistes
+  Catalanes Antigues). Es mostra com a insígnia al costat de la de Viquipèdia i
+  s'afegeix al `sameAs` del JSON-LD. Ha de ser la URL completa
+  (`https://arca.bnc.cat/arcabib_pro/ca/consulta/registro.do?id=NNNN`), triada de
+  manera que el període del registre cobreixi els articles publicats al web
+  (algunes capçaleres tenen diversos registres, un per etapa). Per obtenir l'id:
+  cerca el títol a https://arca.bnc.cat, obre la fitxa i copia el `id=` de la URL
+  del registre
 
 ## Convencions de noms de fitxers
 

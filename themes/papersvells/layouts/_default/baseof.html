@@ -246,7 +246,9 @@
     {{- $seccioNom = "Publicacions" -}}
     {{- $seccioURL = printf "%spublicacions/" .Site.BaseURL -}}
   {{- end -}}
-  {{- $wikipedia := .Params.wikipedia | default "" -}}
+  {{- $sameAs := slice -}}
+  {{- with .Params.wikipedia }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+  {{- with .Params.arca }}{{ $sameAs = $sameAs | append . }}{{ end -}}
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -255,11 +257,11 @@
   "description": {{ $desc | htmlUnescape | plainify | truncate 160 | jsonify | safeJS }},
   "url": {{ .Permalink | jsonify | safeJS }},
   "inLanguage": "ca"
-  {{- if $wikipedia }},
+  {{- if $sameAs }},
   "about": {
     "@type": {{ if eq .Type "autors" }}"Person"{{ else }}"Periodical"{{ end }},
     "name": {{ $pageTitle | jsonify | safeJS }},
-    "sameAs": {{ $wikipedia | jsonify | safeJS }}
+    "sameAs": {{ $sameAs | jsonify | safeJS }}
   }
   {{- end }}
 }

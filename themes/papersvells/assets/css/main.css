@@ -333,6 +333,36 @@ h4 { font-size: var(--text-lg);  }
   margin-top: var(--space-sm);
 }
 
+/* ── Enllaços externs (ARCA + Viquipèdia) a la capçalera de publicació */
+.enllacos-fonts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--space-sm);
+}
+
+.enllacos-fonts .wikipedia-link--left {
+  margin-top: 0;
+}
+
+.arca-icon {
+  height: 15px;
+  width: auto;
+  display: block;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0.35rem 0.6rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s ease;
+}
+
+.enllacos-fonts a:hover .arca-icon {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
 .wikipedia-icon {
   width: 84px;
   height: auto;
@@ -1702,6 +1732,10 @@ html.js .card-hidden {
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+
+  .enllacos-fonts {
+    justify-content: center;
   }
 
   .autors-grid {
