@@ -43,10 +43,10 @@ pugui haver canviat la sintaxi. Si una dada no hi apareix, digues-ho.
 papersvells/
 ├── hugo.toml                  # Configuració del lloc
 ├── content/                   # TOT el contingut
-│   ├── *.md                   # ~296 articles (arrel directa, NO en subcarpetes)
+│   ├── *.md                   # 298 articles (arrel directa, NO en subcarpetes)
 │   ├── autors/                # 101 autors, cadascun amb _index.md
 │   │   └── <nom-slug>/_index.md
-│   ├── publicacions/          # 34 publicacions, cadascuna amb _index.md
+│   ├── publicacions/          # 35 publicacions, cadascuna amb _index.md
 │   │   └── <nom-slug>/_index.md
 │   ├── categoria/, questions/ # Altres taxonomies (amb _index.md)
 │   ├── cronologia/_index.md   # Pàgina del timeline
@@ -54,8 +54,8 @@ papersvells/
 │   └── cerca/_index.md        # Pàgina de cerca (outputs: html, json)
 ├── assets/                    # Recursos que Hugo processa (site-level)
 │   └── images/
-│       ├── articles/          # ~296 imatges d'article (900×450; el timeline en fa thumbs 120px)
-│       └── publicacions/      # 34 logos de publicació (600px, servits directament)
+│       ├── articles/          # 298 imatges d'article (900×450; hero a 720px, thumbs a 120px)
+│       └── publicacions/      # 35 logos de publicació (600px, servits directament)
 ├── themes/papersvells/        # El tema custom
 │   ├── layouts/
 │   │   ├── _default/          # baseof.html, single.html, list.html, taxonomy.html, 404.html
@@ -65,18 +65,17 @@ papersvells/
 │   │   ├── cronologia/list.html
 │   │   ├── projecte/list.html
 │   │   └── shortcodes/estadistiques.html
-│   ├── assets/
-│   │   ├── css/               # main.css, header.css, cerca.css, cronologia.css
-│   │   └── js/                # menu.js, header-scroll.js, cerca.js, portada.js, cronologia.js, fitxa.js
-│   └── static/
-│       ├── fonts/             # Alegreya (Regular, Italic, Medium, Bold, BoldItalic), Rubik Mono One, Alegreya-Sans
-│       └── images/
-│           ├── autors/        # Fotos dels autors (webp)
-│           ├── logo-horitzontal.webp
-│           ├── logo-vertical.webp
-│           ├── og-default.webp
-│           └── lupa.webp, twpv.webp, wikipedia.webp, arca.webp
-├── static/                    # Favicon, robots.txt, apple-touch-icon, _headers
+│   └── assets/
+│       ├── css/               # main.css, header.css, cerca.css, cronologia.css
+│       └── js/                # menu.js, header-scroll.js, cerca.js, portada.js, cronologia.js, fitxa.js
+├── static/                    # Fitxers servits tal qual (sense processar)
+│   ├── fonts/                 # Alegreya (Regular, Italic, Medium, Bold, BoldItalic), Rubik Mono One, Alegreya-Sans
+│   ├── images/
+│   │   ├── autors/            # Fotos dels autors (webp, 240×240)
+│   │   ├── logo-horitzontal.webp, logo-vertical.webp, og-default.jpg
+│   │   └── lupa.webp, twpv.webp, wikipedia.webp, arca.webp, floritura.webp, rsslogo.webp
+│   ├── _headers, _redirects
+│   └── favicon.ico, apple-touch-icon.png, robots.txt, icon-*.png, icon.svg
 ├── public/                    # Output del build (gitignore)
 └── data/                      # Buit
 ```
@@ -153,8 +152,9 @@ wikipedia: "https://ca.wikipedia.org/wiki/La_Veu_de_Catalunya"
 - Imatges d'autors: `<slug-sense-accents>.webp` (mateix nom que el directori)
 - Imatges de publicacions: `<slug>.webp` — **600px d'ample** (es serveixen directament, sense
   resize de Hugo; exporta sempre els logos nous a 600px). Virolles a `assets/images/publicacions/`
-- Imatges d'articles: `<mateix-nom-del-fitxer-md>.webp` (900×450, a `assets/images/articles/`;
-  el timeline en genera miniatures de 120px amb `images.Fill`)
+- Imatges d'articles: `<mateix-nom-del-fitxer-md>.webp` (900×450, a `assets/images/articles/`).
+  L'original fa de màster: el hero se serveix com a variant de 720px (`.Resize "720x webp q82"`)
+  i el timeline en genera miniatures de 120px amb `images.Fill`
 
 ## IMPORTANT: carpetes de termes amb accents/apòstrofs
 
