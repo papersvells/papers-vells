@@ -259,7 +259,7 @@
       Si retorna 0 articles, fem una recerca manual filtrant
       per l'array corresponent del frontmatter dels articles.
     */}}
-    <div class="container">
+    <div class="container{{ if or (eq .Type "autors") (eq .Type "publicacions") }} container--term{{ end }}">
 
       {{/* Recerca primària */}}
       {{ $articles := .Pages }}
