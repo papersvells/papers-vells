@@ -1,4 +1,4 @@
-baseURL           = 'https://papers-vells.pages.dev/'
+baseURL           = 'https://papersvells.cat/'
 defaultContentLanguage = 'ca'
 locale            = 'ca-ES'
 title             = 'Papers Vells'
