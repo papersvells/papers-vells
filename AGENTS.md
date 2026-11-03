@@ -2,7 +2,7 @@
 
 ## Què és
 
-Arxiu de premsa antiga catalana (1899–1938). Web estàtica feta amb **Hugo**, desplegada a **Cloudflare Pages** al domini **`https://papersvells.cat/`** (el domini de plataforma `papers-vells.pages.dev` també serveix el lloc, però el canònic és el domini propi). El tema és custom (no és un tema extern).
+Arxiu de premsa antiga catalana (1899–1938). Web estàtica feta amb **Hugo**, desplegada a **Cloudflare Pages** al domini **`https://papersvells.cat/`** (el canònic és el domini propi, sense `www`: tant `www.papersvells.cat` com `papers-vells.pages.dev` redirigeixen amb **301** cap aquí). El tema és custom (no és un tema extern).
 
 **`baseURL` de `hugo.toml` és la font de veritat de l'URL pública:** d'ella surten
 `rel=canonical`, `og:url`, `og:image`, els enllaços absoluts de CSS/JS/imatges i les
@@ -28,6 +28,86 @@ commits locals pendents). El desplegament a Cloudflare Pages depèn del push a
 git push          # o bé:
 ../pujar-a-github.sh   # git add + commit + push (script de desplegament)
 ```
+
+## Domini, canonical i redireccions
+
+**Domini canònic: `https://papersvells.cat/`**, sense `www`, amb barra final. Tres
+portes responen a DNS (àpex, `www` i `papers-vells.pages.dev`), però només l'àpex
+serveix contingut: les altres dues són 301 cap a ell.
+
+### Qui fa què
+
+| Capa | Funció | On viu |
+|---|---|---|
+| `baseURL = 'https://papersvells.cat/'` | Font de veritat de totes les URL absolutes | `hugo.toml` (repo) |
+| `{{ .Permalink }}` | `rel=canonical` de cada pàgina | `themes/.../baseof.html` |
+| `Sitemap:` | Assenyala el sitemap als cercadors | `static/robots.txt` |
+| Redirect Rule `www` | 301 de `www.*` a l'àpex | Cloudflare → zona → Rules → Redirect Rules |
+| Bulk Redirect `pages.dev` | 301 de `*.pages.dev` a l'àpex | Cloudflare → compte → Bulk Redirects |
+| Search Console | Domini verificat + sitemap enviat | Google Search Console |
+
+### Regla de `www` → àpex (zona)
+
+- *Request URL*: `https://www.papersvells.cat/*`
+- *Target URL*: `https://papersvells.cat/${1}`
+- *Status*: `301`, *Preserve query string*: ✓
+
+`${1}` és el *wildcard replacement* (l'`*` captura la resta de la ruta i `${1}` la
+torna a enganxar), així que una sola regla cobreix tots els articles. La plantilla
+del panell **"Redirigir de WWW a raíz"** ja ho genera.
+
+### Regla de `pages.dev` → àpex (compte)
+
+Llista de Bulk Redirects amb una entrada:
+
+| Source URL | Target URL | Status | Paràmetres |
+|---|---|---|---|
+| `papers-vells.pages.dev` | `https://papersvells.cat` | `301` | Preserve query string, **Subpath matching**, **Preserve path suffix** |
+
+- **Subpath matching** + **Preserve path suffix** són imprescindibles: sense elles,
+  `/josep-pla/…` cauria a la portada en lloc de conservar la ruta.
+- **Include subdomains** desactivat a propòsit: així els desplegaments de preview
+  (`<hash>.papers-vells.pages.dev`) segueixen accessibles per provar coses.
+- Una llista **sola no fa res**: cal una **Bulk Redirect Rule** que la faci servir.
+  Les Bulk Redirect Rules s'executen *davant* del projecte de Pages.
+
+### Per què no es fa tot des de `static/_redirects`
+
+`papers-vells.pages.dev` **no és una zona del compte** (el domini és de Cloudflare),
+així que no admet Redirect Rules de zona. El `_redirects` del repo sí que accepta un
+hostname al costat esquerre, però Cloudflare documenta les **Bulk Redirects** com el
+camí per a aquest cas. `static/_redirects` queda per a paths del propi lloc
+(les regles estàtiques sempre al principi del fitxer; les dinàmiques al final).
+
+Si mai coincideixen Bulk Redirect i `_redirects`, no hi ha conflicte ni bucle: les
+Bulk Redirects corren primer.
+
+### Errors a no repetir
+
+- **Mai** crear una regla amb *"Todas las solicitudes entrantes"* a la zona de
+  `papersvells.cat`: redirigiria l'àpex cap a si mateix i faria un bucle (la web cauria).
+- El `www` de la regla ha de portar `https://` explícit a la URL de sol·licitud.
+- Si canvia el domini: tocar `baseURL`, la línia `Sitemap:` de `static/robots.txt` i
+  les dues redireccions de Cloudflare. No hi ha cap URL absoluta hardcodejada al codi.
+
+### Com verificar-ho
+
+```bash
+curl -sI https://papersvells.cat/ | head -1                        # 200
+curl -sI https://www.papersvells.cat/ | head -1                    # 301 → àpex
+curl -sI https://papers-vells.pages.dev/ | head -1                 # 301 → àpex
+curl -sI "https://www.papersvells.cat/cerca/?q=pla" | head -3      # 301 amb ?q=pla
+curl -sI https://papersvells.cat/el-diari/ | head -3               # 301 → /projecte/
+```
+
+### Google Search Console
+
+- Propietat de tipus **Dominio** per a `papersvells.cat`, verificada amb un registre
+  TXT `google-site-verification=…` al DNS de Cloudflare. **No esborrar aquest TXT**:
+  és el que manté la propietat verificada.
+- Sitemap enviat (`https://papersvells.cat/sitemap.xml`); el `robots.txt` també hi apunta.
+- Un `504` en verificar és un error **transitori de Google** (no del DNS): comprovar
+  que el TXT ja es propaga i reintentar al cap d'una estona.
 
 ## Documentació de Hugo (Context7)
 
@@ -80,7 +160,7 @@ papersvells/
 │   │   ├── autors/            # Fotos dels autors (webp, 240×240)
 │   │   ├── logo-horitzontal.webp, logo-vertical.webp, og-default.jpg
 │   │   └── lupa.webp, twpv.webp, wikipedia.webp, arca.webp, floritura.webp, rsslogo.webp
-│   ├── _headers, _redirects
+│   ├── _headers, _redirects  # Cache-Control; 301 de paths antics (estàtics primer)
 │   └── favicon.ico, apple-touch-icon.png, robots.txt, icon-*.png, icon.svg
 ├── public/                    # Output del build (gitignore)
 └── data/                      # Buit
@@ -226,3 +306,5 @@ Funciona 100% client-side:
 - `.gitignore`: `public/`, `/resources/_gen/`, `/.hugo_build.lock`, `/skills-lock.json`. `public/` ja no es versiona
 - Script de desplegament (a la carpeta pare): `pujar-a-github.sh` (git add + commit + push)
 - L'Hugo local i el de Cloudflare Pages han d'anar lligats (Cloudflare: `HUGO_VERSION = 0.164.0`)
+- El domini canònic, el `rel=canonical`, les redireccions `www`/`pages.dev` i la
+  verificació de Search Console es documenten a «Domini, canonical i redireccions»
