@@ -88,10 +88,16 @@
 
           <a class="autor-card" href="{{ .Permalink }}">
             <div class="autor-card__foto-wrapper">
+              {{- $slug := "" }}
+              {{- with .File }}{{ $slug = .ContentBaseName | urlize }}{{ else }}{{ $slug = .Title | urlize }}{{ end }}
+              {{- /* Només emetem la imatge si el fitxer existeix: evita 404 d'avatars
+                     en taxonomies sense foto (categoria: Entrevista, Opinió…) */}}
+              {{- if os.FileExists (printf "static/images/autors/%s.webp" $slug) }}
               <img class="autor-card__avatar"
-                   src="/images/autors/{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Title | urlize }}{{ end }}.webp"
+                   src="/images/autors/{{ $slug }}.webp"
                    alt="" width="120" height="120" loading="lazy"
                    onerror="this.style.display='none'">
+              {{- end }}
               <div class="autor-card__overlay">
                 <span class="autor-card__count">{{ $count }} articles</span>
               </div>
@@ -372,10 +378,14 @@
           CAPÇALERA D'AUTOR — avatar circular a l'esquerra
         */}}
         <header class="autor-header">
+          {{- $slug := "" }}
+          {{- with .File }}{{ $slug = .ContentBaseName | urlize }}{{ else }}{{ $slug = .Title | urlize }}{{ end }}
+          {{- if os.FileExists (printf "static/images/autors/%s.webp" $slug) }}
           <img class="autor-header__avatar"
-               src="/images/autors/{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Title | urlize }}{{ end }}.webp"
+               src="/images/autors/{{ $slug }}.webp"
                alt="" width="95" height="95"
                onerror="this.style.display='none'">
+          {{- end }}
           <div class="autor-header__text">
             <h1 class="autor-header__name">{{ .Title | replaceRE `\bI\b` "i" }}</h1>
           <p class="autor-header__info">{{ len $articles }} {{ cond (eq (len $articles) 1) "article publicat" "articles publicats" }}</p>
