@@ -1,0 +1,44 @@
+{{/*
+  ═══════════════════════════════════════════════════════════
+  CERCA/SUGGERIMENTS.JSON — índex prim per al 404
+  ═══════════════════════════════════════════════════════════
+  Només URL, títol, secció i any. Serveix perquè la pàgina 404
+  pugui suggerir l'article (o autor, o publicació) més semblant
+  a l'adreça que ha fallat.
+
+  Pes: ~35 KB, contra els 2,2 MB de /cerca/index.json (que porta
+  el text complet de cada article per a la cerca).
+
+  Camps:
+    s → secció: "a" article, "t" autor, "p" publicació
+    u → URL relativa
+    t → títol
+    a → autor(s) de l'article (buit a les altres seccions)
+    y → any de publicació (buit a autors i publicacions)
+*/}}
+{{- $out := slice -}}
+
+{{- range where .Site.RegularPages "Section" "" -}}
+  {{- $autors := delimit (.Params.autors | default (slice)) ", " -}}
+  {{- $out = $out | append (dict
+      "s" "a"
+      "u" .RelPermalink
+      "t" .Title
+      "a" $autors
+      "y" (.Date.Format "2006")
+  ) -}}
+{{- end -}}
+
+{{- range where .Site.Pages "Type" "autors" -}}
+  {{- if eq .Kind "term" -}}
+    {{- $out = $out | append (dict "s" "t" "u" .RelPermalink "t" .Title "a" "" "y" "") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range where .Site.Pages "Type" "publicacions" -}}
+  {{- if eq .Kind "term" -}}
+    {{- $out = $out | append (dict "s" "p" "u" .RelPermalink "t" .Title "a" "" "y" "") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $out | jsonify -}}

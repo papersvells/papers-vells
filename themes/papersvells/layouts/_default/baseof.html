@@ -24,6 +24,7 @@
   {{- if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
     {{- $pageTitle = .Title | replaceRE `\bI\b` "i" -}}
   {{- end -}}
+  {{- if eq .Kind "404" -}}{{- $pageTitle = "Pàgina no trobada" -}}{{- end -}}
   {{- $title := cond .IsHome .Site.Title (printf "%s · %s" $pageTitle .Site.Title) -}}
   <title>{{ $title }}</title>
 
@@ -104,7 +105,7 @@
     ─────────────────────────────────────────────────────────
   */}}
   <link rel="canonical" href="{{ .Permalink }}">
-  <meta name="robots" content="{{ if .Params.noindex }}noindex, nofollow{{ else }}index, follow{{ end }}">
+  <meta name="robots" content="{{ if or .Params.noindex (eq .Kind "404") }}noindex, nofollow{{ else }}index, follow{{ end }}">
 
   {{/*
     ─────────────────────────────────────────────────────────

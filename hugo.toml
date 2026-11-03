@@ -18,6 +18,14 @@ capitalizeListTitles = false
   taxonomy = ['html']
   term     = ['html']
 
+# Sortida prim per a les suggerències del 404: només URL, títol i secció
+# (35 KB en lloc dels 2,2 MB de /cerca/index.json).
+[outputFormats.suggeriments]
+  mediaType      = 'application/json'
+  baseName       = 'suggeriments'
+  isPlainText    = true
+  notAlternative = true
+
 [taxonomies]
   autors       = 'autors'
   publicacions = 'publicacions'

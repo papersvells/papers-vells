@@ -45,20 +45,40 @@
   }
 
   // ─── Carrega de l'índex ──────────────────────────────────
-  fetch('/cerca/index.json')
-    .then(r => r.json())
-    .then(data => {
-      index = data.articles.map(x => ({
-        ...x,
-        _s: norm(x.t + ' ' + x.a.join(' ') + ' ' + x.p.join(' ') + ' ' + (x.x || ''))
-      }));
-      estat.textContent = '';
-      input.disabled = false;
-      if (qParam) cerca();
-    })
-    .catch(() => {
-      estat.textContent = 'No s\'ha pogut carregar l\'índex. Recarrega la pàgina.';
-    });
+  // A la pàgina 404 no es demana l'índex complet (2,2 MB) fins que
+  // l'usuari comença a escriure: allà ja hi ha les suggerències, que
+  // només pesen 35 KB. A /cerca/ es carrega de seguida.
+  let carregant = null;
+
+  function carregaIndex() {
+    if (index) return Promise.resolve();
+    if (carregant) return carregant;
+
+    estat.textContent = 'Carregant índex…';
+    carregant = fetch('/cerca/index.json')
+      .then(r => r.json())
+      .then(data => {
+        index = data.articles.map(x => ({
+          ...x,
+          _s: norm(x.t + ' ' + x.a.join(' ') + ' ' + x.p.join(' ') + ' ' + (x.x || ''))
+        }));
+        estat.textContent = '';
+        if (qParam || input.value.trim()) cerca();
+      })
+      .catch(() => {
+        estat.textContent = 'No s\'ha pogut carregar l\'índex. Recarrega la pàgina.';
+        carregant = null;
+      });
+
+    return carregant;
+  }
+
+  if (document.documentElement.dataset.cercaDiferida === 'si') {
+    // 404: només quan l'usuari escriu (no al focus, que hi ha autofocus)
+    input.addEventListener('input', carregaIndex, { once: true });
+  } else {
+    carregaIndex();
+  }
 
   // ─── Debounce ────────────────────────────────────────────
   let timer;
