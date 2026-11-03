@@ -2,7 +2,13 @@
 
 ## Què és
 
-Arxiu de premsa antiga catalana (1899–1938). Web estàtica feta amb **Hugo**, desplegada a **Cloudflare Pages** (`papers-vells.pages.dev`). El tema és custom (no és un tema extern).
+Arxiu de premsa antiga catalana (1899–1938). Web estàtica feta amb **Hugo**, desplegada a **Cloudflare Pages** al domini **`https://papersvells.cat/`** (el domini de plataforma `papers-vells.pages.dev` també serveix el lloc, però el canònic és el domini propi). El tema és custom (no és un tema extern).
+
+**`baseURL` de `hugo.toml` és la font de veritat de l'URL pública:** d'ella surten
+`rel=canonical`, `og:url`, `og:image`, els enllaços absoluts de CSS/JS/imatges i les
+URL del `sitemap.xml` i de l'`index.xml`. Si algun dia canvia el domini, s'ha de
+canviar només aquí (i actualitzar la línia `Sitemap:` de `static/robots.txt` i la
+redirecció corresponent a Cloudflare).
 
 ## Com buildar
 
