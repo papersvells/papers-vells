@@ -1,0 +1,50 @@
+name: Estadístiques
+
+# Baixa les visites de Cloudflare Web Analytics i les acumula a
+# estadistiques/*.csv. Cloudflare només guarda ~184 dies: aquests CSV són
+# l'arxiu permanent. Vegeu docs/estadistiques.md.
+
+on:
+  schedule:
+    # Cada dilluns a les 06:00 UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: estadistiques
+  cancel-in-progress: false
+
+jobs:
+  actualitza:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Baixa i acumula estadístiques
+        env:
+          CF_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
+        run: node scripts/estadistiques.mjs
+
+      - name: Resum al log del workflow
+        run: node scripts/estadistiques.mjs --resum >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit si hi ha canvis
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add estadistiques/
+          if git diff --cached --quiet; then
+            echo "Sense canvis: les dades són iguals."
+          else
+            git commit -m "Estadístiques: actualitza visites ($(date -u +%Y-%m-%d))"
+            git push
+          fi
