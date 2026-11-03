@@ -282,6 +282,7 @@ el nom **EXACTE del terme** tal com apareix als articles (ex: `Lluís Nicolau d'
 | `/article/`            | `single.html`                  | Article amb fitxa documental sticky  |
 | `/cerca/`              | `cerca/list.html` + `list.json`| Cerca client-side                   |
 | `/projecte/`           | `projecte/list.html`           | Pàgina estática amb estadístiques   |
+| `/404.html`            | `404.html` + `suggeriments.js` | «Potser buscaves»: compara el path amb `/cerca/suggeriments.json` (47 KB, Levenshtein) |
 
 ## CSS i JS
 
@@ -290,8 +291,11 @@ el nom **EXACTE del terme** tal com apareix als articles (ex: `Lluís Nicolau d'
   via el bloc `css-extra` de `baseof.html`. Minified + fingerprinted.
 - **JS (`themes/papersvells/assets/js/`):** `principal.js` = concatenació de `menu.js` (hamburguesa)
   i `header-scroll.js` (hide on scroll), a totes les pàgines. Específics: `portada.js`,
-  `cronologia.js`, `fitxa.js`, `cerca.js`. Minified + fingerprinted; només queda inline el
-  `documentElement.classList.add('js')` del `<head>`.
+  `cronologia.js`, `fitxa.js`, `cerca.js` (a `/cerca/` i 404) i `suggeriments.js` (només 404).
+  Minified + fingerprinted; només queda inline el `documentElement.classList.add('js')` del `<head>`.
+- **Índexs de cerca:** `/cerca/index.json` (2,2 MB, amb text complet, el carrega `cerca.js`) i
+  `/cerca/suggeriments.json` (47 KB, només URL+títol+secció, el carrega `suggeriments.js`).
+  Al 404 l'índex gros **no es demana** fins que l'usuari escriu (`data-cerca-diferida`).
 - **Font principal:** Alegreya (serif) + Rubik Mono One (metadades) + Alegreya-Sans (nav)
 - **Color accent:** `#973330` (vermell fosc)
 
