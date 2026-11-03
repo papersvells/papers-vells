@@ -162,6 +162,11 @@ papersvells/
 │   │   └── lupa.webp, twpv.webp, wikipedia.webp, arca.webp, floritura.webp, rsslogo.webp
 │   ├── _headers, _redirects  # Cache-Control; 301 de paths antics (estàtics primer)
 │   └── favicon.ico, apple-touch-icon.png, robots.txt, icon-*.png, icon.svg
+├── scripts/                   # Utilitats (Node, sense dependències)
+│   └── estadistiques.mjs      # Baixa i acumula visites de Cloudflare RUM
+├── estadistiques/             # CSV acumulatius de visites (arxiu permanent)
+├── docs/estadistiques.md      # Com funcionen les estadístiques
+├── .github/workflows/         # estadistiques.yml (cron setmanal)
 ├── public/                    # Output del build (gitignore)
 └── data/                      # Buit
 ```
@@ -296,6 +301,18 @@ Funciona 100% client-side:
 1. Hugo genera `/cerca/index.json` amb array de {t, u, a, p, d, x} (títol, URL, autors, publicacions, data, text pla)
 2. `cerca.js` carrega el JSON una sola vegada i filtra amb `String.includes()`
 3. Hi ha 3 seccions: articles, autors, publicacions
+
+## Estadístiques (separat del disseny de la web)
+
+Les visites es guarden fora de Cloudflare perquè el beacon només en conserva ~184 dies.
+
+- Script: `scripts/estadistiques.mjs` (Node, sense dependències).
+- Dades: `estadistiques/*.csv` (acumulatives; vegeu `docs/estadistiques.md`).
+- Automatització: `.github/workflows/estadistiques.yml`, dilluns 06:00 UTC, amb el
+  secret `CF_ANALYTICS_TOKEN` (`Account Analytics: Read`).
+- **No modificar els CSV a mà** ni reordenar-ne les files: el script reemplaça la
+  finestra dels últims 30 dies a cada execució.
+- Tot el detall tècnic (dataset, límits, com citar xifres) a `docs/estadistiques.md`.
 
 ## Notes importants
 
