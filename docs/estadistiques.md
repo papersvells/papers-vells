@@ -62,8 +62,11 @@ estadistiques/articles-30dies.csv   titol,path,pageviews,visites   (llista públ
 4. Genera els dos rànquings.
 5. Comprova si hi ha dies sense dades i avisa.
 
-Si l'API torna buida però ja teníem dades, el script **no escriu res** (protecció
-contra un buidatge accidental).
+Si una consulta torna incompleta o un tram de 7 dies torna buit però ja hi havia
+dades d'aquell període, el script **s'atura amb error i no escriu cap fitxer**.
+La protecció s'aplica per separat al lloc i als articles (també després de filtrar
+els paths que no són articles), encara que les altres consultes retornin dades.
+Els períodes sense dades prèvies poden continuar buits legítimament.
 
 ### Ordres
 
@@ -76,6 +79,16 @@ CF_TOKEN=... node scripts/estadistiques.mjs --dry-run      # no escriu res
 
 Opcions completes: `--dies`, `--top`, `--finestra`, `--public`, `--min`, `--des`,
 `--resum`, `--dry-run`. Vegeu `--ajuda`.
+
+`--dies N` només canvia el període de la taula del terminal; `--finestra N`
+controla independentment el període del CSV de la llista pública (30 dies per
+defecte). Cap de les dues opcions retalla l'històric guardat.
+
+Proves de regressió, sense xarxa ni modificacions als CSV reals:
+
+```bash
+node --test scripts/estadistiques.test.mjs
+```
 
 ## Automatització
 

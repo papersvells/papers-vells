@@ -167,17 +167,28 @@ const Q_ARTICLES = `
 // estables i coincideixen entre consultes. No apujar aquest valor.
 const MAX_DIES_PER_CONSULTA = 7;
 
-async function baixaDades(query, des, fins) {
+async function baixaDades(query, des, fins, { anteriors, nom, accepta = () => true }) {
   const files = [];
   for (let inici = des; inici <= fins; inici = sumaDies(inici, MAX_DIES_PER_CONSULTA)) {
     const final = minim(sumaDies(inici, MAX_DIES_PER_CONSULTA - 1), fins);
+    const primerDia = iso(inici);
+    const ultimDia = iso(final);
     const data = await gql(query, {
       a: CFG.accountId,
       t: CFG.siteTag,
-      s: `${iso(inici)}T00:00:00Z`,
-      e: `${iso(final)}T23:59:59Z`,
+      s: `${primerDia}T00:00:00Z`,
+      e: `${ultimDia}T23:59:59Z`,
     });
-    files.push(...(data.viewer.accounts[0]?.dades ?? []));
+    const dades = data?.viewer?.accounts?.[0]?.dades;
+    if (!Array.isArray(dades)) {
+      throw new Error(`Resposta incompleta de l'API (${nom}, ${primerDia} → ${ultimDia}). No s'ha tocat cap fitxer.`);
+    }
+    // Validem cada tram abans de reemplaçar-lo: una altra consulta o un altre
+    // tram amb dades no han d'amagar una resposta buida que esborraria l'històric.
+    if (!dades.some(accepta) && anteriors.some((f) => f.data >= primerDia && f.data <= ultimDia)) {
+      throw new Error(`L'API ha tornat buida per a ${nom} (${primerDia} → ${ultimDia}), però ja hi havia dades. No s'ha tocat cap fitxer.`);
+    }
+    files.push(...dades);
   }
   return files;
 }
@@ -282,7 +293,7 @@ async function main() {
   }
 
   // ── Rang a demanar ────────────────────────────────────────────────────────
-  const ultim = articles.length ? maxim(...articles.map((f) => f.data)) : null;
+  const ultim = articles.reduce((data, f) => maxim(data, f.data), '');
   const inici = maxim(
     ultim
       ? minim(sumaDies(deIso(ultim), 1), sumaDies(avui(), -opcions.des + 1))
@@ -302,12 +313,17 @@ async function main() {
   if (inici <= fi) {
     console.log(`Demanant a Cloudflare: ${iso(inici)} → ${iso(fi)} (${Math.round((fi - inici) / DIA) + 1} dies)…`);
 
-    const dadesLloc = await baixaDades(Q_LLOC, inici, fi);
-    const dadesArticles = await baixaDades(Q_ARTICLES, inici, fi);
-
     // Títols coneguts: els de l'índex i, si cal, els que ja teníem guardats.
     const titols = new Map(articles.map((f) => [f.path, f.titol]));
     for (const [u, t] of index) titols.set(u, t);
+
+    const dadesLloc = await baixaDades(Q_LLOC, inici, fi, {
+      anteriors: lloc, nom: 'lloc',
+    });
+    const dadesArticles = await baixaDades(Q_ARTICLES, inici, fi, {
+      anteriors: articles, nom: 'articles',
+      accepta: (f) => titols.has(f.dimensions.requestPath),
+    });
 
     novesLloc = dadesLloc.map((f) => ({
       data: f.dimensions.date,
@@ -348,11 +364,14 @@ async function main() {
     agrupa(articlesFinals.filter((f) => esArticle(f.path)), 'path'),
     'pageviews', 'visites');
 
-  const finestra = opcions.finestra;
-  const desde = iso(sumaDies(avui(), -finestra + 1));
-  const recent = ordena(
-    agrupa(articlesFinals.filter((f) => esArticle(f.path) && f.data >= desde), 'path'),
-    'pageviews', 'visites');
+  const rankingDelsUltimsDies = (dies) => {
+    const desde = iso(sumaDies(avui(), -dies + 1));
+    return ordena(
+      agrupa(articlesFinals.filter((f) => esArticle(f.path) && f.data >= desde), 'path'),
+      'pageviews', 'visites');
+  };
+  const recent = rankingDelsUltimsDies(opcions.finestra);
+  const informe = opcions.dies > 0 ? rankingDelsUltimsDies(opcions.dies) : total;
 
   // La llista pública: top N amb un mínim de visites per no ensenyar empats a 1.
   const publiques = recent
@@ -360,11 +379,7 @@ async function main() {
     .slice(0, opcions.public);
 
   // ── Escriptura ────────────────────────────────────────────────────────────
-  const respostaBuida = novesLloc.length === 0 && novesArticles.length === 0;
-  if (!opcions.dryRun && respostaBuida && lloc.length > 0) {
-    // Protecció: si l'API torna buit però ja teníem dades, no esborrem res.
-    console.log('\n⚠️  L\'API ha tornat buida; no s\'ha tocat cap fitxer (per seguretat).');
-  } else if (!opcions.dryRun) {
+  if (!opcions.dryRun) {
     await writeFile(FITXERS.articlesDiari, csv(['data', 'path', 'titol', 'pageviews', 'visites'], articlesFinals));
     await writeFile(FITXERS.llocDiari, csv(['data', 'pageviews', 'visites'], llocFinal));
     await writeFile(FITXERS.articlesTotal, csv(['titol', 'path', 'pageviews', 'visites'], total));
@@ -380,7 +395,7 @@ async function main() {
     : `tot l'històric (${llocFinal[0]?.data ?? '—'} → ${llocFinal.at(-1)?.data ?? '—'})`;
 
   console.log(`\nEls més llegits — ${rangs}\n`);
-  const files = (opcions.dies > 0 ? recent : total).slice(0, opcions.top)
+  const files = informe.slice(0, opcions.top)
     .map((f, i) => [String(i + 1), f.titol, f.pageviews, f.visites]);
   console.log(taula(['#', 'Títol', 'Pàg.', 'Vis.'], files));
 
