@@ -490,7 +490,7 @@
       
         <img class="floritura" src="/images/floritura.webp" alt="" width="150" height="50" decoding="async" loading="lazy">
       
-        <h1 class="autor-header__name autor-header__name--accent">Ha estat citat en {{ len $citats }} {{ cond (eq (len $citats) 1) "article" "articles" }}</h1>
+        <h2 class="autor-header__name autor-header__name--accent">Ha estat citat en {{ len $citats }} {{ cond (eq (len $citats) 1) "article" "articles" }}</h2>
 
         <ul class="llista-articles">
           {{ range $citats.ByDate.Reverse }}
@@ -566,7 +566,7 @@
 
           <img class="floritura" src="/images/floritura.webp" alt="" width="150" height="50" decoding="async" loading="lazy">
 
-          <h1 class="autor-header__name autor-header__name--accent">Ha col·laborat en {{ len $qüestionsAutor }} {{ cond (eq (len $qüestionsAutor) 1) "qüestió" "qüestions" }}</h1>
+          <h2 class="autor-header__name autor-header__name--accent">Ha col·laborat en {{ len $qüestionsAutor }} {{ cond (eq (len $qüestionsAutor) 1) "qüestió" "qüestions" }}</h2>
 
       <div class="questions-grid questions-grid--questio">
             {{ range sort $qüestionsAutor "clau" "asc" }}
@@ -581,7 +581,7 @@
               {{ end }}
 
               <a class="questio-card" href="{{ $termPage.Permalink }}">
-                <h2 class="questio-card__title">{{ $termPage.Title }}</h2>
+                <h3 class="questio-card__title">{{ $termPage.Title }}</h3>
                 {{ if and $anyInici $anyFinal }}
                   <p class="questio-card__anys">
                     {{ if eq $anyInici $anyFinal }}{{ $anyInici }}{{ else }}{{ $anyInici }}–{{ $anyFinal }}{{ end }}
