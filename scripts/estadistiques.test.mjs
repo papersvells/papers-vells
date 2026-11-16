@@ -202,6 +202,17 @@ test('el diagnòstic distingeix una resposta buida de paths no reconeguts', asyn
   assert.equal(desconeguda.escrits.size, 0);
 });
 
+test('el diagnòstic compara les rutes i el total del lloc sense paràmetres sensibles', async () => {
+  const resultat = await executa({ articlesNous: [filaAPI({
+    data: '2026-11-12', path: '/altra/?secret=valor', pageviews: 3, visites: 0,
+  })] });
+  assert.match(resultat.errors, /Articles retornats:.*"path":"\/altra\/".*"pageviews":3/);
+  assert.match(resultat.errors, /Articles previs:.*"path":"\/nou\/"/);
+  assert.match(resultat.errors, /Total del lloc retornat:.*"pageviews":20/);
+  assert.doesNotMatch(resultat.errors, /secret=valor/);
+  assert.equal(resultat.escrits.size, 0);
+});
+
 test('un tram buit no queda amagat per dades d’un altre tram de la mateixa consulta', async () => {
   const resultat = await executa({
     articlesVells: [article('2026-10-20', '/antic/'), article('2026-11-12', '/nou/')],

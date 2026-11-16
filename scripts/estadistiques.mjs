@@ -167,7 +167,7 @@ const Q_ARTICLES = `
 // estables i coincideixen entre consultes. No apujar aquest valor.
 const MAX_DIES_PER_CONSULTA = 7;
 
-async function baixaDades(query, des, fins, { anteriors, nom, accepta = () => true }) {
+async function baixaDades(query, des, fins, { anteriors, nom, accepta = () => true, diagnostic }) {
   const files = [];
   for (let inici = des; inici <= fins; inici = sumaDies(inici, MAX_DIES_PER_CONSULTA)) {
     const final = minim(sumaDies(inici, MAX_DIES_PER_CONSULTA - 1), fins);
@@ -188,7 +188,8 @@ async function baixaDades(query, des, fins, { anteriors, nom, accepta = () => tr
     const acceptades = dades.filter(accepta).length;
     const previes = anteriors.filter((f) => f.data >= primerDia && f.data <= ultimDia).length;
     if (acceptades === 0 && previes > 0) {
-      throw new Error(`L'API no ha retornat files acceptades per a ${nom} (${primerDia} → ${ultimDia}), però ja hi havia dades. Files retornades: ${dades.length}; acceptades: ${acceptades}; prèvies: ${previes}. No s'ha tocat cap fitxer.`);
+      const detall = diagnostic ? `\n${diagnostic(dades, primerDia, ultimDia)}` : '';
+      throw new Error(`L'API no ha retornat files acceptades per a ${nom} (${primerDia} → ${ultimDia}), però ja hi havia dades. Files retornades: ${dades.length}; acceptades: ${acceptades}; prèvies: ${previes}. No s'ha tocat cap fitxer.${detall}`);
     }
     files.push(...dades);
   }
@@ -325,6 +326,21 @@ async function main() {
     const dadesArticles = await baixaDades(Q_ARTICLES, inici, fi, {
       anteriors: articles, nom: 'articles',
       accepta: (f) => titols.has(f.dimensions.requestPath),
+      diagnostic: (dades, primerDia, ultimDia) => {
+        // Limitem la sortida i ometem paràmetres de consulta que poden ser sensibles.
+        const rutaSegura = (ruta) => String(ruta ?? '').split(/[?#]/, 1)[0].slice(0, 300);
+        const retornades = dades.slice(0, 10).map((f) => ({
+          data: f.dimensions?.date, path: rutaSegura(f.dimensions?.requestPath), pageviews: f.count,
+        }));
+        const previes = articles.filter((f) => f.data >= primerDia && f.data <= ultimDia)
+          .slice(0, 10).map((f) => ({ data: f.data, path: rutaSegura(f.path), pageviews: f.pageviews }));
+        const llocTram = dadesLloc.filter((f) => f.dimensions.date >= primerDia && f.dimensions.date <= ultimDia)
+          .map((f) => ({ data: f.dimensions.date, pageviews: f.count }));
+        return `Diagnòstic (màxim 10 rutes per llista):\n` +
+          `Articles retornats: ${JSON.stringify(retornades)}\n` +
+          `Articles previs: ${JSON.stringify(previes)}\n` +
+          `Total del lloc retornat: ${JSON.stringify(llocTram)}`;
+      },
     });
 
     novesLloc = dadesLloc.map((f) => ({

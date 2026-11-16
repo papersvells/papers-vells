@@ -68,8 +68,9 @@ La protecció s'aplica per separat al lloc i als articles (també després de fi
 els paths que no són articles), encara que les altres consultes retornin dades.
 Els períodes sense dades prèvies poden continuar buits legítimament.
 En cas d'error, el missatge mostra el nombre de files retornades, acceptades i
-prèvies del tram: permet distingir una resposta buida de paths no reconeguts
-sense publicar els paths ni el token al registre.
+prèvies del tram. Per als articles també mostra fins a deu rutes retornades i
+prèvies, amb les dates i pàgines vistes, i el total diari del lloc retornat.
+S'ometen els paràmetres de consulta de les rutes i no es mostra el token.
 
 ### Ordres
 
