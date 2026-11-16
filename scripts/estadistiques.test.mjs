@@ -190,6 +190,18 @@ for (const [nom, dades] of [
   });
 }
 
+test('el diagnòstic distingeix una resposta buida de paths no reconeguts', async () => {
+  const buida = await executa({ articlesNous: [] });
+  assert.match(buida.errors, /Files retornades: 0; acceptades: 0; prèvies: 1/);
+  assert.equal(buida.escrits.size, 0);
+
+  const desconeguda = await executa({ articlesNous: [filaAPI({
+    data: '2026-11-12', path: '/', pageviews: 3, visites: 0,
+  })] });
+  assert.match(desconeguda.errors, /Files retornades: 1; acceptades: 0; prèvies: 1/);
+  assert.equal(desconeguda.escrits.size, 0);
+});
+
 test('un tram buit no queda amagat per dades d’un altre tram de la mateixa consulta', async () => {
   const resultat = await executa({
     articlesVells: [article('2026-10-20', '/antic/'), article('2026-11-12', '/nou/')],

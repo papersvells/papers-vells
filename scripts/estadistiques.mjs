@@ -185,8 +185,10 @@ async function baixaDades(query, des, fins, { anteriors, nom, accepta = () => tr
     }
     // Validem cada tram abans de reemplaçar-lo: una altra consulta o un altre
     // tram amb dades no han d'amagar una resposta buida que esborraria l'històric.
-    if (!dades.some(accepta) && anteriors.some((f) => f.data >= primerDia && f.data <= ultimDia)) {
-      throw new Error(`L'API ha tornat buida per a ${nom} (${primerDia} → ${ultimDia}), però ja hi havia dades. No s'ha tocat cap fitxer.`);
+    const acceptades = dades.filter(accepta).length;
+    const previes = anteriors.filter((f) => f.data >= primerDia && f.data <= ultimDia).length;
+    if (acceptades === 0 && previes > 0) {
+      throw new Error(`L'API no ha retornat files acceptades per a ${nom} (${primerDia} → ${ultimDia}), però ja hi havia dades. Files retornades: ${dades.length}; acceptades: ${acceptades}; prèvies: ${previes}. No s'ha tocat cap fitxer.`);
     }
     files.push(...dades);
   }

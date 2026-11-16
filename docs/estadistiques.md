@@ -67,6 +67,9 @@ dades d'aquell període, el script **s'atura amb error i no escriu cap fitxer**.
 La protecció s'aplica per separat al lloc i als articles (també després de filtrar
 els paths que no són articles), encara que les altres consultes retornin dades.
 Els períodes sense dades prèvies poden continuar buits legítimament.
+En cas d'error, el missatge mostra el nombre de files retornades, acceptades i
+prèvies del tram: permet distingir una resposta buida de paths no reconeguts
+sense publicar els paths ni el token al registre.
 
 ### Ordres
 
