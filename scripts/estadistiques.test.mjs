@@ -182,45 +182,44 @@ for (const [nom, dades] of [
     data: '2026-11-12', path: '/', pageviews: 3, visites: 0,
   })] }],
 ]) {
-  test(`no escriu cap fitxer si hi havia dades prèvies: ${nom}`, async () => {
+  test(`conserva les dades prèvies del tram: ${nom}`, async () => {
     const resultat = await executa(dades);
-    assert.equal(resultat.exitCode, 1);
-    assert.match(resultat.errors, /ja hi havia dades/);
-    assert.equal(resultat.escrits.size, 0);
+    assert.equal(resultat.exitCode, 0);
+    assert.match(resultat.logs, /Tram protegit/);
+    assert.match(resultat.escrits.get('estadistiques/articles-diari.csv'), /2026-11-12,\/nou\//);
+    assert.match(resultat.escrits.get('estadistiques/lloc-diari.csv'), /2026-11-12,20,0/);
   });
 }
 
 test('el diagnòstic distingeix una resposta buida de paths no reconeguts', async () => {
   const buida = await executa({ articlesNous: [] });
-  assert.match(buida.errors, /Files retornades: 0; acceptades: 0; prèvies: 1/);
-  assert.equal(buida.escrits.size, 0);
+  assert.match(buida.logs, /0 files retornades, 0 acceptades, 1 prèvies/);
 
   const desconeguda = await executa({ articlesNous: [filaAPI({
     data: '2026-11-12', path: '/', pageviews: 3, visites: 0,
   })] });
-  assert.match(desconeguda.errors, /Files retornades: 1; acceptades: 0; prèvies: 1/);
-  assert.equal(desconeguda.escrits.size, 0);
+  assert.match(desconeguda.logs, /1 files retornades, 0 acceptades, 1 prèvies/);
 });
 
 test('el diagnòstic compara les rutes i el total del lloc sense paràmetres sensibles', async () => {
   const resultat = await executa({ articlesNous: [filaAPI({
     data: '2026-11-12', path: '/altra/?secret=valor', pageviews: 3, visites: 0,
   })] });
-  assert.match(resultat.errors, /Articles retornats:.*"path":"\/altra\/".*"pageviews":3/);
-  assert.match(resultat.errors, /Articles previs:.*"path":"\/nou\/"/);
-  assert.match(resultat.errors, /Total del lloc retornat:.*"pageviews":20/);
-  assert.doesNotMatch(resultat.errors, /secret=valor/);
-  assert.equal(resultat.escrits.size, 0);
+  assert.match(resultat.logs, /Articles retornats:.*"path":"\/altra\/".*"pageviews":3/);
+  assert.match(resultat.logs, /Articles previs:.*"path":"\/nou\/"/);
+  assert.match(resultat.logs, /Total del lloc retornat:.*"pageviews":20/);
+  assert.doesNotMatch(resultat.logs, /secret=valor/);
 });
 
 test('un tram buit no queda amagat per dades d’un altre tram de la mateixa consulta', async () => {
   const resultat = await executa({
     articlesVells: [article('2026-10-20', '/antic/'), article('2026-11-12', '/nou/')],
-    articlesNous: [filaAPI(article('2026-11-12', '/nou/'))],
+    articlesNous: [filaAPI(article('2026-11-12', '/nou/', 27))],
   });
-  assert.equal(resultat.exitCode, 1);
-  assert.match(resultat.errors, /articles \(2026-10-15 → 2026-10-21\)/);
-  assert.equal(resultat.escrits.size, 0);
+  assert.equal(resultat.exitCode, 0);
+  assert.match(resultat.logs, /Tram protegit 2026-10-15 → 2026-10-21 \(articles\)/);
+  assert.match(resultat.escrits.get('estadistiques/articles-diari.csv'), /2026-10-20,\/antic\//);
+  assert.match(resultat.escrits.get('estadistiques/articles-diari.csv'), /2026-11-12,\/nou\/,Article nou,27,0/);
 });
 
 for (const tipus of ['lloc', 'articles']) {

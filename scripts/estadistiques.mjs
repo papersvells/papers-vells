@@ -169,6 +169,7 @@ const MAX_DIES_PER_CONSULTA = 7;
 
 async function baixaDades(query, des, fins, { anteriors, nom, accepta = () => true, diagnostic }) {
   const files = [];
+  const protegits = [];
   for (let inici = des; inici <= fins; inici = sumaDies(inici, MAX_DIES_PER_CONSULTA)) {
     const final = minim(sumaDies(inici, MAX_DIES_PER_CONSULTA - 1), fins);
     const primerDia = iso(inici);
@@ -189,11 +190,13 @@ async function baixaDades(query, des, fins, { anteriors, nom, accepta = () => tr
     const previes = anteriors.filter((f) => f.data >= primerDia && f.data <= ultimDia).length;
     if (acceptades === 0 && previes > 0) {
       const detall = diagnostic ? `\n${diagnostic(dades, primerDia, ultimDia)}` : '';
-      throw new Error(`L'API no ha retornat files acceptades per a ${nom} (${primerDia} → ${ultimDia}), però ja hi havia dades. Files retornades: ${dades.length}; acceptades: ${acceptades}; prèvies: ${previes}. No s'ha tocat cap fitxer.${detall}`);
+      const avis = `Tram protegit ${primerDia} → ${ultimDia} (${nom}): ${dades.length} files retornades, ${acceptades} acceptades, ${previes} prèvies. Es conserven les dades anteriors del lloc i dels articles; cal verificar-les.`;
+      console.log(`${process.env.GITHUB_ACTIONS === 'true' ? '::warning::' : '⚠️  '}${avis}${detall}`);
+      protegits.push({ des: primerDia, fins: ultimDia });
     }
     files.push(...dades);
   }
-  return files;
+  return { files, protegits };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -313,6 +316,7 @@ async function main() {
 
   let novesArticles = [];
   let novesLloc = [];
+  let protegits = [];
   if (inici <= fi) {
     console.log(`Demanant a Cloudflare: ${iso(inici)} → ${iso(fi)} (${Math.round((fi - inici) / DIA) + 1} dies)…`);
 
@@ -320,10 +324,11 @@ async function main() {
     const titols = new Map(articles.map((f) => [f.path, f.titol]));
     for (const [u, t] of index) titols.set(u, t);
 
-    const dadesLloc = await baixaDades(Q_LLOC, inici, fi, {
+    const resultatLloc = await baixaDades(Q_LLOC, inici, fi, {
       anteriors: lloc, nom: 'lloc',
     });
-    const dadesArticles = await baixaDades(Q_ARTICLES, inici, fi, {
+    const dadesLloc = resultatLloc.files;
+    const resultatArticles = await baixaDades(Q_ARTICLES, inici, fi, {
       anteriors: articles, nom: 'articles',
       accepta: (f) => titols.has(f.dimensions.requestPath),
       diagnostic: (dades, primerDia, ultimDia) => {
@@ -342,6 +347,8 @@ async function main() {
           `Total del lloc retornat: ${JSON.stringify(llocTram)}`;
       },
     });
+    const dadesArticles = resultatArticles.files;
+    protegits = [...resultatLloc.protegits, ...resultatArticles.protegits];
 
     novesLloc = dadesLloc.map((f) => ({
       data: f.dimensions.date,
@@ -366,13 +373,14 @@ async function main() {
   // cau dins la finestra relligada i hi posem exactament el que diu l'API.
   // Les files anteriors a la finestra no es toquen mai.
   const desdeFinestra = iso(inici);
+  const protegit = (data) => protegits.some((rang) => data >= rang.des && data <= rang.fins);
 
-  const articlesFora = articles.filter((f) => f.data < desdeFinestra);
-  const llocFora = lloc.filter((f) => f.data < desdeFinestra);
+  const articlesFora = articles.filter((f) => f.data < desdeFinestra || protegit(f.data));
+  const llocFora = lloc.filter((f) => f.data < desdeFinestra || protegit(f.data));
 
-  const articlesFinals = [...articlesFora, ...novesArticles]
+  const articlesFinals = [...articlesFora, ...novesArticles.filter((f) => !protegit(f.data))]
     .sort((a, b) => a.data.localeCompare(b.data) || a.path.localeCompare(b.path));
-  const llocFinal = [...llocFora, ...novesLloc]
+  const llocFinal = [...llocFora, ...novesLloc.filter((f) => !protegit(f.data))]
     .sort((a, b) => a.data.localeCompare(b.data));
 
   // ── Rànquings ─────────────────────────────────────────────────────────────

@@ -62,12 +62,17 @@ estadistiques/articles-30dies.csv   titol,path,pageviews,visites   (llista públ
 4. Genera els dos rànquings.
 5. Comprova si hi ha dies sense dades i avisa.
 
-Si una consulta torna incompleta o un tram de 7 dies torna buit però ja hi havia
-dades d'aquell període, el script **s'atura amb error i no escriu cap fitxer**.
-La protecció s'aplica per separat al lloc i als articles (també després de filtrar
-els paths que no són articles), encara que les altres consultes retornin dades.
-Els períodes sense dades prèvies poden continuar buits legítimament.
-En cas d'error, el missatge mostra el nombre de files retornades, acceptades i
+Si una consulta torna incompleta, el script **s'atura amb error i no escriu cap
+fitxer**. Si un tram de 7 dies no retorna files acceptades però ja hi havia dades,
+es conserven les files anteriors **tant del lloc com dels articles** per a tot el
+tram i s'actualitzen els altres trams. Es mostra un avís (també com a anotació a
+GitHub Actions): les dades conservades estan pendents de verificar, i el tram es
+torna a comprovar mentre cau dins la finestra consultada.
+La comprovació s'aplica per separat al lloc i als articles (també després de filtrar
+els paths que no són articles). Els períodes sense dades prèvies poden continuar
+buits legítimament. La protecció només detecta trams completament buits, no pèrdues
+parcials; els límits dels trams poden canviar entre execucions.
+En cas d'avís, el missatge mostra el nombre de files retornades, acceptades i
 prèvies del tram. Per als articles també mostra fins a deu rutes retornades i
 prèvies, amb les dates i pàgines vistes, i el total diari del lloc retornat.
 S'ometen els paràmetres de consulta de les rutes i no es mostra el token.
