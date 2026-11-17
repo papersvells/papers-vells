@@ -63,7 +63,31 @@ estadistiques/articles-30dies.csv   titol,path,pageviews,visites   (llista públ
 5. Comprova si hi ha dies sense dades i avisa.
 
 Si l'API torna buida però ja teníem dades, el script **no escriu res** (protecció
-contra un buidatge accidental).
+contra un buidatge accidental) i acaba amb error, també amb `--dry-run`.
+
+### Garanties de la recollida
+
+- La data més recent es calcula sobre totes les files dels dos arxius diaris.
+  Encara no es desa una marca de sincronització independent de les visites.
+- `--dies N` controla el període de l'informe; `--finestra N`, el del rànquing
+  públic. Són independents. Els arguments desconeguts o invàlids es rebutgen.
+- Només un fitxer inexistent es tracta com un arxiu nou. Els errors de lectura,
+  fitxers buits, files incompletes, dates o mètriques invàlides i duplicats
+  aturen l'execució abans d'escriure.
+- Es valida el compte i cada resposta de l'API. Si una consulta arriba a 10.000
+  files, es divideix en períodes més petits; si un sol dia encara arriba al límit,
+  s'atura la recollida en lloc de desar dades potencialment truncades.
+- Els quatre CSV es preparen en fitxers temporals del mateix directori i després
+  se substitueixen amb `rename`. Cada substitució és atòmica; el conjunt dels
+  quatre fitxers no és una transacció. Git conserva les versions anteriors.
+- Les dades d'avui continuen sent provisionals i es rellegeixen en la següent
+  execució. Una resposta vàlida però incompleta no sempre es pot detectar.
+
+Proves de regressió, amb API simulada i CSV temporals:
+
+```bash
+node --test scripts/estadistiques.test.mjs
+```
 
 ### Ordres
 

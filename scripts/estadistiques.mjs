@@ -15,7 +15,9 @@
  * Sense dependències: només Node >= 18 (fetch global).
  */
 
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rename, rm } from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
+import { randomUUID } from 'node:crypto';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Configuració
@@ -79,6 +81,7 @@ function parseCsv(text) {
       camp += c;
     }
   }
+  if (entreCometes) throw new Error('CSV amb cometes sense tancar.');
   if (camp !== '' || fila.length) { fila.push(camp); files.push(fila); }
   return files.filter((f) => f.length > 1 || (f.length === 1 && f[0] !== ''));
 }
@@ -90,6 +93,7 @@ function llegeixCsv(text, camps) {
   const idx = Object.fromEntries(capçalera.map((c, i) => [c.trim(), i]));
   const falten = camps.filter((c) => !(c in idx));
   if (falten.length) throw new Error(`CSV sense les columnes: ${falten.join(', ')}`);
+  if (files.some((f) => f.length !== capçalera.length)) throw new Error('CSV amb una fila incompleta.');
   return files.map((f) => Object.fromEntries(camps.map((c) => [c, (f[idx[c]] ?? '').trim()])));
 }
 
@@ -102,7 +106,42 @@ const csv = (camps, files) =>
   [camps.join(','), ...files.map((f) => camps.map((c) => escapa(f[c])).join(','))].join('\n') + '\n';
 
 async function llegeixFitxer(ruta) {
-  try { return await readFile(ruta, 'utf8'); } catch { return ''; }
+  try {
+    const text = await readFile(ruta, 'utf8');
+    if (!text.trim()) throw new Error(`Fitxer buit inesperat: ${ruta}`);
+    return text;
+  } catch (e) {
+    if (e.code === 'ENOENT') return '';
+    throw e;
+  }
+}
+
+function validaFiles(files, ambPath, des = '0000-01-01', fins = '9999-12-31') {
+  const claus = new Set();
+  for (const f of files) {
+    const data = deIso(f.data);
+    const clau = ambPath ? `${f.data}\0${f.path}` : f.data;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(f.data) || !Number.isFinite(data.getTime()) ||
+        iso(data) !== f.data || f.data < des || f.data > fins ||
+        (ambPath && (typeof f.path !== 'string' || !f.path.startsWith('/'))) ||
+        ['pageviews', 'visites'].some((c) =>
+          f[c] === '' || f[c] == null || !Number.isFinite(Number(f[c])) || Number(f[c]) < 0) ||
+        claus.has(clau)) {
+      throw new Error(`Fila invàlida o duplicada: ${clau}`);
+    }
+    claus.add(clau);
+  }
+}
+
+async function desaFitxers(fitxers) {
+  const temporals = fitxers.map(([ruta, text]) => [ruta, `${ruta}.${randomUUID()}.tmp`, text]);
+  try {
+    // Preparem tots els fitxers abans de substituir-ne cap.
+    for (const [, temporal, text] of temporals) await writeFile(temporal, text, { flag: 'wx' });
+    for (const [ruta, temporal] of temporals) await rename(temporal, ruta);
+  } finally {
+    await Promise.all(temporals.map(([, temporal]) => rm(temporal, { force: true })));
+  }
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -169,15 +208,31 @@ const MAX_DIES_PER_CONSULTA = 7;
 
 async function baixaDades(query, des, fins) {
   const files = [];
-  for (let inici = des; inici <= fins; inici = sumaDies(inici, MAX_DIES_PER_CONSULTA)) {
-    const final = minim(sumaDies(inici, MAX_DIES_PER_CONSULTA - 1), fins);
+  async function tram(inici, final) {
     const data = await gql(query, {
-      a: CFG.accountId,
-      t: CFG.siteTag,
+      a: CFG.accountId, t: CFG.siteTag,
       s: `${iso(inici)}T00:00:00Z`,
       e: `${iso(final)}T23:59:59Z`,
     });
-    files.push(...(data.viewer.accounts[0]?.dades ?? []));
+    const comptes = data?.viewer?.accounts;
+    if (!Array.isArray(comptes) || comptes.length !== 1 || !Array.isArray(comptes[0]?.dades)) {
+      throw new Error('Resposta de Cloudflare sense el compte o les dades esperades.');
+    }
+    const dades = comptes[0].dades;
+    if (dades.length >= 10000) {
+      if (+inici === +final) throw new Error(`Límit de files assolit el ${iso(inici)}; no es desa una resposta truncada.`);
+      const mig = sumaDies(inici, Math.floor((final - inici) / DIA / 2));
+      return [...await tram(inici, mig), ...await tram(sumaDies(mig, 1), final)];
+    }
+    validaFiles(dades.map((f) => ({
+      data: f?.dimensions?.date, path: f?.dimensions?.requestPath,
+      pageviews: f?.count, visites: f?.sum?.visits,
+    })), query === Q_ARTICLES, iso(inici), iso(final));
+    return dades;
+  }
+  for (let inici = des; inici <= fins; inici = sumaDies(inici, MAX_DIES_PER_CONSULTA)) {
+    const final = minim(sumaDies(inici, MAX_DIES_PER_CONSULTA - 1), fins);
+    files.push(...await tram(inici, final));
   }
   return files;
 }
@@ -195,7 +250,10 @@ async function baixaIndex() {
   if (!Array.isArray(json.articles)) throw new Error('/cerca/index.json no té la clau "articles"');
   const index = new Map();
   for (const a of json.articles) {
-    if (a.u && a.t) index.set(a.u, a.t);
+    if (typeof a?.u !== 'string' || !a.u.startsWith('/') || typeof a.t !== 'string' || !a.t.trim()) {
+      throw new Error('/cerca/index.json conté un article invàlid');
+    }
+    index.set(a.u, a.t);
   }
   return index;
 }
@@ -206,6 +264,20 @@ async function baixaIndex() {
 
 function args() {
   const a = process.argv.slice(2);
+  const numerics = ['--dies', '--top', '--finestra', '--public', '--min', '--des'];
+  const flags = ['--resum', '--dry-run', '--ajuda', '-h'];
+  for (let i = 0; i < a.length; i++) {
+    if (flags.includes(a[i])) continue;
+    const nom = a[i];
+    if (!numerics.includes(nom)) throw new Error(`Opció desconeguda: ${nom}`);
+    const valor = a[++i];
+    const n = Number(valor);
+    if (!/^\d+$/.test(valor ?? '') || !Number.isSafeInteger(n) ||
+        (['--finestra', '--des'].includes(nom) && n < 1) ||
+        (['--dies', '--finestra', '--des'].includes(nom) && n > 100000)) {
+      throw new Error(`Valor invàlid per a ${nom}: ${valor ?? '(absent)'}`);
+    }
+  }
   const val = (nom, def) => {
     const i = a.indexOf(nom);
     if (i === -1) return def;
@@ -274,6 +346,8 @@ async function main() {
   const textLloc = await llegeixFitxer(FITXERS.llocDiari);
   const articles = llegeixCsv(textArticles, ['data', 'path', 'titol', 'pageviews', 'visites']);
   const lloc = llegeixCsv(textLloc, ['data', 'pageviews', 'visites']);
+  validaFiles(articles, true);
+  validaFiles(lloc, false);
 
   // ── Resum: no toca l'API ni els fitxers ────────────────────────────────────
   if (opcions.resum) {
@@ -282,7 +356,7 @@ async function main() {
   }
 
   // ── Rang a demanar ────────────────────────────────────────────────────────
-  const ultim = articles.length ? maxim(...articles.map((f) => f.data)) : null;
+  const ultim = [...articles, ...lloc].reduce((d, f) => d === null ? f.data : maxim(d, f.data), null);
   const inici = maxim(
     ultim
       ? minim(sumaDies(deIso(ultim), 1), sumaDies(avui(), -opcions.des + 1))
@@ -293,6 +367,7 @@ async function main() {
 
   if (inici > fi) {
     console.log('No hi ha dies nous per demanar.');
+    return;
   }
 
   const index = await baixaIndex();
@@ -340,6 +415,11 @@ async function main() {
     .sort((a, b) => a.data.localeCompare(b.data) || a.path.localeCompare(b.path));
   const llocFinal = [...llocFora, ...novesLloc]
     .sort((a, b) => a.data.localeCompare(b.data));
+  validaFiles(articlesFinals, true);
+  validaFiles(llocFinal, false);
+  if (novesLloc.length === 0 && novesArticles.length === 0 && (lloc.length || articles.length)) {
+    throw new Error('L’API ha tornat buida; no s’ha tocat cap fitxer.');
+  }
 
   // ── Rànquings ─────────────────────────────────────────────────────────────
   const esArticle = (path) => index.has(path);
@@ -360,15 +440,13 @@ async function main() {
     .slice(0, opcions.public);
 
   // ── Escriptura ────────────────────────────────────────────────────────────
-  const respostaBuida = novesLloc.length === 0 && novesArticles.length === 0;
-  if (!opcions.dryRun && respostaBuida && lloc.length > 0) {
-    // Protecció: si l'API torna buit però ja teníem dades, no esborrem res.
-    console.log('\n⚠️  L\'API ha tornat buida; no s\'ha tocat cap fitxer (per seguretat).');
-  } else if (!opcions.dryRun) {
-    await writeFile(FITXERS.articlesDiari, csv(['data', 'path', 'titol', 'pageviews', 'visites'], articlesFinals));
-    await writeFile(FITXERS.llocDiari, csv(['data', 'pageviews', 'visites'], llocFinal));
-    await writeFile(FITXERS.articlesTotal, csv(['titol', 'path', 'pageviews', 'visites'], total));
-    await writeFile(FITXERS.articles30dies, csv(['titol', 'path', 'pageviews', 'visites'], publiques));
+  if (!opcions.dryRun) {
+    await desaFitxers([
+      [FITXERS.articlesDiari, csv(['data', 'path', 'titol', 'pageviews', 'visites'], articlesFinals)],
+      [FITXERS.llocDiari, csv(['data', 'pageviews', 'visites'], llocFinal)],
+      [FITXERS.articlesTotal, csv(['titol', 'path', 'pageviews', 'visites'], total)],
+      [FITXERS.articles30dies, csv(['titol', 'path', 'pageviews', 'visites'], publiques)],
+    ]);
     console.log(`\nDesat a ${CFG.dir}/: ${articlesFinals.length} files d'articles, ${llocFinal.length} dies del lloc.`);
   } else {
     console.log('\n[--dry-run] No s\'ha escrit res.');
@@ -380,7 +458,11 @@ async function main() {
     : `tot l'històric (${llocFinal[0]?.data ?? '—'} → ${llocFinal.at(-1)?.data ?? '—'})`;
 
   console.log(`\nEls més llegits — ${rangs}\n`);
-  const files = (opcions.dies > 0 ? recent : total).slice(0, opcions.top)
+  const desInforme = iso(sumaDies(avui(), -opcions.dies + 1));
+  const informe = opcions.dies > 0
+    ? ordena(agrupa(articlesFinals.filter((f) => esArticle(f.path) && f.data >= desInforme), 'path'))
+    : total;
+  const files = informe.slice(0, opcions.top)
     .map((f, i) => [String(i + 1), f.titol, f.pageviews, f.visites]);
   console.log(taula(['#', 'Títol', 'Pàg.', 'Vis.'], files));
 
@@ -455,7 +537,9 @@ function imprimeixResum(lloc) {
   }
 }
 
-main().catch((e) => {
+export { main, baixaDades, Q_ARTICLES, Q_LLOC, llegeixFitxer, validaFiles, desaFitxers };
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main().catch((e) => {
   console.error(`\nError: ${e.message}`);
   process.exit(1);
 });
