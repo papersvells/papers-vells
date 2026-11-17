@@ -206,7 +206,7 @@ const Q_ARTICLES = `
 // estables i coincideixen entre consultes. No apujar aquest valor.
 const MAX_DIES_PER_CONSULTA = 7;
 
-async function baixaDades(query, des, fins) {
+async function baixaDades(query, des, fins, { anteriors = [], nom = 'dades', accepta = () => true, diagnostic } = {}) {
   const files = [];
   async function tram(inici, final) {
     const data = await gql(query, {
@@ -216,7 +216,7 @@ async function baixaDades(query, des, fins) {
     });
     const comptes = data?.viewer?.accounts;
     if (!Array.isArray(comptes) || comptes.length !== 1 || !Array.isArray(comptes[0]?.dades)) {
-      throw new Error('Resposta de Cloudflare sense el compte o les dades esperades.');
+      throw new Error('Resposta incompleta de Cloudflare: falta el compte o les dades esperades.');
     }
     const dades = comptes[0].dades;
     if (dades.length >= 10000) {
@@ -230,11 +230,25 @@ async function baixaDades(query, des, fins) {
     })), query === Q_ARTICLES, iso(inici), iso(final));
     return dades;
   }
+  const protegits = [];
   for (let inici = des; inici <= fins; inici = sumaDies(inici, MAX_DIES_PER_CONSULTA)) {
     const final = minim(sumaDies(inici, MAX_DIES_PER_CONSULTA - 1), fins);
-    files.push(...await tram(inici, final));
+    const primerDia = iso(inici);
+    const ultimDia = iso(final);
+    const dades = await tram(inici, final);
+    // Validem cada tram abans de reemplaçar-lo: una altra consulta o un altre
+    // tram amb dades no han d'amagar una resposta buida que esborraria l'històric.
+    const acceptades = dades.filter(accepta).length;
+    const previes = anteriors.filter((f) => f.data >= primerDia && f.data <= ultimDia).length;
+    if (acceptades === 0 && previes > 0) {
+      const detall = diagnostic ? `\n${diagnostic(dades, primerDia, ultimDia)}` : '';
+      const avis = `Tram protegit ${primerDia} → ${ultimDia} (${nom}): ${dades.length} files retornades, ${acceptades} acceptades, ${previes} prèvies. Es conserven les dades anteriors del lloc i dels articles; cal verificar-les.`;
+      console.log(`${process.env.GITHUB_ACTIONS === 'true' ? '::warning::' : '⚠️  '}${avis}${detall}`);
+      protegits.push({ des: primerDia, fins: ultimDia });
+    }
+    files.push(...dades);
   }
-  return files;
+  return { files, protegits };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -374,15 +388,39 @@ async function main() {
 
   let novesArticles = [];
   let novesLloc = [];
+  let protegits = [];
   if (inici <= fi) {
     console.log(`Demanant a Cloudflare: ${iso(inici)} → ${iso(fi)} (${Math.round((fi - inici) / DIA) + 1} dies)…`);
-
-    const dadesLloc = await baixaDades(Q_LLOC, inici, fi);
-    const dadesArticles = await baixaDades(Q_ARTICLES, inici, fi);
 
     // Títols coneguts: els de l'índex i, si cal, els que ja teníem guardats.
     const titols = new Map(articles.map((f) => [f.path, f.titol]));
     for (const [u, t] of index) titols.set(u, t);
+
+    const resultatLloc = await baixaDades(Q_LLOC, inici, fi, {
+      anteriors: lloc, nom: 'lloc',
+    });
+    const dadesLloc = resultatLloc.files;
+    const resultatArticles = await baixaDades(Q_ARTICLES, inici, fi, {
+      anteriors: articles, nom: 'articles',
+      accepta: (f) => titols.has(f.dimensions.requestPath),
+      diagnostic: (dades, primerDia, ultimDia) => {
+        // Limitem la sortida i ometem paràmetres de consulta que poden ser sensibles.
+        const rutaSegura = (ruta) => String(ruta ?? '').split(/[?#]/, 1)[0].slice(0, 300);
+        const retornades = dades.slice(0, 10).map((f) => ({
+          data: f.dimensions?.date, path: rutaSegura(f.dimensions?.requestPath), pageviews: f.count,
+        }));
+        const previes = articles.filter((f) => f.data >= primerDia && f.data <= ultimDia)
+          .slice(0, 10).map((f) => ({ data: f.data, path: rutaSegura(f.path), pageviews: f.pageviews }));
+        const llocTram = dadesLloc.filter((f) => f.dimensions.date >= primerDia && f.dimensions.date <= ultimDia)
+          .map((f) => ({ data: f.dimensions.date, pageviews: f.count }));
+        return `Diagnòstic (màxim 10 rutes per llista):\n` +
+          `Articles retornats: ${JSON.stringify(retornades)}\n` +
+          `Articles previs: ${JSON.stringify(previes)}\n` +
+          `Total del lloc retornat: ${JSON.stringify(llocTram)}`;
+      },
+    });
+    const dadesArticles = resultatArticles.files;
+    protegits = [...resultatLloc.protegits, ...resultatArticles.protegits];
 
     novesLloc = dadesLloc.map((f) => ({
       data: f.dimensions.date,
@@ -407,19 +445,17 @@ async function main() {
   // cau dins la finestra relligada i hi posem exactament el que diu l'API.
   // Les files anteriors a la finestra no es toquen mai.
   const desdeFinestra = iso(inici);
+  const protegit = (data) => protegits.some((rang) => data >= rang.des && data <= rang.fins);
 
-  const articlesFora = articles.filter((f) => f.data < desdeFinestra);
-  const llocFora = lloc.filter((f) => f.data < desdeFinestra);
+  const articlesFora = articles.filter((f) => f.data < desdeFinestra || protegit(f.data));
+  const llocFora = lloc.filter((f) => f.data < desdeFinestra || protegit(f.data));
 
-  const articlesFinals = [...articlesFora, ...novesArticles]
+  const articlesFinals = [...articlesFora, ...novesArticles.filter((f) => !protegit(f.data))]
     .sort((a, b) => a.data.localeCompare(b.data) || a.path.localeCompare(b.path));
-  const llocFinal = [...llocFora, ...novesLloc]
+  const llocFinal = [...llocFora, ...novesLloc.filter((f) => !protegit(f.data))]
     .sort((a, b) => a.data.localeCompare(b.data));
   validaFiles(articlesFinals, true);
   validaFiles(llocFinal, false);
-  if (novesLloc.length === 0 && novesArticles.length === 0 && (lloc.length || articles.length)) {
-    throw new Error('L’API ha tornat buida; no s’ha tocat cap fitxer.');
-  }
 
   // ── Rànquings ─────────────────────────────────────────────────────────────
   const esArticle = (path) => index.has(path);
@@ -428,11 +464,14 @@ async function main() {
     agrupa(articlesFinals.filter((f) => esArticle(f.path)), 'path'),
     'pageviews', 'visites');
 
-  const finestra = opcions.finestra;
-  const desde = iso(sumaDies(avui(), -finestra + 1));
-  const recent = ordena(
-    agrupa(articlesFinals.filter((f) => esArticle(f.path) && f.data >= desde), 'path'),
-    'pageviews', 'visites');
+  const rankingDelsUltimsDies = (dies) => {
+    const desde = iso(sumaDies(avui(), -dies + 1));
+    return ordena(
+      agrupa(articlesFinals.filter((f) => esArticle(f.path) && f.data >= desde), 'path'),
+      'pageviews', 'visites');
+  };
+  const recent = rankingDelsUltimsDies(opcions.finestra);
+  const informe = opcions.dies > 0 ? rankingDelsUltimsDies(opcions.dies) : total;
 
   // La llista pública: top N amb un mínim de visites per no ensenyar empats a 1.
   const publiques = recent
@@ -458,10 +497,6 @@ async function main() {
     : `tot l'històric (${llocFinal[0]?.data ?? '—'} → ${llocFinal.at(-1)?.data ?? '—'})`;
 
   console.log(`\nEls més llegits — ${rangs}\n`);
-  const desInforme = iso(sumaDies(avui(), -opcions.dies + 1));
-  const informe = opcions.dies > 0
-    ? ordena(agrupa(articlesFinals.filter((f) => esArticle(f.path) && f.data >= desInforme), 'path'))
-    : total;
   const files = informe.slice(0, opcions.top)
     .map((f, i) => [String(i + 1), f.titol, f.pageviews, f.visites]);
   console.log(taula(['#', 'Títol', 'Pàg.', 'Vis.'], files));

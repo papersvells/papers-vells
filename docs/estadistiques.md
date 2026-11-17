@@ -62,9 +62,6 @@ estadistiques/articles-30dies.csv   titol,path,pageviews,visites   (llista públ
 4. Genera els dos rànquings.
 5. Comprova si hi ha dies sense dades i avisa.
 
-Si l'API torna buida però ja teníem dades, el script **no escriu res** (protecció
-contra un buidatge accidental) i acaba amb error, també amb `--dry-run`.
-
 ### Garanties de la recollida
 
 - La data més recent es calcula sobre totes les files dels dos arxius diaris.
@@ -83,11 +80,20 @@ contra un buidatge accidental) i acaba amb error, també amb `--dry-run`.
 - Les dades d'avui continuen sent provisionals i es rellegeixen en la següent
   execució. Una resposta vàlida però incompleta no sempre es pot detectar.
 
-Proves de regressió, amb API simulada i CSV temporals:
-
-```bash
-node --test scripts/estadistiques.test.mjs
-```
+Si una consulta torna incompleta, el script **s'atura amb error i no escriu cap
+fitxer**. Si un tram de 7 dies no retorna files acceptades però ja hi havia dades,
+es conserven les files anteriors **tant del lloc com dels articles** per a tot el
+tram i s'actualitzen els altres trams. Es mostra un avís (també com a anotació a
+GitHub Actions): les dades conservades estan pendents de verificar, i el tram es
+torna a comprovar mentre cau dins la finestra consultada.
+La comprovació s'aplica per separat al lloc i als articles (també després de filtrar
+els paths que no són articles). Els períodes sense dades prèvies poden continuar
+buits legítimament. La protecció només detecta trams completament buits, no pèrdues
+parcials; els límits dels trams poden canviar entre execucions.
+En cas d'avís, el missatge mostra el nombre de files retornades, acceptades i
+prèvies del tram. Per als articles també mostra fins a deu rutes retornades i
+prèvies, amb les dates i pàgines vistes, i el total diari del lloc retornat.
+S'ometen els paràmetres de consulta de les rutes i no es mostra el token.
 
 ### Ordres
 
@@ -100,6 +106,16 @@ CF_TOKEN=... node scripts/estadistiques.mjs --dry-run      # no escriu res
 
 Opcions completes: `--dies`, `--top`, `--finestra`, `--public`, `--min`, `--des`,
 `--resum`, `--dry-run`. Vegeu `--ajuda`.
+
+`--dies N` només canvia el període de la taula del terminal; `--finestra N`
+controla independentment el període del CSV de la llista pública (30 dies per
+defecte). Cap de les dues opcions retalla l'històric guardat.
+
+Proves de regressió, sense xarxa ni modificacions als CSV reals:
+
+```bash
+node --test scripts/estadistiques*.test.mjs
+```
 
 ## Automatització
 

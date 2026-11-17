@@ -8,31 +8,32 @@
   const nav    = document.querySelector('.site-nav');
   if (!toggle || !nav) return;
 
+  function setMenuObert(obert) {
+    nav.classList.toggle('is-open', obert);
+    toggle.setAttribute('aria-expanded', String(obert));
+    toggle.setAttribute('aria-label', obert ? 'Tancar menú' : 'Obrir menú');
+  }
+
   toggle.addEventListener('click', function () {
-    const isOpen = nav.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', isOpen);
-    toggle.setAttribute('aria-label', isOpen ? 'Tancar menú' : 'Obrir menú');
+    setMenuObert(!nav.classList.contains('is-open'));
   });
 
   /* Tanca el menú en clicar un enllaç */
   nav.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
-      nav.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', 'Obrir menú');
+      setMenuObert(false);
     });
   });
 
   /* ── Desplegable "Descobrir" (només escriptori) ──────────── */
   const botoDescobrir  = document.querySelector('.site-nav__boto');
   const contenidorDescobrir = document.querySelector('.site-nav__descrubre');
+  function setDescobert(obert) {
+    contenidorDescobrir.classList.toggle('is-open', obert);
+    botoDescobrir.setAttribute('aria-expanded', String(obert));
+  }
+
   if (botoDescobrir && contenidorDescobrir) {
-
-    function setDescobert(obert) {
-      contenidorDescobrir.classList.toggle('is-open', obert);
-      botoDescobrir.setAttribute('aria-expanded', String(obert));
-    }
-
     /* Clic (també Enter/Space amb teclat) */
     botoDescobrir.addEventListener('click', function (event) {
       event.stopPropagation();
@@ -60,17 +61,25 @@
         setDescobert(false);
       }
     });
-
-    /* Tanca amb Esc i torna el focus al botó */
-    document.addEventListener('keydown', function (event) {
-      if (
-        event.key === 'Escape' &&
-        contenidorDescobrir.classList.contains('is-open')
-      ) {
-        setDescobert(false);
-        botoDescobrir.focus();
-      }
-    });
   }
+
+  /* Tanca amb Esc i torna el focus al botó d'obertura.
+     El menú mòbil té prioritat: allà el botó Descobrir està ocult. */
+  document.addEventListener('keydown', function (event) {
+    if (event.key !== 'Escape') return;
+
+    const menuObert = nav.classList.contains('is-open');
+    const descobrirObert = botoDescobrir && contenidorDescobrir &&
+      contenidorDescobrir.classList.contains('is-open');
+
+    if (descobrirObert) setDescobert(false);
+
+    if (menuObert) {
+      setMenuObert(false);
+      toggle.focus();
+    } else if (descobrirObert) {
+      botoDescobrir.focus();
+    }
+  });
 
 })();

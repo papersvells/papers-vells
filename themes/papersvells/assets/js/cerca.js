@@ -37,11 +37,15 @@
 
   // ─── Normalització ───────────────────────────────────────
   // Treu accents: "pla" troba "Pla", "cafe" troba "cafè".
+  // Unifica apòstrofs i espais sense alterar els textos mostrats.
   function norm(s) {
     return decodeEntities(s || '')
       .toLowerCase()
       .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '');
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[\u2018\u2019\u02bc]/g, "'")
+      .replace(/\s+/g, ' ')
+      .trim();
   }
 
   // ─── Carrega de l'índex ──────────────────────────────────
