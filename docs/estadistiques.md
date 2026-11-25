@@ -62,6 +62,24 @@ estadistiques/articles-30dies.csv   titol,path,pageviews,visites   (llista públ
 4. Genera els dos rànquings.
 5. Comprova si hi ha dies sense dades i avisa.
 
+### Garanties de la recollida
+
+- La data més recent es calcula sobre totes les files dels dos arxius diaris.
+  Encara no es desa una marca de sincronització independent de les visites.
+- `--dies N` controla el període de l'informe; `--finestra N`, el del rànquing
+  públic. Són independents. Els arguments desconeguts o invàlids es rebutgen.
+- Només un fitxer inexistent es tracta com un arxiu nou. Els errors de lectura,
+  fitxers buits, files incompletes, dates o mètriques invàlides i duplicats
+  aturen l'execució abans d'escriure.
+- Es valida el compte i cada resposta de l'API. Si una consulta arriba a 10.000
+  files, es divideix en períodes més petits; si un sol dia encara arriba al límit,
+  s'atura la recollida en lloc de desar dades potencialment truncades.
+- Els quatre CSV es preparen en fitxers temporals del mateix directori i després
+  se substitueixen amb `rename`. Cada substitució és atòmica; el conjunt dels
+  quatre fitxers no és una transacció. Git conserva les versions anteriors.
+- Les dades d'avui continuen sent provisionals i es rellegeixen en la següent
+  execució. Una resposta vàlida però incompleta no sempre es pot detectar.
+
 Si una consulta torna incompleta, el script **s'atura amb error i no escriu cap
 fitxer**. Si un tram de 7 dies no retorna files acceptades però ja hi havia dades,
 es conserven les files anteriors **tant del lloc com dels articles** per a tot el
@@ -96,7 +114,7 @@ defecte). Cap de les dues opcions retalla l'històric guardat.
 Proves de regressió, sense xarxa ni modificacions als CSV reals:
 
 ```bash
-node --test scripts/estadistiques.test.mjs
+node --test scripts/estadistiques*.test.mjs
 ```
 
 ## Automatització

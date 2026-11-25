@@ -2,11 +2,14 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { runInNewContext } from 'node:vm';
+import { randomUUID } from 'node:crypto';
 
 // Executem el CLI real en un context aïllat, substituint només les dependències
 // externes: rellotge, API, consola i fitxers. No es toca estadistiques/*.csv.
 const codi = (await readFile(new URL('./estadistiques.mjs', import.meta.url), 'utf8'))
-  .replace("import { readFile, writeFile, mkdir } from 'node:fs/promises';", '');
+  .replace(/^import .*;$/gm, '')
+  .replace(/^export .*;$/gm, '')
+  .replace("if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main()", 'main()');
 
 const ARA = '2026-11-13T12:00:00Z';
 const TITOLS = {
@@ -44,6 +47,7 @@ async function executa({
     ['estadistiques/lloc-diari.csv', aCsv(['data', 'pageviews', 'visites'], llocVell)],
   ]);
   const escrits = new Map();
+  const temporals = new Map();
   const consultes = [];
   const logs = [];
   const errors = [];
@@ -62,8 +66,14 @@ async function executa({
       exit: (code) => { exitCode = code; },
     },
     mkdir: async () => {},
+    randomUUID,
     readFile: async (ruta) => fitxers.get(ruta) ?? '',
-    writeFile: async (ruta, text) => { escrits.set(ruta, text); },
+    writeFile: async (ruta, text) => { temporals.set(ruta, text); },
+    rename: async (origen, desti) => {
+      escrits.set(desti, temporals.get(origen));
+      temporals.delete(origen);
+    },
+    rm: async (ruta) => { temporals.delete(ruta); },
     fetch: async (url, opcions) => {
       if (url === 'https://papersvells.cat/cerca/index.json') {
         return { ok: true, json: async () => ({
