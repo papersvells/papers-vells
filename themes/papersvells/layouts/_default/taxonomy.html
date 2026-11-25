@@ -95,7 +95,7 @@
                      en taxonomies sense foto (categoria: Entrevista, Opinió…) */}}
               {{- if os.FileExists (printf "static/images/autors/%s.webp" $slug) }}
               <img class="autor-card__avatar"
-                   src="/images/autors/{{ $slug }}.webp"
+                   src="{{ printf "images/autors/%s.webp" $slug | relURL }}"
                    alt="" width="120" height="120" loading="lazy"
                    onerror="this.style.display='none'">
               {{- end }}
@@ -321,7 +321,7 @@
                  rel="noopener noreferrer"
                  aria-label="Consulta {{ $.Title }} a ARCA (obre en una pestanya nova)"
                  class="enllac-font">
-                <img src="/images/arca_icon.webp"
+                <img src="{{ "images/arca_icon.webp" | relURL }}"
                      alt="ARCA"
                      width="198" height="79" decoding="async"
                      class="arca-icon">
@@ -333,7 +333,7 @@
                  rel="noopener noreferrer"
                  aria-label="Article a la Viquipèdia en català"
                  class="wikipedia-link--left">
-                <img src="/images/wikipedia.webp"
+                <img src="{{ "images/wikipedia.webp" | relURL }}"
                      alt="Viquipèdia"
                      width="457" height="80" decoding="async"
                      class="wikipedia-icon">
@@ -385,7 +385,7 @@
           {{- with .File }}{{ $slug = .ContentBaseName | urlize }}{{ else }}{{ $slug = .Title | urlize }}{{ end }}
           {{- if os.FileExists (printf "static/images/autors/%s.webp" $slug) }}
           <img class="autor-header__avatar"
-               src="/images/autors/{{ $slug }}.webp"
+               src="{{ printf "images/autors/%s.webp" $slug | relURL }}"
                alt="" width="95" height="95"
                onerror="this.style.display='none'">
           {{- end }}
@@ -404,7 +404,7 @@
                  rel="noopener noreferrer"
                  aria-label="Article a la Viquipèdia en català"
                  class="wikipedia-link--left">
-                <img src="/images/wikipedia.webp"
+                <img src="{{ "images/wikipedia.webp" | relURL }}"
                      alt="Viquipèdia"
                      width="457" height="80" decoding="async"
                      class="wikipedia-icon">
@@ -440,28 +440,28 @@
     {{ with .Params.autors }}
       {{ range $i, $a := . }}
         {{ if $i }}, {{ end }}
-        <a href="/{{ $a | urlize }}/">{{ $a }}</a>
+        <a href="{{ printf "%s/" ($a | urlize) | relURL }}">{{ $a }}</a>
       {{ end }}
     {{ end }}
   {{ else if eq $.Type "questions" }}
     {{ with .Params.autors }}
       {{ range $i, $a := . }}
         {{ if $i }}, {{ end }}
-        <a href="/{{ $a | urlize }}/">{{ $a }}</a>
+        <a href="{{ printf "%s/" ($a | urlize) | relURL }}">{{ $a }}</a>
       {{ end }}
     {{ end }}
   {{ else if eq $.Type "categoria" }}
     {{ with .Params.autors }}
       {{ range $i, $a := . }}
         {{ if $i }}, {{ end }}
-        <a href="/{{ $a | urlize }}/">{{ $a }}</a>
+        <a href="{{ printf "%s/" ($a | urlize) | relURL }}">{{ $a }}</a>
       {{ end }}
     {{ end }}
   {{ else }}
     {{ with .Params.publicacions }}
       {{ range $i, $p := . }}
         {{ if $i }}, {{ end }}
-        <a href="/{{ $p | urlize }}/">{{ $p }}</a>
+        <a href="{{ printf "%s/" ($p | urlize) | relURL }}">{{ $p }}</a>
       {{ end }}
     {{ end }}
   {{ end }}
@@ -488,7 +488,7 @@
 
       {{ if gt (len $citats) 0 }}
       
-        <img class="floritura" src="/images/floritura.webp" alt="" width="150" height="50" decoding="async" loading="lazy">
+        <img class="floritura" src="{{ "images/floritura.webp" | relURL }}" alt="" width="150" height="50" decoding="async" loading="lazy">
       
         <h2 class="autor-header__name autor-header__name--accent">Ha estat citat en {{ len $citats }} {{ cond (eq (len $citats) 1) "article" "articles" }}</h2>
 
@@ -500,7 +500,7 @@
                 {{ with .Params.autors }}
                 {{ range $i, $a := . }}
                 {{ if $i }}, {{ end }}
-                  <a href="/{{ $a | urlize }}/">{{ $a }}</a>
+                  <a href="{{ printf "%s/" ($a | urlize) | relURL }}">{{ $a }}</a>
                 {{ end }}
                 {{ end }}
                 · {{ .Date.Format "02/01/2006" }}
@@ -564,7 +564,7 @@
 
         {{ if gt (len $qüestionsAutor) 0 }}
 
-          <img class="floritura" src="/images/floritura.webp" alt="" width="150" height="50" decoding="async" loading="lazy">
+          <img class="floritura" src="{{ "images/floritura.webp" | relURL }}" alt="" width="150" height="50" decoding="async" loading="lazy">
 
           <h2 class="autor-header__name autor-header__name--accent">Ha col·laborat en {{ len $qüestionsAutor }} {{ cond (eq (len $qüestionsAutor) 1) "qüestió" "qüestions" }}</h2>
 

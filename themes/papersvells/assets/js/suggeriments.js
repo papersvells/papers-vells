@@ -81,7 +81,7 @@
     return [it.a, it.y].filter(Boolean).join(' · ');
   }
 
-  fetch('/cerca/suggeriments.json')
+  fetch(document.documentElement.dataset.suggerimentsIndex)
     .then(function (r) { return r.ok ? r.json() : []; })
     .then(function (items) {
       const objectiu = norm(path);

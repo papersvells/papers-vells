@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="ca"
+      data-cerca-index="{{ "cerca/index.json" | relURL }}"
+      data-suggeriments-index="{{ "cerca/suggeriments.json" | relURL }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -316,7 +318,7 @@
     ─────────────────────────────────────────────────────────
   */}}
   <link rel="preload"
-        href="/fonts/Alegreya-Regular.woff2"
+        href="{{ "fonts/Alegreya-Regular.woff2" | relURL }}"
         as="font"
         type="font/woff2"
         crossorigin>
@@ -326,9 +328,9 @@
     FAVICONS
     ─────────────────────────────────────────────────────────
   */}}
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+  <link rel="icon" href="{{ "icon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 
 
   {{/*
@@ -351,14 +353,14 @@
 
   <header class="site-header">
 
-  <a href="/" aria-label="Papers Vells — pàgina principal">
+  <a href="{{ "" | relURL }}" aria-label="Papers Vells — pàgina principal">
       <picture>
         <source
           media="(max-width: 900px)"
-          srcset="/images/logo-vertical.webp">
+          srcset="{{ "images/logo-vertical.webp" | relURL }}">
         <img
           class="site-header__logo"
-          src="/images/logo-horitzontal.webp"
+          src="{{ "images/logo-horitzontal.webp" | relURL }}"
           alt="Papers Vells"
           width="1200"
           height="104"
@@ -402,11 +404,11 @@
       {{ end }}
 
       <div class="site-nav__icones">
-        <a href="/cerca/"
+        <a href="{{ "cerca/" | relURL }}"
            aria-label="Cerca"
            class="site-nav__cerca"
            {{ if eq $.RelPermalink "/cerca/" }}aria-current="page"{{ end }}>
-          <img src="/images/lupa.webp"
+          <img src="{{ "images/lupa.webp" | relURL }}"
                alt=""
                width="20" height="20">
         </a>
@@ -416,7 +418,7 @@
            rel="noopener noreferrer"
            aria-label="Papers Vells a Twitter/X"
            class="site-nav__twitter">
-          <img src="/images/twpv.webp"
+          <img src="{{ "images/twpv.webp" | relURL }}"
                alt="Twitter/X"
                width="20" height="20">
         </a>
@@ -424,7 +426,7 @@
         <a href="{{ .Site.BaseURL }}index.xml"
            aria-label="Feed RSS"
            class="site-nav__rss">
-          <img src="/images/rsslogo.webp"
+          <img src="{{ "images/rsslogo.webp" | relURL }}"
                alt=""
                width="20" height="20">
         </a>

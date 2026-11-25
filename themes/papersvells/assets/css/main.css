@@ -92,49 +92,49 @@
 /* ── 2. FONT FACE ─────────────────────────────────────────── */
 @font-face {
   font-family: 'Alegreya';
-  src: url('/fonts/Alegreya-Regular.woff2') format('woff2');
+  src: url('../fonts/Alegreya-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Alegreya';
-  src: url('/fonts/Alegreya-Italic.woff2') format('woff2');
+  src: url('../fonts/Alegreya-Italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Alegreya';
-  src: url('/fonts/Alegreya-Medium.woff2') format('woff2');
+  src: url('../fonts/Alegreya-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Alegreya';
-  src: url('/fonts/Alegreya-Bold.woff2') format('woff2');
+  src: url('../fonts/Alegreya-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Alegreya';
-  src: url('/fonts/Alegreya-BoldItalic.woff2') format('woff2');
+  src: url('../fonts/Alegreya-BoldItalic.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Rubik';
-  src: url('/fonts/rubik-mono-one.woff2') format('woff2');
+  src: url('../fonts/rubik-mono-one.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Alegreya-Sans';
-  src: url('/fonts/alegreya-sans-v26-latin-regular.woff2') format('woff2');
+  src: url('../fonts/alegreya-sans-v26-latin-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

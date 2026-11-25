@@ -19,7 +19,7 @@
   <section class="fitxa__bloc fitxa__bloc--principal">
     <h3 class="fitxa__camp">Publicació</h3>
     <p>
-      <a class="fitxa__publicacio" href="/{{ . | urlize }}/">
+      <a class="fitxa__publicacio" href="{{ printf "%s/" (. | urlize) | relURL }}">
         {{ . }}
       </a>
     </p>
@@ -42,10 +42,10 @@
     {{ $autorSlug := $autor | urlize }}
     <div class="fitxa__autor">
       <div class="fitxa__avatar">
-        <a class="fitxa__autor" href="/{{ $autorSlug }}/">
+        <a class="fitxa__autor" href="{{ printf "%s/" $autorSlug | relURL }}">
           <img
             class="article-byline__avatar"
-            src="/images/autors/{{ $autorSlug }}.webp"
+            src="{{ printf "images/autors/%s.webp" $autorSlug | relURL }}"
             alt="Fotografia de {{ $autor }}"
             width="80"
             height="80"
@@ -53,7 +53,7 @@
         </a>
       </div>
       <div>
-        <a href="/{{ $autorSlug }}/">
+        <a href="{{ printf "%s/" $autorSlug | relURL }}">
           {{ $autor }}
         </a>
       </div>
@@ -75,7 +75,7 @@
   <section class="fitxa__bloc fitxa__bloc--meta">
     <p class="fitxa__meta">
       {{ with $categoria }}
-        <a class="fitxa__categoria" href="/categoria/{{ . | urlize }}/">
+        <a class="fitxa__categoria" href="{{ printf "categoria/%s/" (. | urlize) | relURL }}">
           {{ . }}
         </a>
       {{ end }}
@@ -87,7 +87,7 @@
       <section class="fitxa__bloc">
         <h3 class="fitxa__camp">Qüestió</h3>
         <p>
-          <a class="fitxa__questio" href="/questions/{{ . | urlize }}/">
+          <a class="fitxa__questio" href="{{ printf "questions/%s/" (. | urlize) | relURL }}">
             {{ . }}
           </a>
         </p>
@@ -151,7 +151,7 @@
             data-url="{{ .Permalink }}"
             aria-label="Copiar l'enllaç de l'article"
             title="Copiar l'enllaç"
-          ><img src="/icon-clipboard.png" alt="Copiar enllaç" width="18" height="18"><span class="fitxa__copiar-avis">Enllaç copiat</span></button>
+          ><img src="{{ "icon-clipboard.png" | relURL }}" alt="Copiar enllaç" width="18" height="18"><span class="fitxa__copiar-avis">Enllaç copiat</span></button>
           <a
             class="fitxa__xarxa fitxa__xarxa--x"
             href="https://x.com/intent/post?text={{ .Title | urlquery }}&amp;url={{ .Permalink }}"
@@ -159,7 +159,7 @@
             rel="noopener"
             title="Compartir a X (Twitter)"
             aria-label="Compartir a X (Twitter)"
-          ><img src="/icon-x.png" alt="X (Twitter)" width="18" height="18"></a>
+          ><img src="{{ "icon-x.png" | relURL }}" alt="X (Twitter)" width="18" height="18"></a>
           <a
             class="fitxa__xarxa"
             href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
@@ -167,7 +167,7 @@
             rel="noopener"
             title="Compartir a Facebook"
             aria-label="Compartir a Facebook"
-          ><img src="/icon-facebook.png" alt="Facebook" width="18" height="18"></a>
+          ><img src="{{ "icon-facebook.png" | relURL }}" alt="Facebook" width="18" height="18"></a>
         </div>
       </section>
 

@@ -59,7 +59,7 @@
     if (carregant) return carregant;
 
     estat.textContent = 'Carregant índex…';
-    carregant = fetch('/cerca/index.json')
+    carregant = fetch(document.documentElement.dataset.cercaIndex)
       .then(r => r.json())
       .then(data => {
         index = data.articles.map(x => ({
