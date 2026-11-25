@@ -1,4 +1,4 @@
-baseURL           = 'https://papersvells.github.io/proves/'
+baseURL           = 'https://papersvells.github.io/papers-vells/'
 defaultContentLanguage = 'ca'
 locale            = 'ca-ES'
 title             = 'Papers Vells'
